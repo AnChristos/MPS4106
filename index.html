@@ -1293,22 +1293,23 @@ multiply equation (<a
 href="#x1-40002r13">4.13<!--tex4ht:ref: eq:KG --></a>) by <span class="mathjax-inline">\(i\phi ^*\)</span> and its complex conjugate by <span class="mathjax-inline">\(i\phi \)</span> and subtract. We get </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} i\phi ^*\frac {\partial ^2 \phi }{\partial t^2} - i\phi \frac {\partial ^2 \phi ^*}{\partial t^2} &amp;= i\phi ^*(\boldsymbol {\nabla }^2 \phi - m^2 \phi ) - i\phi (\boldsymbol {\nabla }^2 \phi ^* - m^2 \phi ^*)\\ &amp;= i\phi ^*\boldsymbol {\nabla }^2 \phi - i\phi \boldsymbol {\nabla }^2 \phi ^* - i\phi ^* m^2 \phi + i\phi m^2 \phi ^* \\ &amp;= i\phi ^*\boldsymbol {\nabla }^2 \phi - i\phi \boldsymbol {\nabla }^2 \phi ^*. \end {aligned} \end{equation}</div><a 
  id="x1-40005r16"></a> Since <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {\partial }{\partial t} \left [ i \left ( \phi ^* \frac {\partial \phi }{\partial t} - \phi \frac {\partial \phi ^*}{\partial t} \right ) \right ] &amp;= i\phi ^*\frac {\partial ^2 \phi }{\partial t^2} + i\frac {\partial \phi ^*}{\partial t} \frac {\partial \phi }{\partial t} \\ &amp;\quad - i\phi \frac {\partial ^2 \phi ^*}{\partial t^2} - i\frac {\partial \phi }{\partial t} \frac {\partial \phi ^*}{\partial t} \\ &amp;= i\phi ^*\frac {\partial ^2 \phi }{\partial t^2} - i\phi \frac {\partial ^2 \phi ^*}{\partial t^2}, \end {aligned} \end{equation}</div><a 
- id="x1-40006r17"></a>
-and similarly for the <span class="mathjax-inline">\(\boldsymbol {\nabla }\)</span> terms, we can write <div class="mathjax-env mathjax-equation">\begin{equation} \frac {\partial }{\partial t} \left [ i \left ( \phi ^* \frac {\partial \phi }{\partial t} - \phi \frac {\partial \phi ^*}{\partial t} \right ) \right ] + \boldsymbol {\nabla } \cdot \left [ -i (\phi ^* \boldsymbol {\nabla } \phi - \phi \boldsymbol {\nabla } \phi ^*) \right ] = 0. \end{equation}</div><a 
- id="x1-40007r18"></a> We identify the terms in square brackets with
-the probability and probability current densities <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\rho = i \left ( \phi ^* \frac {\partial \phi }{\partial t} - \phi \frac {\partial \phi ^*}{\partial t} \right ) \\ &amp;\mathbf {j} = - i (\phi ^* \boldsymbol {\nabla } \phi - \phi \boldsymbol {\nabla } \phi ^*) \end {aligned} \end{equation}</div><a 
+ id="x1-40006r17"></a> and similarly
+for the <span class="mathjax-inline">\(\boldsymbol {\nabla }\)</span> terms, we can write <div class="mathjax-env mathjax-equation">\begin{equation} \frac {\partial }{\partial t} \left [ i \left ( \phi ^* \frac {\partial \phi }{\partial t} - \phi \frac {\partial \phi ^*}{\partial t} \right ) \right ] + \boldsymbol {\nabla } \cdot \left [ -i (\phi ^* \boldsymbol {\nabla } \phi - \phi \boldsymbol {\nabla } \phi ^*) \right ] = 0. \end{equation}</div><a 
+ id="x1-40007r18"></a> We identify the terms in square brackets with the probability and
+probability current densities <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\rho = i \left ( \phi ^* \frac {\partial \phi }{\partial t} - \phi \frac {\partial \phi ^*}{\partial t} \right ) \\ &amp;\mathbf {j} = - i (\phi ^* \boldsymbol {\nabla } \phi - \phi \boldsymbol {\nabla } \phi ^*) \end {aligned} \end{equation}</div><a 
  id="x1-40008r19"></a> They form a four vector <span class="mathjax-inline">\((\rho , \mathbf {j})\)</span> <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} J^\mu = i\left [\phi ^* \left (\frac {\partial \phi } {\partial t} - \boldsymbol {\nabla } \phi \right ) - \phi \left (\frac {\partial \phi ^*}{\partial t} - \boldsymbol {\nabla } \phi ^*\right ) \right ] = i\left ( \phi ^* \partial ^\mu \phi - \phi \partial ^\mu \phi ^* \right ), \end {aligned} \end{equation}</div><a 
- id="x1-40009r20"></a> that satisfies
-<div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu J^\mu =0. \end{equation}</div><a 
- id="x1-40010r21"></a>
+ id="x1-40009r20"></a> that satisfies <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu J^\mu =0, \end{equation}</div><a 
+ id="x1-40010r21"></a> since <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \partial _\mu J^\mu &amp;= i \partial _\mu \left ( \phi ^* \partial ^\mu \phi - \phi \partial ^\mu \phi ^* \right ) \\ &amp;= i \left ( \partial _\mu \phi ^* \partial ^\mu \phi + \phi ^* \partial _\mu \partial ^\mu \phi - \partial _\mu \phi \partial ^\mu \phi ^* - \phi \partial _\mu \partial ^\mu \phi ^* \right ) \\ &amp;= i \left [ \phi ^* (-m^2 \phi ) - \phi (-m^2 \phi ^*) \right ] = 0. \end {aligned} \end{equation}</div><a 
+ id="x1-40011r22"></a> Here we used the fact that <span class="mathjax-inline">\(\phi \)</span>
+and <span class="mathjax-inline">\(\phi ^*\)</span> satisfy the Klein-Gordon equation.
 <p>   The issue is probability densities can now be negative. We can readily check this by introducing
 plane-wave solutions, and using <span class="mathjax-inline">\(\phi ^*\phi = \phi \phi ^* = |N|^2\)</span>, we obtain </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \rho = i \left ( \phi ^* (-iE) \phi - \phi (iE) \phi ^* \right ) = E (\phi ^*\phi + \phi \phi ^*) = 2|N|^2 E. \end{equation}</div><a 
- id="x1-40011r22"></a> Negative energy solutions lead to negative probability
+ id="x1-40012r23"></a> Negative energy solutions lead to negative probability
 densities. Historically, this is the problem that motivated Dirac to find an alternative equation. The
 eventual solution is that we should treat <span class="mathjax-inline">\(J^\mu \)</span> not as a probability four-current but as a four-current relating
 to particle or charge density <div class="mathjax-env mathjax-equation">\begin{equation} J^\mu = i Q \left ( \phi ^* \partial ^\mu \phi - \phi \partial ^\mu \phi ^* \right ). \end{equation}</div><a 
- id="x1-40012r23"></a>
+ id="x1-40013r24"></a>
                                                                                         
                                                                                         
    
@@ -1318,11 +1319,11 @@ href="#QQ2-1-48" id="x1-410004.3">The Dirac Equation</a></h4>
 being a second order (in <span class="mathjax-inline">\(t\)</span>) differential equation. As a way around it, we try to write a first order
 equation: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:Dirac} \begin {aligned} &amp; H \psi = (\boldsymbol {\alpha }\cdot \mathbf {p} + \beta m) \psi \\ &amp; H \psi = (\alpha _1 p_x + \alpha _2 p_y + \alpha _3 p_z + \beta m)\psi . \end {aligned} \end{equation}</div><a 
- id="x1-41001r24"></a> Where <span class="mathjax-inline">\(\boldsymbol {\alpha }\)</span> and <span class="mathjax-inline">\(\beta \)</span> are coefficients to be determined. We still have to satisfy the correct dependence
+ id="x1-41001r25"></a> Where <span class="mathjax-inline">\(\boldsymbol {\alpha }\)</span> and <span class="mathjax-inline">\(\beta \)</span> are coefficients to be determined. We still have to satisfy the correct dependence
 between energy and momentum <span class="mathjax-inline">\(H^2 \psi = \left ({ \mathbf p}^2 + m^2 \right ) \psi \)</span>. <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} H^2 \psi = &amp;(\alpha _1 p_x + \alpha _2 p_y + \alpha _3 p_z + \beta m) (\alpha _1 p_x + \alpha _2 p_y + \alpha _3 p_z + \beta m) \psi \\ =&amp; (\alpha _1^2 p_x^2 + \alpha _2^2 p_y^2 + \alpha _3^2 p_z^2) \psi +(\beta ^2 m^2) \psi \\ &amp;+\left [ m (\beta \alpha _1 + \alpha _1 \beta ) p_x + m (\beta \alpha _2 + \alpha _2 \beta ) p_y + m (\beta \alpha _3 + \alpha _3 \beta ) p_z \right ]\psi \\ &amp; + \left [ (\alpha _1 \alpha _2 + \alpha _2 \alpha _1) p_x p_y + (\alpha _1 \alpha _3 + \alpha _3 \alpha _1) p_x p_z + (\alpha _2 \alpha _3 + \alpha _3 \alpha _2) p_y p_z \right ]\psi , \end {aligned} \end{equation}</div><a 
- id="x1-41002r25"></a> where we used the fact that <span class="mathjax-inline">\([p_x, p_y]=0\)</span>. For this expression to be equal to <span class="mathjax-inline">\(({\mathbf p}^2 + m^2)\psi \)</span> the <span class="mathjax-inline">\(\alpha _i\)</span>
+ id="x1-41002r26"></a> where we used the fact that <span class="mathjax-inline">\([p_x, p_y]=0\)</span>. For this expression to be equal to <span class="mathjax-inline">\(({\mathbf p}^2 + m^2)\psi \)</span> the <span class="mathjax-inline">\(\alpha _i\)</span>
 and <span class="mathjax-inline">\(\beta \)</span> coefficients need to satisfy the following: <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:Dirac_Matrices} \begin {aligned} \alpha _1^2 = \alpha _2^2 = \alpha _3^2 = \beta ^2 &amp;=&amp; I, \\ \alpha _i \beta + \beta \alpha _i = \{ \alpha _i, \beta \} &amp;=&amp; 0,\\ \alpha _i \alpha _j + \alpha _j \alpha _i = \{ \alpha _i, \alpha _j \} &amp;=&amp; 0 \quad (i \neq j), \end {aligned} \end{equation}</div><a 
- id="x1-41003r26"></a> where we have introduced the <i>anti-commutator</i>
+ id="x1-41003r27"></a> where we have introduced the <i>anti-commutator</i>
 indicated with the curly brackets. Since the coefficients do not commute, they cannot simply be
 numbers, so we are led to consider matrices operating on a multicomponent column vector
 <span class="mathjax-inline">\(\psi \)</span>.
@@ -1332,14 +1333,14 @@ numbers, so we are led to consider matrices operating on a multicomponent column
      <li class="itemize">
      <p>Zero trace (sum of the elements on their main diagonal) </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \mbox {Tr}(\alpha _i) = \mbox {Tr}(\alpha _i \beta \beta ) = \mbox {Tr}(\beta \alpha _i \beta ) = -\mbox {Tr}(\alpha _i \beta \beta ) = -\mbox {Tr}(\alpha _i), \end{equation}</div><a 
- id="x1-41004r27"></a> where we have used the fact that <span class="mathjax-inline">\(\mbox {Tr}(AB) = \mbox {Tr}(BA)\)</span> and
+ id="x1-41004r28"></a> where we have used the fact that <span class="mathjax-inline">\(\mbox {Tr}(AB) = \mbox {Tr}(BA)\)</span> and
      the commutation relations above.
      </li>
      <li class="itemize">
      <p>+1 and -1 eigenvalues. To prove this, consider an eigenvector <span class="mathjax-inline">\(Y\)</span>: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \alpha _i Y = \lambda Y. \end{equation}</div><a 
- id="x1-41005r28"></a> Multiplying by <span class="mathjax-inline">\(\alpha _i\)</span> we get <div class="mathjax-env mathjax-equation">\begin{equation} \alpha _i^2 Y = \lambda \alpha _i Y = \lambda ^2 Y, \end{equation}</div><a 
- id="x1-41006r29"></a> which
+ id="x1-41005r29"></a> Multiplying by <span class="mathjax-inline">\(\alpha _i\)</span> we get <div class="mathjax-env mathjax-equation">\begin{equation} \alpha _i^2 Y = \lambda \alpha _i Y = \lambda ^2 Y, \end{equation}</div><a 
+ id="x1-41006r30"></a> which
      implies, since <span class="mathjax-inline">\(\alpha _i^2 = 1\)</span>, <span class="mathjax-inline">\(\lambda =\pm 1\)</span>
      </li>
      <li class="itemize">
@@ -1353,9 +1354,9 @@ numbers, so we are led to consider matrices operating on a multicomponent column
 </li></ul>
 <p>The lowest dimensionality matrices satisfying all these requirements are <span class="mathjax-inline">\(4 \times 4\)</span>. A four-component column vector </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \psi = N \left ( \begin {array}{r} \psi _1 \\ \psi _2 \\ \psi _3 \\ \psi _4 \end {array} \right ) \end{equation}</div><a 
- id="x1-41007r30"></a>
+ id="x1-41007r31"></a>
 that satisfies the Dirac Equation <a 
-href="#x1-41001r24">4.24<!--tex4ht:ref: eq:Dirac --></a> is called a <i>Dirac spinor</i>.
+href="#x1-41001r25">4.25<!--tex4ht:ref: eq:Dirac --></a> is called a <i>Dirac spinor</i>.
 <p>   The fact that spinors have the same dimension as space-time can generate some confusion. The
 components of a Dirac spinor do not transform as a four-vector when you go from one inertial system to
 another. We will see later in the course how they transform. For now, it is important not to think of
@@ -1376,45 +1377,45 @@ href="#QQ2-1-49" id="x1-420004.4">Covariant Formulation of the Dirac Equation</a
                                                                                         
 <p>The Dirac equation is usually expressed in a form which emphasises its covariance (form invariance). On
 multiplying the Dirac equation <a 
-href="#x1-41001r24">4.24<!--tex4ht:ref: eq:Dirac --></a> by <span class="mathjax-inline">\(\beta \)</span> and substituting the operators we obtain </p> 
+href="#x1-41001r25">4.25<!--tex4ht:ref: eq:Dirac --></a> by <span class="mathjax-inline">\(\beta \)</span> and substituting the operators we obtain </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; i \beta \frac {\partial \psi }{\partial t} = - i \beta \boldsymbol {\alpha } \cdot \boldsymbol {\nabla } \psi + m \psi , \end {aligned} \end{equation}</div><a 
- id="x1-42001r31"></a> which can be written
+ id="x1-42001r32"></a> which can be written
 as <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:DiracCovariant} \begin {aligned} &amp; (i \gamma ^\mu \partial _\mu - m) \psi = 0, \end {aligned} \end{equation}</div><a 
- id="x1-42002r32"></a> where we introduced the <span class="mathjax-inline">\(\gamma \)</span> matrices <div class="mathjax-env mathjax-equation">\begin{equation} \gamma ^0 = \beta , \quad \gamma ^1 = \beta \alpha _1, \quad \gamma ^2 = \beta \alpha _2, \quad \gamma ^3 = \beta \alpha _3, \end{equation}</div><a 
- id="x1-42003r33"></a> or in shorthand form <div class="mathjax-env mathjax-equation">\begin{equation} \gamma ^{\mu } = (\beta , \beta \boldsymbol {\alpha }). \end{equation}</div><a 
- id="x1-42004r34"></a> Summation over repeated <span class="mathjax-inline">\(\mu \)</span> indices is
+ id="x1-42002r33"></a> where we introduced the <span class="mathjax-inline">\(\gamma \)</span> matrices <div class="mathjax-env mathjax-equation">\begin{equation} \gamma ^0 = \beta , \quad \gamma ^1 = \beta \alpha _1, \quad \gamma ^2 = \beta \alpha _2, \quad \gamma ^3 = \beta \alpha _3, \end{equation}</div><a 
+ id="x1-42003r34"></a> or in shorthand form <div class="mathjax-env mathjax-equation">\begin{equation} \gamma ^{\mu } = (\beta , \beta \boldsymbol {\alpha }). \end{equation}</div><a 
+ id="x1-42004r35"></a> Summation over repeated <span class="mathjax-inline">\(\mu \)</span> indices is
 implied. Despite the suggestive way it is written, the Dirac <span class="mathjax-inline">\(\gamma \)</span> matrices are not four-vectors; they are
 constant matrices, the same in any reference frame. Equation <a 
-href="#x1-42002r32">4.32<!--tex4ht:ref: eq:DiracCovariant --></a> is called the covariant form of the
+href="#x1-42002r33">4.33<!--tex4ht:ref: eq:DiracCovariant --></a> is called the covariant form of the
 Dirac equation.
 <p>   It is worth noticing that the Dirac equation is actually four differential equations coupling the four
 components of <span class="mathjax-inline">\(\psi \)</span>. The four equations, <span class="mathjax-inline">\(j=1,2,3,4\)</span>, can be written as </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:Dirac_algebraic} \sum \limits _{k=1}^4 \left [\sum \limits _{\mu =0}^3 (i \gamma ^\mu _{jk} \partial _\mu - m \delta _{jk}) \right ] \psi _k = 0. \end{equation}</div><a 
- id="x1-42005r35"></a>
+ id="x1-42005r36"></a>
 <p>   Using the properties of the <span class="mathjax-inline">\(\alpha \)</span> and <span class="mathjax-inline">\(\beta \)</span> matrices we can work out: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; (\gamma ^0)^2 = I, \\ &amp; (\gamma ^i)^2 = \beta (\alpha _i \beta ) \alpha _i = - \beta (\beta \alpha _i) \alpha _i = -I, \\ &amp; \gamma ^0 \gamma ^i = \beta (\beta \alpha _i) = - \beta (\alpha _i \beta ) = - (\beta \alpha _i) \beta = - \gamma ^i \gamma ^0, \\ &amp; \gamma ^i \gamma ^j = (\beta \alpha _i) (\beta \alpha _j) = - \beta \beta \alpha _i \alpha _j = \beta \beta \alpha _j \alpha _i \\ &amp; = -(\beta \alpha _j) (\beta \alpha _i) = - \gamma ^j \gamma ^i. \end {aligned} \end{equation}</div><a 
- id="x1-42006r36"></a> All these can be written in short
+ id="x1-42006r37"></a> All these can be written in short
 notation as <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:gamma_clifford} \{ \gamma ^\mu , \gamma ^\nu \} = \gamma ^\mu \gamma ^\nu + \gamma ^\nu \gamma ^\mu = 2 g^{\mu \nu }. \end{equation}</div><a 
- id="x1-42007r37"></a>
+ id="x1-42007r38"></a>
 <p>   The <span class="mathjax-inline">\(\alpha \)</span> and <span class="mathjax-inline">\(\beta \)</span> matrices are Hermitian, which means </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; (\gamma ^0)^\dagger = \gamma ^0, \\ &amp; (\gamma ^i)^\dagger = (\beta \alpha _i)^\dagger = \alpha _i^\dagger \beta ^\dagger = \alpha _i \beta = - \beta \alpha _i = - \gamma ^i, \end {aligned} \end{equation}</div><a 
- id="x1-42008r38"></a> where we used <span class="mathjax-inline">\((AB)^\dagger = B^\dagger A^\dagger \)</span> and the anti-commutation
+ id="x1-42008r39"></a> where we used <span class="mathjax-inline">\((AB)^\dagger = B^\dagger A^\dagger \)</span> and the anti-commutation
 relationships from equation <a 
-href="#x1-41003r26">4.26<!--tex4ht:ref: eq:Dirac_Matrices --></a>. These are usually written compactly as <div class="mathjax-env mathjax-equation">\begin{equation} (\gamma ^\mu )^\dagger = \gamma ^0 \gamma ^\mu \gamma ^0. \end{equation}</div><a 
- id="x1-42009r39"></a>
+href="#x1-41003r27">4.27<!--tex4ht:ref: eq:Dirac_Matrices --></a>. These are usually written compactly as <div class="mathjax-env mathjax-equation">\begin{equation} (\gamma ^\mu )^\dagger = \gamma ^0 \gamma ^\mu \gamma ^0. \end{equation}</div><a 
+ id="x1-42009r40"></a>
 <p>   The choice of the four <span class="mathjax-inline">\(\gamma ^\mu \)</span> matrices is not unique. The physics depends only on the properties listed in
 equations <a 
-href="#x1-41003r26">4.26<!--tex4ht:ref: eq:Dirac_Matrices --></a> and <a 
-href="#x1-42007r37">4.37<!--tex4ht:ref: eq:gamma_clifford --></a>. It is only when we need explicit solutions of the Dirac equation that we use a
+href="#x1-41003r27">4.27<!--tex4ht:ref: eq:Dirac_Matrices --></a> and <a 
+href="#x1-42007r38">4.38<!--tex4ht:ref: eq:gamma_clifford --></a>. It is only when we need explicit solutions of the Dirac equation that we use a
 particular representation. The two most commonly used are the Dirac-Pauli representation </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \beta = \begin {pmatrix} I &amp; 0 \\ 0 &amp; -I \end {pmatrix}, \quad \alpha _i = \begin {pmatrix} 0 &amp; \sigma _i \\ \sigma _i &amp; 0 \end {pmatrix}, \label {eq:DiracPauli} \end{equation}</div><a 
- id="x1-42010r40"></a> and the
+ id="x1-42010r41"></a> and the
 chiral (Weyl) representation <div class="mathjax-env mathjax-equation">\begin{equation} \beta = \begin {pmatrix} 0 &amp; I \\ I &amp; 0 \end {pmatrix}, \quad \alpha _i = \begin {pmatrix} -\sigma _i &amp; 0 \\ 0 &amp; \sigma _i \end {pmatrix}, \label {eq:Chiral} \end{equation}</div><a 
- id="x1-42011r41"></a> where <span class="mathjax-inline">\(I\)</span> is the <span class="mathjax-inline">\(2 \times 2\)</span> identity, <span class="mathjax-inline">\(0\)</span> is the <span class="mathjax-inline">\(2 \times 2\)</span> zero matrix, and <span class="mathjax-inline">\(\sigma _i\)</span> are the Pauli
+ id="x1-42011r42"></a> where <span class="mathjax-inline">\(I\)</span> is the <span class="mathjax-inline">\(2 \times 2\)</span> identity, <span class="mathjax-inline">\(0\)</span> is the <span class="mathjax-inline">\(2 \times 2\)</span> zero matrix, and <span class="mathjax-inline">\(\sigma _i\)</span> are the Pauli
 matrices: <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:paulimatr} I = \sigma _0 = \begin {pmatrix} 1 &amp; 0 \\ 0 &amp; 1 \end {pmatrix}, \quad \sigma _1 = \begin {pmatrix} 0 &amp; 1 \\ 1 &amp; 0 \end {pmatrix}, \quad \sigma _2 = \begin {pmatrix} 0 &amp; -i \\ i &amp; 0 \end {pmatrix}, \quad \sigma _3 = \begin {pmatrix} 1 &amp; 0 \\ 0 &amp; -1 \end {pmatrix}. \end{equation}</div><a 
- id="x1-42012r42"></a> Notice that although the matrices in <a 
-href="#x1-42010r40">4.40<!--tex4ht:ref: eq:DiracPauli --></a> and <a 
-href="#x1-42011r41">4.41<!--tex4ht:ref: eq:Chiral --></a> look like <span class="mathjax-inline">\(2 \times 2\)</span>, they are actually <span class="mathjax-inline">\(4 \times 4\)</span>
+ id="x1-42012r43"></a> Notice that although the matrices in <a 
+href="#x1-42010r41">4.41<!--tex4ht:ref: eq:DiracPauli --></a> and <a 
+href="#x1-42011r42">4.42<!--tex4ht:ref: eq:Chiral --></a> look like <span class="mathjax-inline">\(2 \times 2\)</span>, they are actually <span class="mathjax-inline">\(4 \times 4\)</span>
 matrices.
    
    <h4 class="subsectionHead"><span class="titlemark">4.5   </span> <a 
@@ -1423,20 +1424,20 @@ href="#QQ2-1-50" id="x1-430004.5">Covariant Current</a></h4>
 the Dirac equation, except that, as we now have a matrix equation, we must consider the Hermitian
 conjugate rather than the complex conjugate. The Hermitian conjugate of </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;i\gamma ^0\frac {\partial \psi }{\partial t} +i\gamma ^i \frac {\partial \psi }{\partial x^i} - m \psi =0 \end {aligned} \end{equation}</div><a 
- id="x1-43001r43"></a> is <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;-i\frac {\partial \psi ^{\dagger } }{\partial t}\gamma ^0 - i \frac {\partial \psi ^{\dagger }}{\partial x^i} (-\gamma ^i) - m \psi ^{\dagger } =0. \end {aligned} \end{equation}</div><a 
- id="x1-43002r44"></a> To restore the manifestly
+ id="x1-43001r44"></a> is <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;-i\frac {\partial \psi ^{\dagger } }{\partial t}\gamma ^0 - i \frac {\partial \psi ^{\dagger }}{\partial x^i} (-\gamma ^i) - m \psi ^{\dagger } =0. \end {aligned} \end{equation}</div><a 
+ id="x1-43002r45"></a> To restore the manifestly
 Lorentz invariant form (to write <span class="mathjax-inline">\(\gamma ^\mu \)</span> times the time and space derivatives) we want to remove the minus
 sign of the <span class="mathjax-inline">\((-\gamma ^i)\)</span> while leaving the first term unchanged. Since <span class="mathjax-inline">\(\gamma ^0\gamma ^i = - \gamma ^i\gamma ^0\)</span> we can do this by multiplying from the right
 by <span class="mathjax-inline">\(\gamma ^0\)</span>. We introduce the adjoint (row) spinor <div class="mathjax-env mathjax-equation">\begin{equation} \bar {\psi } \equiv \psi ^\dagger \gamma ^0, \end{equation}</div><a 
- id="x1-43003r45"></a> and we obtain <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:DiracAdjoint} \begin {aligned} &amp; i \partial _\mu \bar {\psi } \gamma ^\mu + m \bar {\psi } = 0. \end {aligned} \end{equation}</div><a 
- id="x1-43004r46"></a> We can now derive a continuity
+ id="x1-43003r46"></a> and we obtain <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:DiracAdjoint} \begin {aligned} &amp; i \partial _\mu \bar {\psi } \gamma ^\mu + m \bar {\psi } = 0. \end {aligned} \end{equation}</div><a 
+ id="x1-43004r47"></a> We can now derive a continuity
 equation by multiplying equation <a 
-href="#x1-43004r46">4.46<!--tex4ht:ref: eq:DiracAdjoint --></a> from the right with <span class="mathjax-inline">\(\psi \)</span> and equation <a 
-href="#x1-42002r32">4.32<!--tex4ht:ref: eq:DiracCovariant --></a> from the left
+href="#x1-43004r47">4.47<!--tex4ht:ref: eq:DiracAdjoint --></a> from the right with <span class="mathjax-inline">\(\psi \)</span> and equation <a 
+href="#x1-42002r33">4.33<!--tex4ht:ref: eq:DiracCovariant --></a> from the left
 with <span class="mathjax-inline">\(\bar {\psi }\)</span> and add them: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;(\partial _\mu \bar {\psi }) \gamma ^\mu \psi + \bar {\psi } \gamma ^\mu \partial _\mu \psi = 0 \Rightarrow \partial _\mu (\bar {\psi }\gamma ^{\mu }\psi ) = 0. \end {aligned} \end{equation}</div><a 
- id="x1-43005r47"></a> At this point we can identify the probability density four-vector as
+ id="x1-43005r48"></a> At this point we can identify the probability density four-vector as
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} J^\mu = \bar {\psi } \gamma ^\mu \psi . \end {aligned} \end{equation}</div><a 
- id="x1-43006r48"></a>
+ id="x1-43006r49"></a>
 <p>   For the covariance of the continuity equation, <span class="mathjax-inline">\(\partial _{\mu } J^{\mu } = 0\)</span>, it is necessary that <span class="mathjax-inline">\(J^{\mu }\)</span> transforms as a four-vector. So <span class="mathjax-inline">\(\bar {\psi }\gamma ^{\mu }\psi \)</span>
 looks like and is a four-vector. As we noted before <span class="mathjax-inline">\(\gamma ^\mu \)</span> are just four constant matrices. They do not change
 when going to another inertial frame. It is the <span class="mathjax-inline">\(\psi \)</span> terms that actually transform, and they do it in such a
@@ -1444,61 +1445,61 @@ way that makes the full “sandwich” a four-vector.
 </p> 
 <p>   Finally, the probability density is now positive: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\rho = J^0 = \bar {\psi } \gamma ^{0} \psi = \psi ^\dagger \gamma ^{0} \gamma ^{0} \psi = \psi ^\dagger \psi = |\psi _1|^2 + |\psi _2|^2 + |\psi _3|^2 + |\psi _4|^2, \end {aligned} \end{equation}</div><a 
- id="x1-43007r49"></a> so we achieved our initial goal.
+ id="x1-43007r50"></a> so we achieved our initial goal.
    
    <h4 class="subsectionHead"><span class="titlemark">4.6   </span> <a 
 href="#QQ2-1-51" id="x1-440004.6">Free Particle Solutions of the Dirac Equation</a></h4>
 <p>We will be looking for free particle independent solutions of the Dirac equation with the usual plane
 wave form </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:Dirac_plane_wave} \psi = u(E, \boldsymbol {p}) e^{-ip_\mu x^\mu }. \end{equation}</div><a 
- id="x1-44001r50"></a> We substitute in equation <a 
-href="#x1-42002r32">4.32<!--tex4ht:ref: eq:DiracCovariant --></a> noticing that the time and position dependence appears only
+ id="x1-44001r51"></a> We substitute in equation <a 
+href="#x1-42002r33">4.33<!--tex4ht:ref: eq:DiracCovariant --></a> noticing that the time and position dependence appears only
 in the exponent, the <span class="mathjax-inline">\(u(E, \boldsymbol {p})\)</span> is only a function of the energy and momentum. We therefore obtain
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:Dirac_gamma} (\gamma ^{\mu } p_{\mu } - m) u = 0, \end{equation}</div><a 
- id="x1-44002r51"></a> or using the abbreviated slash notation <span class="mathjax-inline">\(\not \!p = \gamma ^{\mu } p_{\mu }\)</span>: <div class="mathjax-env mathjax-equation">\begin{equation} (\not \!p - m) u = 0. \end{equation}</div><a 
- id="x1-44003r52"></a> This is an algebraic equation. Let us look at
+ id="x1-44002r52"></a> or using the abbreviated slash notation <span class="mathjax-inline">\(\not \!p = \gamma ^{\mu } p_{\mu }\)</span>: <div class="mathjax-env mathjax-equation">\begin{equation} (\not \!p - m) u = 0. \end{equation}</div><a 
+ id="x1-44003r53"></a> This is an algebraic equation. Let us look at
 the solutions for a particle at rest, with <span class="mathjax-inline">\(E=m\)</span> and <span class="mathjax-inline">\(\boldsymbol {p}=0\)</span>. In this case the Dirac equation is simply:
 <div class="mathjax-env mathjax-equation">\begin{equation} (\gamma ^0 p_0 - m) u(E,0) = 0 \Rightarrow E \gamma ^0 u = m u. \end{equation}</div><a 
- id="x1-44004r53"></a>
+ id="x1-44004r54"></a>
 <p>   In the Dirac-Pauli representation <span class="mathjax-inline">\(\gamma ^0\)</span> is a diagonal matrix. In that representation it is easy to
 obtain four orthogonal solutions based on the eigenvectors and eigenvalues of <span class="mathjax-inline">\(\gamma ^0\)</span>: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} E \begin {pmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1\end {pmatrix} \begin {pmatrix} u_1 \\ u_2 \\ u_3 \\ u_4 \end {pmatrix} = m \begin {pmatrix} u_1 \\ u_2 \\ u_3 \\ u_4 \end {pmatrix}, \end{equation}</div><a 
- id="x1-44005r54"></a> resulting
+ id="x1-44005r55"></a> resulting
 in <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} u^{(1)} = N \begin {pmatrix} 1 \\ 0 \\ 0 \\ 0 \end {pmatrix}; \u^{(2)} = N \begin {pmatrix} 0 \\ 1 \\ 0 \\ 0 \end {pmatrix}; \u^{(3)} = N \begin {pmatrix} 0 \\ 0 \\ 1 \\ 0 \end {pmatrix}; \u^{(4)} = N \begin {pmatrix} 0 \\ 0 \\ 0 \\ 1 \end {pmatrix}. \end {aligned} \label {eq:stationary_dirac} \end{equation}</div><a 
- id="x1-44006r55"></a> The factor <span class="mathjax-inline">\(N\)</span> is a normalisation constant. The first two solutions have positive energy
+ id="x1-44006r56"></a> The factor <span class="mathjax-inline">\(N\)</span> is a normalisation constant. The first two solutions have positive energy
                                                                                         
                                                                                         
 eigenvalues <span class="mathjax-inline">\(E = +m\)</span> and the last two have negative energy eigenvalues <span class="mathjax-inline">\(E = -m\)</span>. In terms of <span class="mathjax-inline">\(\psi _i\)</span>, the solutions are:
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \psi _1 = N \begin {pmatrix} 1 \\ 0 \\ 0 \\ 0 \end {pmatrix} e^{-imt};\\psi _2 = N \begin {pmatrix} 0 \\ 1 \\ 0 \\ 0 \end {pmatrix} e^{-imt};\\psi _3 = N \begin {pmatrix} 0 \\ 0 \\ 1 \\ 0 \end {pmatrix} e^{+imt};\\psi _4 = N \begin {pmatrix} 0 \\ 0 \\ 0 \\ 1 \end {pmatrix} e^{+imt}. \end {aligned} \end{equation}</div><a 
- id="x1-44007r56"></a>
+ id="x1-44007r57"></a>
 <p>   The general free particle solutions in the Dirac-Pauli representation are: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} u^{(s)} &amp;= N \begin {pmatrix} \chi ^{(s)} \\ \frac {\boldsymbol {\sigma } \cdot \boldsymbol {p}}{E+m} \chi ^{(s)} \end {pmatrix}, \\ u^{(s+2)} &amp;= N \begin {pmatrix} \frac {\boldsymbol {\sigma } \cdot \boldsymbol {p}}{E-m} \chi ^{(s)} \\ \chi ^{(s)} \end {pmatrix}, \end {aligned} \end{equation}</div><a 
- id="x1-44008r57"></a> where <span class="mathjax-inline">\(s=1,2\)</span> and <div class="mathjax-env mathjax-equation">\begin{equation} \chi ^{(1)} = \begin {pmatrix} 1 \\ 0 \end {pmatrix}; \quad \chi ^{(2)} = \begin {pmatrix} 0 \\ 1 \end {pmatrix}; \end{equation}</div><a 
- id="x1-44009r58"></a> or in longhand
+ id="x1-44008r58"></a> where <span class="mathjax-inline">\(s=1,2\)</span> and <div class="mathjax-env mathjax-equation">\begin{equation} \chi ^{(1)} = \begin {pmatrix} 1 \\ 0 \end {pmatrix}; \quad \chi ^{(2)} = \begin {pmatrix} 0 \\ 1 \end {pmatrix}; \end{equation}</div><a 
+ id="x1-44009r59"></a> or in longhand
 form: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} u^{(1)} = N \begin {pmatrix} 1 \\ 0 \\ \frac {p_z}{E+m} \\ \frac {p_x+i p_y}{E+m} \end {pmatrix};\u^{(2)} = N \begin {pmatrix} 0 \\ 1 \\ \frac {p_x-i p_y}{E+m} \\ \frac {-p_z}{E+m} \end {pmatrix}; \u^{(3)} = N \begin {pmatrix} \frac {p_z}{E-m} \\ \frac {p_x+i p_y}{E-m} \\ 1 \\ 0 \end {pmatrix}; \u^{(4)} = N \begin {pmatrix} \frac {p_x-i p_y}{E-m} \\ \frac {-p_z}{E-m} \\ 0 \\ 1 \end {pmatrix}. \end {aligned} \end{equation}</div><a 
- id="x1-44010r59"></a>
+ id="x1-44010r60"></a>
    
    <h4 class="subsectionHead"><span class="titlemark">4.7   </span> <a 
 href="#QQ2-1-52" id="x1-450004.7">Interpretation of Negative Energy Solutions</a></h4>
 <p>The first two general solutions in the previous section have positive energy eigenvalues </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} E = +\sqrt {p^2+m^2}, \end{equation}</div><a 
- id="x1-45001r60"></a> while the last
+ id="x1-45001r61"></a> while the last
 two have negative energy eigenvalues <div class="mathjax-env mathjax-equation">\begin{equation} E = -\sqrt {p^2+m^2}. \end{equation}</div><a 
- id="x1-45002r61"></a>
+ id="x1-45002r62"></a>
 <p>   At the end, we did not get rid of the negative energy solutions. We can, however, interpret negative
 energy solutions as positive energy solutions for particles that travel back in time: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} e^{-iEt} = e^{-i (-E) (-t)}, \end{equation}</div><a 
- id="x1-45003r62"></a> where <span class="mathjax-inline">\(-E\)</span> is positive.
+ id="x1-45003r63"></a> where <span class="mathjax-inline">\(-E\)</span> is positive.
 An electron travelling back in time is equivalent to a positron travelling forward in time. This is the
 <i>Feynman-Stüeckelberg</i> interpretation. We reverse the signs of energy and momentum: <div class="mathjax-env mathjax-equation">\begin{equation} \psi = v(p) e^{ip_\mu x^\mu }, \end{equation}</div><a 
- id="x1-45004r63"></a> leading to the
+ id="x1-45004r64"></a> leading to the
 following form of the Dirac equation for antiparticles: <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:Dirac_gamma_anti} (\gamma ^{\mu } p_{\mu } + m) v = 0 \Rightarrow (\not \!p + m) v = 0. \end{equation}</div><a 
- id="x1-45005r64"></a> This equation also has two positive (<span class="mathjax-inline">\(v^{(1)}, v^{(2)}\)</span>) and two
+ id="x1-45005r65"></a> This equation also has two positive (<span class="mathjax-inline">\(v^{(1)}, v^{(2)}\)</span>) and two
 negative value solutions (<span class="mathjax-inline">\(v^{(3)}, v^{(4)}\)</span>).
 <p>   We can replace the negative energy solutions (<span class="mathjax-inline">\(u^{(3)}, u^{(4)}\)</span>) of the particle equation with the positive energy
 solutions of the antiparticle equation: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} v^{(1)}(p) = N \begin {pmatrix} \frac {p_x - i p_y}{E+m} \\ \frac {-p_z}{E+m} \\ 0 \\ 1 \end {pmatrix}; \quad v^{(2)}(p) = N \begin {pmatrix} \frac {p_z}{E+m} \\ \frac {p_x + i p_y}{E+m} \\ 1 \\ 0 \end {pmatrix}. \end {aligned} \end{equation}</div><a 
- id="x1-45006r65"></a> We will mainly working with a set of four independent solutions <span class="mathjax-inline">\([u^{(1)}, u^{(2)}, v^{(1)}, v^{(2)}]\)</span>
+ id="x1-45006r66"></a> We will mainly working with a set of four independent solutions <span class="mathjax-inline">\([u^{(1)}, u^{(2)}, v^{(1)}, v^{(2)}]\)</span>
 that all represent particles with positive energy.
 <p>   <figure class="figure"> 
 
@@ -1533,15 +1534,15 @@ href="#QQ2-1-54" id="x1-460004.8">Normalisation of Spinors and Completeness Rela
 <p>We work out the normalisation factor <span class="mathjax-inline">\(N\)</span> by imposing the conventional normalisation of <span class="mathjax-inline">\(2E\)</span> particles per unit
 volume. For <span class="mathjax-inline">\(u^{(1)}\)</span>, this means: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} u^{(1)\dagger } u^{(1)} = |N|^2 \left ( 1 + \frac {p^2}{(E+m)^2} \right ) = |N|^2 \frac {2E}{E+m}, \end{equation}</div><a 
- id="x1-46001r66"></a> leading to the choice <div class="mathjax-env mathjax-equation">\begin{equation} N = \sqrt {E+m}. \end{equation}</div><a 
- id="x1-46002r67"></a> Solving the adjoint forms of the particle and
+ id="x1-46001r67"></a> leading to the choice <div class="mathjax-env mathjax-equation">\begin{equation} N = \sqrt {E+m}. \end{equation}</div><a 
+ id="x1-46002r68"></a> Solving the adjoint forms of the particle and
 antiparticle equations: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \bar {u}(\gamma ^{\mu } p_{\mu } - m) &amp;= 0, \\ \bar {v}(\gamma ^{\mu } p_{\mu } + m) &amp;= 0, \end {aligned} \end{equation}</div><a 
- id="x1-46003r68"></a> we obtain the adjoint spinors <span class="mathjax-inline">\(\bar {u} \equiv u^\dagger \gamma ^0\)</span> and <span class="mathjax-inline">\(\bar {v} \equiv v^\dagger \gamma ^0\)</span>. It is useful to note that the spinors are
+ id="x1-46003r69"></a> we obtain the adjoint spinors <span class="mathjax-inline">\(\bar {u} \equiv u^\dagger \gamma ^0\)</span> and <span class="mathjax-inline">\(\bar {v} \equiv v^\dagger \gamma ^0\)</span>. It is useful to note that the spinors are
 orthogonal: <div class="mathjax-env mathjax-equation">\begin{equation} \bar {u}^{(1)}u^{(2)} = 0; \quad \bar {v}^{(1)}v^{(2)} = 0, \end{equation}</div><a 
- id="x1-46004r69"></a> normalized to the invariant mass: <div class="mathjax-env mathjax-equation">\begin{equation} \bar {u}^{(s)}u^{(s)} = 2m; \quad \bar {v}^{(s)} v^{(s)} = -2m, \end{equation}</div><a 
- id="x1-46005r70"></a> and obey the completeness relations for the sum of spin
+ id="x1-46004r70"></a> normalized to the invariant mass: <div class="mathjax-env mathjax-equation">\begin{equation} \bar {u}^{(s)}u^{(s)} = 2m; \quad \bar {v}^{(s)} v^{(s)} = -2m, \end{equation}</div><a 
+ id="x1-46005r71"></a> and obey the completeness relations for the sum of spin
 states: <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:completeness} \begin {aligned} \sum \limits _{s=1,2} u^{(s)} \bar {u}^{(s)} &amp;= \not \!{p}+m, \\ \sum \limits _{s=1,2} v^{(s)} \bar {v}^{(s)} &amp;= \not \!{p}-m. \end {aligned} \end{equation}</div><a 
- id="x1-46006r71"></a>
+ id="x1-46006r72"></a>
    
    <h4 class="subsectionHead"><span class="titlemark">4.9   </span> <a 
 href="#QQ2-1-55" id="x1-470004.9">Helicity</a></h4>
@@ -1552,12 +1553,12 @@ eigenvalues can allow us to distinguish the states.
 </p> 
 <p>   We can start from the definition of the spin matrices for Dirac particles: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \boldsymbol {S} = \frac {\boldsymbol {\Sigma }}{2} = \frac {1}{2} \begin {pmatrix} \boldsymbol {\sigma } &amp; 0 \\ 0 &amp; \boldsymbol {\sigma } \end {pmatrix}, \label {eq:Spin_operator} \end{equation}</div><a 
- id="x1-47001r72"></a>
+ id="x1-47001r73"></a>
 <p>   We will need an operator that commutes with the energy operator, and whose eigenvalues can
 distinguish the solutions. For stationary electrons <a 
-href="#x1-44006r55">4.55<!--tex4ht:ref: eq:stationary_dirac --></a> the energy operator is <span class="mathjax-inline">\(\beta m\)</span>. The operator </p> 
+href="#x1-44006r56">4.56<!--tex4ht:ref: eq:stationary_dirac --></a> the energy operator is <span class="mathjax-inline">\(\beta m\)</span>. The operator </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \boldsymbol {S_z} = \frac {1}{2} \begin {pmatrix} \sigma _3 &amp; 0 \\ 0 &amp; \sigma _3 \end {pmatrix} \end{equation}</div><a 
- id="x1-47002r73"></a>
+ id="x1-47002r74"></a>
 commutes with <span class="mathjax-inline">\(\beta \)</span> and allows us to obtain the spin along the <span class="mathjax-inline">\(z\)</span>-axis (<span class="mathjax-inline">\(s_z\)</span>). We can then readily verify
 that, for the stationary electron solutions, the positive energy solution <span class="mathjax-inline">\(u^{(1)}\)</span> corresponds to <span class="mathjax-inline">\(s_z = 1/2\)</span> and <span class="mathjax-inline">\(u^{(2)}\)</span>
 corresponds to <span class="mathjax-inline">\(s_z = -1/2\)</span>, while for the negative energy solutions <span class="mathjax-inline">\(u^{(3)}\)</span> corresponds to <span class="mathjax-inline">\(s_z = 1/2\)</span> and <span class="mathjax-inline">\(u^{(4)}\)</span> corresponds to
@@ -1568,10 +1569,10 @@ to find another operator whose eigenvalues can be used to distinguish the two st
 case the most useful is the <i>helicity</i> operator. Helicity is defined as the normalized spin projection along
 the direction of motion: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} h = \frac {\boldsymbol {\Sigma } \cdot \boldsymbol {p}}{|\boldsymbol {p}|}. \end{equation}</div><a 
- id="x1-47003r74"></a>
+ id="x1-47003r75"></a>
 <p>   Therefore, the helicity operator for Dirac particles is: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \boldsymbol {\Sigma } \cdot \hat {\boldsymbol {p}} = \begin {pmatrix} \boldsymbol {\sigma } \cdot \hat {\boldsymbol {p}} &amp; 0 \\ 0 &amp; \boldsymbol {\sigma } \cdot \hat {\boldsymbol {p}} \end {pmatrix}. \end{equation}</div><a 
- id="x1-47004r75"></a> Helicity can be used to separate states with
+ id="x1-47004r76"></a> Helicity can be used to separate states with
 positive helicity <span class="mathjax-inline">\(u_\uparrow \)</span> and <span class="mathjax-inline">\(v_\uparrow \)</span> and with negative helicity <span class="mathjax-inline">\(u_\downarrow \)</span> and <span class="mathjax-inline">\(v_\downarrow \)</span>. Helicity is not invariant under Lorentz
 transformations for massive particles. This is because one can always boost to a different frame in which
 the 3-momentum is flipped but the spin remains the same.
@@ -1582,22 +1583,22 @@ href="#QQ2-1-56" id="x1-480004.10">Chirality</a></h4>
 helicity, it does not have a classical concept to compare it with. Chirality is introduced by defining the <span class="mathjax-inline">\(\gamma ^5\)</span>
 matrix: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \gamma ^5 = i \gamma ^0 \gamma ^1 \gamma ^2 \gamma ^3. \end{equation}</div><a 
- id="x1-48001r76"></a> The important properties of the <span class="mathjax-inline">\(\gamma ^5\)</span> matrix are: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; \gamma ^5 \gamma ^5 = I, \\ &amp; \gamma ^{5 \dagger } = \gamma ^5, \\ &amp; \gamma ^5 \gamma ^\mu = -\gamma ^\mu \gamma ^5 \\ &amp; \mathrm {or} \ \{\gamma ^5, \gamma ^\mu \} = 0. \end {aligned} \end{equation}</div><a 
- id="x1-48002r77"></a> The chiral states are the eigenstates of the
+ id="x1-48001r77"></a> The important properties of the <span class="mathjax-inline">\(\gamma ^5\)</span> matrix are: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; \gamma ^5 \gamma ^5 = I, \\ &amp; \gamma ^{5 \dagger } = \gamma ^5, \\ &amp; \gamma ^5 \gamma ^\mu = -\gamma ^\mu \gamma ^5 \\ &amp; \mathrm {or} \ \{\gamma ^5, \gamma ^\mu \} = 0. \end {aligned} \end{equation}</div><a 
+ id="x1-48002r78"></a> The chiral states are the eigenstates of the
 chirality operator which is represented by the <span class="mathjax-inline">\(\gamma ^5\)</span> matrix.
 <p>   Any Dirac spinor can be decomposed into chiral states using the two operators: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} P_R = \frac {1}{2} (1 + \gamma ^5); \quad P_L = \frac {1}{2} (1 - \gamma ^5). \end{equation}</div><a 
- id="x1-48003r78"></a>
+ id="x1-48003r79"></a>
 <p>   The two operators satisfy the algebra of projection operators: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} P_R P_R = P_R, \ P_L P_L = P_L, \ P_L P_R = 0, \ P_L + P_R = I. \end{equation}</div><a 
- id="x1-48004r79"></a>
+ id="x1-48004r80"></a>
                                                                                         
                                                                                         
 <p>   The left- and right-handed eigenstates of the chirality operator are unaffected by their corresponding
 projection operator: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; P_R u_R = u_R, \ P_R u_L = 0, \ P_R v_R = 0, \ P_R v_L = v_L, \\ &amp; P_L u_R = 0, \ P_L u_L = u_L, \ P_L v_R = v_R, \ P_L v_L = 0. \end {aligned} \end{equation}</div><a 
- id="x1-48005r80"></a> Notice that: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \bar {\psi } P_R &amp;= (\psi ^{\dagger } \gamma ^0) P_R = \psi ^{\dagger } \gamma ^0 \frac {(1 + \gamma ^5)}{2} = \psi ^{\dagger } \frac {(1 - \gamma ^5)}{2} \gamma ^0 \\ &amp;= (P_L \psi )^{\dagger } \gamma ^0 = \psi _L^{\dagger } \gamma ^0 = \bar {\psi }_L, \end {aligned} \end{equation}</div><a 
- id="x1-48006r81"></a> where we used the fact that the projection operators are Hermitian
+ id="x1-48005r81"></a> Notice that: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \bar {\psi } P_R &amp;= (\psi ^{\dagger } \gamma ^0) P_R = \psi ^{\dagger } \gamma ^0 \frac {(1 + \gamma ^5)}{2} = \psi ^{\dagger } \frac {(1 - \gamma ^5)}{2} \gamma ^0 \\ &amp;= (P_L \psi )^{\dagger } \gamma ^0 = \psi _L^{\dagger } \gamma ^0 = \bar {\psi }_L, \end {aligned} \end{equation}</div><a 
+ id="x1-48006r82"></a> where we used the fact that the projection operators are Hermitian
 and <span class="mathjax-inline">\(\{\gamma ^5, \gamma ^0\} = 0\)</span>.
 <p>   The chiral states are summarized in table <a 
 href="#x1-48007r1">4.1<!--tex4ht:ref: tab:chiralState --></a>. </p> 
@@ -1650,7 +1651,7 @@ href="#QQ2-1-58" id="x1-490004.11">Helicity versus Chirality</a></h4>
      <li class="itemize">
      <p>Helicity is the projection of spin on the direction of motion: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} h = \frac {\boldsymbol {\Sigma } \cdot \boldsymbol {p}} {|\boldsymbol {p}|}. \end{equation}</div><a 
- id="x1-49001r82"></a> Helicity eigenstates exist for any spin.
+ id="x1-49001r83"></a> Helicity eigenstates exist for any spin.
      The helicity for a photon corresponds to what we normally call polarisation. Helicity is conserved,
      but is not Lorentz invariant for massive particles.
      </li>
@@ -1668,9 +1669,9 @@ helicity and chirality are both Lorentz invariant and conserved.
 right and left chiral eigenstates. Similarly, the left and right chiral particle eigenstates can been
 expressed as a mixture of negative and positive helicity eigenstates. The relative weights are </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \bigg (1+\frac {|\boldsymbol {p}|} {E+m} \bigg ) \approx 2 - \frac {m}{E}, \end{equation}</div><a 
- id="x1-49002r83"></a> for the
+ id="x1-49002r84"></a> for the
 “correct” component and <div class="mathjax-env mathjax-equation">\begin{equation} \bigg (1-\frac {|\boldsymbol {p}|} {E+m} \bigg ) \approx \frac {m}{E}. \end{equation}</div><a 
- id="x1-49003r84"></a> for the “wrong” component [<a 
+ id="x1-49003r85"></a> for the “wrong” component [<a 
 href="#Xbettini2024introduction">7</a>]. At the high energy limit the “wrong”
 component vanishes. Therefore, in the high-energy limit, where particles can be considered massless, you
 might find that helicity (or the term <i>definite</i> helicity) is often used interchangeably with
@@ -1682,53 +1683,53 @@ href="#QQ2-1-59" id="x1-500004.12">Dirac Equation In Chiral Representation</a></
 the Dirac equation for a massless fermion. Let’s switch, perhaps not surprisingly, to the
 chiral or Weyl representation: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \gamma ^5 = \begin {pmatrix} -I &amp; 0 \\ 0 &amp; I \end {pmatrix}, \\gamma ^0 = \begin {pmatrix} 0 &amp; I \\ I &amp; 0 \end {pmatrix}, \\gamma ^i = \begin {pmatrix} 0 &amp; \sigma _i \\ -\sigma _i &amp; 0 \end {pmatrix}, \end{equation}</div><a 
- id="x1-50001r85"></a> where <span class="mathjax-inline">\(\gamma ^5\)</span> is diagonal, unlike the Dirac-Pauli representation
+ id="x1-50001r86"></a> where <span class="mathjax-inline">\(\gamma ^5\)</span> is diagonal, unlike the Dirac-Pauli representation
 where <span class="mathjax-inline">\(\gamma ^0\)</span> is diagonal. We multiply <a 
-href="#x1-44002r51">4.51<!--tex4ht:ref: eq:Dirac_gamma --></a> from the left with <span class="mathjax-inline">\(\gamma ^5 \gamma ^0\)</span>: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; (\gamma ^5 \gamma ^0 \gamma ^0 p_0 - \gamma ^5 \gamma ^0 \boldsymbol {\gamma }^i \boldsymbol {p}) u = 0. \end {aligned} \end{equation}</div><a 
- id="x1-50002r86"></a> Since <span class="mathjax-inline">\(\gamma ^0 \gamma ^0 = I\)</span> we have <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; (\gamma ^5p_0 - \gamma ^5 \gamma ^0 \boldsymbol {\gamma }^i \boldsymbol {p}) u = 0. \end {aligned} \end{equation}</div><a 
- id="x1-50003r87"></a> This results in: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \gamma ^5 E u &amp;= \begin {pmatrix} -I &amp; 0 \\ 0 &amp; I \end {pmatrix} \begin {pmatrix} 0 &amp; I \\ I &amp; 0 \end {pmatrix} \begin {pmatrix} 0 &amp; \sigma _i \\ -\sigma _i &amp; 0 \end {pmatrix} \boldsymbol {p} u \\ &amp;= \begin {pmatrix} 0 &amp; -I \\ I &amp; 0 \end {pmatrix} \begin {pmatrix} 0 &amp; \sigma _i \\ -\sigma _i &amp; 0 \end {pmatrix} \boldsymbol {p} u . \end {aligned} \end{equation}</div><a 
- id="x1-50004r88"></a>
+href="#x1-44002r52">4.52<!--tex4ht:ref: eq:Dirac_gamma --></a> from the left with <span class="mathjax-inline">\(\gamma ^5 \gamma ^0\)</span>: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; (\gamma ^5 \gamma ^0 \gamma ^0 p_0 - \gamma ^5 \gamma ^0 \boldsymbol {\gamma }^i \boldsymbol {p}) u = 0. \end {aligned} \end{equation}</div><a 
+ id="x1-50002r87"></a> Since <span class="mathjax-inline">\(\gamma ^0 \gamma ^0 = I\)</span> we have <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; (\gamma ^5p_0 - \gamma ^5 \gamma ^0 \boldsymbol {\gamma }^i \boldsymbol {p}) u = 0. \end {aligned} \end{equation}</div><a 
+ id="x1-50003r88"></a> This results in: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \gamma ^5 E u &amp;= \begin {pmatrix} -I &amp; 0 \\ 0 &amp; I \end {pmatrix} \begin {pmatrix} 0 &amp; I \\ I &amp; 0 \end {pmatrix} \begin {pmatrix} 0 &amp; \sigma _i \\ -\sigma _i &amp; 0 \end {pmatrix} \boldsymbol {p} u \\ &amp;= \begin {pmatrix} 0 &amp; -I \\ I &amp; 0 \end {pmatrix} \begin {pmatrix} 0 &amp; \sigma _i \\ -\sigma _i &amp; 0 \end {pmatrix} \boldsymbol {p} u . \end {aligned} \end{equation}</div><a 
+ id="x1-50004r89"></a>
 The end result is: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \begin {pmatrix} -I &amp; 0 \\ 0 &amp; I \end {pmatrix} E u &amp;= \begin {pmatrix} \sigma _i &amp; 0 \\ 0 &amp; \sigma _i \end {pmatrix} \boldsymbol {p} u, \\ \begin {pmatrix} -I &amp; 0 \\ 0 &amp; I \end {pmatrix} u &amp;= \begin {pmatrix} \sigma _i &amp; 0 \\ 0 &amp; \sigma _i \end {pmatrix} \frac {\boldsymbol {p}}{E} u . \end {aligned} \end{equation}</div><a 
- id="x1-50005r89"></a> Or in shorthand: <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:ChiralityHelicityMassless} \gamma ^5 u = (\boldsymbol {\Sigma } \cdot \frac {\boldsymbol {p}}{E}) u. \end{equation}</div><a 
- id="x1-50006r90"></a> Here, for massless particles <span class="mathjax-inline">\(E = |\boldsymbol {p}|\)</span>. Therefore, the equation
+ id="x1-50005r90"></a> Or in shorthand: <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:ChiralityHelicityMassless} \gamma ^5 u = (\boldsymbol {\Sigma } \cdot \frac {\boldsymbol {p}}{E}) u. \end{equation}</div><a 
+ id="x1-50006r91"></a> Here, for massless particles <span class="mathjax-inline">\(E = |\boldsymbol {p}|\)</span>. Therefore, the equation
 above indicates that the effect of the chirality operator on the Dirac spinor for a massless
 particle is the same as the effect of the helicity operator. Again, it is easy to obtain orthogonal
 solutions since we are dealing with diagonal matrices: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} u^{(1)} &amp;= N \begin {pmatrix} 0 \\ 0 \\ 1 \\ 0 \end {pmatrix}, \quad u^{(2)} = N \begin {pmatrix} 0 \\ 1 \\ 0 \\ 0 \end {pmatrix}, u^{(3)} &amp;= N \begin {pmatrix} 0 \\ 0 \\ 0 \\ 1 \end {pmatrix}, \quad u^{(4)} = N \begin {pmatrix} 1 \\ 0 \\ 0 \\ 0 \end {pmatrix}. \end {aligned} \end{equation}</div><a 
- id="x1-50007r91"></a> The first and third solutions correspond
+ id="x1-50007r92"></a> The first and third solutions correspond
 to the positive eigenvalues of the <span class="mathjax-inline">\(\gamma ^5\)</span> and are also states of positive helicity. The second and
 the fourth solutions correspond to the negative <span class="mathjax-inline">\(\gamma ^5\)</span> eigenvalues and are also states of negative
 helicity.
 <p>   For antiparticle spinors we instead have </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} (\gamma ^\mu p_\mu + m)v = 0. \end{equation}</div><a 
- id="x1-50008r92"></a> Repeating the same steps as for the particle spinors in the
+ id="x1-50008r93"></a> Repeating the same steps as for the particle spinors in the
 massless limit, one finds that the relation between chirality and helicity acquires an opposite sign:
 <div class="mathjax-env mathjax-equation">\begin{equation} \gamma ^5 v = -\left ( \boldsymbol {\Sigma }\cdot \frac {\mathbf p}{E} \right )v. \end{equation}</div><a 
- id="x1-50009r93"></a>
+ id="x1-50009r94"></a>
                                                                                         
                                                                                         
 <p>   If we had not omitted the mass term then equation <a 
-href="#x1-50006r90">4.90<!--tex4ht:ref: eq:ChiralityHelicityMassless --></a> would have been </p> 
+href="#x1-50006r91">4.91<!--tex4ht:ref: eq:ChiralityHelicityMassless --></a> would have been </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \gamma ^5 u = (\boldsymbol {\Sigma } \cdot \frac {\boldsymbol {p}}{E}) u +\frac {m}{E} \gamma ^5\gamma ^0 u. \end{equation}</div><a 
- id="x1-50010r94"></a> We can write a Dirac
+ id="x1-50010r95"></a> We can write a Dirac
 spinor as <div class="mathjax-env mathjax-equation">\begin{equation} u = \begin {pmatrix} u_L \\ u_R \end {pmatrix}. \end{equation}</div><a 
- id="x1-50011r95"></a>
+ id="x1-50011r96"></a>
 <p>   This can be easily be understood by the effect of the projection operators </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \frac {1}{2}( 1 - \gamma ^5) = \frac {1}{2} ( \begin {pmatrix} I &amp; 0 \\ 0 &amp; I \end {pmatrix} - \begin {pmatrix} - I &amp; 0 \\ 0 &amp; I \end {pmatrix}) = \begin {pmatrix} I &amp; 0 \\ 0 &amp; 0 \end {pmatrix}, \end{equation}</div><a 
- id="x1-50012r96"></a> to the above spinor, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {pmatrix} I &amp; 0 \\ 0 &amp; 0 \end {pmatrix} \begin {pmatrix} u_L \\ u_R \end {pmatrix} = u_L. \end{equation}</div><a 
- id="x1-50013r97"></a>
+ id="x1-50012r97"></a> to the above spinor, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {pmatrix} I &amp; 0 \\ 0 &amp; 0 \end {pmatrix} \begin {pmatrix} u_L \\ u_R \end {pmatrix} = u_L. \end{equation}</div><a 
+ id="x1-50013r98"></a>
 Similarly for <span class="mathjax-inline">\(u_R\)</span>.
 <p>   Substituting in the equation for the massive case gives : </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} - Eu_L &amp;= \Sigma \cdot \mathbf {p} \, u_L - m\, u_R, \\ E u_R &amp;= \Sigma \cdot \mathbf {p}\, u_R + m\, u_L. \end {aligned} \end{equation}</div><a 
- id="x1-50014r98"></a> These equation are coupled via the mass
+ id="x1-50014r99"></a> These equation are coupled via the mass
 term, in or in other words the mass acts as the mixing of left and right chiral states. This kind of mass
 term is called a <i>Dirac mass</i> term.
 <p>   One may also consider the possibility that these components are not independent, but related by a
 constraint. This leads to a Majorana fermion, for which </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \psi _R = (\psi _L)^\dagger . \end{equation}</div><a 
- id="x1-50015r99"></a> A Majorana spinor can be written as <div class="mathjax-env mathjax-equation">\begin{equation} \psi _M = \begin {pmatrix} \psi _L \\ \psi _L^\dagger \end {pmatrix}, \end{equation}</div><a 
- id="x1-50016r100"></a> and
+ id="x1-50015r100"></a> A Majorana spinor can be written as <div class="mathjax-env mathjax-equation">\begin{equation} \psi _M = \begin {pmatrix} \psi _L \\ \psi _L^\dagger \end {pmatrix}, \end{equation}</div><a 
+ id="x1-50016r101"></a> and
 satisfies the same Dirac equation <div class="mathjax-env mathjax-equation">\begin{equation} (i\gamma ^\mu \partial _\mu - m)\psi _M = 0. \end{equation}</div><a 
- id="x1-50017r101"></a> However, it carries only half the degrees of freedom of a Dirac spinor
+ id="x1-50017r102"></a> However, it carries only half the degrees of freedom of a Dirac spinor
 due to the constraint above.
                                                                                         
                                                                                         
@@ -2078,7 +2079,7 @@ to <span class="mathjax-inline">\(\psi \)</span>. Treating <span class="mathjax-
 Euler–Lagrange equation <div class="mathjax-env mathjax-equation">\begin{equation} \frac {\partial \mathcal {L}}{\partial \psi } - \partial _\mu \left ( \frac {\partial \mathcal {L}}{\partial (\partial _\mu \psi )} \right ) = 0 \end{equation}</div><a 
  id="x1-61010r25"></a> yields <div class="mathjax-env mathjax-equation">\begin{equation} - m \bar {\psi } - \partial _\mu ( i \bar {\psi } \gamma ^\mu ) = 0. \end{equation}</div><a 
  id="x1-61011r26"></a> Rearranging, we obtain the adjoint Dirac equation <a 
-href="#x1-45005r64">4.64<!--tex4ht:ref: eq:Dirac_gamma_anti --></a>
+href="#x1-45005r65">4.65<!--tex4ht:ref: eq:Dirac_gamma_anti --></a>
 <div class="mathjax-env mathjax-equation">\begin{equation} i \, \partial _\mu \bar {\psi } \, \gamma ^\mu + m \bar {\psi } = 0. \end{equation}</div><a 
  id="x1-61012r27"></a>
 <p>   Before leaving this section, it is important to notice that we can write the mass term <span class="mathjax-inline">\(m \bar {\psi } \psi \)</span> as </p> 
