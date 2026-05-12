@@ -262,6 +262,12 @@ href="#x1-156000G.2" id="QQ2-1-203">Euler-Lagrange Equations</a></span>
 href="#x1-157000G.3" id="QQ2-1-204">Noether’s Theorem</a></span>
 <br />   <span class="subsectionToc" >G.4 <a 
 href="#x1-158000G.4" id="QQ2-1-205">Noether Current for Complex Klein-Gordon Field</a></span>
+<br />   <span class="sectionToc" >H <a 
+href="#x1-159000H" id="QQ2-1-206">Feynman Rules</a></span>
+<br />   <span class="subsectionToc" >H.1 <a 
+href="#x1-160000H.1" id="QQ2-1-207">Gauge Boson Propagators</a></span>
+<br />   <span class="subsectionToc" >H.2 <a 
+href="#x1-164000H.2" id="QQ2-1-211">QCD Interaction Feynman Rules</a></span>
    </div>
                                                                                         
                                                                                         
@@ -1300,7 +1306,7 @@ probability current densities <div class="mathjax-env mathjax-equation">\begin{e
  id="x1-40008r19"></a> They form a four vector <span class="mathjax-inline">\((\rho , \mathbf {j})\)</span> <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} J^\mu = i\left [\phi ^* \left (\frac {\partial \phi } {\partial t} - \boldsymbol {\nabla } \phi \right ) - \phi \left (\frac {\partial \phi ^*}{\partial t} - \boldsymbol {\nabla } \phi ^*\right ) \right ] = i\left ( \phi ^* \partial ^\mu \phi - \phi \partial ^\mu \phi ^* \right ), \end {aligned} \end{equation}</div><a 
  id="x1-40009r20"></a> that satisfies <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu J^\mu =0, \end{equation}</div><a 
  id="x1-40010r21"></a> since <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \partial _\mu J^\mu &amp;= i \partial _\mu \left ( \phi ^* \partial ^\mu \phi - \phi \partial ^\mu \phi ^* \right ) \\ &amp;= i \left ( \partial _\mu \phi ^* \partial ^\mu \phi + \phi ^* \partial _\mu \partial ^\mu \phi - \partial _\mu \phi \partial ^\mu \phi ^* - \phi \partial _\mu \partial ^\mu \phi ^* \right ) \\ &amp;= i \left [ \phi ^* (-m^2 \phi ) - \phi (-m^2 \phi ^*) \right ] = 0. \end {aligned} \end{equation}</div><a 
- id="x1-40011r22"></a> Here we used the fact that <span class="mathjax-inline">\(\phi \)</span>
+ id="x1-40011r22"></a> Here, we used the fact that <span class="mathjax-inline">\(\phi \)</span>
 and <span class="mathjax-inline">\(\phi ^*\)</span> satisfy the Klein-Gordon equation.
 <p>   The issue is probability densities can now be negative. We can readily check this by introducing
 plane-wave solutions, and using <span class="mathjax-inline">\(\phi ^*\phi = \phi \phi ^* = |N|^2\)</span>, we obtain </p> 
@@ -5682,13 +5688,179 @@ is associated with the conservation of particle number (particles minus antipart
 charge.
                                                                                         
                                                                                         
+   
+<p>   <span style="display: hidden">\(\nextSection \)</span></p> 
+<h3 class="sectionHead"><span class="titlemark">H   </span> <a 
+href="#QQ2-1-206" id="x1-159000H">Feynman Rules</a></h3>
+<p>   Here, as in the main body of the notes, I omit the formal QFT steps and take as starting point the
+following statement [<a 
+href="#XtHooft:1971qjg">18</a>, <a 
+href="#XtHooft:1973wag">19</a>]
+     </p> 
+<blockquote class="quote">
+     <p>the Feynman rules must always be derived from the final Lagrangians by performing
+     the path integral, and not by canonical quantization. This means that the propagators
+     are always the inverse of the matrices in the bilinear terms of the Lagrangian, and
+     the vertices are the coefficients in front of the remaining terms in the Lagrangian,
+     regardless whether time derivatives occur or not.</p> 
+</blockquote>
+   
+   <h4 class="subsectionHead"><span class="titlemark">H.1   </span> <a 
+href="#QQ2-1-207" id="x1-160000H.1">Gauge Boson Propagators</a></h4>
+<p>The first step is to use a bit of calculus to bring the Lagrangian into the form <span class="mathjax-inline">\(\mathcal {L}= \frac {1}{2} \phi P \phi \)</span>. The trick is to use
+integration by parts for the kinetic term. Then we obtain a surface term that vanishes, as the volume
+approaches infinity for it to be physically well-behaved.
+   
+   </p> 
+
+<p><span class="paragraphHead"><a 
+href="#x1-161000" id="x1-161000">Scalar Bosons</a></span>
+   For the Klein-Gordon field we have </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu (\phi \partial ^\mu \phi ) = (\partial _\mu \phi )(\partial ^\mu \phi ) + \phi (\partial _\mu \partial ^\mu \phi ). \end{equation}</div><a 
+ id="x1-161001r1"></a> Rearranging this we can obtain the kinetic term: <div class="mathjax-env mathjax-equation">\begin{equation} (\partial _\mu \phi )(\partial ^\mu \phi ) = \partial _\mu (\phi \partial ^\mu \phi ) - \phi (\partial ^2 \phi ), \end{equation}</div><a 
+ id="x1-161002r2"></a> where
+<span class="mathjax-inline">\(\partial ^2 \equiv \partial _\mu \partial ^\mu \)</span>.
+<p>   The integral of the kinetic term is </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} \int d^4x \frac {1}{2} (\partial _\mu \phi ) (\partial ^\mu \phi ) = \int d^4x \frac {1}{2} \partial _\mu (\phi \partial ^\mu \phi ) - \int d^4x \frac {1}{2} \phi (\partial _\mu \partial ^\mu \phi ). \end{equation}</div><a 
+ id="x1-161003r3"></a> The first term on the right-hand side is a total divergence called
+a surface or boundary term. According to the 4-dimensional version of the Divergence Theorem
+(Gauss’s Theorem), the integral of a divergence over a volume <span class="mathjax-inline">\(V\)</span> is equal to the flux through its
+boundary <span class="mathjax-inline">\(\partial V\)</span>: <div class="mathjax-env mathjax-equation">\begin{equation} \int _{V} \partial _\mu \Lambda ^\mu \, d^4x = \oint _{\partial V} \Lambda ^\mu \, d\Sigma _\mu . \end{equation}</div><a 
+ id="x1-161004r4"></a> We impose the requirement that the field <span class="mathjax-inline">\(\phi (x)\)</span> must be well-behaved and fall to zero
+sufficiently fast at spatial and temporal infinity (<span class="mathjax-inline">\(|x| \to \infty \)</span>): <div class="mathjax-env mathjax-equation">\begin{equation} \lim _{|x| \to \infty } \phi (x) = 0. \end{equation}</div><a 
+ id="x1-161005r5"></a> Consequently, there is no flux through the
+distant boundary and the surface term vanishes. This assumption is standard for deriving
+Feynman rules in perturbative QFT, where we consider small fluctuations around a stable
+vacuum.
+<p>   Therefore, we have </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} (\partial _\mu \phi )(\partial ^\mu \phi ) \to - \phi (\partial ^2 \phi ). \end{equation}</div><a 
+ id="x1-161006r6"></a> Including the mass term, we have the operator <span class="mathjax-inline">\(P = -(\partial ^2 + m^2)\)</span>. Applying the replacement <span class="mathjax-inline">\(\partial _\mu \to -i p_\mu \)</span> (so
+<span class="mathjax-inline">\(\partial ^2 \to -p^2\)</span>): <div class="mathjax-env mathjax-equation">\begin{equation} P = -(-p^2 + m^2) = p^2 - m^2. \end{equation}</div><a 
+ id="x1-161007r7"></a> The propagator is <span class="mathjax-inline">\(i\)</span> times the inverse of <span class="mathjax-inline">\(P\)</span> <div class="mathjax-env mathjax-equation">\begin{equation} \frac {i}{p^2 - m^2 + i\epsilon }, \end{equation}</div><a 
+ id="x1-161008r8"></a> where we also added the <span class="mathjax-inline">\(i\epsilon \)</span> prescription.
+   
+<p><span class="paragraphHead"><a 
+href="#x1-162000" id="x1-162000">Massive Vector Bosons</a></span>
+   For a massive vector boson <span class="mathjax-inline">\(A_\mu \)</span> ( such as the <span class="mathjax-inline">\(W\)</span> or <span class="mathjax-inline">\(Z\)</span> bosons) the Lagrangian is </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {L} = -\frac {1}{4} F_{\mu \nu } F^{\mu \nu } + \frac {1}{2} M^2 A_\mu A^\mu , \end{equation}</div><a 
+ id="x1-162001r9"></a> where <span class="mathjax-inline">\(F_{\mu \nu } = \partial _\mu A_\nu - \partial _\nu A_\mu \)</span>. Expanding the
+kinetic term yields: <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {L}_{\text {kin}} = -\frac {1}{2} \left ( \partial _\mu A_\nu \partial ^\mu A^\nu - \partial _\mu A_\nu \partial ^\nu A^\mu \right ). \end{equation}</div><a 
+ id="x1-162002r10"></a>
+<p>   To bring this into the quadratic form <span class="mathjax-inline">\(\frac {1}{2} A_\nu P^{\nu \mu } A_\mu \)</span>, we perform integration by parts. Let’s look at the first term: </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} -\frac {1}{2} \int d^4x (\partial _\mu A_\nu ) (\partial ^\mu A^\nu ). \end{equation}</div><a 
+ id="x1-162003r11"></a>
+Using the product rule <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu (A_\nu \partial ^\mu A^\nu ) = (\partial _\mu A_\nu )(\partial ^\mu A^\nu ) + A_\nu (\partial ^2 A^\nu ), \end{equation}</div><a 
+ id="x1-162004r12"></a> we can rewrite the integral as: <div class="mathjax-env mathjax-equation">\begin{equation} -\frac {1}{2} \int d^4x \left [ \partial _\mu (A_\nu \partial ^\mu A^\nu ) - A_\nu (\partial ^2 A^\nu ) \right ]. \end{equation}</div><a 
+ id="x1-162005r13"></a> We identify the surface term: <div class="mathjax-env mathjax-equation">\begin{equation} \underbrace {-\frac {1}{2} \int d^4x \partial _\mu (A_\nu \partial ^\mu A^\nu )} _{\text {Surface Term}} + \frac {1}{2} \int d^4x A_\nu (\partial ^2 A^\nu ). \end{equation}</div><a 
+ id="x1-162006r14"></a> Dropping the
+surface term we are left with: <div class="mathjax-env mathjax-equation">\begin{equation} -\frac {1}{2} \int d^4x (\partial _\mu A_\nu ) (\partial ^\mu A^\nu ) = \frac {1}{2} \int d^4x A_\nu (\partial ^2 A^\nu ). \end{equation}</div><a 
+ id="x1-162007r15"></a>
+<p>   Similarly, for the second term: </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} \frac {1}{2} \int d^4x (\partial _\mu A_\nu ) (\partial ^\nu A^\mu ) = -\frac {1}{2} \int d^4x A_\nu (\partial ^\nu \partial _\mu A^\mu ). \end{equation}</div><a 
+ id="x1-162008r16"></a> Combining these with the mass term, we have: <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {L} = \frac {1}{2} A_\nu (\partial ^2 A^\nu ) - \frac {1}{2} A_\nu (\partial ^\nu \partial _\mu A^\mu ) + \frac {1}{2} M^2 A_\nu A^\nu . \end{equation}</div><a 
+ id="x1-162009r17"></a>
+<p>   To write this in the form <span class="mathjax-inline">\(\frac {1}{2} A_\mu P^{\mu \nu } A_\nu \)</span>, we perform the following index manipulations: </p> 
+
+                                                                                        
+                                                                                        
+     <ul class="itemize1">
+     <li class="itemize">
+     <p><span class="mathjax-inline">\(A_\nu \partial ^2 A^\nu \to A_\mu (g^{\mu \nu } \partial ^2) A_\nu \)</span>.
+     </p> 
+</li>
+     <li class="itemize">
+     <p><span class="mathjax-inline">\(-A_\nu \partial ^\nu \partial _\mu A^\mu \to -A_\mu (\partial ^\mu \partial ^\nu ) A_\nu \)</span>.
+     </p> 
+</li>
+     <li class="itemize">
+     <p><span class="mathjax-inline">\(M^2 A_\nu A^\nu \to A_\mu (g^{\mu \nu } M^2) A_\nu \)</span>.</p> 
+</li></ul>
+<p>   Therefore, the operator is </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} P^{\mu \nu } = g^{\mu \nu } (\partial ^2 + M^2) - \partial ^\mu \partial ^\nu . \end{equation}</div><a 
+ id="x1-162010r18"></a> In momentum space: <div class="mathjax-env mathjax-equation">\begin{equation} P^{\mu \nu }(p) = g^{\mu \nu }(-p^2 + M^2) + p^\mu p^\nu . \end{equation}</div><a 
+ id="x1-162011r19"></a> Inverting this matrix and multiplying by <span class="mathjax-inline">\(i\)</span> gives the
+propagator: <div class="mathjax-env mathjax-equation">\begin{equation} \frac {-i \left (g_{\mu \nu } - \frac {p_\mu p_\nu }{M^2}\right )} {p^2 - M^2 + i\epsilon }, \end{equation}</div><a 
+ id="x1-162012r20"></a> where we also added the <span class="mathjax-inline">\(i\epsilon \)</span> prescription.
+   
+<p><span class="paragraphHead"><a 
+href="#x1-163000" id="x1-163000">Massless Vector Bosons</a></span>
+   For the photon (<span class="mathjax-inline">\(M=0\)</span>), the operator is </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} P_{\mu \nu }(q) = -q^2 g_{\mu \nu } + q_\mu q_\nu \end{equation}</div><a 
+ id="x1-163001r21"></a> The most general form for an inverse <span class="mathjax-inline">\(D^{\nu \lambda }\)</span> that satisfies Lorentz
+covariance is: <div class="mathjax-env mathjax-equation">\begin{equation} D^{\nu \lambda } = A(q^2) g^{\nu \lambda } + B(q^2) q^\nu q^\lambda . \end{equation}</div><a 
+ id="x1-163002r22"></a> If <span class="mathjax-inline">\(D\)</span> is the inverse, then: <div class="mathjax-env mathjax-equation">\begin{equation} P_{\mu \nu } D^{\nu \lambda } = \delta ^\lambda _\mu \end{equation}</div><a 
+ id="x1-163003r23"></a> Performing the multiplication: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} (A g_{\nu \lambda } + B q_\nu q_\lambda ) (-q^2 g_{\mu \nu } + q_\mu q_\nu ) = -A q^2 \delta ^\lambda _\mu + (A - B q^2 + B q^2) q_\mu q_\lambda \end {aligned} \end{equation}</div><a 
+ id="x1-163004r24"></a> Simplifying the terms, we arrive
+at: <div class="mathjax-env mathjax-equation">\begin{equation} - A q^2 \delta ^\lambda _\mu + A q_\mu q_\lambda = \delta ^\lambda _\mu \end{equation}</div><a 
+ id="x1-163005r25"></a> The conditions for this to hold are: From the <span class="mathjax-inline">\(\delta ^\lambda _\mu \)</span> term: <div class="mathjax-env mathjax-equation">\begin{equation} A = -\frac {1}{q^2} \end{equation}</div><a 
+ id="x1-163006r26"></a> and from the <span class="mathjax-inline">\(q_\mu q_\lambda \)</span> term: <div class="mathjax-env mathjax-equation">\begin{equation} A = 0 \end{equation}</div><a 
+ id="x1-163007r27"></a> Because <span class="mathjax-inline">\(A\)</span> cannot be both <span class="mathjax-inline">\(-1/q^2\)</span>
+and <span class="mathjax-inline">\(0\)</span>, this inverse does not exist.
+<p>   We therefore add a <i>gauge fixing term</i>: </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {L}_{\text {gf}} = -\frac {1}{2\xi } (\partial _\mu A^\mu )^2. \end{equation}</div><a 
+ id="x1-163008r28"></a> We have <div class="mathjax-env mathjax-equation">\begin{equation} I_{\text {gf}} = -\frac {1}{2\xi } \int d^4x (\partial _\mu A^\mu )(\partial _\nu A^\nu ). \end{equation}</div><a 
+ id="x1-163009r29"></a> Using the product rule: <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu (A^\mu \partial _\nu A^\nu ) = (\partial _\mu A^\mu )(\partial _\nu A^\nu ) + A^\mu \partial _\mu (\partial _\nu A^\nu ), \end{equation}</div><a 
+ id="x1-163010r30"></a> and rearranging we obtain <div class="mathjax-env mathjax-equation">\begin{equation} I_{\text {gf}} = -\frac {1}{2\xi } \int d^4x \left [ \partial _\mu (A^\mu \partial _\nu A^\nu ) - A_\mu (\partial ^\mu \partial ^\nu A_\nu ) \right ]. \end{equation}</div><a 
+ id="x1-163011r31"></a>
+The first term is a surface term. Droping it we are left with: <div class="mathjax-env mathjax-equation">\begin{equation} I_{\text {gf}} = \frac {1}{2\xi } \int d^4x A_\mu (\partial ^\mu \partial ^\nu ) A_\nu . \end{equation}</div><a 
+ id="x1-163012r32"></a>
+<p>   Using the results from the massive case the total operator becomes: </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} P^{\mu \nu } = \partial ^2 g^{\mu \nu } - \partial ^\mu \partial ^\nu + \frac {1}{\xi } \partial ^\mu \partial ^\nu = \partial ^2 g^{\mu \nu } - \left (1 - \frac {1}{\xi }\right ) \partial ^\mu \partial ^\nu . \end{equation}</div><a 
+ id="x1-163013r33"></a> In momentum space: <div class="mathjax-env mathjax-equation">\begin{equation} P^{\mu \nu } = - p^2 g^{\mu \nu } + \left (1 - \frac {1}{\xi }\right ) p^\mu p^\nu . \end{equation}</div><a 
+ id="x1-163014r34"></a> The
+propagator is <span class="mathjax-inline">\(i\)</span> times the inverse of this operator: <div class="mathjax-env mathjax-equation">\begin{equation} \frac {-i}{p^2 + i\epsilon } \left [ g_{\mu \nu } - (1 - \xi ) \frac {p_\mu p_\nu }{p^2} \right ], \end{equation}</div><a 
+ id="x1-163015r35"></a> where we also added the <span class="mathjax-inline">\(i\epsilon \)</span> prescription.
+<p>   In the <i>Feynman gauge</i> (<span class="mathjax-inline">\(\xi =1\)</span>), this reduces to: </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} \frac {-i g_{\mu \nu }}{p^2 + i\epsilon }, \end{equation}</div><a 
+ id="x1-163016r36"></a>
+   
+   <h4 class="subsectionHead"><span class="titlemark">H.2   </span> <a 
+href="#QQ2-1-211" id="x1-164000H.2">QCD Interaction Feynman Rules</a></h4>
+   
+<p><span class="paragraphHead"><a 
+href="#x1-165000" id="x1-165000">Quark-Gluon Vertex</a></span>
+   The interaction term in the QCD Lagrangian is </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {L}_{q\bar {q}g} = g_s \, \bar {\psi }_i \, \gamma ^\mu (t^a)_{ij} \, \psi _j \, G_\mu ^a. \end{equation}</div><a 
+ id="x1-165001r37"></a> Including the factor <span class="mathjax-inline">\(i\)</span> for the Feynman rule gives <div class="mathjax-env mathjax-equation">\begin{equation} i \mathcal {L}_{\text {int}} = i g_s \, \bar {\psi } \gamma ^\mu t^a \psi \, G_\mu ^a. \end{equation}</div><a 
+ id="x1-165002r38"></a>
+Stripping off the fields leaves the vertex: <div class="mathjax-env mathjax-equation">\begin{equation} i g_s \gamma ^\mu t^a = i g_s \gamma ^\mu \frac {\lambda ^a}{2}. \end{equation}</div><a 
+ id="x1-165003r39"></a>
+   
+<p><span class="paragraphHead"><a 
+href="#x1-166000" id="x1-166000">Three-Gluon Vertex</a></span>
+   The kinetic term in the QCD Lagrangian is </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {L}_{\text {kin}} = -\frac {1}{4} G_{\mu \nu }^a G^{a\,\mu \nu } \end{equation}</div><a 
+ id="x1-166001r40"></a> with <div class="mathjax-env mathjax-equation">\begin{equation} G_{\mu \nu }^a = \underbrace {\partial _\mu G_\nu ^a - \partial _\nu G_\mu ^a} _{\text {Abelian}} - \underbrace {g_s f^{abc} G_\mu ^b G_\nu ^c} _{\text {non-Abelian}}. \end{equation}</div><a 
+ id="x1-166002r41"></a> Expanding the square gives the cross-term for
+three-gluon interaction: <div class="mathjax-env mathjax-equation">\begin{equation} -\frac {2}{4} g_s f^{abc} (\partial _\mu G_\nu ^a - \partial _\nu G_\mu ^a) G^{\mu b} G^{\nu c}. \end{equation}</div><a 
+ id="x1-166003r42"></a> <div class="mathjax-env mathjax-equation">\begin{equation} -\frac {2}{4} \big [ g_s f^{abc} (\partial _\mu G_\nu ^a) G^{\mu b} G^{\nu c} -g_s f^{abc} (\partial _\nu G_\mu ^a) G^{\mu b} G^{\nu c}]. \end{equation}</div><a 
+ id="x1-166004r43"></a> For the second term we rename the colours being summed over: <div class="mathjax-env mathjax-equation">\begin{equation} T_2 = f^{acb} (\partial _\mu G_\nu ^a) G^{\mu c} G^{\nu b}. \end{equation}</div><a 
+ id="x1-166005r44"></a>
+Accounting for the antisymmetry <span class="mathjax-inline">\(f^{acb} = - f^{abc}\)</span> and the symmetry of the fields <span class="mathjax-inline">\(G^{\mu b} G^{\nu c}\)</span> under <span class="mathjax-inline">\(b \leftrightarrow c\)</span>: <div class="mathjax-env mathjax-equation">\begin{equation} f^{acb} (\partial _\mu G_\nu ^a) G^{\mu c} G^{\nu b} = - f^{abc} (\partial _\mu G_\nu ^a) G^{\mu b} G^{\nu c}. \end{equation}</div><a 
+ id="x1-166006r45"></a> Therefore, <div class="mathjax-env mathjax-equation">\begin{equation} T_2 = - f^{abc} (\partial _\mu G_\nu ^a) G^{\mu b} G^{\nu c}. \end{equation}</div><a 
+ id="x1-166007r46"></a> Leading to:
+<div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {L}_{3g} = - g_s f^{abc} (\partial _\mu G_\nu ^a) G^{\mu b} G^{\nu c}. \end{equation}</div><a 
+ id="x1-166008r47"></a>
+<p>   We do the standard replacement <span class="mathjax-inline">\(\partial _\mu \to -i p_\mu \)</span>, and we label the gluons as <span class="mathjax-inline">\((a,\mu ,p_1), (b,\nu ,p_2), (c, \sigma ,p_3)\)</span> to obtain the following permutations: </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} S^{abc}_{\mu \nu \sigma }(p_1,p_2,p_3) &amp;= - g_s f^{abc} \Big [ g^{\mu \nu } (p_1 - p_2)^\sigma \\ &amp;\quad + g^{\nu \sigma } (p_2 - p_3)^\mu \\ &amp;\quad + g^{\sigma \mu } (p_3 - p_1)^\nu \Big ]. \end {aligned} \end{equation}</div><a 
+ id="x1-166009r48"></a>
+Using the antisymmetry of <span class="mathjax-inline">\(f^{abc}\)</span> (<span class="mathjax-inline">\(f^{bca} = f^{abc}\)</span>, <span class="mathjax-inline">\(f^{cab} = f^{abc}\)</span>), this simplifies to: <div class="mathjax-env mathjax-equation">\begin{equation} - g_s f^{abc} \Big [ g^{\mu \nu } (p_1 - p_2)^\sigma + g^{\nu \sigma } (p_2 - p_3)^\mu + g^{\sigma \mu } (p_3 - p_1)^\nu \Big ]. \end{equation}</div><a 
+ id="x1-166010r49"></a>
+   
+<p><span class="paragraphHead"><a 
+href="#x1-167000" id="x1-167000">Four-Gluon Vertex</a></span>
+   From the Lagrangian </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {L}_{4g} = -\frac {1}{4} g_s^2 f^{abc} f^{ade} G_\mu ^b G_\nu ^c G^{\mu d} G^{\nu e}. \end{equation}</div><a 
+ id="x1-167001r50"></a> Using the symmetry of <span class="mathjax-inline">\(f^{abc}\)</span>, the <span class="mathjax-inline">\(4! = 24\)</span> permutations reduce to three distinct colour
+pairings. Including <span class="mathjax-inline">\(i\)</span>, the four-gluon vertex is: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} -i g_s^2 \Big [ &amp; f^{abe} f^{cde} (g^{\mu \rho } g^{\nu \sigma } - g^{\mu \sigma } g^{\nu \rho }) \\ +&amp; f^{ace} f^{bde} (g^{\mu \nu } g^{\rho \sigma } - g^{\mu \sigma } g^{\nu \rho }) \\ +&amp; f^{ade} f^{bce} (g^{\mu \nu } g^{\rho \sigma } - g^{\mu \rho } g^{\nu \sigma }) \Big ]. \end {aligned} \end{equation}</div><a 
+ id="x1-167002r51"></a>
    </div>
                                                                                         
                                                                                         
    <section role="doc-bibliography" class="thebibliography">
 <p>   <span style="display: hidden">\(\nextSection \)</span></p> 
 <h3 class="likesectionHead"><a 
-href="#x1-159000" id="x1-159000">References</a></h3>
+href="#x1-168000" id="x1-168000">References</a></h3>
 <p>
     </p> 
 <dl><dt>
