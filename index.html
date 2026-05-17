@@ -262,8 +262,8 @@ href="#x1-156000G.1" id="QQ2-1-203">Lagrangian formulation of Classical Mechanic
 href="#x1-157000G.2" id="QQ2-1-204">Euler-Lagrange Equations</a></span>
 <br />   <span class="subsectionToc" >G.3 <a 
 href="#x1-158000G.3" id="QQ2-1-205">Noether’s Theorem</a></span>
-<br />   <span class="subsectionToc" >G.4 <a 
-href="#x1-159000G.4" id="QQ2-1-206">Noether Current for Complex Klein-Gordon Field</a></span>
+<br />   <span class="subsubsectionToc" >G.3.1 <a 
+href="#x1-159000G.3.1" id="QQ2-1-206">Noether Current for Complex Klein-Gordon Field</a></span>
 <br />   <span class="sectionToc" >H <a 
 href="#x1-160000H" id="QQ2-1-207">Feynman Rules</a></span>
 <br />   <span class="subsectionToc" >H.1 <a 
@@ -700,15 +700,15 @@ equal to the value in the original system: <div class="mathjax-env mathjax-equat
 two different frames.
 <p>   Applying the four-derivative gives </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \frac {\partial }{\partial x^{\prime \mu } } \Phi ^\prime (x^{\prime }) = \frac {\partial x^\nu }{\partial x^{\prime \mu } } \frac {\partial }{\partial x^{\nu } } \Phi (x) = {\Lambda _\mu }^{\nu } \frac {\partial } {\partial x^{\nu } } \Phi (x), \end{equation}</div><a 
- id="x1-15003r51"></a> where the first step uses the chain rule a nd the last step uses
+ id="x1-15003r51"></a> where the first step uses the chain rule and the last step uses
 equation <a 
 href="#x1-8004r19">1.19<!--tex4ht:ref: eq:Covariant_transform --></a>. Therefore, the four-derivative transforms as a covariant four-vector: <div class="mathjax-env mathjax-equation">\begin{equation} \frac {\partial }{\partial x^{\mu } } \rightarrow \frac {\partial }{\partial x^{\prime \mu } } = {\Lambda _\mu }^{\nu } \frac {\partial }{\partial x^{\nu } }. \end{equation}</div><a 
  id="x1-15004r52"></a> This allows us to
 write <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu = \frac {\partial }{\partial x^\mu }. \end{equation}</div><a 
  id="x1-15005r53"></a> Using <span class="mathjax-inline">\(\partial ^{\mu } = g^{\mu \nu } \partial _\nu \)</span>, we also define <div class="mathjax-env mathjax-equation">\begin{equation} \partial ^{\mu } = \left ( \frac {\partial }{\partial x^0} , -\frac {\partial }{\partial x^1} , -\frac {\partial }{\partial x^2} , -\frac {\partial }{\partial x^3} \right ). \end{equation}</div><a 
- id="x1-15006r54"></a> Finally, the d’Alembert operator is defined as <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu \partial ^\mu = \frac {\partial ^2}{\partial (x^0)^2} - \frac {\partial ^2}{\partial (x^1)^2} - \frac {\partial ^2}{\partial (x^2)^2} - \frac {\partial ^2}{\partial (x^3)^2}. \end{equation}</div><a 
- id="x1-15007r55"></a> The d’Alembert operator is
-Lorentz invariant because <div class="mathjax-env mathjax-equation">\begin{equation} \partial ^\prime _\mu \partial ^{\prime \mu } = {\Lambda _\mu }^\nu \partial _\nu {\Lambda ^\mu }_\sigma \partial ^{\sigma } = {\Lambda _\mu }^\nu {\Lambda ^\mu }_\sigma \partial _\nu \partial ^{\sigma } = {(\Lambda ^{-1})^\nu }_\mu {\Lambda ^\mu }_\sigma \partial _\nu \partial ^{\sigma } = {\delta ^\nu }_\sigma \partial _\nu \partial ^{\sigma } = \partial _\nu \partial ^{\nu }. \end{equation}</div><a 
+ id="x1-15006r54"></a> Finally, the d’Alembert operator is defined as <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu \partial ^\mu = \frac {\partial ^2}{\partial (x^0)^2} - \frac {\partial ^2}{\partial (x^1)^2} - \frac {\partial ^2}{\partial (x^2)^2} - \frac {\partial ^2}{\partial (x^3)^2}, \end{equation}</div><a 
+ id="x1-15007r55"></a> that is Lorentz invariant:
+<div class="mathjax-env mathjax-equation">\begin{equation} \partial ^\prime _\mu \partial ^{\prime \mu } = {\Lambda _\mu }^\nu \partial _\nu {\Lambda ^\mu }_\sigma \partial ^{\sigma } = {\Lambda _\mu }^\nu {\Lambda ^\mu }_\sigma \partial _\nu \partial ^{\sigma } = {(\Lambda ^{-1})^\nu }_\mu {\Lambda ^\mu }_\sigma \partial _\nu \partial ^{\sigma } = {\delta ^\nu }_\sigma \partial _\nu \partial ^{\sigma } = \partial _\nu \partial ^{\nu }. \end{equation}</div><a 
  id="x1-15008r56"></a>
    
    <h4 class="subsectionHead"><span class="titlemark">1.5   </span> <a 
@@ -720,11 +720,10 @@ units become <div class="mathjax-env mathjax-equation">\begin{equation} E = \gam
  id="x1-16002r58"></a>
 <p>   The energy-momentum of a particle can also be written as a four-vector: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} p^{\mu } = \left ( E, p_x, p_y, p_z \right ). \end{equation}</div><a 
- id="x1-16003r59"></a> Since <span class="mathjax-inline">\(p^\mu \)</span> is a
-four-vector, the squared norm <span class="mathjax-inline">\(p^2 = p^{\mu } p_{\mu }\)</span> is Lorentz invariant: <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:psquare} \begin {aligned} p^2 = p^{\mu }p_{\mu } = E^2 - (p_x)^2 - (p_y)^2 - (p_z)^2 = E^2 - \boldsymbol {p}^2 = m^2. \end {aligned} \end{equation}</div><a 
- id="x1-16004r60"></a> Thus, <span class="mathjax-inline">\(p^2\)</span> gives the squared invariant mass <span class="mathjax-inline">\(m\)</span> of a
-particle. Note that for a <i>virtual</i> particle, <span class="mathjax-inline">\(E^2 - \boldsymbol {p}^2\)</span> can take any value; virtual particles can be “off mass
-shell”.
+ id="x1-16003r59"></a> Since <span class="mathjax-inline">\(p^\mu \)</span> is a four-vector, <span class="mathjax-inline">\(p^2 = p^{\mu } p_{\mu }\)</span> is
+Lorentz invariant: <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:psquare} \begin {aligned} p^2 = p^{\mu }p_{\mu } = E^2 - (p_x)^2 - (p_y)^2 - (p_z)^2 = E^2 - \boldsymbol {p}^2 = m^2. \end {aligned} \end{equation}</div><a 
+ id="x1-16004r60"></a> Thus, <span class="mathjax-inline">\(p^2\)</span> gives the squared invariant mass <span class="mathjax-inline">\(m\)</span> of a particle. Note that for a <i>virtual</i>
+particle, <span class="mathjax-inline">\(E^2 - \boldsymbol {p}^2\)</span> can take any value; virtual particles can be “off mass shell”.
 <p>   The equality </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;(p_1^\mu +p_2^\mu ) = (p_3^\mu +p_4^\mu ) \\ &amp;{\Lambda ^\nu }_{\mu } (p_1^\mu +p_2^\mu ) = {\Lambda ^\nu }_{\mu } (p_3^\mu +p_4^\mu ) \\ &amp; (p_1^{\prime \nu }+p_2^{\prime \nu }) = (p_3^{\prime \nu }+p_4^{\prime \nu }) \end {aligned} \end{equation}</div><a 
  id="x1-16005r61"></a> means that if energy and momentum conservation hold in one inertial frame, then they
@@ -3234,17 +3233,18 @@ but without working in a specific gauge. We then have <div class="mathjax-env ma
  id="x1-85004r45"></a> is the momentum of the virtual photon.
 If the answer is to be independent of <span class="mathjax-inline">\(\xi \)</span>, then the term proportional to <span class="mathjax-inline">\((1-\xi )\)</span> must give no contribution to the
 amplitude. In this particular case we have <div class="mathjax-env mathjax-equation">\begin{equation} (\bar v_b \gamma ^\mu u_a) q_\mu = \bar v_b \not \!q\, u_a = \bar v_b (\not \!p_a + \not \!p_b) u_a = m \bar v_b u_a - m \bar v_b u_a = 0. \end{equation}</div><a 
- id="x1-85005r46"></a> Here, we have applied the Dirac equation to write <div class="mathjax-env mathjax-equation">\begin{equation} \not \!p_a\, u_a = m u_a \end{equation}</div><a 
- id="x1-85006r47"></a> and
-<div class="mathjax-env mathjax-equation">\begin{equation} \bar v_b \not \!p_b = -m \bar v_b. \end{equation}</div><a 
+ id="x1-85005r46"></a> Here, we have applied the Dirac equation for <div class="mathjax-env mathjax-equation">\begin{equation} \not \!p_a\, u_a = m u_a, \end{equation}</div><a 
+ id="x1-85006r47"></a> and the adjoint
+Dirac equation for <div class="mathjax-env mathjax-equation">\begin{equation} \bar v_b \not \!p_b = -m \bar v_b. \end{equation}</div><a 
  id="x1-85007r48"></a>
 <p>   This cancellation is an example of a general principle of gauge theories, called the <i>Ward-Takahashi
 identity</i>. The unphysical degrees of freedom, here the longitudinal and time-like photon polarizations, do
 not contribute to physical processes. The <span class="mathjax-inline">\((1-\xi )\)</span> term always cancels when one includes <i>all</i> Feynman diagrams
 contributing to a particular process at a given order.
 </p> 
-<p>   The details of the Ward-Takahashi identity are beyond the scope of this course. Let me
-just connect the main concepts: global symmetry leads to conserved currents; the gauge
+<p>   The details of the Ward-Takahashi identity are beyond the scope of this course; if you are interested
+see [<a 
+href="#XPeskin:1995ev">11</a>]. Let me just list the main concepts: global symmetry leads to conserved currents; the gauge
 principle promotes this symmetry to a local symmetry, defining the interaction; and the
 Ward-Takahashi identity ensures the gauge invariance of amplitudes calculated via Feynman
 diagrams.
@@ -4330,7 +4330,7 @@ use the Feynman rule for incoming spin-1 particles. We have <div class="mathjax-
  id="x1-100004r25"></a> Summing over outgoing spins and using
 Casimir’s trick <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sum \limits _{\mathrm {spins}} |\mathcal {M}|^2 &amp;= \left (\frac {g_X}{2} \right )^2 \epsilon _\mu (p_1) \epsilon ^*_\nu (p_1) \times \\ &amp;\mbox {Tr}\left [ \gamma ^\mu (c_V - c_A\gamma ^5) (\not \!p_3 - m_3) \gamma ^\nu (c_V - c_A\gamma ^5) (\not \!p_2 + m_2) \right ]. \end {aligned} \end{equation}</div><a 
  id="x1-100005r26"></a> As before we will use <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\mbox {Tr}\left [\gamma ^\mu (c_V-c_A\gamma ^5)(\not \!p_1+m_1) \gamma ^\nu (c_V-c_A\gamma ^5)(\not \!p_2+m_2)\right ]\\ &amp;= 4(c_V^2 + c_A^2 ) [p_1^\mu p_2^\nu + p_1^\nu p_2^\mu -p_1 \cdot p_2 g^{\mu \nu }] \\ &amp;+ 4(c_V^2 - c_A^2 ) m_1 m_2 g^{\mu \nu } -8ic_Vc_A \epsilon ^{\mu \nu \lambda \sigma } p_{1\lambda } p_{2\sigma }. \end {aligned} \end{equation}</div><a 
- id="x1-100006r27"></a> Ignoring the masses of the fermions, <span class="mathjax-inline">\(m_2=m_3=0\)</span> <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sum \limits _{\mathrm {spins,\,pol.}} |\mathcal {M}|^2 &amp;= \left (\frac {g_X}{2} \right )^2 \left (\sum _{\lambda }\epsilon _\mu ^{(\lambda )}(p_1)\epsilon _\nu ^{*(\lambda )}(p_1)\right ) 4 \times \\ &amp;\left [(c_V^2 + c_A^2) (p_3^\mu p_2^\nu + p_3^\nu p_2^\mu - (p_3 \cdot p_2) g^{\mu \nu }) -2ic_Vc_A \epsilon ^{\mu \nu \lambda \sigma } p_{3\lambda } p_{2\sigma } \right ]. \end {aligned} \end{equation}</div><a 
+ id="x1-100006r27"></a> Ignoring the masses of the fermions, <span class="mathjax-inline">\(m_2=m_3=0\)</span>, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sum \limits _{\mathrm {spins,\,pol.}} |\mathcal {M}|^2 &amp;= \left (\frac {g_X}{2} \right )^2 \left (\sum _{\lambda }\epsilon _\mu ^{(\lambda )}(p_1)\epsilon _\nu ^{*(\lambda )}(p_1)\right ) 4 \times \\ &amp;\left [(c_V^2 + c_A^2) (p_3^\mu p_2^\nu + p_3^\nu p_2^\mu - (p_3 \cdot p_2) g^{\mu \nu }) -2ic_Vc_A \epsilon ^{\mu \nu \lambda \sigma } p_{3\lambda } p_{2\sigma } \right ]. \end {aligned} \end{equation}</div><a 
  id="x1-100007r28"></a> The next step is to
 average over the three polarization states of a massive vector boson. This is given by the
 completeness relation equation <a 
@@ -4652,7 +4652,7 @@ where <span class="mathjax-inline">\(\theta ^a t^a = \sum _{a=1}^8 \theta ^a t^a
  id="x1-107010r10"></a> Other values follow from
 the total antisymmetry of <span class="mathjax-inline">\(f^{abc}\)</span>.
 <p>   For a global transformation (independent of <span class="mathjax-inline">\(x\)</span>): </p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \psi '_{iq} &amp;= U_{ij}\,\psi _{jq}, \\ \bar {\psi }'_{qi} &amp;= \psi ^\dagger _{pj}\,(U^\dagger )_{ji} (\gamma ^0)_{pq}. \end {aligned} \end{equation}</div><a 
+<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \psi '_{iq} &amp;= U_{ij}\,\psi _{jq}, \\ \bar {\psi }'_{qi} &amp;= (U_{ij}\,\psi _{jp})^\dagger (\gamma ^0)_{pq} = \psi ^\dagger _{pj}\,(U^\dagger )_{ji} (\gamma ^0)_{pq}. \end {aligned} \end{equation}</div><a 
  id="x1-107011r11"></a>
 <p>   The unitary matrix <span class="mathjax-inline">\(U\)</span> acts on the colour indices <span class="mathjax-inline">\((i,j)\)</span>, while the Dirac matrix <span class="mathjax-inline">\(\gamma ^0\)</span> acts on the spinor indices <span class="mathjax-inline">\((p,q)\)</span>.
 Because these are independent indices, we can rearrange the components: </p> 
@@ -5338,7 +5338,7 @@ diagrams-account for the small but measurable deviation known as the anomalous m
 <h3 class="sectionHead"><span class="titlemark">E   </span> <a 
 href="#QQ2-1-184" id="x1-137000E">Gamma Matrix Identities and Trace Techniques</a></h3>
 <p>   The Dirac <span class="mathjax-inline">\(\gamma \)</span>-matrices satisfy the fundamental anti-commutation relation: </p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} \{\gamma ^\mu , \gamma ^\nu \} = \gamma ^\mu \gamma ^\nu + \gamma ^\nu \gamma ^\mu = 2 g^{\mu \nu } \mathbb {I}. \end{equation}</div><a 
+<div class="mathjax-env mathjax-equation">\begin{equation} \{\gamma ^\mu , \gamma ^\nu \} = \gamma ^\mu \gamma ^\nu + \gamma ^\nu \gamma ^\mu = 2 g^{\mu \nu } I. \end{equation}</div><a 
  id="x1-137001r1"></a>
    
    <h4 class="subsectionHead"><span class="titlemark">E.1   </span> <a 
@@ -5704,8 +5704,8 @@ the transformation, we have <div class="mathjax-env mathjax-equation">\begin{equ
 <div class="mathjax-env mathjax-equation">\begin{equation} J^\mu =- \sum _n \frac {\partial \mathcal {L}}{\partial (\partial _\mu \phi _n)} \Delta \phi _n. \end{equation}</div><a 
  id="x1-158014r33"></a>
    
-   <h4 class="subsectionHead"><span class="titlemark">G.4   </span> <a 
-href="#QQ2-1-206" id="x1-159000G.4">Noether Current for Complex Klein-Gordon Field</a></h4>
+   <h5 class="subsubsectionHead"><span class="titlemark">G.3.1   </span> <a 
+href="#QQ2-1-206" id="x1-159000G.3.1">Noether Current for Complex Klein-Gordon Field</a></h5>
 <p>Notice that we can write the complex Klein-Gordon Lagrangian </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {L} = \partial _\mu \phi ^* \partial ^\mu \phi - m^2 \phi ^* \phi . \end{equation}</div><a 
  id="x1-159001r34"></a> You can check that this also leads to
