@@ -1133,36 +1133,41 @@ Here, <span class="mathjax-inline">\(A^\mu = (A^0, \boldsymbol {A})\)</span> and
 represents the energy per unit charge locally available, while the vector potential <span class="mathjax-inline">\(\boldsymbol {A}\)</span> represents the
 momentum per unit charge locally available for exchange between charged matter and the
 field.
+<p>   The magnetic field is </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \boldsymbol {B} = \boldsymbol {\nabla } \times \boldsymbol {A}, \end {aligned} \end{equation}</div><a 
+ id="x1-35002r2"></a> while the electric field is <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \boldsymbol {E} = -\frac {\partial \boldsymbol {A}} {\partial t} - \boldsymbol {\nabla } A^0. \end {aligned} \end{equation}</div><a 
+ id="x1-35003r3"></a> Leading to <div class="mathjax-env mathjax-equation">\begin{equation} F^{\mu \nu } = \left (\begin {array}{cccc} 0 &amp; -E_x &amp; -E_y &amp; -E_z \\ E_x &amp; 0 &amp; -B_z &amp; B_y \\ E_y &amp; B_z &amp; 0 &amp; -B_x \\ E_z &amp; -B_y &amp; B_x &amp; 0 \end {array}\right ). \end{equation}</div><a 
+ id="x1-35004r4"></a>
 <p>   A “feature” of the covariant formulation of Maxwell’s equations is that the four-vector potential is
 not uniquely determined. A transformation of the form </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:Maxwell_gauge_transf} A_\mu \rightarrow A'_\mu = A_\mu - \partial _\mu \lambda (x), \end{equation}</div><a 
- id="x1-35002r2"></a> where <span class="mathjax-inline">\(\lambda (x)\)</span> is any function of position and time,
+ id="x1-35005r5"></a> where <span class="mathjax-inline">\(\lambda (x)\)</span> is any function of position and time,
 does not have any effect on <span class="mathjax-inline">\(F^{\mu \nu }\)</span>: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} F'^{\mu \nu } &amp;= \partial ^\mu A'^\nu - \partial ^\nu A'^\mu \\ &amp;= \partial ^\mu (A^\nu - \partial ^\nu \lambda ) - \partial ^\nu (A^\mu - \partial ^\mu \lambda ) \\ &amp;= \partial ^\mu A^\nu - \partial ^\nu A^\mu = F^{\mu \nu }. \end {aligned} \end{equation}</div><a 
- id="x1-35003r3"></a>
+ id="x1-35006r6"></a>
 <p>   A change of the potential that has no effect on the fields is called a <i>gauge transformation</i>. We can
 use this freedom to choose a function <span class="mathjax-inline">\(\lambda \)</span> in such a way that </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \partial _\mu \partial ^\mu \lambda = \partial _\mu A^\mu . \end {aligned} \end{equation}</div><a 
- id="x1-35004r4"></a> This leads to <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu A'^\mu = \partial _\mu A^\mu - \partial _\mu \partial ^\mu \lambda = 0. \end{equation}</div><a 
- id="x1-35005r5"></a> After performing a gauge
+ id="x1-35007r7"></a> This leads to <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu A'^\mu = \partial _\mu A^\mu - \partial _\mu \partial ^\mu \lambda = 0. \end{equation}</div><a 
+ id="x1-35008r8"></a> After performing a gauge
 transformation we can relabel <span class="mathjax-inline">\(A'_\mu \to A_\mu \)</span>; the transformed potential is physically equivalent to the original.
 Dropping the primes, we obtain the <i>Lorenz</i> (Ludvig Lorenz, not Hendrik Lorentz) gauge condition <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:Lorenz_Gauge} \partial _\mu A^\mu = 0. \end{equation}</div><a 
- id="x1-35006r6"></a> In
+ id="x1-35009r9"></a> In
 this gauge, Maxwell’s equations <a 
 href="#x1-35001r1">3.1<!--tex4ht:ref: eq:CovariantMaxwell --></a> reduce to <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:MaxwellLorenz} \partial _\nu \partial ^\nu A^\mu = J^\mu . \end{equation}</div><a 
- id="x1-35007r7"></a>
+ id="x1-35010r10"></a>
 <p>   Even the Lorenz condition does not uniquely determine <span class="mathjax-inline">\(A^\mu \)</span>. Further gauge transformations of the form </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} A_\mu \rightarrow A'_\mu = A_\mu - \partial _\mu \Lambda , \end{equation}</div><a 
- id="x1-35008r8"></a>
+ id="x1-35011r11"></a>
 where <span class="mathjax-inline">\(\Lambda \)</span> satisfies <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu \partial ^\mu \Lambda = 0, \end{equation}</div><a 
- id="x1-35009r9"></a> are possible, since <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu A'^\mu = \partial _\mu (A^\mu - \partial ^\mu \Lambda ) = \partial _\mu A^\mu - \partial _\mu \partial ^\mu \Lambda = 0. \end{equation}</div><a 
- id="x1-35010r10"></a>
+ id="x1-35012r12"></a> are possible, since <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu A'^\mu = \partial _\mu (A^\mu - \partial ^\mu \Lambda ) = \partial _\mu A^\mu - \partial _\mu \partial ^\mu \Lambda = 0. \end{equation}</div><a 
+ id="x1-35013r13"></a>
 <p>   Gauge invariance is a <i>redundancy of the description</i> that involves an arbitrary function of time and
 position. It means that there are different but equivalent mathematical descriptions of the
 same physics. In practical terms, this freedom can be used to clarify certain aspects of a
 theory.
 </p> 
-<p>   Here, let me not that in classical electrodynamics, the electric and magnetic field strengths are
-usually considered as the basic quantities whereas the four-potential is typically viewed as a convenient
+<p>   Here, let me not that in classical electrodynamics, the electric and magnetic fields are usually
+considered as the basic quantities whereas the four-potential is typically viewed as a convenient
 mathematical object. In quantum mechanics, the four-potential acquires a direct physical significance, as
 was first pointed out by Aharonov and Bohm [<a 
 href="#XPhysRev.115.485">12</a>] and experimentally confirmed by Tonomura et
@@ -1177,53 +1182,53 @@ href="#QQ2-1-43" id="x1-360003.2">The Photon</a></h4>
 <p>We know that the photon is the quantum of the four-potential <span class="mathjax-inline">\(A^\mu \)</span> and that it is massless and has two
 polarisation degrees of freedom. We consider plane-wave solutions of the Maxwell equations of the form </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} A^\mu = \epsilon ^\mu (p) e^{-ip_\mu x^\mu }. \end{equation}</div><a 
- id="x1-36001r11"></a>
+ id="x1-36001r14"></a>
 from which more general solutions can be constructed by superposition, for the free Maxwell
 equation <a 
-href="#x1-35007r7">3.7<!--tex4ht:ref: eq:MaxwellLorenz --></a> <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu F^{\mu \nu } = \partial _\mu \partial ^\mu A^{\nu } - \partial ^{\nu }(\partial _\mu A^{\mu }) = 0. \end{equation}</div><a 
- id="x1-36002r12"></a>
+href="#x1-35010r10">3.10<!--tex4ht:ref: eq:MaxwellLorenz --></a> <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu F^{\mu \nu } = \partial _\mu \partial ^\mu A^{\nu } - \partial ^{\nu }(\partial _\mu A^{\mu }) = 0. \end{equation}</div><a 
+ id="x1-36002r15"></a>
 <p>   Here <span class="mathjax-inline">\(\epsilon ^\mu (p)\)</span> is a four-vector that describes the polarisation and depends on the four-momentum <span class="mathjax-inline">\(p\)</span>. You
 might be more familiar with the following notation </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} e^{-ip_\mu x^\mu } = e^{-i(Et - \boldsymbol {p}\cdot \boldsymbol {x})} = e^{-i(\omega t - \boldsymbol {k}\cdot \boldsymbol {x})}, \end{equation}</div><a 
- id="x1-36003r13"></a> since <span class="mathjax-inline">\(E = \hbar \omega \)</span> and <span class="mathjax-inline">\(\boldsymbol {p} = \hbar \boldsymbol {k}\)</span>, and in natural units <span class="mathjax-inline">\(\hbar =1\)</span>. We will be
+ id="x1-36003r16"></a> since <span class="mathjax-inline">\(E = \hbar \omega \)</span> and <span class="mathjax-inline">\(\boldsymbol {p} = \hbar \boldsymbol {k}\)</span>, and in natural units <span class="mathjax-inline">\(\hbar =1\)</span>. We will be
+                                                                                        
+                                                                                        
 working with <span class="mathjax-inline">\(E\)</span>, <span class="mathjax-inline">\(\boldsymbol {p}\)</span> and <span class="mathjax-inline">\(p_\mu \)</span>.
-                                                                                        
-                                                                                        
 <p>   At this stage we have a vector field with four components, meaning that the polarization has four
 degrees of freedom. To determine the physical content of the theory, we consider Maxwell’s equations in
 vacuum: Imposing the Lorenz gauge condition <a 
-href="#x1-35006r6">3.6<!--tex4ht:ref: eq:Lorenz_Gauge --></a>, </p> 
+href="#x1-35009r9">3.9<!--tex4ht:ref: eq:Lorenz_Gauge --></a>, </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu A^\mu = 0, \end{equation}</div><a 
- id="x1-36004r14"></a> these equations reduce to <div class="mathjax-env mathjax-equation">\begin{equation} (\partial _\nu \partial ^\nu ) A^\mu = 0. \end{equation}</div><a 
- id="x1-36005r15"></a> Using <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} (\partial _\nu \partial ^\nu ) A^\mu = (g^{\rho \nu } \partial _\rho \partial _\nu ) A^\mu = (\partial _0^2 - \partial _1^2 - \partial _2^2 - \partial _3^2) A^\mu , \end {aligned} \end{equation}</div><a 
- id="x1-36006r16"></a> the end result is: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} (\partial _\nu \partial ^\nu ) A^\mu = 0 \Rightarrow -p^2 \epsilon ^\mu e^{-ip_\mu x^\mu } = 0. \end {aligned} \end{equation}</div><a 
- id="x1-36007r17"></a>
+ id="x1-36004r17"></a> these equations reduce to <div class="mathjax-env mathjax-equation">\begin{equation} (\partial _\nu \partial ^\nu ) A^\mu = 0. \end{equation}</div><a 
+ id="x1-36005r18"></a> Using <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} (\partial _\nu \partial ^\nu ) A^\mu = (g^{\rho \nu } \partial _\rho \partial _\nu ) A^\mu = (\partial _0^2 - \partial _1^2 - \partial _2^2 - \partial _3^2) A^\mu , \end {aligned} \end{equation}</div><a 
+ id="x1-36006r19"></a> the end result is: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} (\partial _\nu \partial ^\nu ) A^\mu = 0 \Rightarrow -p^2 \epsilon ^\mu e^{-ip_\mu x^\mu } = 0. \end {aligned} \end{equation}</div><a 
+ id="x1-36007r20"></a>
 This implies that the plane-wave solution exists only if <span class="mathjax-inline">\(p^2= m^2=0\)</span>. This is what we want as the photon has zero
 mass.
 <p>   The Lorenz condition also implies </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\partial _\mu A^\mu = 0 \Rightarrow -i \epsilon ^\mu p_\mu e^{-ip_\mu x^\mu } =0 , \end {aligned} \end{equation}</div><a 
- id="x1-36008r18"></a> meaning that <div class="mathjax-env mathjax-equation">\begin{equation} p_\mu \epsilon ^\mu = p_0 \epsilon ^0 - \boldsymbol {p} \cdot \boldsymbol {\epsilon } = 0. \end{equation}</div><a 
- id="x1-36009r19"></a> The four components of <span class="mathjax-inline">\(\epsilon ^\mu \)</span> are not independent. For
+ id="x1-36008r21"></a> meaning that <div class="mathjax-env mathjax-equation">\begin{equation} p_\mu \epsilon ^\mu = p_0 \epsilon ^0 - \boldsymbol {p} \cdot \boldsymbol {\epsilon } = 0. \end{equation}</div><a 
+ id="x1-36009r22"></a> The four components of <span class="mathjax-inline">\(\epsilon ^\mu \)</span> are not independent. For
 example, assuming the photon is moving along the z-axis <span class="mathjax-inline">\(p^\mu = (E,0,0,E)\)</span>, we have <div class="mathjax-env mathjax-equation">\begin{equation} \epsilon ^\mu p_\mu = E \epsilon ^0 - E \epsilon ^3 = 0 \Rightarrow \epsilon ^0 = \epsilon ^3. \end{equation}</div><a 
- id="x1-36010r20"></a>
+ id="x1-36010r23"></a>
 <p>   We are not yet finished: we know that the photon has only two physical degrees of polarization. For
 a photon moving along the z-axis <span class="mathjax-inline">\(p^\mu =(E,0,0,E)\)</span>, we can construct a basis for the three remaining degrees of freedom
 allowed by the Lorenz gauge: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \epsilon ^{(1)\mu } = \begin {pmatrix} 0 \\ 1 \\ 0 \\ 0 \end {pmatrix}, \quad \epsilon ^{(2)\mu } = \begin {pmatrix} 0 \\ 0 \\ 1 \\ 0 \end {pmatrix}, \quad \epsilon ^{(3)\mu } = \begin {pmatrix} 1 \\ 0 \\ 0 \\ 1 \end {pmatrix}. \end {aligned} \end{equation}</div><a 
- id="x1-36011r21"></a> This basis satisfies the condition <span class="mathjax-inline">\(\epsilon ^\mu p_\mu = 0\)</span> for <span class="mathjax-inline">\(p^\mu =(E,0,0,E)\)</span>. But <span class="mathjax-inline">\(\epsilon ^{(3)\mu } \epsilon ^{(3)}_\mu =0\)</span>. If we insist on keeping three
+ id="x1-36011r24"></a> This basis satisfies the condition <span class="mathjax-inline">\(\epsilon ^\mu p_\mu = 0\)</span> for <span class="mathjax-inline">\(p^\mu =(E,0,0,E)\)</span>. But <span class="mathjax-inline">\(\epsilon ^{(3)\mu } \epsilon ^{(3)}_\mu =0\)</span>. If we insist on keeping three
 independent degrees of freedom for the polarization, one of them is normalised to zero. Actually, the
 momentum and the “longitudinal” state <span class="mathjax-inline">\(\epsilon ^{(3)\mu }\)</span> are proportional <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} p^\mu = E\, \epsilon ^{(3)\mu }, \end {aligned} \end{equation}</div><a 
- id="x1-36012r22"></a> we still have a redundant degree of freedom
+ id="x1-36012r25"></a> we still have a redundant degree of freedom
 that we need to eliminate.
 <p>   We can employ the additional gauge freedom and work in the <i>Coulomb gauge</i>: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:coulomb_gauge} \boldsymbol {\nabla \cdot A} = 0. \end{equation}</div><a 
- id="x1-36013r23"></a> From <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \nabla \cdot \boldsymbol {A} = 0 \Rightarrow -i \boldsymbol {\epsilon } \cdot \boldsymbol {p} \, e^{-ip_\mu x^\mu } = 0, \end {aligned} \end{equation}</div><a 
- id="x1-36014r24"></a> one has <div class="mathjax-env mathjax-equation">\begin{equation} \boldsymbol {\epsilon } \cdot \boldsymbol {p} = 0. \end{equation}</div><a 
- id="x1-36015r25"></a> From
+ id="x1-36013r26"></a> From <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \nabla \cdot \boldsymbol {A} = 0 \Rightarrow -i \boldsymbol {\epsilon } \cdot \boldsymbol {p} \, e^{-ip_\mu x^\mu } = 0, \end {aligned} \end{equation}</div><a 
+ id="x1-36014r27"></a> one has <div class="mathjax-env mathjax-equation">\begin{equation} \boldsymbol {\epsilon } \cdot \boldsymbol {p} = 0. \end{equation}</div><a 
+ id="x1-36015r28"></a> From
 equation <a 
-href="#x1-35006r6">3.6<!--tex4ht:ref: eq:Lorenz_Gauge --></a> it follows that <div class="mathjax-env mathjax-equation">\begin{equation} \epsilon ^0 = 0, \end{equation}</div><a 
- id="x1-36016r26"></a> and if we take the photon moving along the z-axis <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \boldsymbol {\epsilon } \cdot \boldsymbol {p} = \epsilon ^1 \cdot 0 + \epsilon ^2 \cdot 0 + \epsilon ^3 \cdot E = 0 \Rightarrow E \epsilon ^3 = 0 \Rightarrow \epsilon ^3 = 0, \end {aligned} \end{equation}</div><a 
- id="x1-36017r27"></a> the longitudinal
+href="#x1-35009r9">3.9<!--tex4ht:ref: eq:Lorenz_Gauge --></a> it follows that <div class="mathjax-env mathjax-equation">\begin{equation} \epsilon ^0 = 0, \end{equation}</div><a 
+ id="x1-36016r29"></a> and if we take the photon moving along the z-axis <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \boldsymbol {\epsilon } \cdot \boldsymbol {p} = \epsilon ^1 \cdot 0 + \epsilon ^2 \cdot 0 + \epsilon ^3 \cdot E = 0 \Rightarrow E \epsilon ^3 = 0 \Rightarrow \epsilon ^3 = 0, \end {aligned} \end{equation}</div><a 
+ id="x1-36017r30"></a> the longitudinal
 polarization degree of freedom vanishes as expected.
    
 <p><span class="paragraphHead"><a 
@@ -2194,7 +2199,7 @@ local phase, invariance </p>
  id="x1-65002r43"></a> where <span class="mathjax-inline">\(a(x)\)</span> is a function of the coordinates. The gauge transform for
 the gauge (vector) field is <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:EMGaugeTransf} A_\mu \rightarrow A_\mu ^\prime = A_\mu - \frac {1}{e}\partial _\mu a(x), \end{equation}</div><a 
  id="x1-65003r44"></a> where, with respect to equation <a 
-href="#x1-35002r2">3.2<!--tex4ht:ref: eq:Maxwell_gauge_transf --></a>, we have <span class="mathjax-inline">\(a(x) = e \lambda (x)\)</span>. The tricky part
+href="#x1-35005r5">3.5<!--tex4ht:ref: eq:Maxwell_gauge_transf --></a>, we have <span class="mathjax-inline">\(a(x) = e \lambda (x)\)</span>. The tricky part
 seems to be the derivative acting on <span class="mathjax-inline">\(\psi \)</span> which transforms as <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\bar {\psi }i\gamma ^\mu \partial _\mu \psi \rightarrow \\ &amp;\bar {\psi } e^{-ia(x)Q} i \gamma ^\mu \partial _\mu (\psi e^{ia(x)Q}) \\ &amp; = \bar {\psi } e^{-ia(x)Q} i \gamma ^\mu \left (e^{ia(x)Q} \partial _\mu (\psi ) + \psi e^{ia(x)Q} iQ \partial _\mu a(x) \right ) \\ &amp; = \bar {\psi } i \gamma ^\mu \partial _\mu \psi - Q \bar {\psi } \gamma ^\mu \psi \partial _\mu a(x), \label {eq:QED_non_CovDeriv} \end {aligned} \end{equation}</div><a 
  id="x1-65004r45"></a> bringing an additional <span class="mathjax-inline">\(-Q \bar {\psi } \gamma ^\mu \psi \partial _\mu a(x)\)</span> term.
 But this term is cancelled by the transformations of the interaction term <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;- eQ \bar {\psi } \gamma ^\mu \psi A_\mu \rightarrow \\ &amp; -eQ \bar {\psi } e^{-ia(x)q} \gamma ^\mu \psi e^{ia(x)q} \left ( A_\mu - \frac {1}{e}\partial _\mu a(x) \right ) = \\ &amp;- eQ \bar {\psi } \gamma ^\mu \psi A_\mu + Q \bar {\psi } \gamma ^\mu \psi \partial _\mu a(x). \end {aligned} \end{equation}</div><a 
@@ -4498,9 +4503,9 @@ expression: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {a
 proportional to <span class="mathjax-inline">\(\mu ^2/v\)</span> correspond to <span class="mathjax-inline">\(\xi \xi \xi \)</span> and <span class="mathjax-inline">\( \xi \eta \eta \)</span> interaction vertices, while the quartic terms proportional to <span class="mathjax-inline">\(\mu ^2/v^2\)</span>
 correspond to <span class="mathjax-inline">\(\xi \xi \xi \xi \)</span>, <span class="mathjax-inline">\( \xi \xi \eta \eta \)</span>, and <span class="mathjax-inline">\(\eta \eta \eta \eta \)</span> interaction vertices.
 <p>   We started with a complex field possessing <span class="mathjax-inline">\(U(1)\)</span> symmetry, representing two physical degrees of freedom.
-After spontaneous symmetry breaking, we have two bosons, so again two degrees of freedom as there
-should be. We have a massive <span class="mathjax-inline">\(\xi \)</span> scalar boson along the direction we broke the symmetry, and we also
-have a massless scalar particle <span class="mathjax-inline">\(\eta \)</span>.
+After spontaneous symmetry breaking, we have two scalar bosons, so again two degrees of freedom as
+there should be. We have a massive <span class="mathjax-inline">\(\xi \)</span> scalar boson along the direction we broke the symmetry, and we
+also have a massless scalar particle <span class="mathjax-inline">\(\eta \)</span>.
 </p> 
 <p>   The breaking of a continuous internal global symmetry implies the existence of massless scalar
 particles. This is Goldstone’s theorem and the massless particles are known as Goldstone
