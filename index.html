@@ -1691,58 +1691,55 @@ chirality.
    
    <h4 class="subsectionHead"><span class="titlemark">4.12   </span> <a 
 href="#QQ2-1-59" id="x1-500004.12">Dirac Equation In Chiral Representation</a></h4>
-<p>In 1929 Weyl presented a theory for massless particles with spin <span class="mathjax-inline">\(1/2\)</span>. We will do the same by solving
-the Dirac equation for a massless fermion. Let’s switch, perhaps not surprisingly, to the
-chiral or Weyl representation: </p> 
+<p>In 1929 Weyl presented a theory for massless particles with spin <span class="mathjax-inline">\(1/2\)</span>. We will do the same by solving the
+Dirac equation for a massless fermion. Let’s switch, perhaps not surprisingly, to the chiral or Weyl
+representation: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \gamma ^5 = \begin {pmatrix} -I &amp; 0 \\ 0 &amp; I \end {pmatrix}, \\gamma ^0 = \begin {pmatrix} 0 &amp; I \\ I &amp; 0 \end {pmatrix}, \\gamma ^i = \begin {pmatrix} 0 &amp; \sigma _i \\ -\sigma _i &amp; 0 \end {pmatrix}, \end{equation}</div><a 
- id="x1-50001r86"></a> where <span class="mathjax-inline">\(\gamma ^5\)</span> is diagonal, unlike the Dirac-Pauli representation
-where <span class="mathjax-inline">\(\gamma ^0\)</span> is diagonal. We multiply <a 
+ id="x1-50001r86"></a> where <span class="mathjax-inline">\(\gamma ^5\)</span> is diagonal, unlike the Dirac-Pauli representation where <span class="mathjax-inline">\(\gamma ^0\)</span> is diagonal. We
+multiply <a 
 href="#x1-44002r52">4.52<!--tex4ht:ref: eq:Dirac_gamma --></a> from the left with <span class="mathjax-inline">\(\gamma ^5 \gamma ^0\)</span>: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; (\gamma ^5 \gamma ^0 \gamma ^0 p_0 - \gamma ^5 \gamma ^0 \boldsymbol {\gamma }^i \boldsymbol {p}) u = 0. \end {aligned} \end{equation}</div><a 
  id="x1-50002r87"></a> Since <span class="mathjax-inline">\(\gamma ^0 \gamma ^0 = I\)</span> we have <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; (\gamma ^5p_0 - \gamma ^5 \gamma ^0 \boldsymbol {\gamma }^i \boldsymbol {p}) u = 0. \end {aligned} \end{equation}</div><a 
  id="x1-50003r88"></a> This results in: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \gamma ^5 E u &amp;= \begin {pmatrix} -I &amp; 0 \\ 0 &amp; I \end {pmatrix} \begin {pmatrix} 0 &amp; I \\ I &amp; 0 \end {pmatrix} \begin {pmatrix} 0 &amp; \sigma _i \\ -\sigma _i &amp; 0 \end {pmatrix} \boldsymbol {p} u \\ &amp;= \begin {pmatrix} 0 &amp; -I \\ I &amp; 0 \end {pmatrix} \begin {pmatrix} 0 &amp; \sigma _i \\ -\sigma _i &amp; 0 \end {pmatrix} \boldsymbol {p} u . \end {aligned} \end{equation}</div><a 
- id="x1-50004r89"></a>
-The end result is: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \begin {pmatrix} -I &amp; 0 \\ 0 &amp; I \end {pmatrix} E u &amp;= \begin {pmatrix} \sigma _i &amp; 0 \\ 0 &amp; \sigma _i \end {pmatrix} \boldsymbol {p} u, \\ \begin {pmatrix} -I &amp; 0 \\ 0 &amp; I \end {pmatrix} u &amp;= \begin {pmatrix} \sigma _i &amp; 0 \\ 0 &amp; \sigma _i \end {pmatrix} \frac {\boldsymbol {p}}{E} u . \end {aligned} \end{equation}</div><a 
+ id="x1-50004r89"></a> The end result is: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \begin {pmatrix} -I &amp; 0 \\ 0 &amp; I \end {pmatrix} E u &amp;= \begin {pmatrix} \sigma _i &amp; 0 \\ 0 &amp; \sigma _i \end {pmatrix} \boldsymbol {p} u, \\ \begin {pmatrix} -I &amp; 0 \\ 0 &amp; I \end {pmatrix} u &amp;= \begin {pmatrix} \sigma _i &amp; 0 \\ 0 &amp; \sigma _i \end {pmatrix} \frac {\boldsymbol {p}}{E} u . \end {aligned} \end{equation}</div><a 
  id="x1-50005r90"></a> Or in shorthand: <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:ChiralityHelicityMassless} \gamma ^5 u = (\boldsymbol {\Sigma } \cdot \frac {\boldsymbol {p}}{E}) u. \end{equation}</div><a 
- id="x1-50006r91"></a> Here, for massless particles <span class="mathjax-inline">\(E = |\boldsymbol {p}|\)</span>. Therefore, the equation
-above indicates that the effect of the chirality operator on the Dirac spinor for a massless
-particle is the same as the effect of the helicity operator. Again, it is easy to obtain orthogonal
-solutions since we are dealing with diagonal matrices: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} u^{(1)} &amp;= N \begin {pmatrix} 0 \\ 0 \\ 1 \\ 0 \end {pmatrix}, \quad u^{(2)} = N \begin {pmatrix} 0 \\ 1 \\ 0 \\ 0 \end {pmatrix}, u^{(3)} &amp;= N \begin {pmatrix} 0 \\ 0 \\ 0 \\ 1 \end {pmatrix}, \quad u^{(4)} = N \begin {pmatrix} 1 \\ 0 \\ 0 \\ 0 \end {pmatrix}. \end {aligned} \end{equation}</div><a 
- id="x1-50007r92"></a> The first and third solutions correspond
-to the positive eigenvalues of the <span class="mathjax-inline">\(\gamma ^5\)</span> and are also states of positive helicity. The second and
-the fourth solutions correspond to the negative <span class="mathjax-inline">\(\gamma ^5\)</span> eigenvalues and are also states of negative
+ id="x1-50006r91"></a>
+Here, for massless particles <span class="mathjax-inline">\(E = |\boldsymbol {p}|\)</span>. Therefore, the equation above indicates that the effect of the chirality
+operator on the Dirac spinor for a massless particle is the same as the effect of the helicity operator. For
+antiparticle spinors we instead have <div class="mathjax-env mathjax-equation">\begin{equation} (\gamma ^\mu p_\mu + m)v = 0. \end{equation}</div><a 
+ id="x1-50007r92"></a> Repeating the same steps as for the particle spinors in the massless
+limit, one finds that the relation between chirality and helicity acquires an opposite sign:
+<div class="mathjax-env mathjax-equation">\begin{equation} \gamma ^5 v = -\left (\boldsymbol {\Sigma }\cdot \frac {\mathbf p}{E}\right )v. \end{equation}</div><a 
+ id="x1-50008r93"></a>
+<p>   Again, it is easy to obtain orthogonal solutions since we are dealing with diagonal matrices.
+Assuming a particle travelling along the positive <span class="mathjax-inline">\(z\)</span>-axis (<span class="mathjax-inline">\(\boldsymbol {p} = (0,0,E)\)</span>), the two particle solutions are: </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} u_R(p) = \sqrt {2E} \begin {pmatrix} 0 \\ 0 \\ 1 \\ 0 \end {pmatrix}, \u_L(p) = \sqrt {2E} \begin {pmatrix} 0 \\ 1 \\ 0 \\ 0 \end {pmatrix}. \end {aligned} \end{equation}</div><a 
+ id="x1-50009r94"></a> The first
+solution <span class="mathjax-inline">\(u_R\)</span> corresponds to a positive eigenvalue of <span class="mathjax-inline">\( \gamma ^5\)</span> (right-handed chirality) and is a state of positive
+helicity. The second solution <span class="mathjax-inline">\(u_L\)</span> corresponds to a negative <span class="mathjax-inline">\(\gamma ^5\)</span> eigenvalue (left-handed chirality) and is a state
+of negative helicity.
+                                                                                        
+                                                                                        
+<p>   The two antiparticle solutions are: </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} v_R(p) = \sqrt {2E} \begin {pmatrix} 0 \\ 0 \\ 0 \\ 1 \end {pmatrix}, \v_L(p) = \sqrt {2E} \begin {pmatrix} 1 \\ 0 \\ 0 \\ 0 \end {pmatrix}. \end {aligned} \end{equation}</div><a 
+ id="x1-50010r95"></a> Here, the right-handed antiparticle <span class="mathjax-inline">\(v_R\)</span> possesses positive chirality
+but negative helicity, while the left-handed antiparticle <span class="mathjax-inline">\(v_L\)</span> possesses negative chirality but positive
 helicity.
-<p>   For antiparticle spinors we instead have </p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} (\gamma ^\mu p_\mu + m)v = 0. \end{equation}</div><a 
- id="x1-50008r93"></a> Repeating the same steps as for the particle spinors in the
-massless limit, one finds that the relation between chirality and helicity acquires an opposite sign:
-<div class="mathjax-env mathjax-equation">\begin{equation} \gamma ^5 v = -\left ( \boldsymbol {\Sigma }\cdot \frac {\mathbf p}{E} \right )v. \end{equation}</div><a 
- id="x1-50009r94"></a>
-                                                                                        
-                                                                                        
 <p>   If we had not omitted the mass term then equation <a 
 href="#x1-50006r91">4.91<!--tex4ht:ref: eq:ChiralityHelicityMassless --></a> would have been </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \gamma ^5 u = (\boldsymbol {\Sigma } \cdot \frac {\boldsymbol {p}}{E}) u +\frac {m}{E} \gamma ^5\gamma ^0 u. \end{equation}</div><a 
- id="x1-50010r95"></a> We can write a Dirac
+ id="x1-50011r96"></a> We can write a Dirac
 spinor as <div class="mathjax-env mathjax-equation">\begin{equation} u = \begin {pmatrix} u_L \\ u_R \end {pmatrix}. \end{equation}</div><a 
- id="x1-50011r96"></a>
+ id="x1-50012r97"></a>
 <p>   This can be easily be understood by the effect of the projection operators </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \frac {1}{2}( 1 - \gamma ^5) = \frac {1}{2} ( \begin {pmatrix} I &amp; 0 \\ 0 &amp; I \end {pmatrix} - \begin {pmatrix} - I &amp; 0 \\ 0 &amp; I \end {pmatrix}) = \begin {pmatrix} I &amp; 0 \\ 0 &amp; 0 \end {pmatrix}, \end{equation}</div><a 
- id="x1-50012r97"></a> to the above spinor, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {pmatrix} I &amp; 0 \\ 0 &amp; 0 \end {pmatrix} \begin {pmatrix} u_L \\ u_R \end {pmatrix} = u_L. \end{equation}</div><a 
- id="x1-50013r98"></a>
+ id="x1-50013r98"></a> to the above spinor, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {pmatrix} I &amp; 0 \\ 0 &amp; 0 \end {pmatrix} \begin {pmatrix} u_L \\ u_R \end {pmatrix} = \begin {pmatrix} u_L \\ 0 \end {pmatrix}. \end{equation}</div><a 
+ id="x1-50014r99"></a>
 Similarly for <span class="mathjax-inline">\(u_R\)</span>.
 <p>   Substituting in the equation for the massive case gives : </p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} - Eu_L &amp;= \Sigma \cdot \mathbf {p} \, u_L - m\, u_R, \\ E u_R &amp;= \Sigma \cdot \mathbf {p}\, u_R + m\, u_L. \end {aligned} \end{equation}</div><a 
- id="x1-50014r99"></a> These equation are coupled via the mass
+<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} - Eu_L &amp;= \sigma \cdot \mathbf {p} \, u_L - m\, u_R, \\ E u_R &amp;= \sigma \cdot \mathbf {p}\, u_R + m\, u_L. \end {aligned} \end{equation}</div><a 
+ id="x1-50015r100"></a> These equation are coupled via the mass
 term, in or in other words the mass acts as the mixing of left and right chiral states. This kind of mass
 term is called a <i>Dirac mass</i> term.
-<p>   One may also consider the possibility that these components are not independent, but related by a
-constraint. This leads to a Majorana fermion, for which </p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} \psi _R = (\psi _L)^\dagger . \end{equation}</div><a 
- id="x1-50015r100"></a> A Majorana spinor can be written as <div class="mathjax-env mathjax-equation">\begin{equation} \psi _M = \begin {pmatrix} \psi _L \\ \psi _L^\dagger \end {pmatrix}, \end{equation}</div><a 
- id="x1-50016r101"></a> and
-satisfies the same Dirac equation <div class="mathjax-env mathjax-equation">\begin{equation} (i\gamma ^\mu \partial _\mu - m)\psi _M = 0. \end{equation}</div><a 
- id="x1-50017r102"></a> However, it carries only half the degrees of freedom of a Dirac spinor
-due to the constraint above.
                                                                                         
                                                                                         
    
@@ -3233,14 +3230,14 @@ href="#QQ2-1-109" id="x1-850008.3">Gauge Invariance And Feynman Diagrams</a></h4
 observables must not depend on this choice. Let us consider again the matrix element for the process </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} e^+ e^- \to \mu ^+ \mu ^-, \end{equation}</div><a 
  id="x1-85002r43"></a>
-but without working in a specific gauge. We then have <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {M} = (\bar v_b \gamma ^\mu u_a) (\bar u_1 \gamma ^\nu v_2) \frac {i e^2}{q^2} \left [ -g_{\mu \nu } + (1-\xi )\frac {q_\mu q_\nu }{q^2} \right ], \end{equation}</div><a 
- id="x1-85003r44"></a> where <div class="mathjax-env mathjax-equation">\begin{equation} q = p_a + p_b \end{equation}</div><a 
+but without working in a specific gauge. We then have <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {M} = - \frac {e^2}{q^2} \left [ \bar {v}(p_2) ( \gamma ^\mu ) u(p_1) \right ] \left [ \bar {u}(p_3) ( \gamma ^\nu ) v(p_4) \right ] \left [ g_{\mu \nu } - (1-\xi )\frac {q_\mu q_\nu }{q^2} \right ], \end{equation}</div><a 
+ id="x1-85003r44"></a> where <div class="mathjax-env mathjax-equation">\begin{equation} q = p_1 + p_2 \end{equation}</div><a 
  id="x1-85004r45"></a> is the momentum of the virtual photon.
 If the answer is to be independent of <span class="mathjax-inline">\(\xi \)</span>, then the term proportional to <span class="mathjax-inline">\((1-\xi )\)</span> must give no contribution to the
-amplitude. In this particular case we have <div class="mathjax-env mathjax-equation">\begin{equation} (\bar v_b \gamma ^\mu u_a) q_\mu = \bar v_b \not \!q\, u_a = \bar v_b (\not \!p_a + \not \!p_b) u_a = m \bar v_b u_a - m \bar v_b u_a = 0. \end{equation}</div><a 
- id="x1-85005r46"></a> Here, we have applied the Dirac equation for <div class="mathjax-env mathjax-equation">\begin{equation} \not \!p_a\, u_a = m u_a, \end{equation}</div><a 
+amplitude. In this particular case we have <div class="mathjax-env mathjax-equation">\begin{equation} \left (\bar {v}(p_2) \gamma ^\mu u(p_1)\right ) q_\mu = \bar {v}(p_2) \not \!q\, u(p_1) = \bar {v}(p_2) (\not \!p_1 + \not \!p_2) u(p_1) = m \bar {v}(p_2) u(p_1) - m \bar {v}(p_2) u(p_1) = 0. \end{equation}</div><a 
+ id="x1-85005r46"></a> Here, we have applied the Dirac equation for <div class="mathjax-env mathjax-equation">\begin{equation} \not \!p_1\, u(p_1) = m u(p_1), \end{equation}</div><a 
  id="x1-85006r47"></a> and the adjoint
-Dirac equation for <div class="mathjax-env mathjax-equation">\begin{equation} \bar v_b \not \!p_b = -m \bar v_b. \end{equation}</div><a 
+Dirac equation for <div class="mathjax-env mathjax-equation">\begin{equation} \bar {v}(p_2) \not \!p_2 = -m \bar {v}(p_2). \end{equation}</div><a 
  id="x1-85007r48"></a>
 <p>   This cancellation is an example of a general principle of gauge theories, called the <i>Ward-Takahashi
 identity</i>. The unphysical degrees of freedom, here the longitudinal and time-like photon polarizations, do
