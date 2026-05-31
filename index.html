@@ -464,9 +464,13 @@ Heaviside-Lorentz units: </p>
  id="x1-5002r1"></a> The dimensionless fine structure constant <span class="mathjax-inline">\(\alpha \approx 1/137\)</span> is the same in all unit systems. In
 the Heaviside-Lorentz units we can write <div class="mathjax-env mathjax-equation">\begin{equation} \alpha = \frac {e^2}{4 \pi \epsilon _0 \hbar c} = \frac {e^2}{4 \pi } \approx \frac {1}{137}. \label {eq:fine_structure} \end{equation}</div><a 
  id="x1-5003r2"></a> Table <a 
-href="#x1-5001r1">1.1<!--tex4ht:ref: tab:SIunits --></a> gives the main quantities used and their units. It is
-also useful to remember that <div class="mathjax-env mathjax-equation">\begin{equation} \hbar c = 0.1973 \ \mbox {GeV} \ \mbox {fm}. \end{equation}</div><a 
- id="x1-5004r3"></a>
+href="#x1-5001r1">1.1<!--tex4ht:ref: tab:SIunits --></a> gives the main quantities used and their
+units.
+<p>   It is also useful to remember that </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} \hbar c = 0.1973 \ \mbox {GeV} \ \mbox {fm}. \end{equation}</div><a 
+ id="x1-5004r3"></a> and <div class="mathjax-env mathjax-equation">\begin{equation} \hbar = 6.58 × 10^{−25} \ \mbox {GeV} \ \mbox {s}. \end{equation}</div><a 
+ id="x1-5005r4"></a> A length or time calculation will have natural units <span class="mathjax-inline">\(\mbox {GeV}^-1\)</span> and
+conversion to <span class="mathjax-inline">\(\mbox {fm}\)</span> or <span class="mathjax-inline">\(\mbox {s}\)</span> follow by multiplying with <span class="mathjax-inline">\(\hbar c\)</span> or <span class="mathjax-inline">\(\hbar \)</span> above.
    
    <h4 class="subsectionHead"><span class="titlemark">1.2   </span> <a 
 href="#QQ2-1-7" id="x1-60001.2">Special Relativy Notation</a></h4>
@@ -475,77 +479,89 @@ href="#QQ2-1-7" id="x1-60001.2">Special Relativy Notation</a></h4>
 href="#x1-7000" id="x1-7000">The Invariant</a></h5>
 <p>In special relativity, the quantity </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:invariance_gmunu} g_{\mu \nu } a^{\mu } a^{\nu } = (a^0)^2 - (a^1)^2 - (a^2)^2 - (a^3)^2 \end{equation}</div><a 
- id="x1-7001r4"></a> is invariant. Here <span class="mathjax-inline">\(a^{\mu }\)</span> is a “contravariant” or “index up” four-vector with
+ id="x1-7001r5"></a> is invariant. Here <span class="mathjax-inline">\(a^{\mu }\)</span> is a “contravariant” or “index up” four-vector with
 one “time-like” and three “space-like” components: <div class="mathjax-env mathjax-equation">\begin{equation} (a^0, a^1, a^2, a^3), \end{equation}</div><a 
- id="x1-7002r5"></a> and <span class="mathjax-inline">\(g_{\mu \nu }\)</span> is the Minkowski metric tensor in Cartesian
+ id="x1-7002r6"></a> and <span class="mathjax-inline">\(g_{\mu \nu }\)</span> is the Minkowski metric tensor in Cartesian
 coordinates: <div class="mathjax-env mathjax-equation">\begin{equation} g_{\mu \nu } = \left ( \begin {array}{rrrr} g_{00} &amp; g_{01} &amp; g_{02} &amp; g_{03} \\ g_{10} &amp; g_{11} &amp; g_{12} &amp; g_{13} \\ g_{20} &amp; g_{21} &amp; g_{22} &amp; g_{23} \\ g_{30} &amp; g_{31} &amp; g_{32} &amp; g_{33} \end {array} \right ) = \left ( \begin {array}{rrrr} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 \end {array} \right ). \end{equation}</div><a 
- id="x1-7003r6"></a> or simply <div class="mathjax-env mathjax-equation">\begin{equation} g_{\mu \nu } = \text {diag}[1,-1,-1,-1]. \end{equation}</div><a 
- id="x1-7004r7"></a>
+ id="x1-7003r7"></a> or simply <div class="mathjax-env mathjax-equation">\begin{equation} g_{\mu \nu } = \text {diag}[1,-1,-1,-1]. \end{equation}</div><a 
+ id="x1-7004r8"></a>
 <p>   As a matter of notation, it is important to notice that Greek indices <span class="mathjax-inline">\(\mu \)</span>, <span class="mathjax-inline">\(\nu \)</span>, <span class="mathjax-inline">\(\rho \)</span>, such as in <span class="mathjax-inline">\(a^{\mu }\)</span>, run over the
 values 0, 1, 2, 3, and that we are using the Einstein summation convention: any index such as <span class="mathjax-inline">\(\mu \)</span> that
 appears twice, once as a superscript and once as a subscript, is understood to be summed over and
 <i>contracted</i>. </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} g_{\mu \nu } a^\mu a^\nu = \sum _{\mu =0}^{3} \sum _{\nu =0}^{3} g_{\mu \nu } a^\mu a^\nu \end{equation}</div><a 
- id="x1-7005r8"></a>
+ id="x1-7005r9"></a>
 <p>   The metric tensor is symmetric, <span class="mathjax-inline">\(g_{\mu \nu } = g_{\nu \mu }\)</span>, and has an inverse <span class="mathjax-inline">\(g^{\mu \nu }\)</span> such that </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} g^{\mu \nu } g_{\nu \rho } = \delta ^\mu _\rho . \end{equation}</div><a 
- id="x1-7006r9"></a> In the case of the Minkowski metric
+ id="x1-7006r10"></a> In the case of the Minkowski metric
 tensor in Cartesian coordinates, <span class="mathjax-inline">\(g^{\mu \nu }\)</span> has the same components as <span class="mathjax-inline">\(g_{\mu \nu }\)</span>.
 <p>   The inverse metric allows us to lower indices and define covariant (dual or one-form) four-vectors:
 </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} a_{\mu } = g_{\mu \nu } a^{\nu } = (a^0, -a^1, -a^2, -a^3), \end{equation}</div><a 
- id="x1-7007r10"></a>
+ id="x1-7007r11"></a>
 <p>   The product of two four-vectors can be written as: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:4vec_mult} \begin {aligned} a^{\mu } b_{\mu } = a_{\mu } b^{\mu } = g_{\mu \nu } a^{\mu } b^{\nu } = g^{\mu \nu } a_{\mu } b_{\nu } = a \cdot b \\ = a^0 b^0 - a^1 b^1 - a^2 b^2 - a^3 b^3. \end {aligned} \end{equation}</div><a 
- id="x1-7008r11"></a>
+ id="x1-7008r12"></a>
 <p>   Some important Special Relativity invariants that you have likely already encountered are invariant
-interval, proper time and invariant mass. The invariant interval is defined as </p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} ds^2 = c^2 dt^2 - (dx^2 + dy^2 + dz^2), \end{equation}</div><a 
- id="x1-7009r12"></a> The proper time is defined
-as <div class="mathjax-env mathjax-equation">\begin{equation} d\tau ^2 = dt^2 - \frac {1}{c^2}(dx^2 + dy^2 + dz^2) = \frac {ds^2}{c^2}. \end{equation}</div><a 
- id="x1-7010r13"></a> In natural units (<span class="mathjax-inline">\(c=1\)</span>) and using Einstein summation: <div class="mathjax-env mathjax-equation">\begin{equation} d\tau ^2 = ds^2= g_{\mu \nu } dx^\mu dx^\nu = dt^2 - dx^2 - dy^2 - dz^2. \end{equation}</div><a 
- id="x1-7011r14"></a> The invariant mass, in natural units (<span class="mathjax-inline">\(c=1\)</span>) , is defined
-as <div class="mathjax-env mathjax-equation">\begin{equation} m^2 = g_{\mu \nu } p^\mu p^\nu = E^2 - \mathbf {p}^2. \end{equation}</div><a 
- id="x1-7012r15"></a>
+interval, proper time and invariant mass. </p> 
+
+     <ul class="itemize1">
+     <li class="itemize">
+     <p>The invariant interval is defined as: </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} ds^2 = c^2 dt^2 - (dx^2 + dy^2 + dz^2). \end{equation}</div><a 
+ id="x1-7009r13"></a> Events with <span class="mathjax-inline">\(ds^2&gt;0\)</span> are called time-like, <span class="mathjax-inline">\(ds^2&lt;0\)</span> space-like and <span class="mathjax-inline">\(ds^2=0\)</span>
+     lightlike.
+     </li>
+     <li class="itemize">
+     <p>The proper time is defined as: </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} d\tau ^2 = dt^2 - \frac {1}{c^2}(dx^2 + dy^2 + dz^2) = \frac {ds^2}{c^2}. \end{equation}</div><a 
+ id="x1-7010r14"></a> In natural units (<span class="mathjax-inline">\(c=1\)</span>) and using Einstein summation: <div class="mathjax-env mathjax-equation">\begin{equation} d\tau ^2 = ds^2= g_{\mu \nu } dx^\mu dx^\nu = dt^2 - dx^2 - dy^2 - dz^2. \end{equation}</div><a 
+ id="x1-7011r15"></a>
+     </li>
+     <li class="itemize">
+     <p>The invariant mass, in natural units (<span class="mathjax-inline">\(c=1\)</span>) , is defined as </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} m^2 = g_{\mu \nu } p^\mu p^\nu = E^2 - \mathbf {p}^2. \end{equation}</div><a 
+ id="x1-7012r16"></a>
+     </li></ul>
    
+                                                                                         
+                                                                                         
    <h5 class="likesubsubsectionHead"><a 
 href="#x1-8000" id="x1-8000">Lorentz Transformations</a></h5>
 <p>The set of linear coordinate transformations </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:Contravariant_transform} a^{\mu } \rightarrow a^{\prime \mu } = {\Lambda ^\mu }_{\nu } a^{\nu } \end{equation}</div><a 
- id="x1-8001r16"></a> which preserve the quantity <div class="mathjax-env mathjax-equation">\begin{equation} g_{\mu \nu } a^{\mu } a^{\nu } \end{equation}</div><a 
- id="x1-8002r17"></a> are called Lorentz
+ id="x1-8001r17"></a> which preserve the quantity <div class="mathjax-env mathjax-equation">\begin{equation} g_{\mu \nu } a^{\mu } a^{\nu } \end{equation}</div><a 
+ id="x1-8002r18"></a> are called Lorentz
 transformations.
 <p>   The Lorentz transformation <span class="mathjax-inline">\({\Lambda ^\mu }_{\nu }\)</span> has an inverse allowing us to write </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} a^{\prime \mu } \rightarrow a^{\mu } = {(\Lambda ^{-1})^\mu }_{\nu } a^{\prime \nu }. \end{equation}</div><a 
- id="x1-8003r18"></a> Covariant four-vectors transform as <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:Covariant_transform} a_{\mu } \rightarrow a'_{\mu } = {\Lambda _\mu }^{\nu } a_{\nu }, \end{equation}</div><a 
- id="x1-8004r19"></a>
+ id="x1-8003r19"></a> Covariant four-vectors transform as <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:Covariant_transform} a_{\mu } \rightarrow a'_{\mu } = {\Lambda _\mu }^{\nu } a_{\nu }, \end{equation}</div><a 
+ id="x1-8004r20"></a>
 where <span class="mathjax-inline">\({\Lambda _\nu }^{\mu } = {(\Lambda ^{-1})^\mu }_{\nu }\)</span>; notice the position of the indices.
 <p>   Given two contravariant four-vectors <span class="mathjax-inline">\(a^\mu \)</span> and <span class="mathjax-inline">\(b^\nu \)</span> we have </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;g_{\mu \nu } a^{\prime \mu } b^{\prime \nu } = g_{\mu \nu } a^{\mu } b^{\nu } \implies \\ &amp;g_{\mu \nu } {\Lambda ^\mu }_{\rho } {\Lambda ^\nu }_{\sigma } a^{\rho } b^{\sigma } = g_{\rho \sigma } a^{\rho } b^{\sigma }. \end {aligned} \end{equation}</div><a 
- id="x1-8005r20"></a> Since <span class="mathjax-inline">\(a^\mu \)</span> and <span class="mathjax-inline">\(b^\nu \)</span> are arbitrary, it follows that a Lorentz
+ id="x1-8005r21"></a> Since <span class="mathjax-inline">\(a^\mu \)</span> and <span class="mathjax-inline">\(b^\nu \)</span> are arbitrary, it follows that a Lorentz
 transformation must satisfy the following constraint: <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:lorentz_constraint} g_{\mu \nu } {\Lambda ^\mu }_{\rho } {\Lambda ^\nu }_{\sigma } = g_{\rho \sigma }. \end{equation}</div><a 
- id="x1-8006r21"></a>
+ id="x1-8006r22"></a>
    
    <h4 class="subsectionHead"><span class="titlemark">1.3   </span> <a 
 href="#QQ2-1-10" id="x1-90001.3">Tensor Notation</a></h4>
 <p>A <i>tensor</i> is a geometric object defined with respect to any system of coordinates, that carries spacetime
 indices, and transforms appropriately under a change of reference frame. A Lorentz scalar (which we will
 be calling just a scalar) transforms as a tensor with no spacetime index (zero rank), namely <span class="mathjax-inline">\(S' = S\)</span>. In other
-                                                                                         
-                                                                                         
 words, a scalar is invariant under Lorentz transformations. A four-vector transforms as a rank one (one
 spacetime index) tensor. A second-rank tensor <span class="mathjax-inline">\(s^{\mu \nu }\)</span> carries two indices, has <span class="mathjax-inline">\(4^2 = 16\)</span> components, and
 transforms as </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} s^{\mu \nu } \rightarrow s^{\prime \mu \nu } = {\Lambda ^\mu }_{\kappa } {\Lambda ^\nu }_{\sigma } s^{\kappa \sigma }. \end{equation}</div><a 
- id="x1-9001r22"></a> A third-rank tensor has three indices, <span class="mathjax-inline">\(4^3 = 64\)</span> components, and transforms as <div class="mathjax-env mathjax-equation">\begin{equation} t^{\mu \nu \lambda } \rightarrow t^{\prime \mu \nu \lambda } = {\Lambda ^\mu }_{\kappa } {\Lambda ^\nu }_{\sigma } {\Lambda ^\lambda }_{\tau } t^{\kappa \sigma \tau }, \end{equation}</div><a 
- id="x1-9002r23"></a> and
+ id="x1-9001r23"></a> A third-rank tensor has three indices, <span class="mathjax-inline">\(4^3 = 64\)</span> components, and transforms as <div class="mathjax-env mathjax-equation">\begin{equation} t^{\mu \nu \lambda } \rightarrow t^{\prime \mu \nu \lambda } = {\Lambda ^\mu }_{\kappa } {\Lambda ^\nu }_{\sigma } {\Lambda ^\lambda }_{\tau } t^{\kappa \sigma \tau }, \end{equation}</div><a 
+ id="x1-9002r24"></a> and
 so on. The product of two tensors is itself a tensor. For example <span class="mathjax-inline">\(a^\mu b^\nu \)</span> is a second-rank tensor.
 There are also mixed tensors, for example <span class="mathjax-inline">\(g^{\mu \lambda } g_{\lambda \nu } = {\delta ^\mu }_\nu \)</span>, <span class="mathjax-inline">\({T_{\alpha \beta }}^\lambda {\delta _\lambda }^\gamma = {T_{\alpha \beta }}^\gamma \)</span>. Finally, the contraction of like upper and lower
 indices results in another tensor with order reduced by two, for example <span class="mathjax-inline">\({s^\mu }_\mu \)</span> is a scalar and <span class="mathjax-inline">\(a_\nu t^{\mu \nu }\)</span> is a
 vector.
 <p>   A repeated index implies a summation over all possible values of that index: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} a_\mu b^\mu = \sum _{\mu =0}^3 a_\mu b^\mu . \end{equation}</div><a 
- id="x1-9003r24"></a> An index that is
+ id="x1-9003r25"></a> An index that is
 summed over is called a <i>dummy index</i> and can be freely renamed (e.g., <span class="mathjax-inline">\(a_\mu b^\mu = a_\rho b^\rho \)</span>). An index that appears only
 once in a term is a <i>free index</i>. In the Einstein summation convention, an index may appear at most twice
 in a single term.
@@ -566,7 +582,7 @@ href="#x1-10000" id="x1-10000">Example:</a></span>
 <p>   Like indices will contract, so the result will have no indices; it will be a scalar. Using the Einstein
 summation convention: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;g^{\mu \nu }g_{\mu \nu } = \sum \limits _{\mu } \sum \limits _{\nu } g^{\mu \nu }g_{\mu \nu } \\ &amp;g^{00}g_{00} + \cdots + g^{11}g_{11} + \cdots + g^{22}g_{22} + \cdots + g^{33}g_{33} = 4. \end {aligned} \end{equation}</div><a 
- id="x1-10001r25"></a>
+ id="x1-10001r26"></a>
    
 <p><span class="paragraphHead"><a 
 href="#x1-11000" id="x1-11000">Example:</a></span>
@@ -576,6 +592,8 @@ antisymmetric if it changes sign <span class="mathjax-inline">\(\alpha ^{\mu \nu
      <ul class="itemize1">
      <li class="itemize">
      <p>How many independent elements exist in a symmetric tensor?
+                                                                                         
+                                                                                         
      </p> 
 <p>Since, for example, <span class="mathjax-inline">\(s^{12} = s^{21}\)</span>, these count as one element. Therefore, the independent elements are
      10: <span class="mathjax-inline">\(s^{00}\)</span>, <span class="mathjax-inline">\(s^{11}\)</span>, <span class="mathjax-inline">\(s^{22}\)</span>, <span class="mathjax-inline">\(s^{33}\)</span> and <span class="mathjax-inline">\(s^{01}\)</span>, <span class="mathjax-inline">\(s^{02}\)</span>, <span class="mathjax-inline">\(s^{03}\)</span>, <span class="mathjax-inline">\(s^{12}\)</span>, <span class="mathjax-inline">\(s^{13}\)</span>, <span class="mathjax-inline">\(s^{23}\)</span>.
@@ -591,46 +609,44 @@ antisymmetric if it changes sign <span class="mathjax-inline">\(\alpha ^{\mu \nu
      <p>Show that <span class="mathjax-inline">\(s^{\mu \nu } \alpha _{\mu \nu } = 0\)</span>.
      </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} s^{\mu \nu } \alpha _{\mu \nu } = s^{\nu \mu } \alpha _{\nu \mu } = s^{\mu \nu } (-\alpha _{\mu \nu }) = - s^{\mu \nu } \alpha _{\mu \nu }. \end{equation}</div><a 
- id="x1-11001r26"></a> where in the first step we exchanged the names of the indices <span class="mathjax-inline">\(\mu \)</span> and <span class="mathjax-inline">\(\nu \)</span>, and in the second we used the
+ id="x1-11001r27"></a> where in the first step we exchanged the names of the indices <span class="mathjax-inline">\(\mu \)</span> and <span class="mathjax-inline">\(\nu \)</span>, and in the second we used the
      symmetry/antisymmetry. The only quantity which is equal to its own negative is 0. In longhand
      form, keeping only the 12 non-zero elements of <span class="mathjax-inline">\(\alpha _{\mu \nu }\)</span> and summing explicitly, what we did is
      equivalent to writing <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;s^{01}\alpha _{01} + s^{02}\alpha _{02} + s^{03}\alpha _{03} + s^{12}\alpha _{12} + s^{13}\alpha _{13} + s^{23}\alpha _{23}\\ &amp;+ s^{10}\alpha _{10} + s^{20}\alpha _{20} + s^{30}\alpha _{30} + s^{21}\alpha _{21} + s^{31}\alpha _{31} + s^{32}\alpha _{32} \\ &amp;= s^{10}\alpha _{10} + s^{20}\alpha _{20} + s^{30}\alpha _{30} + s^{21}\alpha _{21} + s^{31}\alpha _{31} + s^{32}\alpha _{32} \\ &amp;+ s^{01}\alpha _{01} + s^{02}\alpha _{02} + s^{03}\alpha _{03} + s^{12}\alpha _{12} + s^{13}\alpha _{13} + s^{23}\alpha _{23}, \end {aligned} \end{equation}</div><a 
- id="x1-11002r27"></a> because we can add numbers in any order. And then we use the
+ id="x1-11002r28"></a> because we can add numbers in any order. And then we use the
      symmetry/antisymmetry: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;= -s^{01}\alpha _{01} - s^{02}\alpha _{02} - s^{03}\alpha _{03} - s^{12}\alpha _{12} - s^{13}\alpha _{13} - s^{23}\alpha _{23}\\ &amp;- s^{10}\alpha _{10} - s^{20}\alpha _{20} - s^{30}\alpha _{30} - s^{21}\alpha _{21} - s^{31}\alpha _{31} - s^{32}\alpha _{32} \\ &amp;= - (s^{01}\alpha _{01} + s^{02}\alpha _{02} + s^{03}\alpha _{03} + s^{12}\alpha _{12} + s^{13}\alpha _{13} + s^{23}\alpha _{23}\\ &amp;+ s^{10}\alpha _{10} + s^{20}\alpha _{20} + s^{30}\alpha _{30} + s^{21}\alpha _{21} + s^{31}\alpha _{31} + s^{32}\alpha _{32}). \end {aligned} \end{equation}</div><a 
- id="x1-11003r28"></a></li></ul>
-                                                                                         
-                                                                                         
+ id="x1-11003r29"></a></li></ul>
    
    <h4 class="subsectionHead"><span class="titlemark">1.4   </span> <a 
 href="#QQ2-1-13" id="x1-120001.4">Lorentz Transformations in Space-Time</a></h4>
 <p>In special relativity, for any given event we assign a four-vector </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} x^{\mu } = (t, x, y, z), \end{equation}</div><a 
- id="x1-12001r29"></a> and for an infinitesimal displacement we
+ id="x1-12001r30"></a> and for an infinitesimal displacement we
 have <div class="mathjax-env mathjax-equation">\begin{equation} dx^\mu \rightarrow dx'^\mu = {\Lambda ^\mu }_{\nu } dx^\nu . \end{equation}</div><a 
- id="x1-12002r30"></a> The invariant spacetime interval is defined as <div class="mathjax-env mathjax-equation">\begin{equation} (ds)^2 = g_{\mu \nu } dx^\mu dx^\nu = (dt)^2 - (dx)^2 - (dy)^2 - (dz)^2. \end{equation}</div><a 
- id="x1-12003r31"></a>
+ id="x1-12002r31"></a> The invariant spacetime interval is defined as <div class="mathjax-env mathjax-equation">\begin{equation} (ds)^2 = g_{\mu \nu } dx^\mu dx^\nu = (dt)^2 - (dx)^2 - (dy)^2 - (dz)^2. \end{equation}</div><a 
+ id="x1-12003r32"></a>
 <p>   A light ray travels such that <span class="mathjax-inline">\((ds)^2 = 0\)</span>, which implies </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} |d\mathbf {x}/dt| = 1. \end{equation}</div><a 
- id="x1-12004r32"></a> Since <span class="mathjax-inline">\((ds)^2\)</span> is invariant under Lorentz transformations, it
+ id="x1-12004r33"></a> Since <span class="mathjax-inline">\((ds)^2\)</span> is invariant under Lorentz transformations, it
 follows that in any other inertial frame <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;ds^2 = g_{\mu \nu } dx'^\mu dx'^\nu = 0, \\ &amp;|d\mathbf {x}'/dt'| = 1. \end {aligned} \end{equation}</div><a 
- id="x1-12005r33"></a> Note that <span class="mathjax-inline">\(x^\mu \)</span> is a four-vector, while <span class="mathjax-inline">\(\mathbf {x}\)</span> is the corresponding
+ id="x1-12005r34"></a> Note that <span class="mathjax-inline">\(x^\mu \)</span> is a four-vector, while <span class="mathjax-inline">\(\mathbf {x}\)</span> is the corresponding
 three-vector of spatial components.
 <p>   A common parametrization of a Lorentz boost in the <span class="mathjax-inline">\(z\)</span>-direction is </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} t' &amp;= \gamma (t - \beta z),\\ x' &amp;= x,\\ y' &amp;= y,\\ z' &amp;= \gamma (z - \beta t), \end {aligned} \end{equation}</div><a 
- id="x1-12006r34"></a> where <span class="mathjax-inline">\(\beta = v/c\)</span> and <span class="mathjax-inline">\(\gamma = 1/\sqrt {1-\beta ^2}\)</span>. In this case <span class="mathjax-inline">\({\Lambda ^\mu }_{\nu } = dx'^\mu /dx^\nu \)</span> is <div class="mathjax-env mathjax-equation">\begin{equation} {\Lambda ^\mu }_{\nu } = \left ( \begin {array}{cccc} \gamma &amp; 0 &amp; 0 &amp; -\beta \gamma \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ -\beta \gamma &amp; 0 &amp; 0 &amp; \gamma \end {array} \right ). \end{equation}</div><a 
- id="x1-12007r35"></a> The
+ id="x1-12006r35"></a> where <span class="mathjax-inline">\(\beta = v/c\)</span> and <span class="mathjax-inline">\(\gamma = 1/\sqrt {1-\beta ^2}\)</span>. In this case <span class="mathjax-inline">\({\Lambda ^\mu }_{\nu } = dx'^\mu /dx^\nu \)</span> is <div class="mathjax-env mathjax-equation">\begin{equation} {\Lambda ^\mu }_{\nu } = \left ( \begin {array}{cccc} \gamma &amp; 0 &amp; 0 &amp; -\beta \gamma \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ -\beta \gamma &amp; 0 &amp; 0 &amp; \gamma \end {array} \right ). \end{equation}</div><a 
+ id="x1-12007r36"></a> The
 inverse transform can be obtained by inverting the sign of <span class="mathjax-inline">\(v\)</span>: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} t &amp;= \gamma (t' + \beta z'),\\ x &amp;= x',\\ y &amp;= y',\\ z &amp;= \gamma (z' + \beta t'), \end {aligned} \end{equation}</div><a 
- id="x1-12008r36"></a> so that <span class="mathjax-inline">\({(\Lambda ^{-1})^\mu }_{\nu } = dx^\mu /dx'^\nu \)</span> is <div class="mathjax-env mathjax-equation">\begin{equation} {\Lambda _\mu }^{\nu } = \left ( \begin {array}{cccc} \gamma &amp; 0 &amp; 0 &amp; +\beta \gamma \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ +\beta \gamma &amp; 0 &amp; 0 &amp; \gamma \end {array} \right ). \end{equation}</div><a 
- id="x1-12009r37"></a>
+ id="x1-12008r37"></a> so that <span class="mathjax-inline">\({(\Lambda ^{-1})^\mu }_{\nu } = dx^\mu /dx'^\nu \)</span> is <div class="mathjax-env mathjax-equation">\begin{equation} {\Lambda _\mu }^{\nu } = \left ( \begin {array}{cccc} \gamma &amp; 0 &amp; 0 &amp; +\beta \gamma \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ +\beta \gamma &amp; 0 &amp; 0 &amp; \gamma \end {array} \right ). \end{equation}</div><a 
+ id="x1-12009r38"></a>
    
 <p><span class="paragraphHead"><a 
 href="#x1-13000" id="x1-13000">Testing <span class="mathjax-inline">\(g_{\mu \nu } {\Lambda ^\mu }_{\rho } {\Lambda ^\nu }_{\sigma } = g_{\rho \sigma }\)</span></a></span>
    This is a good way to again see the index notation in action. We have: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} g_{00} &amp;= g_{00}{\Lambda ^{0}}_{0}{\Lambda ^{0}}_{0} + g_{11}{\Lambda ^{1}}_{0}{\Lambda ^{1}}_{0} + g_{22}{\Lambda ^{2}}_{0}{\Lambda ^{2}}_{0} + g_{33}{\Lambda ^{3}}_{0}{\Lambda ^{3}}_{0} \\ &amp;= (1)(\gamma )(\gamma ) + (-1)(0)(0) + (-1)(0)(0) + (-1)(-\beta \gamma )(-\beta \gamma ) \\ &amp;= \gamma ^2 - \beta ^2 \gamma ^2 = (1 - \beta ^2)\gamma ^2 = (1 - \beta ^2)\frac {1}{1 - \beta ^2} = 1, \end {aligned} \end{equation}</div><a 
- id="x1-13001r38"></a> <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} g_{11} &amp;= g_{00}{\Lambda ^{0}}_{1}{\Lambda ^{0}}_{1} + g_{11}{\Lambda ^{1}}_{1}{\Lambda ^{1}}_{1} + g_{22}{\Lambda ^{2}}_{1}{\Lambda ^{2}}_{1} + g_{33}{\Lambda ^{3}}_{1}{\Lambda ^{3}}_{1} \\ &amp;= (1)(0)(0) + (-1)(1)(1) + (-1)(0)(0) + (-1)(0)(0) = -1, \end {aligned} \end{equation}</div><a 
- id="x1-13002r39"></a> <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} g_{22} &amp;= g_{00}{\Lambda ^{0}}_{2}{\Lambda ^{0}}_{2} + g_{11}{\Lambda ^{1}}_{2}{\Lambda ^{1}}_{2} + g_{22}{\Lambda ^{2}}_{2}{\Lambda ^{2}}_{2} + g_{33}{\Lambda ^{3}}_{2}{\Lambda ^{3}}_{2} \\ &amp;= (1)(0)(0) + (-1)(0)(0) + (-1)(1)(1) + (-1)(0)(0) = -1, \end {aligned} \end{equation}</div><a 
- id="x1-13003r40"></a> <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} g_{33} &amp;= g_{00}{\Lambda ^{0}}_{3}{\Lambda ^{0}}_{3} + g_{11}{\Lambda ^{1}}_{3}{\Lambda ^{1}}_{3} + g_{22}{\Lambda ^{2}}_{3}{\Lambda ^{2}}_{3} + g_{33}{\Lambda ^{3}}_{3}{\Lambda ^{3}}_{3} \\ &amp;= (1)(-\beta \gamma )(-\beta \gamma ) + (-1)(0)(0) + (-1)(0)(0) + (-1)(\gamma )(\gamma ) \\ &amp;= \beta ^2 \gamma ^2 - \gamma ^2 = -(1 - \beta ^2)\gamma ^2 = -(1 - \beta ^2)\frac {1}{1 - \beta ^2} = -1. \end {aligned} \end{equation}</div><a 
- id="x1-13004r41"></a>
+ id="x1-13001r39"></a> <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} g_{11} &amp;= g_{00}{\Lambda ^{0}}_{1}{\Lambda ^{0}}_{1} + g_{11}{\Lambda ^{1}}_{1}{\Lambda ^{1}}_{1} + g_{22}{\Lambda ^{2}}_{1}{\Lambda ^{2}}_{1} + g_{33}{\Lambda ^{3}}_{1}{\Lambda ^{3}}_{1} \\ &amp;= (1)(0)(0) + (-1)(1)(1) + (-1)(0)(0) + (-1)(0)(0) = -1, \end {aligned} \end{equation}</div><a 
+ id="x1-13002r40"></a> <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} g_{22} &amp;= g_{00}{\Lambda ^{0}}_{2}{\Lambda ^{0}}_{2} + g_{11}{\Lambda ^{1}}_{2}{\Lambda ^{1}}_{2} + g_{22}{\Lambda ^{2}}_{2}{\Lambda ^{2}}_{2} + g_{33}{\Lambda ^{3}}_{2}{\Lambda ^{3}}_{2} \\ &amp;= (1)(0)(0) + (-1)(0)(0) + (-1)(1)(1) + (-1)(0)(0) = -1, \end {aligned} \end{equation}</div><a 
+ id="x1-13003r41"></a> <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} g_{33} &amp;= g_{00}{\Lambda ^{0}}_{3}{\Lambda ^{0}}_{3} + g_{11}{\Lambda ^{1}}_{3}{\Lambda ^{1}}_{3} + g_{22}{\Lambda ^{2}}_{3}{\Lambda ^{2}}_{3} + g_{33}{\Lambda ^{3}}_{3}{\Lambda ^{3}}_{3} \\ &amp;= (1)(-\beta \gamma )(-\beta \gamma ) + (-1)(0)(0) + (-1)(0)(0) + (-1)(\gamma )(\gamma ) \\ &amp;= \beta ^2 \gamma ^2 - \gamma ^2 = -(1 - \beta ^2)\gamma ^2 = -(1 - \beta ^2)\frac {1}{1 - \beta ^2} = -1. \end {aligned} \end{equation}</div><a 
+ id="x1-13004r42"></a>
    
 <p><span class="paragraphHead"><a 
 href="#x1-14000" id="x1-14000">Applying the Concepts: Twin Paradox</a></span>
@@ -673,12 +689,12 @@ class="content">Spacetime diagrams showing the worldlines for Alice and Bob
 </p> 
 <p>   The quantity </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} (ds)^2 = g_{\mu \nu } dx^\mu dx^\nu = (dt)^2 - (dx)^2 - (dy)^2 - (dz)^2, \end{equation}</div><a 
- id="x1-14004r42"></a> is invariant. It does not matter which frame we use to calculate it. Let’s choose the
+ id="x1-14004r43"></a> is invariant. It does not matter which frame we use to calculate it. Let’s choose the
 frame where Alice worldline starts and ends on the time-axis; see figure <a 
 href="#x1-14001r1">1.0a<!--tex4ht:ref: fig:Twin_Alice --></a>. For inertial motion
 between two events, the worldline is a straight line. <div class="mathjax-env mathjax-equation">\begin{equation} \Delta s = \sqrt {(\Delta t)^2 - (\Delta x)^2 - (\Delta y)^2 - (\Delta z)^2}. \end{equation}</div><a 
- id="x1-14005r43"></a> For Alice: <div class="mathjax-env mathjax-equation">\begin{equation} \Delta \tau _A = \sqrt {\Delta t^2 - \Delta x_A^2} = \sqrt {10^2 - 0^2} = 10. \end{equation}</div><a 
- id="x1-14006r44"></a> For Bob (sum of outbound and
+ id="x1-14005r44"></a> For Alice: <div class="mathjax-env mathjax-equation">\begin{equation} \Delta \tau _A = \sqrt {\Delta t^2 - \Delta x_A^2} = \sqrt {10^2 - 0^2} = 10. \end{equation}</div><a 
+ id="x1-14006r45"></a> For Bob (sum of outbound and
 inbound legs): <div class="mathjax-env mathjax-equation*">\begin{equation*} \Delta \tau _B = \sqrt {5^2 - 4^2} + \sqrt {5^2 - (-4)^2} = 3 + 3 = 6. \end{equation*}</div> So when they meet again, 6 years will have passed for Bob but 10 years for
 Alice.
 <p>   Let’s now pick the frame where Bob outgoing part on the trip is on the time axis; see figure <a 
@@ -686,11 +702,11 @@ href="#x1-14002r2">1.0b<!--tex4ht:ref: fig:Twin_Bob_outgoing --></a>. We
 want to do a rotation in the <span class="mathjax-inline">\(t\)</span>-<span class="mathjax-inline">\(x\)</span> plane; a boost. The invariant length should stay the same. This is what the
 Lorentz transformations do. </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} x'^{\mu } = \Lambda ^{\mu }_{\ \nu } x^{\nu }. \end{equation}</div><a 
- id="x1-14007r45"></a> For a boost in the <span class="mathjax-inline">\(x\)</span>-direction, the non-zero components of <span class="mathjax-inline">\(\Lambda ^{\mu }_{\ \nu }\)</span> are: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \Lambda ^{0}_{\ 0} = \gamma , \, \Lambda ^{0}_{\ 1} = -\beta \gamma , \, \Lambda ^{1}_{\ 0} = -\beta \gamma , \, \Lambda ^{1}_{\ 1} = \gamma . \end {aligned} \end{equation}</div><a 
- id="x1-14008r46"></a> Now we
+ id="x1-14007r46"></a> For a boost in the <span class="mathjax-inline">\(x\)</span>-direction, the non-zero components of <span class="mathjax-inline">\(\Lambda ^{\mu }_{\ \nu }\)</span> are: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \Lambda ^{0}_{\ 0} = \gamma , \, \Lambda ^{0}_{\ 1} = -\beta \gamma , \, \Lambda ^{1}_{\ 0} = -\beta \gamma , \, \Lambda ^{1}_{\ 1} = \gamma . \end {aligned} \end{equation}</div><a 
+ id="x1-14008r47"></a> Now we
 perform the summation over the index <span class="mathjax-inline">\(\nu \)</span> for each value of the <i>free</i> index <span class="mathjax-inline">\(\mu \)</span>. <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} x'^0 = \Lambda ^{0}_{\ \nu } x^{\nu } = \Lambda ^{0}_{\ 0} x^0 + \Lambda ^{0}_{\ 1} x^1 = \gamma t - \beta \gamma x, \end {aligned} \end{equation}</div><a 
- id="x1-14009r47"></a> <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} x'^1 = \Lambda ^{1}_{\ \nu } x^{\nu } = \Lambda ^{1}_{\ 0} x^0 + \Lambda ^{1}_{\ 1} x^1 = -\beta \gamma t + \gamma x. \end {aligned} \end{equation}</div><a 
- id="x1-14010r48"></a> In this case <span class="mathjax-inline">\(\beta = 4/5\)</span> and <span class="mathjax-inline">\(\gamma = 5/3\)</span> so the
+ id="x1-14009r48"></a> <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} x'^1 = \Lambda ^{1}_{\ \nu } x^{\nu } = \Lambda ^{1}_{\ 0} x^0 + \Lambda ^{1}_{\ 1} x^1 = -\beta \gamma t + \gamma x. \end {aligned} \end{equation}</div><a 
+ id="x1-14010r49"></a> In this case <span class="mathjax-inline">\(\beta = 4/5\)</span> and <span class="mathjax-inline">\(\gamma = 5/3\)</span> so the
 meeting point <span class="mathjax-inline">\((0,10)\)</span> in the original frame now becomes <div class="mathjax-env mathjax-equation*">\begin{equation*} \begin {aligned} t' &amp;= \frac {5}{3}10 - \frac {4}{3}0 = \frac {50}{3}, \\ x' &amp;= -\frac {4}{3}10 + \frac {5}{3}0 = -\frac {40}{3}. \end {aligned} \end{equation*}</div> In this new frame, Alice appears to travel to <span class="mathjax-inline">\(x' = -40/3\)</span>
 light-years over a coordinate time of <span class="mathjax-inline">\(t' = 50/3\)</span> years. The length of her worldline remains the same:
 <div class="mathjax-env mathjax-equation*">\begin{equation*} \Delta \tau _A = \sqrt {\left (\frac {50}{3}\right )^2 - \left (\frac {40}{3}\right )^2} = \sqrt {\frac {2500 - 1600}{9}} = \sqrt {\frac {900}{9}} = 10 \text { years}. \end{equation*}</div>
@@ -699,46 +715,46 @@ light-years over a coordinate time of <span class="mathjax-inline">\(t' = 50/3\)
 href="#QQ2-1-17" id="x1-150001.5">Four-Derivative</a></h4>
 <p>The four-derivative is defined as </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \frac {\partial }{\partial x^\mu } = \left ( \frac {\partial }{\partial x^0} , \frac {\partial }{\partial x^1}, \frac {\partial }{\partial x^2} , \frac {\partial }{\partial x^3} \right ). \end{equation}</div><a 
- id="x1-15001r49"></a> Its transformation properties can be understood by considering its effect
+ id="x1-15001r50"></a> Its transformation properties can be understood by considering its effect
 on a scalar function <span class="mathjax-inline">\(\Phi (x)\)</span>. The value of the function in the primed coordinate system is taken to be equal to
 the value in the original system: <div class="mathjax-env mathjax-equation">\begin{equation} \Phi (x) \rightarrow \Phi ^\prime (x^\prime ) = \Phi (x). \end{equation}</div><a 
- id="x1-15002r50"></a> Note that <span class="mathjax-inline">\(\phi (x)\)</span> and <span class="mathjax-inline">\( \phi ^\prime (x^{\prime })\)</span> refer to the same spacetime point as seen by two
+ id="x1-15002r51"></a> Note that <span class="mathjax-inline">\(\phi (x)\)</span> and <span class="mathjax-inline">\( \phi ^\prime (x^{\prime })\)</span> refer to the same spacetime point as seen by two
 different frames.
 <p>   Applying the four-derivative gives </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \frac {\partial }{\partial x^{\prime \mu } } \Phi ^\prime (x^{\prime }) = \frac {\partial x^\nu }{\partial x^{\prime \mu } } \frac {\partial }{\partial x^{\nu } } \Phi (x) = {\Lambda _\mu }^{\nu } \frac {\partial } {\partial x^{\nu } } \Phi (x), \end{equation}</div><a 
- id="x1-15003r51"></a> where the first step uses the chain rule and the last step uses
+ id="x1-15003r52"></a> where the first step uses the chain rule and the last step uses
 equation <a 
-href="#x1-8004r19">1.19<!--tex4ht:ref: eq:Covariant_transform --></a>. Therefore, the four-derivative transforms as a covariant four-vector: <div class="mathjax-env mathjax-equation">\begin{equation} \frac {\partial }{\partial x^{\mu } } \rightarrow \frac {\partial }{\partial x^{\prime \mu } } = {\Lambda _\mu }^{\nu } \frac {\partial }{\partial x^{\nu } }. \end{equation}</div><a 
- id="x1-15004r52"></a> This allows us to
+href="#x1-8004r20">1.20<!--tex4ht:ref: eq:Covariant_transform --></a>. Therefore, the four-derivative transforms as a covariant four-vector: <div class="mathjax-env mathjax-equation">\begin{equation} \frac {\partial }{\partial x^{\mu } } \rightarrow \frac {\partial }{\partial x^{\prime \mu } } = {\Lambda _\mu }^{\nu } \frac {\partial }{\partial x^{\nu } }. \end{equation}</div><a 
+ id="x1-15004r53"></a> This allows us to
 write <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu = \frac {\partial }{\partial x^\mu }. \end{equation}</div><a 
- id="x1-15005r53"></a> Using <span class="mathjax-inline">\(\partial ^{\mu } = g^{\mu \nu } \partial _\nu \)</span>, we also define <div class="mathjax-env mathjax-equation">\begin{equation} \partial ^{\mu } = \left ( \frac {\partial }{\partial x^0} , -\frac {\partial }{\partial x^1} , -\frac {\partial }{\partial x^2} , -\frac {\partial }{\partial x^3} \right ). \end{equation}</div><a 
- id="x1-15006r54"></a> Finally, the d’Alembert operator is defined as <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu \partial ^\mu = \frac {\partial ^2}{\partial (x^0)^2} - \frac {\partial ^2}{\partial (x^1)^2} - \frac {\partial ^2}{\partial (x^2)^2} - \frac {\partial ^2}{\partial (x^3)^2}, \end{equation}</div><a 
- id="x1-15007r55"></a> that is Lorentz invariant:
+ id="x1-15005r54"></a> Using <span class="mathjax-inline">\(\partial ^{\mu } = g^{\mu \nu } \partial _\nu \)</span>, we also define <div class="mathjax-env mathjax-equation">\begin{equation} \partial ^{\mu } = \left ( \frac {\partial }{\partial x^0} , -\frac {\partial }{\partial x^1} , -\frac {\partial }{\partial x^2} , -\frac {\partial }{\partial x^3} \right ). \end{equation}</div><a 
+ id="x1-15006r55"></a> Finally, the d’Alembert operator is defined as <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu \partial ^\mu = \frac {\partial ^2}{\partial (x^0)^2} - \frac {\partial ^2}{\partial (x^1)^2} - \frac {\partial ^2}{\partial (x^2)^2} - \frac {\partial ^2}{\partial (x^3)^2}, \end{equation}</div><a 
+ id="x1-15007r56"></a> that is Lorentz invariant:
 <div class="mathjax-env mathjax-equation">\begin{equation} \partial ^\prime _\mu \partial ^{\prime \mu } = {\Lambda _\mu }^\nu \partial _\nu {\Lambda ^\mu }_\sigma \partial ^{\sigma } = {\Lambda _\mu }^\nu {\Lambda ^\mu }_\sigma \partial _\nu \partial ^{\sigma } = {(\Lambda ^{-1})^\nu }_\mu {\Lambda ^\mu }_\sigma \partial _\nu \partial ^{\sigma } = {\delta ^\nu }_\sigma \partial _\nu \partial ^{\sigma } = \partial _\nu \partial ^{\nu }. \end{equation}</div><a 
- id="x1-15008r56"></a>
+ id="x1-15008r57"></a>
    
    <h4 class="subsectionHead"><span class="titlemark">1.6   </span> <a 
 href="#QQ2-1-18" id="x1-160001.6">Four-Momentum</a></h4>
 <p>The relativistic expressions for the energy and momentum of a massive particle are </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} E = \gamma m c^2\ ,\ \boldsymbol {p} = \gamma m \boldsymbol {v}, \end{equation}</div><a 
- id="x1-16001r57"></a> which in natural
+ id="x1-16001r58"></a> which in natural
 units become <div class="mathjax-env mathjax-equation">\begin{equation} E = \gamma m\ ,\ \boldsymbol {p} = \gamma m \boldsymbol {\beta }. \end{equation}</div><a 
- id="x1-16002r58"></a>
+ id="x1-16002r59"></a>
 <p>   The energy-momentum of a particle can also be written as a four-vector: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} p^{\mu } = \left ( E, p_x, p_y, p_z \right ). \end{equation}</div><a 
- id="x1-16003r59"></a> Since <span class="mathjax-inline">\(p^\mu \)</span> is a four-vector, <span class="mathjax-inline">\(p^2 = p^{\mu } p_{\mu }\)</span> is
+ id="x1-16003r60"></a> Since <span class="mathjax-inline">\(p^\mu \)</span> is a four-vector, <span class="mathjax-inline">\(p^2 = p^{\mu } p_{\mu }\)</span> is
 Lorentz invariant: <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:psquare} \begin {aligned} p^2 = p^{\mu }p_{\mu } = E^2 - (p_x)^2 - (p_y)^2 - (p_z)^2 = E^2 - \boldsymbol {p}^2 = m^2. \end {aligned} \end{equation}</div><a 
- id="x1-16004r60"></a> Thus, <span class="mathjax-inline">\(p^2\)</span> gives the squared invariant mass <span class="mathjax-inline">\(m\)</span> of a particle. Note that for a <i>virtual</i> particle, <span class="mathjax-inline">\(E^2 - \boldsymbol {p}^2\)</span>
+ id="x1-16004r61"></a> Thus, <span class="mathjax-inline">\(p^2\)</span> gives the squared invariant mass <span class="mathjax-inline">\(m\)</span> of a particle. Note that for a <i>virtual</i> particle, <span class="mathjax-inline">\(E^2 - \boldsymbol {p}^2\)</span>
 can take any value; virtual particles can be “off mass shell”.
 <p>   The equality </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;(p_1^\mu +p_2^\mu ) = (p_3^\mu +p_4^\mu ) \\ &amp;{\Lambda ^\nu }_{\mu } (p_1^\mu +p_2^\mu ) = {\Lambda ^\nu }_{\mu } (p_3^\mu +p_4^\mu ) \\ &amp; (p_1^{\prime \nu }+p_2^{\prime \nu }) = (p_3^{\prime \nu }+p_4^{\prime \nu }) \end {aligned} \end{equation}</div><a 
- id="x1-16005r61"></a> means that if energy and momentum conservation hold in one inertial frame, then they
+ id="x1-16005r62"></a> means that if energy and momentum conservation hold in one inertial frame, then they
 hold in any other inertial frame. However, energy and momentum themselves are not Lorentz invariant;
 their values depend on the chosen inertial frame.
 <p>   For a system of particles with </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} p^{\mu } = \sum _i p_i^{\mu }, \end{equation}</div><a 
- id="x1-16006r62"></a> the quantity <div class="mathjax-env mathjax-equation">\begin{equation}\label {eq:inv_system} p^{\mu } p_{\mu } = \left (\sum _i E_i\right )^2 - \left (\sum _i\boldsymbol {p}_i\right )^2 \end{equation}</div><a 
- id="x1-16007r63"></a> is Lorentz invariant. Be mindful that <div class="mathjax-env mathjax-equation*">\begin{equation*} \left (\sum _i\boldsymbol {p}_i\right )^2 \neq \sum _i (\boldsymbol {p}_i)^2. \end{equation*}</div>
+ id="x1-16006r63"></a> the quantity <div class="mathjax-env mathjax-equation">\begin{equation}\label {eq:inv_system} p^{\mu } p_{\mu } = \left (\sum _i E_i\right )^2 - \left (\sum _i\boldsymbol {p}_i\right )^2 \end{equation}</div><a 
+ id="x1-16007r64"></a> is Lorentz invariant. Be mindful that <div class="mathjax-env mathjax-equation*">\begin{equation*} \left (\sum _i\boldsymbol {p}_i\right )^2 \neq \sum _i (\boldsymbol {p}_i)^2. \end{equation*}</div>
    
 <p><span class="paragraphHead"><a 
 href="#x1-17000" id="x1-17000">Two-Body Decays</a></span>
@@ -748,18 +764,18 @@ we have </p>
 <p>   The standard trick is to employ invariant quantities in addition to conservation of energy and
 momentum. Using </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} p_2^2 &amp;= (P - p_1)^2 \\ &amp;= P^2 + p_1^2 - 2 P \cdot p_1 \\ &amp;= M^2 + m_1^2 + 2 \left ( M \cdot E_1 - 0 \cdot \mathbf {p}_1 \right ) . \end {aligned} \end{equation}</div><a 
- id="x1-17001r64"></a> Since <span class="mathjax-inline">\(p_2^2 = m^2\)</span> we obtain <div class="mathjax-env mathjax-equation">\begin{equation} E_1 = \frac {M^2 + m_1^2 - m_2^2}{2M}, \end{equation}</div><a 
- id="x1-17002r65"></a> and <div class="mathjax-env mathjax-equation">\begin{equation} E_2 = M - E_1 = \frac {M^2 + m_2^2 - m_1^2}{2M} . \end{equation}</div><a 
- id="x1-17003r66"></a>
+ id="x1-17001r65"></a> Since <span class="mathjax-inline">\(p_2^2 = m^2\)</span> we obtain <div class="mathjax-env mathjax-equation">\begin{equation} E_1 = \frac {M^2 + m_1^2 - m_2^2}{2M}, \end{equation}</div><a 
+ id="x1-17002r66"></a> and <div class="mathjax-env mathjax-equation">\begin{equation} E_2 = M - E_1 = \frac {M^2 + m_2^2 - m_1^2}{2M} . \end{equation}</div><a 
+ id="x1-17003r67"></a>
 <p>   For the three-momenta <span class="mathjax-inline">\(|\mathbf {p}_1| = | \mathbf {p}_2 = |\mathbf {p}||\)</span> we have </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} |\mathbf {p}|^2 &amp;= E_1^2 - m_1^2 \= \left ( \frac {M^2 + m_1^2 - m_2^2}{2M} \right )^2 - m_1^2 \= \frac {1}{4M^2} \left [ (M^2 + m_1^2 - m_2^2)^2 - 4M^2 m_1^2 \right ]. \end {aligned} \end{equation}</div><a 
- id="x1-17004r67"></a> We treat the term in the brackets as a difference of squares, <span class="mathjax-inline">\(A^2−B^2\)</span>=<span class="mathjax-inline">\((A−B)(A+B)\)</span>,
+ id="x1-17004r68"></a> We treat the term in the brackets as a difference of squares, <span class="mathjax-inline">\(A^2−B^2\)</span>=<span class="mathjax-inline">\((A−B)(A+B)\)</span>,
 where: <span class="mathjax-inline">\(A=(M^2+m1^2−m2^2) \)</span> and <span class="mathjax-inline">\(B=2Mm1\)</span>. Applying the difference of squares: <div class="mathjax-env mathjax-equation">\begin{equation} |\mathbf {p}|^2 = \frac {1}{4M^2} \left [ (M^2 + m_1^2 - m_2^2) - 2Mm_1 \right ] \left [ (M^2 + m_1^2 - m_2^2) + 2Mm_1 \right ]. \end{equation}</div><a 
- id="x1-17005r68"></a> Rearranging the terms inside the brackets: <div class="mathjax-env mathjax-equation">\begin{equation} |\mathbf {p}|^2 = \frac {1}{4M^2} \left [ (M^2 - 2Mm_1 + m_1^2) - m_2^2 \right ] \left [ (M^2 + 2Mm_1 + m_1^2) - m_2^2 \right ], \end{equation}</div><a 
- id="x1-17006r69"></a> we obtain <div class="mathjax-env mathjax-equation">\begin{equation} |\mathbf {p}|^2 = \frac {1}{4M^2} \left [ (M - m_1)^2 - m_2^2 \right ] \left [ (M + m_1)^2 - m_2^2 \right ], \end{equation}</div><a 
- id="x1-17007r70"></a>
+ id="x1-17005r69"></a> Rearranging the terms inside the brackets: <div class="mathjax-env mathjax-equation">\begin{equation} |\mathbf {p}|^2 = \frac {1}{4M^2} \left [ (M^2 - 2Mm_1 + m_1^2) - m_2^2 \right ] \left [ (M^2 + 2Mm_1 + m_1^2) - m_2^2 \right ], \end{equation}</div><a 
+ id="x1-17006r70"></a> we obtain <div class="mathjax-env mathjax-equation">\begin{equation} |\mathbf {p}|^2 = \frac {1}{4M^2} \left [ (M - m_1)^2 - m_2^2 \right ] \left [ (M + m_1)^2 - m_2^2 \right ], \end{equation}</div><a 
+ id="x1-17007r71"></a>
 leading to <div class="mathjax-env mathjax-equation">\begin{equation} |\mathbf {p}| = \frac {1}{2M} \sqrt { [M^2 - (m_1 + m_2)^2] [M^2 - (m_1 - m_2)^2] }. \end{equation}</div><a 
- id="x1-17008r71"></a>
+ id="x1-17008r72"></a>
    
                                                                                          
                                                                                          
@@ -794,11 +810,11 @@ href="#XParticleDataGroup">1</a>].                                           </s
 </p> 
 <p>   The Mandelstam variables are defined as </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;s = (p_1^\mu +p_2^\mu )^2 = (p_3^\mu +p_4^\mu )^2, \\ &amp;t = (p_1^\mu - p_3^\mu )^2 = (p_2^\mu - p_4^\mu )^2, \\ &amp;u = (p_1^\mu - p_4^\mu )^2 = (p_2^\mu - p_3^\mu )^2, \end {aligned} \end{equation}</div><a 
- id="x1-18002r72"></a> and are Lorentz invariant.
+ id="x1-18002r73"></a> and are Lorentz invariant.
 <p>   They follow from the conservation of four-momentum: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} p_1^\mu +p_2^\mu = p_3^\mu +p_4^\mu . \end{equation}</div><a 
- id="x1-18003r73"></a> From this, we obtain <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;(p_1^\mu +p_2^\mu )^2 = (p_3^\mu +p_4^\mu )^2 = s,\\ &amp;p_1^\mu -p_3^\mu = p_4^\mu - p_2^\mu \implies (p_1^\mu - p_3^\mu )^2 = (p_2^\mu - p_4^\mu )^2 = t,\\ &amp;p_1^\mu -p_4^\mu = p_3^\mu - p_2^\mu \implies (p_1^\mu - p_4^\mu )^2 = (p_2^\mu - p_3^\mu )^2 = u. \end {aligned} \end{equation}</div><a 
- id="x1-18004r74"></a>
+ id="x1-18003r74"></a> From this, we obtain <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;(p_1^\mu +p_2^\mu )^2 = (p_3^\mu +p_4^\mu )^2 = s,\\ &amp;p_1^\mu -p_3^\mu = p_4^\mu - p_2^\mu \implies (p_1^\mu - p_3^\mu )^2 = (p_2^\mu - p_4^\mu )^2 = t,\\ &amp;p_1^\mu -p_4^\mu = p_3^\mu - p_2^\mu \implies (p_1^\mu - p_4^\mu )^2 = (p_2^\mu - p_3^\mu )^2 = u. \end {aligned} \end{equation}</div><a 
+ id="x1-18004r75"></a>
                                                                                          
                                                                                          
    
@@ -3232,7 +3248,7 @@ identities for four and two <span class="mathjax-inline">\(\gamma \)</span> matr
 replacement <span class="mathjax-inline">\(1\rightarrow 3 \)</span>, <span class="mathjax-inline">\(2\rightarrow 4\)</span>, <span class="mathjax-inline">\(m_e\rightarrow m_\mu \)</span>, and all indices lowered. Therefore <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mbox {Tr}\left [\gamma _\mu (\not \!p_4-m_\mu ) \gamma _\nu (\not \!p_3+ m_\mu )\right ] = 4 \left [ {p_3}_\mu {p_4}_\nu + {p_4}_\mu {p_3}_\nu - g_{\mu \nu } (p_3 \cdot p_4 + m_\mu ^2) \right ]. \end {aligned} \end{equation}</div><a 
  id="x1-83009r7"></a> Keeping track of the indices to obtain the correct
 four-momentum pairings (<a 
-href="#x1-7008r11">1.11<!--tex4ht:ref: eq:4vec_mult --></a>), employing the fact that <span class="mathjax-inline">\(g^{\mu \nu } g_{\mu \nu } = 4\)</span> and ignoring the mass of the electron <span class="mathjax-inline">\(m_e\)</span> but not
+href="#x1-7008r12">1.12<!--tex4ht:ref: eq:4vec_mult --></a>), employing the fact that <span class="mathjax-inline">\(g^{\mu \nu } g_{\mu \nu } = 4\)</span> and ignoring the mass of the electron <span class="mathjax-inline">\(m_e\)</span> but not
 of the muon <span class="mathjax-inline">\(m_\mu \)</span> we obtain: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {1}{4} \sum \limits _{\mathrm {spins}} |\mathcal {M} |^2 &amp; = \frac {4e^4}{q^4} \big [ (p_1 \cdot p_3)(p_2 \cdot p_4) + (p_1 \cdot p_4) (p_2 \cdot p_3) - (p_1 \cdot p_2) (p_3 \cdot p_4) - m_{\mu }^2 (p_1 \cdot p_2) \\ &amp; + (p_1 \cdot p_4) (p_2 \cdot p_3) + (p_1 \cdot p_3)(p_2 \cdot p_4) - (p_1 \cdot p_2)(p_3 \cdot p_4) - m_{\mu }^2 (p_1 \cdot p_2) \\ &amp; - (p_1 \cdot p_2) (p_3 \cdot p_4) - (p_1 \cdot p_2) (p_3 \cdot p_4) + 4(p_1 \cdot p_2)(p_3 \cdot p_4) + 4m_{\mu }^2 (p_1 \cdot p_2) \big ]\\ &amp;= \frac {8 e^4}{q^4} \left [(p_1 \cdot p_3)(p_2 \cdot p_4) + (p_1 \cdot p_4) (p_2 \cdot p_3) + m_\mu ^2 (p_1 \cdot p_2) \right ]. \end {aligned} \end{equation}</div><a 
  id="x1-83010r8"></a>
    
@@ -4635,16 +4651,17 @@ multiplied with symmetric ones, we have the symmetric <span class="mathjax-inlin
  id="x1-104012r33"></a> and <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} (p_1 \cdot p_2) = (p_1 \cdot p_3) = \frac {M_X^2}{2} . \end {aligned} \end{equation}</div><a 
  id="x1-104013r34"></a>
 Therefore, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; \left [(p_2 \cdot p_3) + 2\frac {(p_1 \cdot p_2)(p_1 \cdot p_3)}{M_X^2}\right ] \\ &amp; = \frac {M_X^2}{2} + 2 \frac {\frac {M_X^2}{2} \frac {M_X^2}{2} }{M_X^2} \\ &amp; = M_X^2. \end {aligned} \end{equation}</div><a 
- id="x1-104014r35"></a>
+ id="x1-104014r35"></a> Thus, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \langle |\mathcal {M}|^2\rangle = \frac {1}{3} g_X^2 (c_V^2 + c_A^2) \left [(p_2 \cdot p_3) + 2\frac {(p_1 \cdot p_2)(p_1 \cdot p_3)}{M_X^2}\right ] = \frac {1}{3} g_X^2 M_X^2 (c_V^2 + c_A^2). \end {aligned} \end{equation}</div><a 
+ id="x1-104015r36"></a>
 <p>   Since, <span class="mathjax-inline">\(\int d\Omega = 4 \pi \)</span> and <span class="mathjax-inline">\(\boldsymbol {p}^* = \frac {M_X}{2}\)</span>, equation  <a 
 href="#x1-31001r18">2.18<!--tex4ht:ref: eq:decayrate --></a> gives </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:WeakBoson_Decay} \Gamma = \frac {g_X^2 M_X}{48 \pi } (c_V^2 + c_A^2). \end{equation}</div><a 
- id="x1-104015r36"></a>
+ id="x1-104016r37"></a>
    
    <h5 class="subsubsectionHead"><span class="titlemark">10.3.1   </span> <a 
 href="#QQ2-1-151" id="x1-10500010.3.1">Z Boson Decay</a></h5>
 <p>We can calculate the decay rates of the <span class="mathjax-inline">\(Z\)</span> boson by using equation <a 
-href="#x1-104015r36">10.36<!--tex4ht:ref: eq:WeakBoson_Decay --></a>. For <span class="mathjax-inline">\(\sin ^2 \theta _W = 0.23146\)</span> we have <span class="mathjax-inline">\(g_Z \approx 0.55\)</span>. The decay rate to
+href="#x1-104016r37">10.37<!--tex4ht:ref: eq:WeakBoson_Decay --></a>. For <span class="mathjax-inline">\(\sin ^2 \theta _W = 0.23146\)</span> we have <span class="mathjax-inline">\(g_Z \approx 0.55\)</span>. The decay rate to
 each particle type depends on the values of <span class="mathjax-inline">\(c_V\)</span> and <span class="mathjax-inline">\(c_A\)</span> </p> 
 
      <ul class="itemize1">
@@ -4665,7 +4682,7 @@ each particle type depends on the values of <span class="mathjax-inline">\(c_V\)
 </li></ul>
 <p>The total decay rate of the <span class="mathjax-inline">\(Z\)</span> boson is given by </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \Gamma _Z =3 \Gamma (Z\rightarrow \nu _e \bar {\nu _e}) + 3 \Gamma (Z\rightarrow e^+ e^-) + 3 \times 2 \ \Gamma (Z\rightarrow u \bar {u}) + 3 \times 3 \ \Gamma (Z\rightarrow d \bar {d}). \label {eq:GammaZ} \end {aligned} \end{equation}</div><a 
- id="x1-105001r37"></a> This means that the <span class="mathjax-inline">\(Z\)</span> couples equally to the three neutrino
+ id="x1-105001r38"></a> This means that the <span class="mathjax-inline">\(Z\)</span> couples equally to the three neutrino
 families and the three charged lepton families. The <span class="mathjax-inline">\(Z\)</span> boson decays to only two up-type quarks, since the
 decay into <span class="mathjax-inline">\(t \bar {t}\)</span> is not allowed by kinematics, and the three bottom type quarks. Each quark type has three
 colour states, hence a further factor of 3.
@@ -4698,27 +4715,27 @@ additional neutrino exists its mass has to be larger than <span class="mathjax-i
 interactions.
 </p> 
 <p>   Equation <a 
-href="#x1-105001r37">10.37<!--tex4ht:ref: eq:GammaZ --></a> can be used to calculate the branching ratios of the <span class="mathjax-inline">\(Z\)</span> boson into its various decay
+href="#x1-105001r38">10.38<!--tex4ht:ref: eq:GammaZ --></a> can be used to calculate the branching ratios of the <span class="mathjax-inline">\(Z\)</span> boson into its various decay
 modes. When taking the ratio </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \Gamma (Z\rightarrow e^+ e^-) / \Gamma _Z, \end {aligned} \end{equation}</div><a 
- id="x1-105003r38"></a> all the common factors relative to the phase space and the interaction
+ id="x1-105003r39"></a> all the common factors relative to the phase space and the interaction
 vertex cancel; only the <span class="mathjax-inline">\(c_V\)</span> and <span class="mathjax-inline">\(c_A\)</span> factors remain. The end result is <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; \mathrm {BR}(Z\rightarrow e^+ e^-) = \mathrm {BR}(Z\rightarrow \mu ^+ \mu ^-) = \mathrm {BR}(Z\rightarrow \tau ^+ \tau ^-) \approx 3.5\% \\ &amp; \mathrm {BR}(Z\rightarrow \nu _e \bar {\nu _e}) = \mathrm {BR}(Z\rightarrow \nu _\mu \bar {\nu _\mu }) = \mathrm {BR}(Z\rightarrow \nu _\tau \bar {\nu _\tau }) \approx 6.9\% \\ &amp; \mathrm {BR}(Z\rightarrow u \bar {u}) = \mathrm {BR}(Z\rightarrow c \bar {c}) \approx 12\% \\ &amp; \mathrm {BR}(Z\rightarrow d \bar {d}) = \mathrm {BR}(Z\rightarrow s \bar {s}) = \mathrm {BR}(Z\rightarrow b \bar {b}) \approx 15\%. \end {aligned} \end{equation}</div><a 
- id="x1-105004r39"></a>
+ id="x1-105004r40"></a>
    
    <h5 class="subsubsectionHead"><span class="titlemark">10.3.2   </span> <a 
 href="#QQ2-1-153" id="x1-10600010.3.2">W Boson Decay</a></h5>
 <p>The decay rates of the W boson follow from <a 
-href="#x1-104015r36">10.36<!--tex4ht:ref: eq:WeakBoson_Decay --></a> with <span class="mathjax-inline">\(g_X = g_W/\sqrt {2}\)</span> and <span class="mathjax-inline">\(c_A = c_V = 1\)</span>. For the leptons, since we ignored the
+href="#x1-104016r37">10.37<!--tex4ht:ref: eq:WeakBoson_Decay --></a> with <span class="mathjax-inline">\(g_X = g_W/\sqrt {2}\)</span> and <span class="mathjax-inline">\(c_A = c_V = 1\)</span>. For the leptons, since we ignored the
 lepton mass differences we write: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \Gamma (W^- \rightarrow e^- \bar {\nu }_e) = \Gamma (W^- \rightarrow \mu ^- \bar {\nu }_\mu ) = \Gamma (W^- \rightarrow \tau ^- \bar {\nu }_\tau ). \end {aligned} \end{equation}</div><a 
- id="x1-106001r40"></a> The decays into quarks are more complex. There is a factor of three
+ id="x1-106001r41"></a> The decays into quarks are more complex. There is a factor of three
 due to the colour terms. But also, the electroweak quark states do not correspond to the strong quark
 states, but they are mixed with the CKM matrix. So we get: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; \Gamma (W^- \rightarrow \bar {u} d) = 3 |V_{ud}|^2 \Gamma (W^- \rightarrow e^- \bar {\nu }_e)\\ &amp;\Gamma (W^- \rightarrow \bar {u} s) = 3 |V_{us}|^2 \Gamma (W^- \rightarrow e^- \bar {\nu }_e) \\ &amp; \Gamma (W^- \rightarrow \bar {u} b) = 3 |V_{ub}|^2 \Gamma (W^- \rightarrow e^- \bar {\nu }_e) \\ &amp; \Gamma (W^- \rightarrow \bar {c} d) = 3 |V_{cd}|^2 \Gamma (W^- \rightarrow e^- \bar {\nu }_e) \\ &amp; \Gamma (W^- \rightarrow \bar {c} s) = 3 |V_{cs}|^2 \Gamma (W^- \rightarrow e^- \bar {\nu }_e) \\ &amp; \Gamma (W^- \rightarrow \bar {c} b) = 3 |V_{cb}|^2 \Gamma (W^- \rightarrow e^- \bar {\nu }_e) \\ \end {aligned} \end{equation}</div><a 
- id="x1-106002r41"></a> Note that decays into the top-quark are not
+ id="x1-106002r42"></a> Note that decays into the top-quark are not
 allowed, since the top quark is heavier than the <span class="mathjax-inline">\(W\)</span> boson. From the unitarity of the CKM matrix we get: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} |V_{ud}|^2 + |V_{us}|^2 + |V_{ub}|^2 = |V_{cd}|^2 + |V_{cs}|^2 + |V_{cb}|^2 = 1. \end {aligned} \end{equation}</div><a 
- id="x1-106003r42"></a> In
+ id="x1-106003r43"></a> In
 the end <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \Gamma (W \rightarrow q \bar {q}') = 6 \Gamma (W^- \rightarrow e^- \bar {\nu }_e). \end {aligned} \end{equation}</div><a 
- id="x1-106004r43"></a> Therefore the total width of the <span class="mathjax-inline">\(W\)</span> boson will be <span class="mathjax-inline">\((6+3) = 9\)</span> times the width to <span class="mathjax-inline">\(e^- \bar {\nu }_e\)</span> and the branching ratio of
+ id="x1-106004r44"></a> Therefore the total width of the <span class="mathjax-inline">\(W\)</span> boson will be <span class="mathjax-inline">\((6+3) = 9\)</span> times the width to <span class="mathjax-inline">\(e^- \bar {\nu }_e\)</span> and the branching ratio of
 the <span class="mathjax-inline">\(W\)</span> into hadrons is <span class="mathjax-inline">\(6/9 = 2/3 \approx 67 \%\)</span>.
                                                                                          
                                                                                          
