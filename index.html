@@ -925,16 +925,17 @@ perturbation theory (typically the so-called Born approximation) to calculate th
 various processes.
 </p> 
 <p>   Let me repeat a customary warning, that you have probably heard multiple times. You should avoid
-thinking it terms of classical trajectories but in terms of of transition amplitudes between different
-states. Even in Bohm type theories, that admit particle trajectories these are non-classical and
-non-local [<a 
-href="#Xbell2004speakable">9</a>].
+thinking it terms of classical trajectories. Even in Bohm type theories, that admit particle trajectories
+these are non-classical and non-local [<a 
+href="#Xbell2004speakable">9</a>]. In the standard approach to quantum mechanics, it is easier to
+think in terms of transition amplitudes between different states. These amplitudes can be calculated
+using the Feynman rules.
 </p> 
 <p>   We will take the view that, as John Bell put it, the standard quantum-mechanical algorithm is good
 enough <i>For All Practical Purposes</i>. Obviously, there are foundational questions [<a 
 href="#Xbell2004speakable">9</a>]. Our main aim would
 be to establish a mapping between the blueprint of the theory, the <i>Standard Model Lagrangian</i> and the
-corresponding <i>Feynman rules</i> that characterise the quantum theory (at least in the level of perturbation
+corresponding <i>Feynman rules</i> that characterise the quantum theory (at least at the level of perturbation
 theory). This will allow us to understand the basis of the theory and its relation to experimental
 results.
    
@@ -966,10 +967,10 @@ operator that connects the physical states between these two times: </p>
 <p>   A particular S-matrix element <span class="mathjax-inline">\(S_{fi}\)</span> is then the amplitude for the physical state to be <span class="mathjax-inline">\(\ket {\mathrm {i}}\)</span> at <span class="mathjax-inline">\(-\infty \)</span> and <span class="mathjax-inline">\(\ket {f}\)</span> at <span class="mathjax-inline">\(+\infty \)</span>: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} S_{fi} \equiv \bra {f} \hat {\mathcal {S}} \ket {i}. \end{equation}</div><a 
  id="x1-27002r3"></a>
+                                                                                         
+                                                                                         
 Assuming that the states at <span class="mathjax-inline">\(\pm \infty \)</span> are normalized, the conservation of probability requires: <div class="mathjax-env mathjax-equation">\begin{equation} 1 = \braket {\text {f}|\text {f}} = \braket {\text {in} | S^\dagger S | \text {in}}. \end{equation}</div><a 
  id="x1-27003r4"></a> For this to hold,
-                                                                                         
-                                                                                         
 the scattering operator must satisfy the unitarity condition: <div class="mathjax-env mathjax-equation">\begin{equation} S^\dagger S = I. \end{equation}</div><a 
  id="x1-27004r5"></a> If the state is <span class="mathjax-inline">\(\boldsymbol {q_1},\dots ,\boldsymbol {q_m}\)</span> at <span class="mathjax-inline">\(-\infty \)</span> and <span class="mathjax-inline">\(\boldsymbol {p_1},\dots ,\boldsymbol {p_n}\)</span> at <span class="mathjax-inline">\(+\infty \)</span> we can write <div class="mathjax-env mathjax-equation">\begin{equation} \bra {\mathrm {f}} \hat {\mathcal {S}} \ket {\mathrm {i}} = \bra {\mathbf {p}_1, \dots , \mathbf {p}_n} \hat {\mathcal {S}} \ket {\mathbf {q}_1, \dots , \mathbf {q}_m}. \end{equation}</div><a 
  id="x1-27005r6"></a>
@@ -1769,8 +1770,8 @@ helicity and chirality are both Lorentz invariant and conserved. We will be usin
 for chirality and positive/negative (<span class="mathjax-inline">\(_\uparrow \)</span>, <span class="mathjax-inline">\(_\downarrow \)</span>) for helicity.
 </p> 
 <p>   For a massive particle the positive and negative helicity eigenstates can be expressed as a mixture of
-right and left chiral eigenstates. Similarly, the left and right chiral particle eigenstates can been expressed
-as a mixture of negative and positive helicity eigenstates. The relative weights are </p> 
+right and left chiral eigenstates. Similarly, the left and right chiral particle eigenstates can be expressed as
+a mixture of negative and positive helicity eigenstates. The relative weights are </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \bigg (1+\frac {|\boldsymbol {p}|} {E+m} \bigg ) \approx 2 - \frac {m}{E}, \end{equation}</div><a 
  id="x1-50002r86"></a> for the “correct”
 component and <div class="mathjax-env mathjax-equation">\begin{equation} \bigg (1-\frac {|\boldsymbol {p}|} {E+m} \bigg ) \approx \frac {m}{E}. \end{equation}</div><a 
@@ -1803,9 +1804,10 @@ operator.
  id="x1-51008r95"></a>
 <p>   Assuming that the particles moves alone the <span class="mathjax-inline">\(z\)</span>-axis we have </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \Sigma _3 = \begin {pmatrix} \sigma _3 &amp; 0 \\ 0 &amp; \sigma _3 \end {pmatrix} = \begin {pmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 \end {pmatrix} \end{equation}</div><a 
- id="x1-51009r96"></a> and <span class="mathjax-inline">\(h = \Sigma _3 \text {sign}(p_z)\)</span>, we obtain the solutions shown in
+ id="x1-51009r96"></a> and <div class="mathjax-env mathjax-equation">\begin{equation} h = \frac {1}{2} \Sigma _3 \text {sign}(p_z) \end{equation}</div><a 
+ id="x1-51010r97"></a> we obtain the solutions shown in
 table <a 
-href="#x1-51010r2">4.2<!--tex4ht:ref: tab:chirality_weyl --></a> alongside their corresponding helicity.
+href="#x1-51011r2">4.2<!--tex4ht:ref: tab:chirality_weyl --></a> alongside their corresponding helicity.
    <div class="table">
                                                                                          
                                                                                          
@@ -1861,10 +1863,10 @@ class="td11"> <span class="mathjax-inline">\(-\tfrac {1}{2}\)</span> </td>
  style="vertical-align:baseline;" id="TBL-4-6-"><td  style="white-space:nowrap; text-align:center;" id="TBL-4-6-1"  
 class="td11">       </td></tr></table>                                                                               </div>
 <a 
- id="x1-51010r2"></a>
+ id="x1-51011r2"></a>
 <figcaption class="caption" ><span class="id">Table 4.2: </span><span  
 class="content">Spinor solution for the Weyl equation and corresponding helicity, spin and momentum.
-</span></figcaption><!--tex4ht:label?: x1-51010r2 -->
+</span></figcaption><!--tex4ht:label?: x1-51011r2 -->
                                                                                          
                                                                                          
    </figure>
@@ -1874,23 +1876,23 @@ class="content">Spinor solution for the Weyl equation and corresponding helicity
 href="#QQ2-1-62" id="x1-520004.12.1">Anti-particle Solutions</a></h5>
 <p>For antiparticle spinors we instead have </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} (\gamma ^\mu p_\mu + m)v = 0. \end{equation}</div><a 
- id="x1-52001r97"></a> Repeating the same steps as for the particle spinors in the
+ id="x1-52001r98"></a> Repeating the same steps as for the particle spinors in the
 massless limit, one finds : <div class="mathjax-env mathjax-equation">\begin{equation} \gamma ^5 v = -\left (\boldsymbol {\Sigma }\cdot \frac {\mathbf p}{E}\right )v. \end{equation}</div><a 
- id="x1-52002r98"></a>
+ id="x1-52002r99"></a>
 <p>   Starting from <span class="mathjax-inline">\(P_L v_R = v_R\)</span> (see section <a 
 href="#x1-490004.10">4.10<!--tex4ht:ref: sec:Chirality --></a> we have </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \frac {1}{2}(1 - \gamma ^5) v_R = v_R \implies -\gamma ^5 v_R = v_R \implies \gamma ^5 v_R = -1 \cdot v_R. \end{equation}</div><a 
- id="x1-52003r99"></a> Substituting this into the equation for antiparticles, we
+ id="x1-52003r100"></a> Substituting this into the equation for antiparticles, we
 obtain: <div class="mathjax-env mathjax-equation">\begin{equation} -1 \cdot v_R = - \left (\boldsymbol {\Sigma }\cdot \frac {\mathbf p}{E}\right )v_R, \end{equation}</div><a 
- id="x1-52004r100"></a> which simplifies to: <div class="mathjax-env mathjax-equation">\begin{equation} \left (\boldsymbol {\Sigma }\cdot \frac {\mathbf p}{E}\right )v_R = +1 \cdot v_R. \end{equation}</div><a 
- id="x1-52005r101"></a> Meaning that the right-handed chiral antiparticle state <span class="mathjax-inline">\(v_R\)</span> in the massless limit
+ id="x1-52004r101"></a> which simplifies to: <div class="mathjax-env mathjax-equation">\begin{equation} \left (\boldsymbol {\Sigma }\cdot \frac {\mathbf p}{E}\right )v_R = +1 \cdot v_R. \end{equation}</div><a 
+ id="x1-52005r102"></a> Meaning that the right-handed chiral antiparticle state <span class="mathjax-inline">\(v_R\)</span> in the massless limit
 coincides with the positive helicity eigenstate <span class="mathjax-inline">\(v_\uparrow \)</span>. The solution are presented in table Starting from <span class="mathjax-inline">\(P_L v_R = v_R\)</span> (see
 section <a 
 href="#x1-490004.10">4.10<!--tex4ht:ref: sec:Chirality --></a> we have <div class="mathjax-env mathjax-equation">\begin{equation} \frac {1}{2}(1 - \gamma ^5) v_R = v_R \implies -\gamma ^5 v_R = v_R \implies \gamma ^5 v_R = -1 \cdot v_R. \end{equation}</div><a 
- id="x1-52006r102"></a> Substituting this into the equation for antiparticles, we obtain: <div class="mathjax-env mathjax-equation">\begin{equation} -1 \cdot v_R = - \left (\boldsymbol {\Sigma }\cdot \frac {\mathbf p}{E}\right )v_R, \end{equation}</div><a 
- id="x1-52007r103"></a> which simplifies to:
+ id="x1-52006r103"></a> Substituting this into the equation for antiparticles, we obtain: <div class="mathjax-env mathjax-equation">\begin{equation} -1 \cdot v_R = - \left (\boldsymbol {\Sigma }\cdot \frac {\mathbf p}{E}\right )v_R, \end{equation}</div><a 
+ id="x1-52007r104"></a> which simplifies to:
 <div class="mathjax-env mathjax-equation">\begin{equation} \left (\boldsymbol {\Sigma }\cdot \frac {\mathbf p}{E}\right )v_R = +1 \cdot v_R. \end{equation}</div><a 
- id="x1-52008r104"></a> Meaning that the right-handed chiral antiparticle state <span class="mathjax-inline">\(v_R\)</span> in the massless limit coincides with the positive
+ id="x1-52008r105"></a> Meaning that the right-handed chiral antiparticle state <span class="mathjax-inline">\(v_R\)</span> in the massless limit coincides with the positive
 helicity eigenstate <span class="mathjax-inline">\(v_\uparrow \)</span>.
 <p>   The solutions are shown in table <a 
 href="#x1-52009r3">4.3<!--tex4ht:ref: tab:antiparticle_chirality_weyl --></a> alongside their corresponding helicity. </p> 
@@ -1964,17 +1966,17 @@ href="#QQ2-1-64" id="x1-530004.12.2">Dirac Mass Term</a></h5>
 <p>If we had not omitted the mass term then equation <a 
 href="#x1-51007r94">4.94<!--tex4ht:ref: eq:ChiralityHelicityMassless --></a> would have been </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \gamma ^5 u = (\boldsymbol {\Sigma } \cdot \frac {\boldsymbol {p}}{E}) u +\frac {m}{E} \gamma ^5\gamma ^0 u. \end{equation}</div><a 
- id="x1-53001r105"></a> We can write a Dirac spinor as
+ id="x1-53001r106"></a> We can write a Dirac spinor as
 <div class="mathjax-env mathjax-equation">\begin{equation} u = \begin {pmatrix} u_L \\ u_R \end {pmatrix}. \end{equation}</div><a 
- id="x1-53002r106"></a>
+ id="x1-53002r107"></a>
 <p>   This can be easily be understood by the effect of the projection operators </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \frac {1}{2}( 1 - \gamma ^5) = \frac {1}{2} ( \begin {pmatrix} I &amp; 0 \\ 0 &amp; I \end {pmatrix} - \begin {pmatrix} - I &amp; 0 \\ 0 &amp; I \end {pmatrix}) = \begin {pmatrix} I &amp; 0 \\ 0 &amp; 0 \end {pmatrix}, \end{equation}</div><a 
- id="x1-53003r107"></a> to the above spinor, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {pmatrix} I &amp; 0 \\ 0 &amp; 0 \end {pmatrix} \begin {pmatrix} u_L \\ u_R \end {pmatrix} = \begin {pmatrix} u_L \\ 0 \end {pmatrix}. \end{equation}</div><a 
- id="x1-53004r108"></a>
+ id="x1-53003r108"></a> to the above spinor, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {pmatrix} I &amp; 0 \\ 0 &amp; 0 \end {pmatrix} \begin {pmatrix} u_L \\ u_R \end {pmatrix} = \begin {pmatrix} u_L \\ 0 \end {pmatrix}. \end{equation}</div><a 
+ id="x1-53004r109"></a>
 Similarly for <span class="mathjax-inline">\(u_R\)</span>.
 <p>   Substituting in the equation for the massive case gives : </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} - Eu_L &amp;= \sigma \cdot \mathbf {p} \, u_L - m\, u_R, \\ E u_R &amp;= \sigma \cdot \mathbf {p}\, u_R + m\, u_L. \end {aligned} \end{equation}</div><a 
- id="x1-53005r109"></a> These equation are coupled via the mass
+ id="x1-53005r110"></a> These equation are coupled via the mass
 term, in or in other words the mass acts as the mixing of left and right chiral states. This kind of mass
 term is called a <i>Dirac mass</i> term.
                                                                                          
@@ -4603,7 +4605,7 @@ and left-handed particles.
    
    <h4 class="subsectionHead"><span class="titlemark">10.3   </span> <a 
 href="#QQ2-1-149" id="x1-10400010.3">Weak Boson Decays</a></h4>
-<p>In this section we will study the weak decay of weak bosons We will do that using a vertex of the form </p> 
+<p>In this section we will study the weak decay of weak bosons. We will do that using a vertex of the form </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {-ig_X}{2} \gamma ^\mu (c_V - c_A\gamma ^5). \end {aligned} \end{equation}</div><a 
  id="x1-104001r23"></a>
 The end result (using the appropriate values for <span class="mathjax-inline">\(g_X\)</span>, <span class="mathjax-inline">\(c_V\)</span>, <span class="mathjax-inline">\(c_A\)</span>, <span class="mathjax-inline">\(M_X\)</span>) will be valid for the decays of <span class="mathjax-inline">\(W^\pm \)</span> and <span class="mathjax-inline">\(Z\)</span>
