@@ -5393,20 +5393,20 @@ href="#QQ2-1-173" id="x1-125000B">Decay Rate Derivations</a></h3>
 href="#QQ2-1-174" id="x1-126000B.1">Decay Rate Formula</a></h4>
 <p>Let’s consider a decay process where the initial state is a single particle with four-momentum <span class="mathjax-inline">\(p\)</span> and mass <span class="mathjax-inline">\(M\)</span>,
 and the final state is given by <span class="mathjax-inline">\(n\)</span> particles with four-momenta <span class="mathjax-inline">\(p_i\)</span> and masses <span class="mathjax-inline">\(m_i\)</span>, <span class="mathjax-inline">\(i=1, \dots ,n\)</span>. For brevity, we define <span class="mathjax-inline">\(T_{fi}\)</span> as: </p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} T_{fi} = \frac {1}{(2E_{p} V)^{1/2}} \prod _{i=1}^{n} \frac {1}{(2E_{p_i} V)^{1/2}} \mathcal {M}_{fi}. \end{equation}</div><a 
+<div class="mathjax-env mathjax-equation">\begin{equation} W_{fi} = \frac {1}{(2E_{p} V)^{1/2}} \prod _{i=1}^{n} \frac {1}{(2E_{p_i} V)^{1/2}} \mathcal {M}_{fi}. \end{equation}</div><a 
  id="x1-126001r1"></a> So
-we can write the corresponding S-matrix element: <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:SMatrix_M} \mathcal {S}_{fi} = \delta _{fi} + i (2\pi )^4 \delta ^{(4)}(P_f - P_i) T_{fi}. \end{equation}</div><a 
+we can write the corresponding S-matrix element: <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:SMatrix_M} \mathcal {S}_{fi} = \delta _{fi} + i (2\pi )^4 \delta ^{(4)}(P_f - P_i) W_{fi}. \end{equation}</div><a 
  id="x1-126002r2"></a>
    
 <p><span class="paragraphHead"><a 
 href="#x1-127000" id="x1-127000">Step 1: Square Modulus</a></span>
    The term <span class="mathjax-inline">\(\delta _{fi}\)</span> is 0 since the initial and final states are different. Quantum mechanics requires that the
 probability for a process is given by the square of the modulus: </p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} |i \mathcal {T}_{fi}|^2 = \left | (2\pi )^4 \delta ^{(4)}(P_f - P_i) i T_{fi} \right |^2. \end{equation}</div><a 
+<div class="mathjax-env mathjax-equation">\begin{equation} |i \mathcal {T}_{fi}|^2 = \left | (2\pi )^4 \delta ^{(4)}(P_f - P_i) i W_{fi} \right |^2. \end{equation}</div><a 
  id="x1-127001r3"></a> We handle the square of the delta
 function by writing one of the terms as an integral over a large <span class="mathjax-inline">\(V\)</span> and <span class="mathjax-inline">\(T\)</span>: <div class="mathjax-env mathjax-equation">\begin{equation} (2\pi )^4 \delta ^{(4)}(P_f - P_i) = \int _{V,T} e^{i (P_f-P_i) \cdot x} d^4x = \int _{V,T} d^4x = VT, \end{equation}</div><a 
  id="x1-127002r4"></a> where the condition <span class="mathjax-inline">\((P_f-P_i)=0\)</span> is enforced by
-the other delta function term. Therefore: <div class="mathjax-env mathjax-equation">\begin{equation} \left | (2\pi )^4 \delta ^{(4)}(P_f - P_i) i T_{fi} \right |^2 = (2\pi )^4 \delta ^{(4)}(P_f - P_i) VT |T_{fi}|^2. \end{equation}</div><a 
+the other delta function term. Therefore: <div class="mathjax-env mathjax-equation">\begin{equation} \left | (2\pi )^4 \delta ^{(4)}(P_f - P_i) i W_{fi} \right |^2 = (2\pi )^4 \delta ^{(4)}(P_f - P_i) VT |W_{fi}|^2. \end{equation}</div><a 
  id="x1-127003r5"></a>
    
 <p><span class="paragraphHead"><a 
@@ -5430,13 +5430,14 @@ eigenstates, so the result depends on momentum but not on position. Consequently
 simply yields the spatial volume <span class="mathjax-inline">\(V\)</span>.
    
 <p><span class="paragraphHead"><a 
-href="#x1-129000" id="x1-129000">Step 3: Combine Results</a></span>
-   The probability <span class="mathjax-inline">\(dw\)</span> for the final state particles to have momenta between <span class="mathjax-inline">\(p_i\)</span> and <span class="mathjax-inline">\(p_i+dp_i\)</span> is: </p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} dw = (2\pi )^4 \delta ^{(4)} (P_i - P_f) VT |T_{fi}|^2 \prod _{i=1}^{n} \frac {V d^3\mathbf {p}_i}{(2\pi )^3}. \end{equation}</div><a 
- id="x1-129001r9"></a> Dividing by <span class="mathjax-inline">\(T\)</span> gives the
-decay probability per unit time <span class="mathjax-inline">\( \Gamma _{fi}\)</span>. Replacing <span class="mathjax-inline">\(T_{fi}\)</span> with the invariant <span class="mathjax-inline">\(\mathcal {M} _{fi}\)</span> removes all volume factors:
-<div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:diff_decay_rate_appendix} \Gamma _{fi} = \frac {(2\pi )^4 \delta ^{(4)} (P_i - P_f)}{2E_p} |\mathcal {M}_{fi}|^2 \prod _{i=1}^{n} \frac {d^3 \mathbf {p}_i}{(2\pi )^3 (2E_i)}. \end{equation}</div><a 
- id="x1-129002r10"></a>
+href="#x1-129000" id="x1-129000">Step 3 Bring things together:</a></span>
+   Therefore, the probability <span class="mathjax-inline">\(dw\)</span> for having in the final state the i<span class="mathjax-inline">\(^\mathrm {th}\)</span> particle with momentum between <span class="mathjax-inline">\(p_i\)</span> and <span class="mathjax-inline">\(p_i+dp_i\)</span> is
+</p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} dw = (2\pi )^4 \delta ^{(4)} (P_i - P_f)VT |W_{fi}|^2 \prod _{i=1}^{n} \frac {Vd^3\boldsymbol {p}_i}{(2\pi )^3}. \end{equation}</div><a 
+ id="x1-129001r9"></a> We are more interested in the decay probability per unit time, so we divide by T <div class="mathjax-env mathjax-equation">\begin{equation} \Gamma _{fi}= (2\pi )^4 \delta ^{(4)} (P_i - P_f) V |W_{fi}|^2 \prod _{i=1}^{n} \frac {Vd^3\boldsymbol {p}_i}{(2\pi )^3}. \end{equation}</div><a 
+ id="x1-129002r10"></a> Replacing <span class="mathjax-inline">\(W_{fi}\)</span> with the
+normalized <span class="mathjax-inline">\(\mathcal {M}_{fi}\)</span> gets rid of the volume factors, <div class="mathjax-env mathjax-equation">\begin{equation} \Gamma _{fi} = (2\pi )^4 \delta ^{(4)} (P_i - P_f) \frac {1}{2E_p}| \mathcal {M}_{fi}|^2 \prod _{i=1}^{n} \frac {d^3\boldsymbol {p}_i}{(2\pi )^3 (2E_i)}. \end{equation}</div><a 
+ id="x1-129003r11"></a>
 <p>   What about all these factors of <span class="mathjax-inline">\(2\pi \)</span> we encountered? You can keep track of them using the following rule:
 <i>Every <span class="mathjax-inline">\(\delta \)</span> gets (<span class="mathjax-inline">\(2\pi \)</span>); every <span class="mathjax-inline">\(d\)</span> gets <span class="mathjax-inline">\(1/2\pi \)</span></i>.
    
@@ -5448,28 +5449,28 @@ href="#QQ2-1-178" id="x1-130000B.2">Two-Body Decays</a></h4>
 two daughter particles are produced back-to-back with three- momenta <span class="mathjax-inline">\(\mathbf {p}^*\)</span> and <span class="mathjax-inline">\(-\mathbf {p}^*\)</span>. In this frame, the decay
 rate is given by </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:two_body_initial} \Gamma _{fi} = \frac {1}{8\pi ^2 m_a} \int \frac {|\mathcal {M}_{fi}|^2}{2 E_1 2 E_2} \delta (m_a - E_1 - E_2) \delta ^{(3)}(\mathbf {p}_1 + \mathbf {p}_2) \, d^3 \mathbf {p}_1 \, d^3 \mathbf {p}_2. \end{equation}</div><a 
- id="x1-130001r11"></a>
+ id="x1-130001r12"></a>
                                                                                          
                                                                                          
 <p>   The <span class="mathjax-inline">\(\delta ^{(3)}(\mathbf {p}_1 + \mathbf {p}_2)\)</span> term enforces momentum conservation, so that integrating over <span class="mathjax-inline">\(d^3 \mathbf {p}_2\)</span> gives <span class="mathjax-inline">\(\mathbf {p}_2 = -\mathbf {p}_1\)</span>, reducing the decay rate
 to </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \Gamma _{fi} = \frac {1}{8\pi ^2 m_a} \int \frac {|\mathcal {M}_{fi}|^2}{4 E_1 E_2} \delta (m_a - E_1 - E_2) \, d^3 \mathbf {p}_1, \end{equation}</div><a 
- id="x1-130002r12"></a> where now <span class="mathjax-inline">\(E_2 = \sqrt {m_2^2 + \mathbf {p}_1^2}\)</span>.
+ id="x1-130002r13"></a> where now <span class="mathjax-inline">\(E_2 = \sqrt {m_2^2 + \mathbf {p}_1^2}\)</span>.
 <p>   Using spherical polar coordinates <span class="mathjax-inline">\(d^3 \mathbf {p}_1 = p_1^2 dp_1 \, d\Omega ^*\)</span>, we can write </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \Gamma _{fi} = \frac {1}{8\pi ^2 m_a} \int \frac {|\mathcal {M}_{fi}|^2 p_1^2}{4 E_1 E_2} \delta \big (m_a - E_1 - E_2\big ) \, dp_1 \, d\Omega ^*. \end{equation}</div><a 
- id="x1-130003r13"></a> We now define <div class="mathjax-env mathjax-align">\begin{align} g(p_1) &amp;= \frac {p_1^2}{4 E_1 E_2}, \\ f(p_1) &amp;= m_a - E_1 - E_2 = m_a - \sqrt {m_1^2 + p_1^2} - \sqrt {m_2^2 + p_1^2}. \end{align}</div><a 
- id="x1-130004r14"></a>
+ id="x1-130003r14"></a> We now define <div class="mathjax-env mathjax-align">\begin{align} g(p_1) &amp;= \frac {p_1^2}{4 E_1 E_2}, \\ f(p_1) &amp;= m_a - E_1 - E_2 = m_a - \sqrt {m_1^2 + p_1^2} - \sqrt {m_2^2 + p_1^2}. \end{align}</div><a 
+ id="x1-130004r15"></a>
 <p>   Then the decay rate can be written as </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \Gamma _{fi} = \frac {1}{8\pi ^2 m_a} \int |\mathcal {M}_{fi}|^2 g(p_1) \, \delta (f(p_1)) \, dp_1 \, d\Omega ^*. \end{equation}</div><a 
- id="x1-130005r15"></a> The delta function <span class="mathjax-inline">\(\delta (f(p_1))\)</span> is only non-zero for <span class="mathjax-inline">\(p_1 = p^*\)</span>, where <span class="mathjax-inline">\(p^*\)</span> is
+ id="x1-130005r16"></a> The delta function <span class="mathjax-inline">\(\delta (f(p_1))\)</span> is only non-zero for <span class="mathjax-inline">\(p_1 = p^*\)</span>, where <span class="mathjax-inline">\(p^*\)</span> is
 the solution of <span class="mathjax-inline">\(f(p^*)=0\)</span>. Using the following property of the Dirac delta function, <div class="mathjax-env mathjax-equation">\begin{equation} \int g(p_1) \, \delta (f(p_1)) \, dp_1 = \frac {g(p^*)}{|df/dp_1|_{p_1 = p^*}}, \end{equation}</div><a 
- id="x1-130006r16"></a> we calculate the
+ id="x1-130006r17"></a> we calculate the
 derivative <div class="mathjax-env mathjax-equation">\begin{equation} \frac {df}{dp_1} = - \frac {p_1}{E_1} - \frac {p_1}{E_2} = -p_1 \left ( \frac {1}{E_1} + \frac {1}{E_2} \right ), \end{equation}</div><a 
- id="x1-130007r17"></a> so that <div class="mathjax-env mathjax-equation">\begin{equation} \left | \frac {df}{dp_1} \right |^{-1} = \frac {1}{p_1} \frac {E_1 E_2}{E_1 + E_2}. \end{equation}</div><a 
- id="x1-130008r18"></a> Combining with <span class="mathjax-inline">\(g(p_1)\)</span> gives <div class="mathjax-env mathjax-equation">\begin{equation} g(p^*) \left | \frac {df}{dp_1} \right |^{-1} = \frac {p^{*2}}{4 E_1 E_2} \cdot \frac {E_1 E_2}{p^*(E_1 + E_2)} = \frac {p^*}{4(E_1 + E_2)} = \frac {p^*}{4 m_a}, \end{equation}</div><a 
- id="x1-130009r19"></a> where we used <span class="mathjax-inline">\(E_1 + E_2 = m_a\)</span>. Thus the differential decay rate is
+ id="x1-130007r18"></a> so that <div class="mathjax-env mathjax-equation">\begin{equation} \left | \frac {df}{dp_1} \right |^{-1} = \frac {1}{p_1} \frac {E_1 E_2}{E_1 + E_2}. \end{equation}</div><a 
+ id="x1-130008r19"></a> Combining with <span class="mathjax-inline">\(g(p_1)\)</span> gives <div class="mathjax-env mathjax-equation">\begin{equation} g(p^*) \left | \frac {df}{dp_1} \right |^{-1} = \frac {p^{*2}}{4 E_1 E_2} \cdot \frac {E_1 E_2}{p^*(E_1 + E_2)} = \frac {p^*}{4(E_1 + E_2)} = \frac {p^*}{4 m_a}, \end{equation}</div><a 
+ id="x1-130009r20"></a> where we used <span class="mathjax-inline">\(E_1 + E_2 = m_a\)</span>. Thus the differential decay rate is
 <div class="mathjax-env mathjax-equation">\begin{equation} \Gamma _{fi} = \frac {p^*}{32 \pi ^2 m_a^2} |\mathcal {M}_{fi}|^2 d\Omega ^*. \end{equation}</div><a 
- id="x1-130010r20"></a>
+ id="x1-130010r21"></a>
                                                                                          
                                                                                          
    
