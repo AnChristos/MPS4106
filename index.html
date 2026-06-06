@@ -3533,7 +3533,7 @@ following spinor replacements <div class="mathjax-env mathjax-equation">\begin{e
  id="x1-88009r67"></a> Therefore, we need to do the following momentum replacements in our LO
 <span class="mathjax-inline">\(e^+e^- \rightarrow \mu ^+ \mu ^-\)</span> result <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;p_2 \rightarrow -p_3,\\ &amp;p_1 \rightarrow p_1, \\ &amp;p_3 \rightarrow p_4, \\ &amp;p_4 \rightarrow -p_2. \\ \end {aligned} \end{equation}</div><a 
  id="x1-88010r68"></a> Note that we crossed both fermion lines, in one line the positron crossed to an electron and in the
-other the anti-muon crossed to a muon in the initial state,so <span class="mathjax-inline">\(F=2\)</span> and there is no overall relative minus
+other the anti-muon crossed to a muon in the initial state, so <span class="mathjax-inline">\(F=2\)</span> and there is no overall relative minus
 sign.
 <p>   Now we can convert our LO <span class="mathjax-inline">\(e^+e^- \rightarrow \mu ^+ \mu ^-\)</span> <span class="mathjax-inline">\(\sum \limits _{\mathrm {spins}} |\mathcal {M} |^2\)</span> result </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {1}{4} \sum \limits _{\mathrm {spins}} |\mathcal {M} |^2 = \frac {8 e^4}{q^4} \left [(p_1 \cdot p_3)(p_2 \cdot p_4) + (p_1 \cdot p_4) (p_2 \cdot p_3) + m_\mu ^2 (p_1 \cdot p_2) \right ], \end {aligned} \end{equation}</div><a 
@@ -4331,10 +4331,10 @@ analysis of some aspects of hadronic weak decays. We know how the <span class="m
 the amplitude as </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} -i \mathcal {M} &amp;= \frac {-i g_W}{2\sqrt {2}} \left [ \bar {u}(p_3) (\gamma ^\mu (1-\gamma ^5)) v(p_4) \right ] \frac {i g_{\mu \nu }}{M_W^2} \frac {-i g_W}{2\sqrt {2}} V_{ud} F^\nu \\ \mathcal {M} &amp; = \frac {g_W^2}{8M_W^2} \left [ \bar {u}(p_3) \gamma ^\mu (1-\gamma ^5) v(p_4) \right ] V_{ud} F_\mu . \end {aligned} \end{equation}</div><a 
  id="x1-99003r51"></a>
-<p>   We only use the fact that we have four fermions, a <span class="mathjax-inline">\(W\)</span> boson propagator, and that the quarks are <span class="mathjax-inline">\(\bar {u}, d\)</span>. We
-are using the <span class="mathjax-inline">\(M_W \gg p\)</span> approximation. The <span class="mathjax-inline">\(F_\pi \)</span> is a <i>form factor</i> which describes the pion blob. We know that <span class="mathjax-inline">\(F_\mu \)</span> is a
-four-vector, as it has to contract with the four-vector from the lepton part. Since the pion has spin 0, the
-only vector associated with it is its four-momentum <span class="mathjax-inline">\(p\)</span>. We effectively end up in the situation shown in
+<p>   We only use the fact that we have four fermions, a <span class="mathjax-inline">\(W\)</span> boson propagator (<span class="mathjax-inline">\(M_W \gg p\)</span> approximation), and that the
+quarks are <span class="mathjax-inline">\(\bar {u}, d\)</span>. The <span class="mathjax-inline">\(F_\pi \)</span> is a <i>form factor</i> which describes the pion blob. We know that <span class="mathjax-inline">\(F_\mu \)</span> is a four-vector, as it has
+to contract with the four-vector from the lepton part. Since the pion has spin 0, the only vector
+associated with it is its four-momentum <span class="mathjax-inline">\(p\)</span>. We effectively end up in the situation shown in
 figure <a 
 href="#x1-99004r10">9.10<!--tex4ht:ref: fig:Pion_Decay_Kinematics --></a>.
 </p> 
@@ -5414,15 +5414,20 @@ href="#x1-128000" id="x1-128000">Step 2: Sum over all final states</a></span>
    To get the correct probability we need to sum over the possible values of the final particles’ momenta.
 In the large volume limit, we can write: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \sum _{\mathbf {p}_i} \rightarrow \frac {V}{(2\pi )^3} \int d^3 \mathbf {p}_i. \end{equation}</div><a 
- id="x1-128001r6"></a> Quantum mechanics connects classical energy to the number of
-quantum states per unit phase space. The usual integration measure is: <div class="mathjax-env mathjax-equation">\begin{equation} \frac {d^3 \mathbf {x}_i \, d^3 \mathbf {p}_i}{h^3}. \end{equation}</div><a 
- id="x1-128002r7"></a> Where <span class="mathjax-inline">\(h^3\)</span> is the volume of the cells
-of phase space. This can be interpreted as the number of particles per unit of phase space being equal to <span class="mathjax-inline">\(h^{-3}\)</span>;
-in other words, a cell of volume <span class="mathjax-inline">\(h^3\)</span> in phase space is equivalent to a discrete particle state. Since <span class="mathjax-inline">\(h=2\pi \hbar \)</span>
-and we work in <span class="mathjax-inline">\(\hbar =1\)</span> units, this becomes: <div class="mathjax-env mathjax-equation">\begin{equation} \frac {d^3 \mathbf {x}_i \, d^3 \mathbf {p}_i}{(2\pi )^3}. \end{equation}</div><a 
- id="x1-128003r8"></a> We work with momentum eigenstates, so the result
-depends on momentum but not position; therefore, integrating over <span class="mathjax-inline">\(d^3 x_i\)</span> gives the volume factor
-<span class="mathjax-inline">\(V\)</span>.
+ id="x1-128001r6"></a>
+<p>   In order to understand this point in a bit more “physical” manner, notice that in classical mechanics
+we use momentum and position phase-space. Classical energy can be connected to quantum mechanics
+via the number of quantum states per area of phase space energy. The usual integration measure is </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} \frac {d^3 \boldsymbol {x}_i \, d^3 \boldsymbol {p}_i}{h^3} \end{equation}</div><a 
+ id="x1-128002r7"></a>
+where <span class="mathjax-inline">\(h^3\)</span> is the volume of the cells of phase space.
+<p>   This can be interpreted as follows. Phase space is not infinitely continuous but is divided into discrete
+cells. A cell of volume <span class="mathjax-inline">\(h^3\)</span> corresponds to exactly one quantum state, so the density of states in phase space
+is <span class="mathjax-inline">\(h^{-3}\)</span>. Since <span class="mathjax-inline">\(h = 2\pi \hbar \)</span> and we work in units where <span class="mathjax-inline">\(\hbar = 1\)</span>, the phase-space measure becomes </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} \frac {d^3\mathbf {x}_i\, d^3\mathbf {p}_i}{(2\pi )^3}. \end{equation}</div><a 
+ id="x1-128003r8"></a> We consider momentum
+eigenstates, so the result depends on momentum but not on position. Consequently, integrating over <span class="mathjax-inline">\(d^3\mathbf {x}_i\)</span>
+simply yields the spatial volume <span class="mathjax-inline">\(V\)</span>.
    
 <p><span class="paragraphHead"><a 
 href="#x1-129000" id="x1-129000">Step 3: Combine Results</a></span>
@@ -5444,6 +5449,8 @@ two daughter particles are produced back-to-back with three- momenta <span class
 rate is given by </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:two_body_initial} \Gamma _{fi} = \frac {1}{8\pi ^2 m_a} \int \frac {|\mathcal {M}_{fi}|^2}{2 E_1 2 E_2} \delta (m_a - E_1 - E_2) \delta ^{(3)}(\mathbf {p}_1 + \mathbf {p}_2) \, d^3 \mathbf {p}_1 \, d^3 \mathbf {p}_2. \end{equation}</div><a 
  id="x1-130001r11"></a>
+                                                                                         
+                                                                                         
 <p>   The <span class="mathjax-inline">\(\delta ^{(3)}(\mathbf {p}_1 + \mathbf {p}_2)\)</span> term enforces momentum conservation, so that integrating over <span class="mathjax-inline">\(d^3 \mathbf {p}_2\)</span> gives <span class="mathjax-inline">\(\mathbf {p}_2 = -\mathbf {p}_1\)</span>, reducing the decay rate
 to </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \Gamma _{fi} = \frac {1}{8\pi ^2 m_a} \int \frac {|\mathcal {M}_{fi}|^2}{4 E_1 E_2} \delta (m_a - E_1 - E_2) \, d^3 \mathbf {p}_1, \end{equation}</div><a 
@@ -5452,8 +5459,6 @@ to </p>
 <div class="mathjax-env mathjax-equation">\begin{equation} \Gamma _{fi} = \frac {1}{8\pi ^2 m_a} \int \frac {|\mathcal {M}_{fi}|^2 p_1^2}{4 E_1 E_2} \delta \big (m_a - E_1 - E_2\big ) \, dp_1 \, d\Omega ^*. \end{equation}</div><a 
  id="x1-130003r13"></a> We now define <div class="mathjax-env mathjax-align">\begin{align} g(p_1) &amp;= \frac {p_1^2}{4 E_1 E_2}, \\ f(p_1) &amp;= m_a - E_1 - E_2 = m_a - \sqrt {m_1^2 + p_1^2} - \sqrt {m_2^2 + p_1^2}. \end{align}</div><a 
  id="x1-130004r14"></a>
-                                                                                         
-                                                                                         
 <p>   Then the decay rate can be written as </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \Gamma _{fi} = \frac {1}{8\pi ^2 m_a} \int |\mathcal {M}_{fi}|^2 g(p_1) \, \delta (f(p_1)) \, dp_1 \, d\Omega ^*. \end{equation}</div><a 
  id="x1-130005r15"></a> The delta function <span class="mathjax-inline">\(\delta (f(p_1))\)</span> is only non-zero for <span class="mathjax-inline">\(p_1 = p^*\)</span>, where <span class="mathjax-inline">\(p^*\)</span> is
