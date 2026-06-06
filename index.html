@@ -760,9 +760,14 @@ where: <span class="mathjax-inline">\(A=(M^2+m_1^2-m_2^2) \)</span> and <span cl
  id="x1-16007r67"></a>
 leading to <div class="mathjax-env mathjax-equation">\begin{equation} |\mathbf {p}| = \frac {1}{2M} \sqrt { [M^2 - (m_1 + m_2)^2] [M^2 - (m_1 - m_2)^2] }. \end{equation}</div><a 
  id="x1-16008r68"></a>
+<p>   Notice that if one of the particles is massless, lets say <span class="mathjax-inline">\(m_2=0\)</span>, then </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} |\mathbf {p}| = \frac {1}{2M} \sqrt { [M^2 - m_1^2] [M^2 - m_1^2] } =\frac {M^2 - m_1^2}{2M} \end{equation}</div><a 
+ id="x1-16009r69"></a> which is the same as the expression for <span class="mathjax-inline">\(E_2\)</span>
+in this case, as expected. At large when working with a massless particle solving for its energy typically
+                                                                                         
+                                                                                         
+reduces the algebra needed.
    
-                                                                                         
-                                                                                         
    <h4 class="subsectionHead"><span class="titlemark">1.7   </span> <a 
 href="#QQ2-1-19" id="x1-170001.7">Mandelstam Variables</a></h4>
 <p>For two-particle to two-particle scattering processes (see figure <a 
@@ -794,11 +799,11 @@ href="#XParticleDataGroup">1</a>].                                           </s
 </p> 
 <p>   The Mandelstam variables are defined as </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;s = (p_1^\mu +p_2^\mu )^2 = (p_3^\mu +p_4^\mu )^2, \\ &amp;t = (p_1^\mu - p_3^\mu )^2 = (p_2^\mu - p_4^\mu )^2, \\ &amp;u = (p_1^\mu - p_4^\mu )^2 = (p_2^\mu - p_3^\mu )^2, \end {aligned} \end{equation}</div><a 
- id="x1-17002r69"></a> and are Lorentz invariant.
+ id="x1-17002r70"></a> and are Lorentz invariant.
 <p>   They follow from the conservation of four-momentum: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} p_1^\mu +p_2^\mu = p_3^\mu +p_4^\mu . \end{equation}</div><a 
- id="x1-17003r70"></a> From this, we obtain <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;(p_1^\mu +p_2^\mu )^2 = (p_3^\mu +p_4^\mu )^2 = s,\\ &amp;p_1^\mu -p_3^\mu = p_4^\mu - p_2^\mu \implies (p_1^\mu - p_3^\mu )^2 = (p_2^\mu - p_4^\mu )^2 = t,\\ &amp;p_1^\mu -p_4^\mu = p_3^\mu - p_2^\mu \implies (p_1^\mu - p_4^\mu )^2 = (p_2^\mu - p_3^\mu )^2 = u. \end {aligned} \end{equation}</div><a 
- id="x1-17004r71"></a>
+ id="x1-17003r71"></a> From this, we obtain <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;(p_1^\mu +p_2^\mu )^2 = (p_3^\mu +p_4^\mu )^2 = s,\\ &amp;p_1^\mu -p_3^\mu = p_4^\mu - p_2^\mu \implies (p_1^\mu - p_3^\mu )^2 = (p_2^\mu - p_4^\mu )^2 = t,\\ &amp;p_1^\mu -p_4^\mu = p_3^\mu - p_2^\mu \implies (p_1^\mu - p_4^\mu )^2 = (p_2^\mu - p_3^\mu )^2 = u. \end {aligned} \end{equation}</div><a 
+ id="x1-17004r72"></a>
                                                                                          
                                                                                          
    
@@ -4385,15 +4390,17 @@ and <span class="mathjax-inline">\(p_4\)</span> respectively <div class="mathjax
 <p>   We will use formula <a 
 href="#x1-30001r18">2.18<!--tex4ht:ref: eq:decayrate --></a>. In the rest frame of the pion we have </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;p = ( m_\pi , 0), \\ &amp;p_3 = (E_3 , \boldsymbol {p}_3 ), \\ &amp;p_4 = (E_4 , \boldsymbol {p}_4 ). \end {aligned} \end{equation}</div><a 
- id="x1-99014r61"></a> Since the neutrino is massless, <span class="mathjax-inline">\(|\boldsymbol {p}^*| = |\boldsymbol {p}_4| = E_4\)</span>. This
-leads to <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} m_l^2 = m_\pi ^2 - 2E_4 m_\pi . \end {aligned} \end{equation}</div><a 
- id="x1-99015r62"></a> Thus, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} |\boldsymbol {p}^*| = \frac {1}{2m_\pi } (m_\pi ^2 - m_l^2). \end {aligned} \end{equation}</div><a 
- id="x1-99016r63"></a> Therefore, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \Gamma _{fi} &amp;= \frac {(m_\pi ^2 - m_l^2)}{64 \pi ^2 m_\pi ^3} 4\pi \left [\frac {g_W}{2 M_W} \right ]^4 V_{ud}^2 f_\pi ^2 m_l^2 (m_\pi ^2 - m_l^2) \\ &amp;= \frac {V_{ud}^2 f_\pi ^2}{16 \pi m_\pi ^3} \left [\frac {g_W}{2 M_W} \right ]^4 m_l^2 (m_\pi ^2 - m_l^2)^2 \\ &amp;= \frac {V_{ud}^2 f_\pi ^2}{\pi m_\pi ^3} \left [\frac {g_W}{4 M_W} \right ]^4 m_l^2 (m_\pi ^2 - m_l^2)^2. \end {aligned} \end{equation}</div><a 
- id="x1-99017r64"></a>
+ id="x1-99014r61"></a> Since the neutrino is massless, <span class="mathjax-inline">\(|\boldsymbol {p}^*| = |\boldsymbol {p}_4| = E_4\)</span>. It is
+convenient to form <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} p_3^2 = (P - p_4)^2. \end {aligned} \end{equation}</div><a 
+ id="x1-99015r62"></a> As the three-momentum of the pion is 0 and the neutrino mass also 0 we can obtain <span class="mathjax-inline">\(E_4\)</span>
+quite easily: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;p_3^2 = (p - p_4)^2 \implies p_3^2 = p^2 +p_4^2 -2 p\cdot p_4\\ &amp;\implies m_l^2 = m_\pi ^2 - 2E_4 E_\pi + 2 \mathbf {p_\pi } \mathbf {p_4} \implies m_l^2 = m_\pi ^2 - 2E_4 m_\pi . \end {aligned} \end{equation}</div><a 
+ id="x1-99016r63"></a> Thus, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} |\boldsymbol {p}^*| = \frac {1}{2m_\pi } (m_\pi ^2 - m_l^2). \end {aligned} \end{equation}</div><a 
+ id="x1-99017r64"></a> Therefore, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \Gamma _{fi} &amp;= \frac {(m_\pi ^2 - m_l^2)}{64 \pi ^2 m_\pi ^3} 4\pi \left [\frac {g_W}{2 M_W} \right ]^4 V_{ud}^2 f_\pi ^2 m_l^2 (m_\pi ^2 - m_l^2) \\ &amp;= \frac {V_{ud}^2 f_\pi ^2}{16 \pi m_\pi ^3} \left [\frac {g_W}{2 M_W} \right ]^4 m_l^2 (m_\pi ^2 - m_l^2)^2 \\ &amp;= \frac {V_{ud}^2 f_\pi ^2}{\pi m_\pi ^3} \left [\frac {g_W}{4 M_W} \right ]^4 m_l^2 (m_\pi ^2 - m_l^2)^2. \end {aligned} \end{equation}</div><a 
+ id="x1-99018r65"></a>
 <p>   Without knowing <span class="mathjax-inline">\(f_\pi \)</span>, we cannot calculate the charged pion lifetime, but we can already determine the
 ratio of the electron and muon decays. </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {\Gamma (\pi ^- \rightarrow e^-~\bar {\nu }_e)} {\Gamma ( \pi ^- \rightarrow \mu ^-~\bar {\nu }_\mu )} = \frac {m_e^2 (m_\pi ^2 - m_e^2)^2} {m_\mu ^2 (m_\pi ^2 - m_\mu ^2)^2} = 1.2 \times 10^{-4}. \end {aligned} \end{equation}</div><a 
- id="x1-99018r65"></a> This is a definite prediction of the theory, as <span class="mathjax-inline">\(f_\pi \)</span> cancels out, so it
+ id="x1-99019r66"></a> This is a definite prediction of the theory, as <span class="mathjax-inline">\(f_\pi \)</span> cancels out, so it
 depends only on the masses of the relevant particles. This prediction has been experimentally
 verified.
 <p>   <figure class="figure"> 
@@ -4406,10 +4413,10 @@ verified.
 <p><img 
 src="pics/Pion_Helicity.png" alt="PIC"  
 style="width:63.25%"> <a 
- id="x1-99019r11"></a>
+ id="x1-99020r11"></a>
 <figcaption class="caption" ><span class="id">Figure 9.11: </span><span  
 class="content">Pion decay helicity sketch [<a 
-href="#Xthomson">5</a>].                                                  </span></figcaption><!--tex4ht:label?: x1-99019r11 -->
+href="#Xthomson">5</a>].                                                  </span></figcaption><!--tex4ht:label?: x1-99020r11 -->
                                                                                          
                                                                                          
 </p> 
@@ -4422,7 +4429,7 @@ Charged pion decay is a good example of the <span class="mathjax-inline">\(V-A\)
 chirality and helicity. The anti-neutrino is right-handed and has positive helicity. The pion has spin 0, so
 the charged lepton has to be emitted with opposite spin, so it also has positive helicity; see
 figure <a 
-href="#x1-99019r11">9.11<!--tex4ht:ref: fig:Pion_Helicity --></a>.
+href="#x1-99020r11">9.11<!--tex4ht:ref: fig:Pion_Helicity --></a>.
 </p> 
 <p>   Since weak interactions couple only to left-handed chiral particles, if helicity and chirality
 coincided, the decay of charged pions to leptons would be forbidden. Actually, as we have
