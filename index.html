@@ -3126,18 +3126,19 @@ incoming/outgoing fermions there is a an additional challenge. We have completen
 spinors, but the spinors appear inside <span class="mathjax-inline">\(\left [\bar {u}(a) (4\times 4) u(b) \right ]\)</span> terms. Therefore, some further algebraic manipulations are
 required. The result can be encoded in the so-called <i>Casimir’s trick</i> </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sum \limits _{\mathrm {spins}} \left [ \bar {u}(a) \Gamma _1 u(b) \right ] \left [ \bar {u} (a) \Gamma _2 u(b)\right ]^* = \mbox {Tr}\left [\Gamma _1(\not \!p_b + m_b) \bar {\Gamma }_2(\not \!p_a + m_a) \right ], \end {aligned} \end{equation}</div><a 
- id="x1-82001r3"></a> where <span class="mathjax-inline">\(\Gamma _1\)</span>, <span class="mathjax-inline">\(\Gamma _2\)</span> are <span class="mathjax-inline">\(4 \times 4\)</span> matrices and <span class="mathjax-inline">\(\bar {\Gamma } = \gamma ^0 \Gamma ^\dagger \gamma ^0\)</span>. For <span class="mathjax-inline">\(\Gamma = \gamma ^\nu \)</span> we
-have <div class="mathjax-env mathjax-equation">\begin{equation} \bar {\Gamma } = \gamma ^0 \gamma ^{\nu \dagger } \gamma ^0 = \gamma ^\nu = \Gamma . \end{equation}</div><a 
- id="x1-82002r4"></a> The relation <span class="mathjax-inline">\(\bar {\Gamma } = \Gamma \)</span> holds for all cases that we will examine in this course even if not shown
-explicitly. If either of the <span class="mathjax-inline">\(u_b\)</span>, <span class="mathjax-inline">\(u_a\)</span> is replaced by <span class="mathjax-inline">\(v_b\)</span>, <span class="mathjax-inline">\(v_a\)</span> the relevant mass sign for <span class="mathjax-inline">\(m_b\)</span>, <span class="mathjax-inline">\(m_a\)</span> changes to minus
-due to the completeness equations for spinors. Also, recall the abbreviated slash notation
+ id="x1-82001r3"></a> Here <span class="mathjax-inline">\(\mbox {Tr}\)</span> is the <i>trace</i> of the matrix <div class="mathjax-env mathjax-equation">\begin{equation} \mbox {Tr}(A) \sum _{i}A_{ii}. \end{equation}</div><a 
+ id="x1-82002r4"></a> <span class="mathjax-inline">\(\Gamma _1\)</span>, <span class="mathjax-inline">\(\Gamma _2\)</span>
+are <span class="mathjax-inline">\(4 \times 4\)</span> matrices that satisfy <span class="mathjax-inline">\(\bar {\Gamma } = \gamma ^0 \Gamma ^\dagger \gamma ^0\)</span>. For <span class="mathjax-inline">\(\Gamma = \gamma ^\nu \)</span> we have <div class="mathjax-env mathjax-equation">\begin{equation} \bar {\Gamma } = \gamma ^0 \gamma ^{\nu \dagger } \gamma ^0 = \gamma ^\nu = \Gamma . \end{equation}</div><a 
+ id="x1-82003r5"></a> The relation <span class="mathjax-inline">\(\bar {\Gamma } = \Gamma \)</span> holds for all cases that we will examine in this
+course even if not shown explicitly. If either of the <span class="mathjax-inline">\(u_b\)</span>, <span class="mathjax-inline">\(u_a\)</span> is replaced by <span class="mathjax-inline">\(v_b\)</span>, <span class="mathjax-inline">\(v_a\)</span> the relevant mass sign for <span class="mathjax-inline">\(m_b\)</span>, <span class="mathjax-inline">\(m_a\)</span> changes
+to minus due to the completeness equations for spinors. Also, recall the abbreviated slash notation
 <span class="mathjax-inline">\(\not \!p = \gamma ^{\mu } p_{\mu }\)</span>.
 <p>   For the un-polarized electron positron annihilation using the Casimir trick we obtain </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {1}{4} \sum \limits _{\mathrm {spins}} |\mathcal {M}|^2 &amp; = \frac {e^4}{4 q^4} \sum \limits _{\mathrm {spins}} \left [ \bar {v}(p_2) \gamma ^\mu u(p_1) \right ] \left [ \bar {v}(p_2) \gamma ^\nu u(p_1)\right ]^* \left [ \bar {u}(p_3) \gamma _\mu v(p_4) \right ] \left [ \bar {u}(p_3) \gamma _\nu v(p_4) \right ]^* \\ &amp; = \frac {e^4}{4 q^4} \mbox {Tr}\left [\gamma ^\mu (\not \!p_1+m_e) \gamma ^\nu (\not \!p_2-m_e)\right ] \mbox {Tr}\left [\gamma _\mu (\not \!p_4-m_\mu ) \gamma _\nu (\not \!p_3+ m_\mu )\right ]. \end {aligned} \end{equation}</div><a 
- id="x1-82003r5"></a> At this stage we
+ id="x1-82004r6"></a> At this stage we
 need to manipulate the trace of a complicated expression involving <span class="mathjax-inline">\(\gamma \)</span> matrices. This is facilitated by a
 number of theorems seen in table <a 
-href="#x1-82004r1">8.1<!--tex4ht:ref: tab:Trace_Theorems --></a>. <div class="table">
+href="#x1-82005r1">8.1<!--tex4ht:ref: tab:Trace_Theorems --></a>. <div class="table">
                                                                                          
                                                                                          
 <p>   <figure class="float" 
@@ -3207,12 +3208,12 @@ class="hline"><td><hr></td><td><hr></td></tr><tr
  style="vertical-align:baseline;" id="TBL-8-12-"><td  style="white-space:nowrap; text-align:center;" id="TBL-8-12-1"  
 class="td11">                       </td></tr></table>                                                             </div>
 <a 
- id="x1-82004r1"></a>
+ id="x1-82005r1"></a>
 <figcaption class="caption" ><span class="id">Table 8.1:  </span><span  
 class="content">Useful  <span class="mathjax-inline">\(\gamma \)</span>  matrices  trace  theorems.  You  can  see  how  some  of  these  are  derived  in
 appendix <a 
 href="#x1-140000E">E<!--tex4ht:ref: sec:Appendix_Gamma --></a>
-</span></figcaption><!--tex4ht:label?: x1-82004r1 -->
+</span></figcaption><!--tex4ht:label?: x1-82005r1 -->
                                                                                          
                                                                                          
    </figure>
@@ -3231,29 +3232,29 @@ class="enumerate-enumitem"><span class="mathjax-inline">\( \mbox {Tr}(AB) = \mbo
 <p>   For the first trace, since the trace for a product of odd number of <span class="mathjax-inline">\(\gamma \)</span> matrices is zero and using the
 identities for four and two <span class="mathjax-inline">\(\gamma \)</span> matrices, we obtain </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; \mbox {Tr}\left [\gamma ^\mu (\not \!p_1+m_e) \gamma ^\nu (\not \!p_2- m_e)\right ] \\ &amp; = \mbox {Tr}\left [\gamma ^\mu \not \!p_1\gamma ^\nu \not \!p_2\right ] - \mbox {Tr}\left [m_e^2 \gamma ^\mu \gamma ^\nu \right ] \\ &amp; = (p_1)_\lambda (p_2)_\kappa \mbox {Tr}\left [\gamma ^\mu \gamma ^\lambda \gamma ^\nu \gamma ^\kappa \right ] - m_e^2 \mbox {Tr}\left [\gamma ^\mu \gamma ^\nu \right ] \\ &amp; = (p_1)_\lambda (p_2)_\kappa 4 \left [ g^{\mu \lambda } g^{\nu \kappa } - g^{\mu \nu }g^{\lambda \kappa } + g^{\mu \kappa }g^{\lambda \nu } \right ] - 4 g^{\mu \nu } m_e^2 \\ &amp;= 4 \left [ p_1^\mu p_2^\nu - g^{\mu \nu } (p_1 \cdot p_2) + p_2^\mu p_1^\nu \right ] - 4 g^{\mu \nu } m_e^2 \\ &amp; = 4 \left [ p_1^\mu p_2^\nu + p_2^\mu p_1^\nu - g^{\mu \nu } (p_1 \cdot p_2+m_e^2) \right ]. \end {aligned} \end{equation}</div><a 
- id="x1-82008r6"></a> The second trace is the same as the above with the
+ id="x1-82009r7"></a> The second trace is the same as the above with the
 replacement <span class="mathjax-inline">\(1\rightarrow 3 \)</span>, <span class="mathjax-inline">\(2\rightarrow 4\)</span>, <span class="mathjax-inline">\(m_e\rightarrow m_\mu \)</span>, and all indices lowered. Therefore <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mbox {Tr}\left [\gamma _\mu (\not \!p_4-m_\mu ) \gamma _\nu (\not \!p_3+ m_\mu )\right ] = 4 \left [ {p_3}_\mu {p_4}_\nu + {p_4}_\mu {p_3}_\nu - g_{\mu \nu } (p_3 \cdot p_4 + m_\mu ^2) \right ]. \end {aligned} \end{equation}</div><a 
- id="x1-82009r7"></a> Keeping track of the indices to obtain the correct
+ id="x1-82010r8"></a> Keeping track of the indices to obtain the correct
 four-momentum pairings (<a 
 href="#x1-7008r12">1.12<!--tex4ht:ref: eq:4vec_mult --></a>), employing the fact that <span class="mathjax-inline">\(g^{\mu \nu } g_{\mu \nu } = 4\)</span> and ignoring the mass of the electron <span class="mathjax-inline">\(m_e\)</span> but not
 of the muon <span class="mathjax-inline">\(m_\mu \)</span> we obtain: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {1}{4} \sum \limits _{\mathrm {spins}} |\mathcal {M} |^2 &amp; = \frac {4e^4}{q^4} \big [ (p_1 \cdot p_3)(p_2 \cdot p_4) + (p_1 \cdot p_4) (p_2 \cdot p_3) - (p_1 \cdot p_2) (p_3 \cdot p_4) - m_{\mu }^2 (p_1 \cdot p_2) \\ &amp; + (p_1 \cdot p_4) (p_2 \cdot p_3) + (p_1 \cdot p_3)(p_2 \cdot p_4) - (p_1 \cdot p_2)(p_3 \cdot p_4) - m_{\mu }^2 (p_1 \cdot p_2) \\ &amp; - (p_1 \cdot p_2) (p_3 \cdot p_4) - (p_1 \cdot p_2) (p_3 \cdot p_4) + 4(p_1 \cdot p_2)(p_3 \cdot p_4) + 4m_{\mu }^2 (p_1 \cdot p_2) \big ]\\ &amp;= \frac {8 e^4}{q^4} \left [(p_1 \cdot p_3)(p_2 \cdot p_4) + (p_1 \cdot p_4) (p_2 \cdot p_3) + m_\mu ^2 (p_1 \cdot p_2) \right ]. \end {aligned} \end{equation}</div><a 
- id="x1-82010r8"></a>
+ id="x1-82011r9"></a>
    
 <p><span class="paragraphHead"><a 
 href="#x1-83000" id="x1-83000">Step 5 Specialize to a particular reference frame</a></span>
    In many cases it is easier to understand the results of a calculation when using a specific reference
 frame. We notice that in the high energy, massless limit the Mandelstam variables become: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;s = (p_1+p_2)^2 = (p_3+p_4)^2 = 2 p_1 \cdot p_2 = 2 p_3 \cdot p_4 ,\\ &amp;t = (p_1 - p_3)^2 = (p_2 -p_4)^2 = - 2 p_1 \cdot p_3 = - 2 p_2 \cdot p_4, \\ &amp;u = (p_1 - p_4)^2 = (p_2 -p_3)^2 = - 2 p_1 \cdot p_4 = - 2 p_2 \cdot p_3 .\\ \end {aligned} \end{equation}</div><a 
- id="x1-83001r9"></a> Therefore for
+ id="x1-83001r10"></a> Therefore for
 the <span class="mathjax-inline">\(e^+e^- \rightarrow \mu ^+ \mu ^-\)</span> s-channel: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\frac {1}{4} \sum \limits _{\mathrm {spins}} |\mathcal {M} |^2 = \frac {8 e^4}{q^4} \left [(p_1 \cdot p_3)(p_2 \cdot p_4) + (p_1 \cdot p_4) (p_2 \cdot p_3) \right ] = \frac {8 e^4}{s^2} \left [ \frac {1}{4}t^2 + \frac {1}{4} u^2 \right ] = 2 e^4 \frac {t^2+u^2}{s^2}. \end {aligned} \end{equation}</div><a 
- id="x1-83002r10"></a>
+ id="x1-83002r11"></a>
 <p>   In the high energy, massless limit using the reference frame from figure <a 
 href="#x1-78001r2">8.2<!--tex4ht:ref: fig:Feyneemm --></a>: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;p_1 = ( E, 0, 0, E), \\ &amp;p_2 = (E , 0 , 0, -E), \\ &amp;p_3 = (E , E \sin \theta , 0 , E \cos \theta ), \\ &amp;p_4 = (E, -E \sin \theta , 0 , -E \cos \theta ). \end {aligned} \end{equation}</div><a 
- id="x1-83003r11"></a> We get <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; q^4 = s^2 = (p_1+p_2)^4 = 16 E^4, \\ &amp;p_1 \cdot p_3 = E^2 (1- \cos \theta ), \\ &amp;p_2 \cdot p_4 = E^2(1 - \cos \theta ),\\ &amp;p_1 \cdot p_4 = E^2(1+ \cos \theta ), \\ &amp;p_2 \cdot p_3 = E^2(1+ \cos \theta ). \end {aligned} \end{equation}</div><a 
- id="x1-83004r12"></a> The end result is
+ id="x1-83003r12"></a> We get <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; q^4 = s^2 = (p_1+p_2)^4 = 16 E^4, \\ &amp;p_1 \cdot p_3 = E^2 (1- \cos \theta ), \\ &amp;p_2 \cdot p_4 = E^2(1 - \cos \theta ),\\ &amp;p_1 \cdot p_4 = E^2(1+ \cos \theta ), \\ &amp;p_2 \cdot p_3 = E^2(1+ \cos \theta ). \end {aligned} \end{equation}</div><a 
+ id="x1-83004r13"></a> The end result is
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \langle |\mathcal {M}|^2\rangle &amp;= \frac {e^4}{2E^4} \left (E^4 (1- \cos \theta )^2 + E^4 (1+ \cos \theta )^2 \right ) \\ &amp;=\frac {e^4}{2} \left ( 2(1+ \cos ^{2}{\theta })\right ) = e^4 (1+ \cos ^{2} {\theta }). \end {aligned} \end{equation}</div><a 
- id="x1-83005r13"></a>
+ id="x1-83005r14"></a>
    
 <p><span class="paragraphHead"><a 
 href="#x1-84000" id="x1-84000">Step 6 Plug the result in the cross-section formula </a></span>
@@ -3299,14 +3300,14 @@ href="#Xthomson">5</a>].   </span></figcaption><!--tex4ht:label?: x1-84002r4 -->
 <p>   Using <a 
 href="#x1-32004r26">2.26<!--tex4ht:ref: eq:crossrate --></a> with <span class="mathjax-inline">\(|\boldsymbol {p_i^*}| = |\boldsymbol {p_f^*}|\)</span> we get: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {d \sigma }{d\Omega } = \frac {1}{64 \pi ^2 s} e^4 (1+\cos ^2 \theta ) = \frac {\alpha ^2}{4s}(1+\cos ^{2} {\theta }). \end {aligned} \end{equation}</div><a 
- id="x1-84003r14"></a> Here we used <span class="mathjax-inline">\(\alpha = e^2/4\pi \)</span>, where <span class="mathjax-inline">\(\alpha \)</span> is the fine structure constant defined in natural units.
+ id="x1-84003r15"></a> Here we used <span class="mathjax-inline">\(\alpha = e^2/4\pi \)</span>, where <span class="mathjax-inline">\(\alpha \)</span> is the fine structure constant defined in natural units.
 The differential cross section for the <span class="mathjax-inline">\(e^+ e^- \rightarrow \mu ^+ \mu ^-\)</span> process has been measured; see figure <a 
 href="#x1-84001r3">8.3<!--tex4ht:ref: fig:eemmdiffxsec --></a>. The <span class="mathjax-inline">\((1+\cos ^{2} {\theta })\)</span> dependence is
 apparent, but as the energy increases there is a <i>Forward-Backward Asymmetry</i>. This is a clear indication
 that QED is not the complete theory.
 <p>   To obtain the total cross-section we integrate over <span class="mathjax-inline">\(d\Omega = d\phi d\cos (\theta )\)</span>: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \sigma = \frac {\alpha ^2}{4s} \int _{-1}^1 (1+\cos ^{2} {\theta }) d\phi d(\cos \theta ) = \frac {\alpha ^2}{4s} 2\pi \int _{-1}^1 (1+\cos ^{2} {\theta }) d(\cos \theta ) = \frac {4 \pi \alpha ^2}{3s}. \end{equation}</div><a 
- id="x1-84004r15"></a> A graph of the total cross section as a function of
+ id="x1-84004r16"></a> A graph of the total cross section as a function of
 the centre of mass energy is shown in figure <a 
 href="#x1-84002r4">8.4<!--tex4ht:ref: fig:eemmxsec --></a>.
    
@@ -3314,15 +3315,15 @@ href="#x1-84002r4">8.4<!--tex4ht:ref: fig:eemmxsec --></a>.
 href="#QQ2-1-109" id="x1-850008.1.1">Electron-positron Annihilation Close to the Threshold</a></h5>
 <p>If we do not ignore the mass of the outgoing fermions we have </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;p_1 = (E, 0, 0, E), \\ &amp;p_2 = (E , 0 , 0, -E), \\ &amp;p_3 = (E , |\boldsymbol {k}| \sin \theta , 0 , |\boldsymbol {k}| \cos \theta ), \\ &amp;p_4 = (E, - |\boldsymbol {k}| \sin \theta , 0 , -|\boldsymbol {k}| \cos \theta ). \end {aligned} \end{equation}</div><a 
- id="x1-85001r16"></a> Therefore, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;p_1 \cdot p_3 = p_2 \cdot p_4 = E^2 - E |\boldsymbol {k}| \cos \theta ) \\ &amp; = E^2 \left [ 1 - \frac {|\boldsymbol {k}|}{E} \cos \theta \right ] = E^2 \left [ 1 - \beta \cos \theta \right ]. \end {aligned} \end{equation}</div><a 
- id="x1-85002r17"></a> Note that since <span class="mathjax-inline">\(|\boldsymbol {k}| = \sqrt {(E^2 - m_f^2)}\)</span> <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \beta = \frac {|\boldsymbol {k}|}{E} = \frac {\sqrt {(E^2- m_f^2)}}{E} = \sqrt {1- \frac {m_f^2} {E^2} } = \sqrt {1- \frac {4 m_f^2} {s} }, \end {aligned} \end{equation}</div><a 
- id="x1-85003r18"></a> where in the
+ id="x1-85001r17"></a> Therefore, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;p_1 \cdot p_3 = p_2 \cdot p_4 = E^2 - E |\boldsymbol {k}| \cos \theta ) \\ &amp; = E^2 \left [ 1 - \frac {|\boldsymbol {k}|}{E} \cos \theta \right ] = E^2 \left [ 1 - \beta \cos \theta \right ]. \end {aligned} \end{equation}</div><a 
+ id="x1-85002r18"></a> Note that since <span class="mathjax-inline">\(|\boldsymbol {k}| = \sqrt {(E^2 - m_f^2)}\)</span> <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \beta = \frac {|\boldsymbol {k}|}{E} = \frac {\sqrt {(E^2- m_f^2)}}{E} = \sqrt {1- \frac {m_f^2} {E^2} } = \sqrt {1- \frac {4 m_f^2} {s} }, \end {aligned} \end{equation}</div><a 
+ id="x1-85003r19"></a> where in the
 last step we used <span class="mathjax-inline">\(s = 4E^2\)</span>. Similarly <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} p_1 \cdot p_4 &amp; = p_2 \cdot p_3 = E^2 \left [ 1 + \beta \cos {\theta } \right ]. \end {aligned} \end{equation}</div><a 
- id="x1-85004r19"></a> We also have <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} p_1 \cdot p_2 = 2 E^2. \end {aligned} \end{equation}</div><a 
- id="x1-85005r20"></a> Substituting into the relationship we obtained before, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \langle |\mathcal {M}|^2\rangle = \frac {8 e^4}{q^4} \left [(p_1 \cdot p_3)(p_2 \cdot p_4) + (p_1 \cdot p_4) (p_2 \cdot p_3) + m_\mu ^2 (p_1 \cdot p_2) \right ], \end {aligned} \end{equation}</div><a 
- id="x1-85006r21"></a> we
+ id="x1-85004r20"></a> We also have <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} p_1 \cdot p_2 = 2 E^2. \end {aligned} \end{equation}</div><a 
+ id="x1-85005r21"></a> Substituting into the relationship we obtained before, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \langle |\mathcal {M}|^2\rangle = \frac {8 e^4}{q^4} \left [(p_1 \cdot p_3)(p_2 \cdot p_4) + (p_1 \cdot p_4) (p_2 \cdot p_3) + m_\mu ^2 (p_1 \cdot p_2) \right ], \end {aligned} \end{equation}</div><a 
+ id="x1-85006r22"></a> we
 obtain <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \langle |\mathcal {M}|^2\rangle &amp;= \frac {e^4}{2E^4} \left ( E^4 (1- \beta \cos \theta )^2 +E^4 (1+ \beta \cos \theta )^2 + 2E^2 m_f^2 \right ) \\ &amp;=\frac {e^4}{2} \left ( 2(1+ \beta ^2 \cos ^{2} {\theta }) + 2\frac {m_f^2}{E^2}\right ) \\ &amp; =e^4 \left ( 1+ \beta ^2 \cos ^{2} {\theta } + \frac {E^2 - |\boldsymbol {k}|^2}{E^2}\right ) \\ &amp;= {e^4} (2+ \beta ^2 \cos ^{2} {\theta } - \beta ^2). \end {aligned} \end{equation}</div><a 
- id="x1-85007r22"></a>
+ id="x1-85007r23"></a>
 <p>   <figure class="figure"> 
 
                                                                                          
@@ -3346,9 +3347,9 @@ href="#Xthomson">5</a>].                                                        
 <p>   We now need to use <a 
 href="#x1-32004r26">2.26<!--tex4ht:ref: eq:crossrate --></a>. In this case </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {|\boldsymbol {p}^*_f|}{|\boldsymbol {p}_i^*|} = \frac {|\boldsymbol {k}|}{E} = \beta . \end {aligned} \end{equation}</div><a 
- id="x1-85009r23"></a> Therefore, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {d \sigma }{d\Omega } &amp; = \frac {1}{64 \pi ^2 s} \beta {e^4} (2+ \beta ^2 \cos ^{2} {\theta } - \beta ^2)\\ &amp; = \frac {\alpha ^2}{4s}\beta (2+ \beta ^2 \cos ^{2} {\theta } - \beta ^2), \end {aligned} \end{equation}</div><a 
- id="x1-85010r24"></a> where we used <span class="mathjax-inline">\(\alpha = e^2/4\pi \)</span>. The total cross-section is given by <div class="mathjax-env mathjax-equation">\begin{equation} \sigma = \frac {4 \pi \alpha ^2}{3s} \beta \left (\frac {(3-\beta )}{2} \right ). \end{equation}</div><a 
- id="x1-85011r25"></a>
+ id="x1-85009r24"></a> Therefore, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {d \sigma }{d\Omega } &amp; = \frac {1}{64 \pi ^2 s} \beta {e^4} (2+ \beta ^2 \cos ^{2} {\theta } - \beta ^2)\\ &amp; = \frac {\alpha ^2}{4s}\beta (2+ \beta ^2 \cos ^{2} {\theta } - \beta ^2), \end {aligned} \end{equation}</div><a 
+ id="x1-85010r25"></a> where we used <span class="mathjax-inline">\(\alpha = e^2/4\pi \)</span>. The total cross-section is given by <div class="mathjax-env mathjax-equation">\begin{equation} \sigma = \frac {4 \pi \alpha ^2}{3s} \beta \left (\frac {(3-\beta )}{2} \right ). \end{equation}</div><a 
+ id="x1-85011r26"></a>
 Figure <a 
 href="#x1-85008r5">8.5<!--tex4ht:ref: fig:ee_tautau --></a> shows the ratio of <span class="mathjax-inline">\(e^- e^+ \rightarrow \tau ^- \tau ^+ \)</span> to <span class="mathjax-inline">\(e^- e^+ \rightarrow \mu ^- \mu ^+\)</span> events. The data are in good agreement with the above
 prediction.
@@ -3357,21 +3358,21 @@ prediction.
 href="#QQ2-1-111" id="x1-860008.1.2">Feynman Diagrams and Gauge Invariance</a></h5>
 <p>Recall that the general form of the photon propagator is </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \frac {-i}{p^2+i\epsilon } \left [ g_{\mu \nu } - (1-\xi )\frac {p_\mu p_\nu }{p^2} \right ]. \end{equation}</div><a 
- id="x1-86001r26"></a>
+ id="x1-86001r27"></a>
 <p>   In the preceding calculations, we have been working within a specific gauge, <span class="mathjax-inline">\(\xi = 1\)</span>. However, physical
 observables must not depend on this choice. Let us consider again the matrix element for the process </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} e^+ e^- \to \mu ^+ \mu ^-, \end{equation}</div><a 
- id="x1-86002r27"></a> but
+ id="x1-86002r28"></a> but
 without working in a specific gauge. We then have <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {M} = - \frac {e^2}{q^2} \left [ \bar {v}(p_2) ( \gamma ^\mu ) u(p_1) \right ] \left [ \bar {u}(p_3) ( \gamma ^\nu ) v(p_4) \right ] \left [ g_{\mu \nu } - (1-\xi )\frac {q_\mu q_\nu }{q^2} \right ], \end{equation}</div><a 
- id="x1-86003r28"></a> where <div class="mathjax-env mathjax-equation">\begin{equation} q = p_1 + p_2 \end{equation}</div><a 
- id="x1-86004r29"></a> is the momentum of the virtual photon. If the
+ id="x1-86003r29"></a> where <div class="mathjax-env mathjax-equation">\begin{equation} q = p_1 + p_2 \end{equation}</div><a 
+ id="x1-86004r30"></a> is the momentum of the virtual photon. If the
 answer is to be independent of <span class="mathjax-inline">\(\xi \)</span>, then the term proportional to <span class="mathjax-inline">\((1-\xi )\)</span> must give no contribution to the
 amplitude. In this particular case we have <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \left (\bar {v}(p_2) \gamma ^\mu u(p_1)\right ) q_\mu &amp;= \bar {v}(p_2) \not \!q\, u(p_1) = \bar {v}(p_2) (\not \!p_1 + \not \!p_2) u(p_1)\\ &amp;= \bar {v}(p_2) \not \!p_1 u(p_1) + \bar {v}(p_2)\not \!p_2 u(p_1). \end {aligned} \end{equation}</div><a 
- id="x1-86005r30"></a> Applying the Dirac equation <div class="mathjax-env mathjax-equation">\begin{equation} \ \not \!p_1 u(p_1) = m u(p_1), \end{equation}</div><a 
- id="x1-86006r31"></a> and the adjoint Dirac equation <div class="mathjax-env mathjax-equation">\begin{equation} \bar {v}(p_2) \not \!p_2 = -m \bar {v}(p_2), \end{equation}</div><a 
- id="x1-86007r32"></a>
+ id="x1-86005r31"></a> Applying the Dirac equation <div class="mathjax-env mathjax-equation">\begin{equation} \ \not \!p_1 u(p_1) = m u(p_1), \end{equation}</div><a 
+ id="x1-86006r32"></a> and the adjoint Dirac equation <div class="mathjax-env mathjax-equation">\begin{equation} \bar {v}(p_2) \not \!p_2 = -m \bar {v}(p_2), \end{equation}</div><a 
+ id="x1-86007r33"></a>
 we have <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \bar {v}(p_2) \not \!p_1 u(p_1) + \bar {v}(p_2) \not \!p_2 u(p_1) &amp;= \bar {v}(p_2) [m u(p_1)] - [m \bar {v}(p_2)] u(p_1) \\ &amp;= m\bar {v}(p_2)u(p_1) - m \bar {v}(p_2)u(p_1) = 0. \end {aligned} \end{equation}</div><a 
- id="x1-86008r33"></a>
+ id="x1-86008r34"></a>
 <p>   This cancellation is a general property of gauge theories. The effect of the unphysical photon degrees
 of freedom always cancels when one includes <i>all</i> Feynman diagrams contributing to a particular process
 at a given order. Formally this is a consequence of the <i>Ward Identity</i> the details of which are beyond the
@@ -3384,75 +3385,75 @@ href="#XSchwartz:2014sze">15</a>].
 href="#QQ2-1-112" id="x1-870008.1.3">Helicity Amplitude Method in the Massless Limit</a></h5>
 <p>It is instructive to compute the polarized cross sections for </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} e^+ e^- \to \mu ^+ \mu ^- . \end{equation}</div><a 
- id="x1-87001r34"></a> using explicit values for the spinors and the
+ id="x1-87001r35"></a> using explicit values for the spinors and the
 matrices. This method is straightforward it helps clarify some of the physics and is well suited for
 computers. The drawback is that we will have to specialize to a particular frame of reference much
 sooner. In addition, in order to avoid the matrix multiplications becoming cumbersome, we will restrict
 ourselves to the massless limit.
 <p>   As we have seen for the </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} e^-(p_1)e^+(p_2)\to \mu ^-(p_3)\mu ^+(p_4). \end{equation}</div><a 
- id="x1-87002r35"></a> process the tree-level QED amplitude is <div class="mathjax-env mathjax-equation">\begin{equation} i\mathcal {M} = (-ie)^2 \, \bar v(p_2)\gamma ^\mu u(p_1) \, \frac {-ig_{\mu \nu }}{q^2} \, \bar u(p_3)\gamma ^\nu v(p_4). \end{equation}</div><a 
- id="x1-87003r36"></a> Using <span class="mathjax-inline">\(q^2=s\)</span>, this becomes <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {M} = -\frac {e^2}{s} \, J_{(e)}^\mu J_{(\mu )\mu }, \end{equation}</div><a 
- id="x1-87004r37"></a> where
+ id="x1-87002r36"></a> process the tree-level QED amplitude is <div class="mathjax-env mathjax-equation">\begin{equation} i\mathcal {M} = (-ie)^2 \, \bar v(p_2)\gamma ^\mu u(p_1) \, \frac {-ig_{\mu \nu }}{q^2} \, \bar u(p_3)\gamma ^\nu v(p_4). \end{equation}</div><a 
+ id="x1-87003r37"></a> Using <span class="mathjax-inline">\(q^2=s\)</span>, this becomes <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {M} = -\frac {e^2}{s} \, J_{(e)}^\mu J_{(\mu )\mu }, \end{equation}</div><a 
+ id="x1-87004r38"></a> where
 <div class="mathjax-env mathjax-equation">\begin{equation} J_{(e)}^\mu = \bar v(p_2)\gamma ^\mu u(p_1), \J_{(\mu )\mu } = \bar u(p_3)\gamma ^\mu v(p_4). \end{equation}</div><a 
- id="x1-87005r38"></a>
+ id="x1-87005r39"></a>
 <p>   There are sixteen helicity combination of the form </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {M}(\lambda _1, \lambda _2, \lambda _3, \lambda _4) = -\frac {e^2}{s} \left [ \bar {v}(p_2, \lambda _2) \gamma ^\mu u(p_1, \lambda _1) \right ] \left [ \bar {u}(p_3, \lambda _3) \gamma _\mu v(p_4, \lambda _4) \right ], \end{equation}</div><a 
- id="x1-87006r39"></a> where <span class="mathjax-inline">\(\lambda \)</span> can be <span class="mathjax-inline">\(+1\)</span>/<span class="mathjax-inline">\(\uparrow \)</span> or <span class="mathjax-inline">\(-1\)</span>/<span class="mathjax-inline">\(\downarrow \)</span>.
+ id="x1-87006r40"></a> where <span class="mathjax-inline">\(\lambda \)</span> can be <span class="mathjax-inline">\(+1\)</span>/<span class="mathjax-inline">\(\uparrow \)</span> or <span class="mathjax-inline">\(-1\)</span>/<span class="mathjax-inline">\(\downarrow \)</span>.
 <p>   In the massless limit, chirality eigenstates coincide with helicity eigenstates; see <a 
 href="#x1-480004.10">4.10<!--tex4ht:ref: sec:Chirality --></a>. Using the
 projection operators <span class="mathjax-inline">\(P_L=\frac {1}{2}(1-\gamma ^5)\)</span> and <span class="mathjax-inline">\(P_R=\frac {1}{2}(1+\gamma ^5)\)</span>, we can show that: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \bar {v}_R \gamma ^\mu u_R = \bar {v} P_R \gamma ^\mu (P_R u) = \bar {v} \gamma ^\mu P_L P_R u =0, \end {aligned} \end{equation}</div><a 
- id="x1-87007r40"></a> and similarly for <span class="mathjax-inline">\(\bar {v}_R \gamma ^\mu u_R \)</span>. Therefore, we need to calculate only the
+ id="x1-87007r41"></a> and similarly for <span class="mathjax-inline">\(\bar {v}_R \gamma ^\mu u_R \)</span>. Therefore, we need to calculate only the
 (<span class="mathjax-inline">\(R\)</span>,<span class="mathjax-inline">\(L\)</span>), (<span class="mathjax-inline">\(R\)</span>,<span class="mathjax-inline">\(L\)</span>) chirality, (<span class="mathjax-inline">\(\uparrow \)</span>,<span class="mathjax-inline">\(\downarrow \)</span>), (<span class="mathjax-inline">\(\downarrow \)</span>,<span class="mathjax-inline">\(\uparrow \)</span>) helicity terms.
 <p>   This can be done using trace technology as we will see in the the chapter on weak interactions. Here,
 we will do an explicit calculation in in the centre-of-mass frame </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;p_1=(E,0,0,E) \\ &amp;p_2=(E,0,0,-E) \\ &amp;p_3 = (E, E \sin \theta , 0, E \cos \theta ), \\ &amp;p_4 = (E, -E \sin \theta , 0, -E \cos \theta ). \end {aligned} \end{equation}</div><a 
- id="x1-87008r41"></a>
+ id="x1-87008r42"></a>
 <p>   For the current <span class="mathjax-inline">\(J_e^\mu (R,L)=\bar v_L(p_2) \gamma ^\mu u_R(p_1)\)</span> using the chiral solution from <a 
 href="#x1-500004.12">4.12<!--tex4ht:ref: sec:Chirality_Mass --></a> we have </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;v_L = \sqrt {2E}\,(0,0,0,-1)^{T}, \\ &amp;u_R =\sqrt {2E}\,(0,0,1,0)^{T}. \end {aligned} \end{equation}</div><a 
- id="x1-87009r42"></a> Since <span class="mathjax-inline">\(\bar v_L = v_L^\dagger \gamma ^0\)</span> we obtain <div class="mathjax-env mathjax-equation">\begin{equation} \bar {v}_L = \sqrt {2E} \begin {pmatrix} 0 &amp; 0 &amp; 0 &amp; -1 \end {pmatrix} \begin {pmatrix} 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \\ 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \end {pmatrix} = \sqrt {2E} \begin {pmatrix} 0 &amp; -1 &amp; 0 &amp; 0 \end {pmatrix}. \end{equation}</div><a 
- id="x1-87010r43"></a>
+ id="x1-87009r43"></a> Since <span class="mathjax-inline">\(\bar v_L = v_L^\dagger \gamma ^0\)</span> we obtain <div class="mathjax-env mathjax-equation">\begin{equation} \bar {v}_L = \sqrt {2E} \begin {pmatrix} 0 &amp; 0 &amp; 0 &amp; -1 \end {pmatrix} \begin {pmatrix} 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \\ 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \end {pmatrix} = \sqrt {2E} \begin {pmatrix} 0 &amp; -1 &amp; 0 &amp; 0 \end {pmatrix}. \end{equation}</div><a 
+ id="x1-87010r44"></a>
 <p>   The current can then be computed component-wise: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} J^0 = 2E \begin {pmatrix} 0 &amp; -1 &amp; 0&amp; 0 \end {pmatrix} \begin {pmatrix} 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \\ 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \end {pmatrix} \begin {pmatrix} 0 \\ 0 \\ 1 \\ 0 \end {pmatrix} = 2E \begin {pmatrix} 0 &amp; 0 &amp; 0 &amp; -1 \end {pmatrix} \begin {pmatrix} 0 \\ 0 \\ 1 \\ 0 \end {pmatrix} = 0. \end{equation}</div><a 
- id="x1-87011r44"></a>
+ id="x1-87011r45"></a>
    <div class="mathjax-env mathjax-equation">\begin{equation} J^1 = 2E \begin {pmatrix} 0 &amp; -1 &amp; 0 &amp; 0 \end {pmatrix} \begin {pmatrix} 0 &amp; 0 &amp; 0 &amp; 1 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ -1 &amp; 0 &amp; 0 &amp; 0 \end {pmatrix} \begin {pmatrix} 0 \\ 0 \\ 1 \\ 0 \end {pmatrix} = 2E \begin {pmatrix} 0 &amp; 0 &amp; -1 &amp; 0 \end {pmatrix} \begin {pmatrix} 0 \\ 0 \\ 1 \\ 0 \end {pmatrix} = -1. \end{equation}</div><a 
- id="x1-87012r45"></a>
+ id="x1-87012r46"></a>
    <div class="mathjax-env mathjax-equation">\begin{equation} J^2 = 2E \begin {pmatrix} 0 &amp; -1 &amp; 0 &amp; 0 \end {pmatrix} \begin {pmatrix} 0 &amp; 0 &amp; 0 &amp; -i \\ 0 &amp; 0 &amp; i &amp; 0 \\ 0 &amp; i &amp; 0 &amp; 0 \\ -i &amp; 0 &amp; 0 &amp; 0 \end {pmatrix} \begin {pmatrix} 0 \\ 0 \\ 1 \\ 0 \end {pmatrix} = 2E \begin {pmatrix} 0 &amp; 0 &amp; -i &amp; 0 \end {pmatrix} \begin {pmatrix} 0 \\ 0 \\ 1 \\ 0 \end {pmatrix} = -i. \end{equation}</div><a 
- id="x1-87013r46"></a>
+ id="x1-87013r47"></a>
    <div class="mathjax-env mathjax-equation">\begin{equation} J^3 = 2E \begin {pmatrix} 0 &amp; -1 &amp; 0 &amp; 0 \end {pmatrix} \begin {pmatrix} 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 \\ -1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \end {pmatrix} \begin {pmatrix} 0 \\ 0 \\ 1 \\ 0 \end {pmatrix} = 2E \begin {pmatrix} 0 &amp; 0 &amp; 0 &amp; 1 \end {pmatrix} \begin {pmatrix} 1 \\ 0 \\ 0 \\ 0 \end {pmatrix} = 0. \end{equation}</div><a 
- id="x1-87014r47"></a> Thus, <div class="mathjax-env mathjax-equation">\begin{equation} J_e^\mu (R,L)=-2E \cdot (0,1,i,0). \end{equation}</div><a 
- id="x1-87015r48"></a>
+ id="x1-87014r48"></a> Thus, <div class="mathjax-env mathjax-equation">\begin{equation} J_e^\mu (R,L)=-2E \cdot (0,1,i,0). \end{equation}</div><a 
+ id="x1-87015r49"></a>
 <p>   The opposite helicity configuration can be obtained using Hermitian conjugation of the current:
 </p> 
 <div class="mathjax-env mathjax-align">\begin{align} (\bar v \gamma ^\mu u)^\dagger &amp;= u^\dagger (\gamma ^\mu )^\dagger \bar v^\dagger \\ &amp;= u^\dagger (\gamma ^\mu )^\dagger \gamma ^0 v \qquad (\text {since } \bar v = v^\dagger \gamma ^0) \\ &amp;= v^\dagger \gamma ^0 \gamma ^\mu u \qquad (\text {using } (\gamma ^\mu )^\dagger \gamma ^0 = \gamma ^0 \gamma ^\mu ) \\ &amp;= \bar u \gamma ^\mu v. \end{align}</div><a 
- id="x1-87016r49"></a>
+ id="x1-87016r50"></a>
 <p>   This gives </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} J_e^\mu (L,R) = \big [J_e^\mu (R,L)\big ]^* = -2E (0, 1, -i, 0). \end{equation}</div><a 
- id="x1-87017r50"></a>
+ id="x1-87017r51"></a>
 <p>   For the muon current </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} J_{(\mu )\mu } (R,L) = \bar {u}_R(p_3)\gamma ^\mu v_L(p_4) = \bar {v}_L(p_4)\gamma ^\mu u_R(p_3) \end{equation}</div><a 
- id="x1-87018r51"></a> The outgoing muons are produced at scattering angle <span class="mathjax-inline">\(\theta \)</span> in the <span class="mathjax-inline">\(x,z\)</span>-plane. Since any
+ id="x1-87018r52"></a> The outgoing muons are produced at scattering angle <span class="mathjax-inline">\(\theta \)</span> in the <span class="mathjax-inline">\(x,z\)</span>-plane. Since any
 expression of the form <span class="mathjax-inline">\(\bar \psi \gamma ^\mu \psi \)</span> transforms like a 4-vector, we can rotate the result of the electron current in the
 <span class="mathjax-inline">\(xz\)</span>-plane. This yields <div class="mathjax-env mathjax-align">\begin{align} j_\mu ^\mu (R,L) &amp;= - 2E (0, \cos \theta , -i, -\sin \theta ), \\ j_\mu ^\mu (L,R) &amp;= - 2E (0, \cos \theta , i, -\sin \theta ). \end{align}</div><a 
- id="x1-87019r52"></a>
+ id="x1-87019r53"></a>
 <p>   Using </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} s = (p_1 + p_2)^2 = 4E^2, \end{equation}</div><a 
- id="x1-87020r53"></a> the helicity amplitudes follow from <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {M} = - \frac {e^2}{s} J_e^\mu J_{(\mu )\mu }. \end{equation}</div><a 
- id="x1-87021r54"></a> For the first channel, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mathcal {M}(RL \to RL) &amp;= - \frac {e^2}{s} J_e(RL)\cdot J_\mu (RL) \\ &amp;= - \frac {e^2}{4E^2} (2E)^2 (-1 \cdot \cos \theta + i \cdot i) = e^2 (1 + \cos \theta ). \end {aligned} \end{equation}</div><a 
- id="x1-87022r55"></a> For the mixed helicity channel, <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {M}(RL \to LR) = - \frac {e^2}{4E^2} (2E)^2 (-\cos \theta + 1) = e^2 (1 - \cos \theta ). \end{equation}</div><a 
- id="x1-87023r56"></a>
+ id="x1-87020r54"></a> the helicity amplitudes follow from <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {M} = - \frac {e^2}{s} J_e^\mu J_{(\mu )\mu }. \end{equation}</div><a 
+ id="x1-87021r55"></a> For the first channel, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mathcal {M}(RL \to RL) &amp;= - \frac {e^2}{s} J_e(RL)\cdot J_\mu (RL) \\ &amp;= - \frac {e^2}{4E^2} (2E)^2 (-1 \cdot \cos \theta + i \cdot i) = e^2 (1 + \cos \theta ). \end {aligned} \end{equation}</div><a 
+ id="x1-87022r56"></a> For the mixed helicity channel, <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {M}(RL \to LR) = - \frac {e^2}{4E^2} (2E)^2 (-\cos \theta + 1) = e^2 (1 - \cos \theta ). \end{equation}</div><a 
+ id="x1-87023r57"></a>
 Similarly, <div class="mathjax-env mathjax-align">\begin{align} \mathcal {M}(LR \to RL) &amp;= -e^2 (1 - \cos \theta ), \\ \mathcal {M}(LR \to LR) &amp;= -e^2 (1 + \cos \theta ). \end{align}</div><a 
- id="x1-87024r57"></a>
+ id="x1-87024r58"></a>
                                                                                          
                                                                                          
 <p>   The corresponding squared amplitudes are </p> 
 <div class="mathjax-env mathjax-align">\begin{align} |\mathcal {M}(RL \to RL)|^2 &amp;= e^4 (1 + \cos \theta )^2, \\ |\mathcal {M}(RL \to LR)|^2 &amp;= e^4 (1 - \cos \theta )^2, \\ |\mathcal {M}(LR \to RL)|^2 &amp;= e^4 (1 - \cos \theta )^2, \\ |\mathcal {M}(LR \to LR)|^2 &amp;= e^4 (1 + \cos \theta )^2. \end{align}</div><a 
- id="x1-87025r58"></a>
+ id="x1-87025r59"></a>
 <p>   Averaging over the four initial helicity states and summing over final helicities gives </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \langle |\mathcal {M}|^2 \rangle = \frac {1}{4} \left [ 2e^4 (1 + \cos \theta )^2 + 2e^4 (1 - \cos \theta )^2 \right ] = e^4 (1 + \cos ^2\theta ). \end{equation}</div><a 
- id="x1-87026r59"></a>
+ id="x1-87026r60"></a>
    
    <h4 class="subsectionHead"><span class="titlemark">8.2   </span> <a 
 href="#QQ2-1-113" id="x1-880008.2">Crossing Symmetry and Electron-Muon Scattering</a></h4>
@@ -3463,14 +3464,14 @@ is replaced by its antiparticle with four-momentum <span class="mathjax-inline">
 href="#XPeskin:1995ev">11</a>]. Symbolically,
 </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {M}(\cdots \phi (p)\cdots \to \cdots ) \;\longleftrightarrow \; \mathcal {M}(\cdots \to \cdots \bar {\phi }(-p)\cdots ). \end{equation}</div><a 
- id="x1-88001r60"></a>
+ id="x1-88001r61"></a>
 <p>   For fermions the situation is slightly more subtle because the relation depends on the conventions
 chosen for the external spinors <span class="mathjax-inline">\(u\)</span> and <span class="mathjax-inline">\(v\)</span>. </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\sum _s u^{(s)}(p)\bar u^{(s)}(p)= \not \!p + m \;\xrightarrow {\,p\to -p\,}\;\\ &amp;-\not \! p + m = -(\not \! p - m) = -\sum _s v^{(s)}(p)\bar v^{(s)}(p). \end {aligned} \end{equation}</div><a 
- id="x1-88002r61"></a> Hence crossing a fermion introduces an additional minus sign
+ id="x1-88002r62"></a> Hence crossing a fermion introduces an additional minus sign
 relative to the anti-fermion spin sum. Consequently, for a process obtained by crossing <span class="mathjax-inline">\(F\)</span> fermion lines,
 <div class="mathjax-env mathjax-equation">\begin{equation} |\mathcal {M}(p_1^\mu ,\ldots ,p_n^\mu ,\ldots )|^2 = (-1)^F |\mathcal {M}'(p_1^{\prime \mu },\ldots ,p_n^{\prime \mu }, \ldots )|^2. \end{equation}</div><a 
- id="x1-88003r62"></a>
+ id="x1-88003r63"></a>
 <p>   The rules for applying crossing symmetry are: </p> 
 
      <ul class="itemize1">
@@ -3478,7 +3479,7 @@ relative to the anti-fermion spin sum. Consequently, for a process obtained by c
      <p>For every particle (antiparticle) crossed from the initial to the final state, replace it by the
      corresponding antiparticle (particle) and make the momentum substitution </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} p_i \rightarrow -p_j . \end{equation}</div><a 
- id="x1-88004r63"></a>
+ id="x1-88004r64"></a>
      </li>
      <li class="itemize">
      <p>For fermions, apply a factor <span class="mathjax-inline">\((-1)^F\)</span> to the spin-summed amplitude squared, where <span class="mathjax-inline">\(F\)</span> is the number of
@@ -3516,38 +3517,38 @@ class="content">LO Feynman diagram for electron muon scattering <span class="mat
 </p> 
 <p>   Using the rules for QED we get: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} -i \mathcal {M} &amp;= \left [ \bar {u}(p_3) (i e \gamma ^\mu ) u(p_1) \right ] (-i \frac {g_{\mu \nu }}{q^2}) \left [ \bar {u}(p_4) (i e \gamma ^\nu ) u(p_2) \right ]\\ \mathcal {M} &amp; = - \frac {e^2}{q^2} \left [ \bar {u}(p_3) \gamma ^\mu u(p_1) \right ] \left [ \bar {u}(p_4) \gamma _\mu u(p_2) \right ]. \end {aligned} \end{equation}</div><a 
- id="x1-88006r64"></a> We can continue as before and use trace identities to calculate <span class="mathjax-inline">\(\langle |\mathcal {M}|^2\rangle \)</span>. You
+ id="x1-88006r65"></a> We can continue as before and use trace identities to calculate <span class="mathjax-inline">\(\langle |\mathcal {M}|^2\rangle \)</span>. You
 can try this as practice. Here we will avoid any new calculation for <span class="mathjax-inline">\(\langle |\mathcal {M}| ^2\rangle \)</span> and just re-use our previous
 result.
 <p>   We compare the <span class="mathjax-inline">\(\mathcal {M}\)</span> for the s-channel <span class="mathjax-inline">\(e^+e^- \rightarrow \mu ^+ \mu ^-\)</span> </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mathcal {M} &amp; = - \frac {e^2}{q^2} \left [ \bar {v}(p_2) \gamma ^\mu u(p_1) \right ] \left [ \bar {u}(p_3) \gamma _\mu v(p_4) \right ], \end {aligned} \end{equation}</div><a 
- id="x1-88007r65"></a> with the one we obtained for the t-channel <span class="mathjax-inline">\(e^-~\mu ^-~ ~\rightarrow ~e^-~\mu ^-\)</span> <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mathcal {M} &amp; = - \frac {e^2}{q^2} \left [ \bar {u}(p_3) \gamma ^\mu u(p_1) \right ] \left [ \bar {u}(p_4) \gamma _\mu u(p_2) \right ]. \end {aligned} \end{equation}</div><a 
- id="x1-88008r66"></a> We can identify the
+ id="x1-88007r66"></a> with the one we obtained for the t-channel <span class="mathjax-inline">\(e^-~\mu ^-~ ~\rightarrow ~e^-~\mu ^-\)</span> <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mathcal {M} &amp; = - \frac {e^2}{q^2} \left [ \bar {u}(p_3) \gamma ^\mu u(p_1) \right ] \left [ \bar {u}(p_4) \gamma _\mu u(p_2) \right ]. \end {aligned} \end{equation}</div><a 
+ id="x1-88008r67"></a> We can identify the
 following spinor replacements <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\bar {v}(p_2) \rightarrow \bar {u}(p_3), \\ &amp;u(p_1) \rightarrow u(p_1), \\ &amp;\bar {u}(p_3) \rightarrow \bar {u}(p_4), \\ &amp;v(p_4) \rightarrow u(p_2). \end {aligned} \end{equation}</div><a 
- id="x1-88009r67"></a> Therefore, we need to do the following momentum replacements in our LO
+ id="x1-88009r68"></a> Therefore, we need to do the following momentum replacements in our LO
 <span class="mathjax-inline">\(e^+e^- \rightarrow \mu ^+ \mu ^-\)</span> result <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;p_2 \rightarrow -p_3,\\ &amp;p_1 \rightarrow p_1, \\ &amp;p_3 \rightarrow p_4, \\ &amp;p_4 \rightarrow -p_2. \\ \end {aligned} \end{equation}</div><a 
- id="x1-88010r68"></a> Note that we crossed both fermion lines, in one line the positron crossed to an electron and in the
+ id="x1-88010r69"></a> Note that we crossed both fermion lines, in one line the positron crossed to an electron and in the
 other the anti-muon crossed to a muon in the initial state, so <span class="mathjax-inline">\(F=2\)</span> and there is no overall relative minus
 sign.
 <p>   Now we can convert our LO <span class="mathjax-inline">\(e^+e^- \rightarrow \mu ^+ \mu ^-\)</span> <span class="mathjax-inline">\(\sum \limits _{\mathrm {spins}} |\mathcal {M} |^2\)</span> result </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {1}{4} \sum \limits _{\mathrm {spins}} |\mathcal {M} |^2 = \frac {8 e^4}{q^4} \left [(p_1 \cdot p_3)(p_2 \cdot p_4) + (p_1 \cdot p_4) (p_2 \cdot p_3) + m_\mu ^2 (p_1 \cdot p_2) \right ], \end {aligned} \end{equation}</div><a 
- id="x1-88011r69"></a> to a LO <span class="mathjax-inline">\(e^-~\mu ^-~ ~\rightarrow ~e^-~\mu ^-\)</span> one <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {1}{4} \sum \limits _{\mathrm {spins}} |\mathcal {M} |^2 &amp; = \frac {8 e^4}{q^4} \Big [(p_1 \cdot p_4)((-p_3) \cdot (-p_2)) + (p_1 \cdot (-p_2)) ((-p_3) \cdot p_4) + m_\mu ^2 (p_1 \cdot (-p_3)) \Big ] \\ &amp; = \frac {8 e^4}{q^4} \left [(p_1 \cdot p_4)(p_2 \cdot p_3) + (p_1 \cdot p_2) (p_3 \cdot p_4) - m_\mu ^2 (p_1 \cdot p_3) \right ]. \end {aligned} \end{equation}</div><a 
- id="x1-88012r70"></a> Notice, that in both cases we average over two
+ id="x1-88011r70"></a> to a LO <span class="mathjax-inline">\(e^-~\mu ^-~ ~\rightarrow ~e^-~\mu ^-\)</span> one <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {1}{4} \sum \limits _{\mathrm {spins}} |\mathcal {M} |^2 &amp; = \frac {8 e^4}{q^4} \Big [(p_1 \cdot p_4)((-p_3) \cdot (-p_2)) + (p_1 \cdot (-p_2)) ((-p_3) \cdot p_4) + m_\mu ^2 (p_1 \cdot (-p_3)) \Big ] \\ &amp; = \frac {8 e^4}{q^4} \left [(p_1 \cdot p_4)(p_2 \cdot p_3) + (p_1 \cdot p_2) (p_3 \cdot p_4) - m_\mu ^2 (p_1 \cdot p_3) \right ]. \end {aligned} \end{equation}</div><a 
+ id="x1-88012r71"></a> Notice, that in both cases we average over two
 incoming fermions so the factor <span class="mathjax-inline">\(1/4\)</span> is the same. In the massless limit we can write <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\frac {8 e^4}{q^4} \left [(p_1 \cdot p_4)(p_2 \cdot p_3) + (p_1 \cdot p_2) (p_3 \cdot p_4) \right ]. \end {aligned} \end{equation}</div><a 
- id="x1-88013r71"></a> Writing this in terms of
+ id="x1-88013r72"></a> Writing this in terms of
 Mandelstam variables we obtain (here <span class="mathjax-inline">\(q^2 = (p_1 - p_3)^2 = t\)</span>, so <span class="mathjax-inline">\(q^4 = t^2\)</span>): <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\frac {8 e^4}{t^2} \left [ \frac {1}{4}u^2 + \frac {1}{4} s^2 \right ] = 2 e^4 \frac {s^2+u^2}{t^2}. \end {aligned} \end{equation}</div><a 
- id="x1-88014r72"></a> In the centre-of-mass frame (neglecting masses), <div class="mathjax-env mathjax-equation">\begin{equation} s = 4E^2, \quad t = -2E^2(1-\cos \theta ), \quad u = -2E^2(1+\cos \theta ). \end{equation}</div><a 
- id="x1-88015r73"></a> <div class="mathjax-env mathjax-equation">\begin{equation} 2 e^4 \frac {s^2+u^2}{t^2} = 2 e^4 \frac {4 + (1+\cos \theta )^2} {(1-\cos \theta )^2}. \end{equation}</div><a 
- id="x1-88016r74"></a> The cross
+ id="x1-88014r73"></a> In the centre-of-mass frame (neglecting masses), <div class="mathjax-env mathjax-equation">\begin{equation} s = 4E^2, \quad t = -2E^2(1-\cos \theta ), \quad u = -2E^2(1+\cos \theta ). \end{equation}</div><a 
+ id="x1-88015r74"></a> <div class="mathjax-env mathjax-equation">\begin{equation} 2 e^4 \frac {s^2+u^2}{t^2} = 2 e^4 \frac {4 + (1+\cos \theta )^2} {(1-\cos \theta )^2}. \end{equation}</div><a 
+ id="x1-88016r75"></a> The cross
 section is <div class="mathjax-env mathjax-equation">\begin{equation} \frac {d\sigma }{d\Omega } = \frac {\alpha ^2}{2s} \frac {4 + (1+\cos \theta )^2}{(1-\cos \theta )^2}. \end{equation}</div><a 
- id="x1-88017r75"></a>
+ id="x1-88017r76"></a>
    
    <h4 class="subsectionHead"><span class="titlemark">8.3   </span> <a 
 href="#QQ2-1-115" id="x1-890008.3">Evidence of Quark Colour from QED</a></h4>
 <p>You might have heard of the <i>eightfold way</i> that arranged the baryons and mesons into geometrical
 patterns according to the charge and strangeness based on the Gell-Mann Nishijima relation </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} Q = (I_3 + \frac {1}{2} B + \frac {1}{2} S) = (I_3 + \frac {1}{2} Y), \end {aligned} \end{equation}</div><a 
- id="x1-89001r76"></a> where <span class="mathjax-inline">\(I_3\)</span> is
+ id="x1-89001r77"></a> where <span class="mathjax-inline">\(I_3\)</span> is
 the third component of isospin, <span class="mathjax-inline">\(B\)</span> is the baryon number, <span class="mathjax-inline">\(S\)</span> the strangeness and <span class="mathjax-inline">\(Y= B+S\)</span> the hypercharge. The <span class="mathjax-inline">\(J=3/2\)</span>
 baryon decuplet is shown in figure <a 
 href="#x1-89002r7">8.7<!--tex4ht:ref: fig:Baryon_decuplet --></a>.
@@ -3586,7 +3587,7 @@ add up all the cross sections for quark flavours that are kinematically allowed.
 colour hypothesis is correct, we need to count each quark three times (<span class="mathjax-inline">\(N_c=3\)</span>), once for each colour.
 </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sigma = (N_c) \sum \limits _{i} Q_i^2 \frac {4 \pi \alpha ^2}{3s}. \end {aligned} \end{equation}</div><a 
- id="x1-89003r77"></a>
+ id="x1-89003r78"></a>
 <p>   <figure class="figure"> 
 
                                                                                          
@@ -3610,12 +3611,12 @@ href="#Xthomson">5</a>].</span></figcaption><!--tex4ht:label?: x1-89004r8 -->
 effect will be to “dress” the quarks (when they reach a separation distance of approximately <span class="mathjax-inline">\(10^{-15}\)</span> m) into
 bunches of hadrons. Rather than looking at the individual cross sections, we define the ratio <span class="mathjax-inline">\(R\)</span> as </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} R=\frac {\sigma (e^+ e^- \rightarrow \mbox {hadrons})}{\sigma (e^+ e^- \rightarrow \mu ^+ \mu ^-)}. \end {aligned} \end{equation}</div><a 
- id="x1-89005r78"></a> For
+ id="x1-89005r79"></a> For
 centre of mass values between <span class="mathjax-inline">\(1.6 &lt; \sqrt {s} &lt; 3.0\)</span> GeV such as those studied by the ADONE experiment in 1969 we would
 get only production of <span class="mathjax-inline">\(u\)</span>, <span class="mathjax-inline">\(d\)</span>, <span class="mathjax-inline">\(s\)</span> flavour final states, so the value of <span class="mathjax-inline">\(R\)</span> would be: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} R=Q_u^2+Q_d^2+Q_s^2 = 4/9 + 1/9 + 1/9 = 2/3 \end {aligned} \end{equation}</div><a 
- id="x1-89006r79"></a> in the absence of quark colour,
+ id="x1-89006r80"></a> in the absence of quark colour,
 or <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} R= 3 ( Q_u^2+Q_d^2+Q_s^2) = 3(4/9 + 1/9 + 1/9) = 2 \end {aligned} \end{equation}</div><a 
- id="x1-89007r80"></a> in the presence of quark colour. Similar behaviour is observed in the kinematic regime where <span class="mathjax-inline">\(c\)</span> and <span class="mathjax-inline">\(b\)</span>
+ id="x1-89007r81"></a> in the presence of quark colour. Similar behaviour is observed in the kinematic regime where <span class="mathjax-inline">\(c\)</span> and <span class="mathjax-inline">\(b\)</span>
 quarks can be produced in the final state. Figure <a 
 href="#x1-89004r8">8.8<!--tex4ht:ref: fig:ratioR --></a> clearly indicates that the factor of 3 is needed to
 describe nature.
@@ -3655,31 +3656,31 @@ class="content">Higgs decay to fermions.                                        
 href="#x1-740007.3">7.3<!--tex4ht:ref: Interactions --></a> we introduced the Higgs coupling to fermions. In the standard model this is
 proportional to the fermion mass </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} -i \frac {m_f}{v}, \end {aligned} \end{equation}</div><a 
- id="x1-90002r81"></a> where <span class="mathjax-inline">\(v\)</span> is the Higgs field vacuum expectation value. The Higgs is a
+ id="x1-90002r82"></a> where <span class="mathjax-inline">\(v\)</span> is the Higgs field vacuum expectation value. The Higgs is a
 scalar, so we do not need to add something for an incoming Higgs. We can readily write the expression
 for <span class="mathjax-inline">\(\mathcal {M}\)</span>. <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} -i \mathcal {M} &amp;= \left [ \bar {u}(p_1) (- i\frac {m_f}{v}) v(p_2) \right ] \\ \mathcal {M} &amp; = \frac { m_f}{v} \left [ \bar {u}(p_1) v(p_2) \right ]. \end {aligned} \end{equation}</div><a 
- id="x1-90003r82"></a> We now square it <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} |\mathcal {M}|^2 &amp; = \frac {m_f^2}{v^2} \left [ \bar {u}(p_1) v(p_2) \right ] \left [ \bar {u}(p_1) v(p_2) \right ]^* \\ &amp; = \frac {m_f^2}{v^2} \left [ \bar {u}(p_1) v(p_2) \right ] \left [ \bar {v}(p_2) u(p_1) \right ]. \end {aligned} \end{equation}</div><a 
- id="x1-90004r83"></a> Here we took advantage of the fact that for a <span class="mathjax-inline">\(1 \times 1\)</span> matrix, the complex
+ id="x1-90003r83"></a> We now square it <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} |\mathcal {M}|^2 &amp; = \frac {m_f^2}{v^2} \left [ \bar {u}(p_1) v(p_2) \right ] \left [ \bar {u}(p_1) v(p_2) \right ]^* \\ &amp; = \frac {m_f^2}{v^2} \left [ \bar {u}(p_1) v(p_2) \right ] \left [ \bar {v}(p_2) u(p_1) \right ]. \end {aligned} \end{equation}</div><a 
+ id="x1-90004r84"></a> Here we took advantage of the fact that for a <span class="mathjax-inline">\(1 \times 1\)</span> matrix, the complex
 conjugate is the same as the Hermitian conjugate. <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \left [ \bar {u} v \right ]^* = \left [ \bar {u} v \right ]^\dagger = \left [ u^\dagger \gamma ^0 v \right ]^\dagger = \left [ v^\dagger \gamma ^{0 \dagger } u \right ] = \left [\bar {v} u \right ]. \end {aligned} \end{equation}</div><a 
- id="x1-90005r84"></a> Averaging over initial particle spins is
+ id="x1-90005r85"></a> Averaging over initial particle spins is
 also a non-operation since Higgs is a scalar. We still need to sum over the final leptons. We
 can use the Casimir’s trick with <span class="mathjax-inline">\(\Gamma = I\)</span> . But this is a simple enough case (no <span class="mathjax-inline">\(\gamma \)</span> matrices from the
 vertex) so we will use it as on opportunity to show how the Casimir trick arises. We have <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sum \limits _{\mathrm {spins}} |\mathcal {M}|^2 = \sum _{s1} \sum _{s2} |\mathcal {M}|^2 = \frac {m_f^2}{v^2} \sum _{s1} \sum _{s2} \left [ \bar {u}(p_1) v(p_2) \bar {v}(p_2) u(p_1) \right ]. \end {aligned} \end{equation}</div><a 
- id="x1-90006r85"></a>
+ id="x1-90006r86"></a>
 We can use immediately the completeness relation for <span class="mathjax-inline">\(s_2\)</span> to obtain <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sum \limits _{\mathrm {spins}}|\mathcal {M}|^2 = \frac {m_f^2}{v^2} \sum _{s1} \left [ \bar {u}(p_1) (\not \!p_2 - m_f) u(p_1) \right ]. \end {aligned} \end{equation}</div><a 
- id="x1-90007r86"></a> Can we move the <span class="mathjax-inline">\(\bar {u}\)</span> all the
+ id="x1-90007r87"></a> Can we move the <span class="mathjax-inline">\(\bar {u}\)</span> all the
 way to the other side? We cannot mess with the order of two spinors, but their components
 are just numbers. So, we use the following trick. A dot product of two vectors is equal to
 the trace of the vectors multiplied in the opposite order to form a matrix. <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \left ( \begin {array}{cccc} a_1 &amp; a_2 &amp; a_3 &amp; a_4 \end {array} \right ) \left (\begin {array}{c} b_1 \\ b_2 \\b_3 \\ b_4 \end {array} \right ) &amp;= \mbox {Tr} \big [ \left (\begin {array}{c} b_1 \\ b_2 \\b_3 \\ b_4 \end {array} \right ) \left ( \begin {array}{cccc} a_1 &amp; a_2 &amp; a_3 &amp; a_4 \end {array} \right ) \big ] \\ &amp; = \mbox {Tr} \left ( \begin {array}{cccc} b_1 a_1 &amp; b_1 a_2 &amp; b_1 a_3 &amp; b_1 a_4 \\ b_2 a_1 &amp; b_2 a_2 &amp; b_2 a_3 &amp; b_2 a_4 \\ b_3 a_1 &amp; b_3 a_2 &amp; b_3 a_3 &amp; b_3 a_4 \\ b_4 a_1 &amp; b_4 a_2 &amp; b_4 a_3 &amp; b_4 a_4 \end {array} \right ). \end {aligned} \end{equation}</div><a 
- id="x1-90008r87"></a> We move the
+ id="x1-90008r88"></a> We move the
 barred spinor (thought of as a row vector) to the end and take the trace over the resulting <span class="mathjax-inline">\(4 \times 4\)</span>
 matrix arising from the completeness relationship for Dirac spinors. <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sum \limits _{\mathrm {spins}} |\mathcal {M}|^2 &amp;= \frac {m_f^2}{v^2} \sum _{s1}\mbox {Tr} \left [ (\not \!p_2 - m_f) u(p_1) \bar {u}(p_1) \right ]\\ &amp;= \frac {m_f^2}{v^2} \mbox {Tr} \left [ (\not \!p_2 - m_f) (\not \!p_1 + m_f) \right ]. \end {aligned} \end{equation}</div><a 
- id="x1-90009r88"></a> We are back in familiar
+ id="x1-90009r89"></a> We are back in familiar
 ground, omitting terms with odd number of <span class="mathjax-inline">\(\gamma \)</span> matrices, since the trace will be zero, we are left
 with <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sum \limits _{\mathrm {spins}} |\mathcal {M}|^2 &amp;= \frac {m_f^2}{v^2} \mbox {Tr} \left [ (\not \!p_2 - m_f) (\not \!p_1 + m_f) \right ]\\ &amp;= \frac {m_f^2}{v^2} \left [\mbox {Tr} (\not \!p_2 \not \!p_1 ) - m_f^2 \mbox {Tr}(I) \right ]\\ &amp;= \frac {m_f^2}{v^2} \left [ 4(p_1 \cdot p_2) - 4m_f^2 \right ]. \end {aligned} \end{equation}</div><a 
- id="x1-90010r89"></a> If we want to be correct for quarks we also need to sum over the different colours <span class="mathjax-inline">\((N_c)\)</span>.
+ id="x1-90010r90"></a> If we want to be correct for quarks we also need to sum over the different colours <span class="mathjax-inline">\((N_c)\)</span>.
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;= \frac {m_f^2}{v^2} (N_c) \left [ 4(p_1 \cdot p_2) - 4m_f^2 \right ]. \end {aligned} \end{equation}</div><a 
- id="x1-90011r90"></a>
+ id="x1-90011r91"></a>
 <p>   <figure class="figure"> 
 
                                                                                          
@@ -3703,16 +3704,16 @@ lie on the dashed line.                                                         
 </p> 
 <p>   When dealing with decays, it is easier to work in the rest frame of the decaying particle </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; q = (M_H, \boldsymbol {0}), \\ &amp; p_1 = (E_1, \boldsymbol {p_1}), \\ &amp; p_2 = (E_2, -\boldsymbol {p_1}). \\ \end {aligned} \end{equation}</div><a 
- id="x1-90013r91"></a> Since the
+ id="x1-90013r92"></a> Since the
 decay products have the same mass <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;E_1 = E_2 = \frac {M_H}{2},\\ &amp;\boldsymbol {p_1}^2 = \left ( \frac {M_H}{2} \right )^2 - m_f^2. \end {aligned} \end{equation}</div><a 
- id="x1-90014r92"></a> We also have, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; q^2 = (p_1+p_2)^2 , \\ &amp; M_H^2 = p_1^2 + p_2^2 +2 p_1 \cdot p_2, \\ &amp; 2 p_1 \cdot p_2 = M_H^2 - 2 m_f^2. \end {aligned} \end{equation}</div><a 
- id="x1-90015r93"></a> Therefore, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sum \limits _{\mathrm {spins}} |\mathcal {M}|^2 &amp; = \frac {m_f^2}{v^2} \left [ 2 M_H^2 - 8 m_f^2 \right ] = 2 M_H^2 \frac {m_f^2}{v^2} \left [ 1 - \frac {4 m_f^2}{M_H^2} \right ]. \end {aligned} \end{equation}</div><a 
- id="x1-90016r94"></a> Now we need to use the formula <a 
+ id="x1-90014r93"></a> We also have, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; q^2 = (p_1+p_2)^2 , \\ &amp; M_H^2 = p_1^2 + p_2^2 +2 p_1 \cdot p_2, \\ &amp; 2 p_1 \cdot p_2 = M_H^2 - 2 m_f^2. \end {aligned} \end{equation}</div><a 
+ id="x1-90015r94"></a> Therefore, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sum \limits _{\mathrm {spins}} |\mathcal {M}|^2 &amp; = \frac {m_f^2}{v^2} \left [ 2 M_H^2 - 8 m_f^2 \right ] = 2 M_H^2 \frac {m_f^2}{v^2} \left [ 1 - \frac {4 m_f^2}{M_H^2} \right ]. \end {aligned} \end{equation}</div><a 
+ id="x1-90016r95"></a> Now we need to use the formula <a 
 href="#x1-30001r18">2.18<!--tex4ht:ref: eq:decayrate --></a>. We
 have <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} |\boldsymbol {p}^*| &amp; = \sqrt { \left ( \frac {M_H}{2} \right )^2 - m_f^2 }\ = \frac {1}{2} \sqrt {(M_H^2 - 4m_f^2)} = \frac {M_H}{2} \sqrt {1 - \frac {4m_f^2}{M_H^2}}. \end {aligned} \end{equation}</div><a 
- id="x1-90017r95"></a> Plugging everything into <a 
+ id="x1-90017r96"></a> Plugging everything into <a 
 href="#x1-30001r18">2.18<!--tex4ht:ref: eq:decayrate --></a> and since <span class="mathjax-inline">\(\int d\Omega = 4 \pi \)</span>, we get <div class="mathjax-env mathjax-equation">\begin{equation} \Gamma _{fi} = \frac {M_H}{8 \pi v^2 } m_f^2 \left [ 1- \frac {4m_f^2}{M_H^2} \right ]^{3/2}. \end{equation}</div><a 
- id="x1-90018r96"></a>
+ id="x1-90018r97"></a>
 <p>   Since the Higgs couples to the fermions proportionally to their mass, the decay rate of the Higgs to
 fermions is proportional to the square of their mass. This is a definite prediction for the SM Higgs
 boson and one that the LHC experiments are checking following the Higgs discovery, see
