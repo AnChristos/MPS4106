@@ -1232,7 +1232,7 @@ evaluates simply to <span class="mathjax-inline">\(4\pi \)</span>. </p>
 href="#x1-35000" id="x1-35000">Using explicit four-vectors</a></span>
    Let’s now re-derive the kinematics using the explicit rest-frame four-vectors.
    </p> 
-<div class="mathjax-env mathjax-equation*">\begin{equation*} \begin {aligned} p_1 &amp;= (m_t, \mathbf {0}) = (m_t, 0), \\ p_2 &amp;= (E_2,|\mathbf {p}^*|) = (|\mathbf {p}^*|,|\mathbf {p}^*|), \\ p_3 &amp;= (E_3,-|\mathbf {p}^*|), \end {aligned} \end{equation*}</div> where <div class="mathjax-env mathjax-equation*">\begin{equation*} E_3 = \sqrt {(p^*)^2 + M_W^2}. \end{equation*}</div> and used <span class="mathjax-inline">\(m_b=0 \Rightarrow E_2 = |\mathbf {p}^*|\)</span> and
+<div class="mathjax-env mathjax-equation*">\begin{equation*} \begin {aligned} p_1 &amp;= (m_t, \mathbf {0}) = (m_t, 0), \\ p_2 &amp;= (E_2,|\mathbf {p}^*|) = (|\mathbf {p}^*|,|\mathbf {p}^*|), \\ p_3 &amp;= (E_3,-|\mathbf {p}^*|), \end {aligned} \end{equation*}</div> where <div class="mathjax-env mathjax-equation*">\begin{equation*} E_3 = \sqrt {(|\mathbf {p}^*|)^2 + M_W^2}. \end{equation*}</div> and used <span class="mathjax-inline">\(m_b=0 \Rightarrow E_2 = |\mathbf {p}^*|\)</span> and
 <p>   Now we solve for <span class="mathjax-inline">\(|\mathbf {p}^*|\)</span>. Energy conservation gives: </p> 
 <div class="mathjax-env mathjax-equation*">\begin{equation*} \begin {aligned} m_t &amp;= |\mathbf {p}^*| + \sqrt {(|\mathbf {p}^*|)^2 + M_W^2}. \end {aligned} \end{equation*}</div> Rearranging: <div class="mathjax-env mathjax-equation*">\begin{equation*} m_t - p^* = \sqrt {(p^*)^2 + M_W^2}. \end{equation*}</div> Squaring both sides: <div class="mathjax-env mathjax-equation*">\begin{equation*} \begin {aligned} &amp;(m_t - |\mathbf {p}^*|)^2 = (|\mathbf {p}^*|)^2 + M_W^2 \\ &amp;\implies m_t^2 - 2m_t |\mathbf {p}^*| + (|\mathbf {p}^*|)^2 = (|\mathbf {p}^*|)^2 + M_W^2\\ &amp;\implies m_t^2 - 2m_t |\mathbf {p}^*| = M_W^2 \implies |\mathbf {p}^*| = \frac {m_t^2 - M_W^2}{2m_t}. \end {aligned} \end{equation*}</div> The <span class="mathjax-inline">\(W\)</span>-boson energy
 is: <div class="mathjax-env mathjax-equation*">\begin{equation*} E_3 = m_t - |\mathbf {p}^*| = m_t - \frac {m_t^2 - M_W^2}{2m_t} = \frac {m_t^2 + M_W^2}{2m_t}. \end{equation*}</div> The dot products are : <div class="mathjax-env mathjax-equation*">\begin{equation*} \begin {aligned} p_1 \cdot p_2 = m_t |\mathbf {p}^*| = m_t \frac {m_t^2 - M_W^2}{2m_t} = \frac {m_t^2 - M_W^2}{2}. \end {aligned} \end{equation*}</div> <div class="mathjax-env mathjax-equation*">\begin{equation*} \begin {aligned} p_1 \cdot p_3 = m_t E_3 = m_t \frac {m_t^2 + M_W^2}{2m_t} = \frac {m_t^2 + M_W^2}{2}. \end {aligned} \end{equation*}</div> <div class="mathjax-env mathjax-equation*">\begin{equation*} \begin {aligned} p_2 \cdot p_3 &amp;= |\mathbf {p}^*| E_3 - \big (- (|\mathbf {p}^*|)^2\big ) \\ &amp;= |\mathbf {p}^*| E_3 + (|\mathbf {p}^*|)^2 \\ &amp;= \left (\frac {m_t^2 - M_W^2}{2m_t}\right ) \left (\frac {m_t^2 + M_W^2}{2m_t}\right ) + \left (\frac {m_t^2 - M_W^2}{2m_t}\right )^2 \\ &amp;= \frac {(m_t^2 - M_W^2)(m_t^2 + M_W^2)}{4m_t^2} + \frac {(m_t^2 - M_W^2)^2}{4m_t^2} \\ &amp;= \frac {m_t^2 - M_W^2}{4m_t^2} \left [(m_t^2 + M_W^2) + (m_t^2 - M_W^2)\right ] \\ &amp;= \frac {m_t^2 - M_W^2}{4m_t^2} (2m_t^2) \\ &amp;= \frac {m_t^2 - M_W^2}{2}. \end {aligned} \end{equation*}</div>
@@ -2787,15 +2787,14 @@ theory. This is sufficient for phenomena that can be described using perturbatio
 we will be dealing with, but it does not capture the full content of the theory.
 </p> 
 <p>   With this caveat in mind, in this course, we adopt the practical viewpoint that for each term in the
-Lagrangian corresponds a Feynman rule that we can “read off”. We note that <span class="mathjax-inline">\(\mathcal {L}\)</span> consists of two parts: the
+Lagrangian corresponds a Feynman rule that we can “read-off”. We note that <span class="mathjax-inline">\(\mathcal {L}\)</span> consists of two parts: the
 free Lagrangian and the interaction part, </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {L} = \mathcal {L}_{\mathrm {free}} + \mathcal {L}_{\mathrm {int}}. \end{equation}</div><a 
  id="x1-75001r1"></a>
-<p>   Terms with two fields of the same or different type involving derivatives are called kinetic terms, or, if
-they involve the mass, they are called mass terms. Propagators correspond to internal lines in Feynman
-diagrams. They can be read-off from the free part of the Lagrangian, using the terms that involve two
-fields. The interaction vertices can be read-off from the interaction part, which involves all other terms
-with three or more fields.
+<p>   Propagators correspond to internal lines in Feynman diagrams. They can be read-off from the
+free part of the Lagrangian, using the terms that involve two fields. The interaction vertices
+can be read-off from the interaction part, which involves all other terms with three or more
+fields.
 </p> 
 <p>   This can be summarised as: </p> 
 
@@ -2915,9 +2914,7 @@ vertex.
 href="#QQ2-1-93" id="x1-780007.4">Propagators</a></h4>
 <p>The propagators are shown in figure <a 
 href="#x1-78001r3">7.3<!--tex4ht:ref: fig:Fermion_propagator --></a> and figure <a 
-href="#x1-78002r4">7.4<!--tex4ht:ref: fig:Boson_propagators --></a>. There is a factor <span class="mathjax-inline">\(i\epsilon \)</span> added to handle the poles in
-the denominators of the propagators. This is important for loop calculations, but is omitted in the
-figures.
+href="#x1-78002r4">7.4<!--tex4ht:ref: fig:Boson_propagators --></a>.
 </p> 
 <p>   <figure class="figure"> 
 
@@ -2961,8 +2958,10 @@ class="content">Gauge boson propagators.                                        
  id="x1-78004r7"></a> for bosons, the free
 propagator in momentum space is <span class="mathjax-inline">\(i\)</span> times the inverse of the operator <span class="mathjax-inline">\(P\)</span> after the replacement <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu \rightarrow -ip_\mu . \end{equation}</div><a 
  id="x1-78005r8"></a> The end
-result for the free propagator can be summarised as : <div class="mathjax-env mathjax-equation">\begin{equation} \frac {i \sum \text {polarizations} }{p^2- m^2 + i\epsilon }. \end{equation}</div><a 
- id="x1-78006r9"></a>
+result for the free propagator can be summarised as : <div class="mathjax-env mathjax-equation">\begin{equation} \frac {i \sum \text {polarizations} }{p^2- m^2}. \end{equation}</div><a 
+ id="x1-78006r9"></a> There is a factor <span class="mathjax-inline">\(i\epsilon \)</span> added to handle the poles in the
+denominators of the propagators. This is important for loop calculations, but is omitted in the figures
+and in most parts of this course
 <p>   Below I sketch the “quick and dirty” derivation, the formal one has to proceed via QFT. For the
 fermion propagator, the bilinear term in the Lagrangian is: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} P = i\gamma ^\mu \partial _\mu - m. \end{equation}</div><a 
@@ -2975,14 +2974,14 @@ relations of the <span class="mathjax-inline">\(\gamma \)</span>-matrices we hav
  id="x1-78009r12"></a> Multiplying the operator by its conjugate <span class="mathjax-inline">\((\not \!p + m)\)</span>: <div class="mathjax-env mathjax-equation">\begin{equation} (\not \!p - m)(\not \!p + m) = \not \!p^{2} + m\not \!p - m\not \!p - m^2 = (p^2 - m^2)I, \end{equation}</div><a 
  id="x1-78010r13"></a> we obtain <div class="mathjax-env mathjax-equation">\begin{equation} (\not \!p - m)^{-1} = \frac {\not \!p + m}{p^2 - m^2}. \end{equation}</div><a 
  id="x1-78011r14"></a> Following our
-rule, the fermion propagator is: <div class="mathjax-env mathjax-equation">\begin{equation} \frac {i(\not \!p + m)}{p^2 - m^2 + i\epsilon }. \end{equation}</div><a 
+rule, the fermion propagator is: <div class="mathjax-env mathjax-equation">\begin{equation} \frac {i(\not \!p + m)}{p^2 - m^2 }. \end{equation}</div><a 
  id="x1-78012r15"></a>
 <p>   For bosons, one may need to integrate the action by parts, throwing away a total derivative to bring
 the Lagrangian into this bilinear form before inverting; for more details see Appendix <a 
 href="#x1-163000G">G<!--tex4ht:ref: sec:Appendix_Feynman --></a>. For scalar
 bosons, the operator derived from the Lagrangian is <span class="mathjax-inline">\(P = -(\partial _\rho \partial ^\rho + m^2)\)</span>. In momentum space this becomes <span class="mathjax-inline">\(P = -(-p^2 + m^2) = p^2 - m^2\)</span>. Applying the
 rule <span class="mathjax-inline">\(iP^{-1}\)</span> yields: </p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} \frac {i}{p^2 - m^2 + i\epsilon }. \end{equation}</div><a 
+<div class="mathjax-env mathjax-equation">\begin{equation} \frac {i}{p^2 - m^2}. \end{equation}</div><a 
  id="x1-78013r16"></a>
 <p>   For a massive vector field <span class="mathjax-inline">\(A_\mu \)</span>, the bilinear operator is </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} P^{\mu \nu } = g^{\mu \nu } (\partial ^2 + M^2) - \partial ^\mu \partial ^\nu . \end{equation}</div><a 
@@ -2990,16 +2989,16 @@ rule <span class="mathjax-inline">\(iP^{-1}\)</span> yields: </p>
 is <div class="mathjax-env mathjax-equation">\begin{equation} P^{\mu \nu } = (-p^2 + m^2)g^{\mu \nu } + p^\mu p^\nu . \end{equation}</div><a 
  id="x1-78015r18"></a> Inverting this tensor (see Appendix <a 
 href="#x1-163000G">G<!--tex4ht:ref: sec:Appendix_Feynman --></a>) and multiplying by <span class="mathjax-inline">\(i\)</span> results in the propagator:
-<div class="mathjax-env mathjax-equation">\begin{equation} \frac {-i \left ( g_{\mu \nu } - \frac {p_\mu p_\nu }{m^2} \right )} {p^2 - m^2 + i\epsilon }. \end{equation}</div><a 
+<div class="mathjax-env mathjax-equation">\begin{equation} \frac {-i \left ( g_{\mu \nu } - \frac {p_\mu p_\nu }{m^2} \right )} {p^2 - m^2}. \end{equation}</div><a 
  id="x1-78016r19"></a>
 <p>   In the massless case (<span class="mathjax-inline">\(m=0\)</span>), the operator </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} P^{\mu \nu } = -p^2g^{\mu \nu } + p^\mu p^\nu . \end{equation}</div><a 
  id="x1-78017r20"></a> is not invertible. To define the propagator, we introduce a
 gauge-fixing term defined by the gauge parameter <span class="mathjax-inline">\(\xi \)</span>. The operator then becomes <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} P^{\mu \nu }(p) = -p^2 g^{\mu \nu } + \left (1-\frac {1}{\xi }\right )p^\mu p^\nu . \end {aligned} \end{equation}</div><a 
  id="x1-78018r21"></a> The inverse of this
-operator gives the photon propagator, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {-i}{p^2+i\epsilon } \left [ g_{\mu \nu } - (1-\xi )\frac {p_\mu p_\nu }{p^2} \right ]. \end {aligned} \end{equation}</div><a 
+operator gives the photon propagator, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {-i}{p^2} \left [ g_{\mu \nu } - (1-\xi )\frac {p_\mu p_\nu }{p^2} \right ]. \end {aligned} \end{equation}</div><a 
  id="x1-78019r22"></a> Choosing the Feynman gauge, <span class="mathjax-inline">\(\xi = 1\)</span>, simplifies the propagator to
-<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {-i g_{\mu \nu }}{p^2+i\epsilon }. \end {aligned} \end{equation}</div><a 
+<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {-i g_{\mu \nu }}{p^2}. \end {aligned} \end{equation}</div><a 
  id="x1-78020r23"></a>
    
    <h4 class="subsectionHead"><span class="titlemark">7.5   </span> <a 
@@ -3450,7 +3449,7 @@ prediction.
    <h5 class="subsubsectionHead"><span class="titlemark">8.1.2   </span> <a 
 href="#QQ2-1-114" id="x1-890008.1.2">Feynman Diagrams and Gauge Invariance</a></h5>
 <p>Recall that the general form of the photon propagator is </p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} \frac {-i}{p^2+i\epsilon } \left [ g_{\mu \nu } - (1-\xi )\frac {p_\mu p_\nu }{p^2} \right ]. \end{equation}</div><a 
+<div class="mathjax-env mathjax-equation">\begin{equation} \frac {-i}{p^2} \left [ g_{\mu \nu } - (1-\xi )\frac {p_\mu p_\nu }{p^2} \right ]. \end{equation}</div><a 
  id="x1-89001r27"></a>
 <p>   In the preceding calculations, we have been working within a specific gauge, <span class="mathjax-inline">\(\xi = 1\)</span>. However, physical
 observables must not depend on this choice. Let us consider again the matrix element for the process </p> 
@@ -3498,7 +3497,7 @@ href="#x1-510004.10">4.10<!--tex4ht:ref: sec:Chirality --></a>. Using the
 projection operators <span class="mathjax-inline">\(P_L=\frac {1}{2}(1-\gamma ^5)\)</span> and <span class="mathjax-inline">\(P_R=\frac {1}{2}(1+\gamma ^5)\)</span>, we can show that: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \bar {v}_R \gamma ^\mu u_R = \bar {v} P_R \gamma ^\mu (P_R u) = \bar {v} \gamma ^\mu P_L P_R u =0, \end {aligned} \end{equation}</div><a 
  id="x1-90007r41"></a> and similarly for <span class="mathjax-inline">\(\bar {v}_R \gamma ^\mu u_R \)</span>.
-<p>   Therefore, we need to calculate and average/sum over only the (<span class="mathjax-inline">\(R\)</span>,<span class="mathjax-inline">\(L\)</span>), (<span class="mathjax-inline">\(R\)</span>,<span class="mathjax-inline">\(L\)</span>) chirality, (<span class="mathjax-inline">\(\uparrow \)</span>,<span class="mathjax-inline">\(\downarrow \)</span>), (<span class="mathjax-inline">\(\downarrow \)</span>,<span class="mathjax-inline">\(\uparrow \)</span>) helicity terms.
+<p>   Therefore, we need to calculate and average/sum over only the (<span class="mathjax-inline">\(R\)</span>,<span class="mathjax-inline">\(L\)</span>), (<span class="mathjax-inline">\(L\)</span>,<span class="mathjax-inline">\(R\)</span>) chirality, (<span class="mathjax-inline">\(\uparrow \)</span>,<span class="mathjax-inline">\(\downarrow \)</span>), (<span class="mathjax-inline">\(\downarrow \)</span>,<span class="mathjax-inline">\(\uparrow \)</span>) helicity terms.
 We will do an explicit calculation in in the centre-of-mass frame </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;p_1=(E,0,0,E) \\ &amp;p_2=(E,0,0,-E) \\ &amp;p_3 = (E, E \sin \theta , 0, E \cos \theta ), \\ &amp;p_4 = (E, -E \sin \theta , 0, -E \cos \theta ). \end {aligned} \end{equation}</div><a 
  id="x1-90008r42"></a>
@@ -6125,9 +6124,9 @@ surface term we are left with: <div class="mathjax-env mathjax-equation">\begin{
 <p>   Therefore, the operator is </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} P^{\mu \nu } = g^{\mu \nu } (\partial ^2 + M^2) - \partial ^\mu \partial ^\nu . \end{equation}</div><a 
  id="x1-166010r18"></a> In momentum space: <div class="mathjax-env mathjax-equation">\begin{equation} P^{\mu \nu }(p) = g^{\mu \nu }(-p^2 + M^2) + p^\mu p^\nu . \end{equation}</div><a 
- id="x1-166011r19"></a> Inverting this matrix and multiplying by <span class="mathjax-inline">\(i\)</span> gives the
-propagator: <div class="mathjax-env mathjax-equation">\begin{equation} \frac {-i \left (g_{\mu \nu } - \frac {p_\mu p_\nu }{M^2}\right )} {p^2 - M^2 + i\epsilon }, \end{equation}</div><a 
- id="x1-166012r20"></a> where we also added the <span class="mathjax-inline">\(i\epsilon \)</span> prescription.
+ id="x1-166011r19"></a> Inverting and multiplying by <span class="mathjax-inline">\(i\)</span> gives the propagator: <div class="mathjax-env mathjax-equation">\begin{equation} \frac {-i \left (g_{\mu \nu } - \frac {p_\mu p_\nu }{M^2}\right )} {p^2 - M^2 + i\epsilon }, \end{equation}</div><a 
+ id="x1-166012r20"></a>
+where we also added the <span class="mathjax-inline">\(i\epsilon \)</span> prescription.
    
 <p><span class="paragraphHead"><a 
 href="#x1-167000" id="x1-167000">Massless Vector Bosons</a></span>
