@@ -2490,7 +2490,7 @@ obtain the QED Lagrangian: </p>
  id="x1-69008r39"></a> In what follows, we will use the convention of <span class="mathjax-inline">\(e\)</span>
 being the elementary charge, with <span class="mathjax-inline">\(Q=-1\)</span> for the electron. We also recognise the Dirac Lagrangian <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mathcal {L}_{\text {Dirac}} = \bar {\psi }i\gamma ^\mu \partial _\mu \psi - m \bar {\psi }\psi , \end {aligned} \end{equation}</div><a 
  id="x1-69009r40"></a> and the free
-Maxwell Lagrangian (see Appendix <a 
+Maxwell Lagrangian (also see Appendix <a 
 href="#x1-156000F">F<!--tex4ht:ref: sec:Appendix_Lagrangian --></a>) <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mathcal {L}_{\text {Maxwell}} = -\frac {1}{4} F_{\mu \nu }F^{\mu \nu }. \end {aligned} \end{equation}</div><a 
  id="x1-69010r41"></a>
    
@@ -3622,7 +3622,7 @@ following spinor replacements <div class="mathjax-env mathjax-equation">\begin{e
  id="x1-91010r69"></a> Note that we crossed both fermion lines, in one line the positron crossed to an electron and in the
 other the anti-muon crossed to a muon in the initial state, so <span class="mathjax-inline">\(F=2\)</span> and there is no overall relative minus
 sign.
-<p>   Now we can convert our LO <span class="mathjax-inline">\(e^+e^- \rightarrow \mu ^+ \mu ^-\)</span> <span class="mathjax-inline">\(\sum \limits _{\mathrm {spins}} |\mathcal {M} |^2\)</span> result </p> 
+<p>   Now we can convert our LO <span class="mathjax-inline">\(e^+e^- \rightarrow \mu ^+ \mu ^-\)</span> result </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {1}{4} \sum \limits _{\mathrm {spins}} |\mathcal {M} |^2 = \frac {8 e^4}{q^4} \left [(p_1 \cdot p_3)(p_2 \cdot p_4) + (p_1 \cdot p_4) (p_2 \cdot p_3) + m_\mu ^2 (p_1 \cdot p_2) \right ], \end {aligned} \end{equation}</div><a 
  id="x1-91011r70"></a> to a LO <span class="mathjax-inline">\(e^-~\mu ^-~ ~\rightarrow ~e^-~\mu ^-\)</span> one <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {1}{4} \sum \limits _{\mathrm {spins}} |\mathcal {M} |^2 &amp; = \frac {8 e^4}{q^4} \Big [(p_1 \cdot p_4)((-p_3) \cdot (-p_2)) + (p_1 \cdot (-p_2)) ((-p_3) \cdot p_4) + m_\mu ^2 (p_1 \cdot (-p_3)) \Big ] \\ &amp; = \frac {8 e^4}{q^4} \left [(p_1 \cdot p_4)(p_2 \cdot p_3) + (p_1 \cdot p_2) (p_3 \cdot p_4) - m_\mu ^2 (p_1 \cdot p_3) \right ]. \end {aligned} \end{equation}</div><a 
  id="x1-91012r71"></a> Notice, that in both cases we average over two
@@ -4214,17 +4214,19 @@ case <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned}
 <p>   When we multiply the two traces together, we can use </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \epsilon ^{\mu \nu \lambda \sigma } \epsilon _{\mu \nu \kappa \tau } = - 2({\delta _\kappa }^\lambda {\delta _\tau }^\sigma -{\delta _\tau }^\lambda {\delta _\kappa }^\sigma ) \end{equation}</div><a 
  id="x1-100006r27"></a> to deal with the term containing the
-Levi-Civita symbol twice. Terms involving the Levi-Civita symbol vanish due to it being
-antisymmetric but multiplying a symmetric tensor; see Appendix <a 
-href="#x1-120000A">A<!--tex4ht:ref: sec:Appendix_Notation --></a>. Omitting the terms that vanish,
-<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sum \limits _{\mathrm {spins}} |\mathcal {M}|^2 &amp; = \frac {g_W^4}{M_W^4} [p_2^\mu p_4^\nu + p_2^\nu p_4^\mu -p_2 \cdot p_4 g^{\mu \nu } -i\epsilon ^{\mu \nu \lambda \sigma } p_{2\lambda } p_{4\sigma }]\\ &amp;\times [p_{1\mu } p_{3\nu } + p_{1\nu } p_{3\mu } -p_1 \cdot p_3 g_{\mu \nu } -i\epsilon _{\mu \nu \kappa \tau } p_1^\kappa p_3^\tau ]\\ &amp;= \frac {g_W^4}{M_W^4} 4(p_1 \cdot p_2)(p_3 \cdot p_4). \end {aligned} \end{equation}</div><a 
- id="x1-100007r28"></a>
+Levi-Civita symbol twice. Terms involving the Levi-Civita symbol vanish due to it being antisymmetric
+but multiplying a symmetric tensor; see Appendix <a 
+href="#x1-120000A">A<!--tex4ht:ref: sec:Appendix_Notation --></a>. Omitting the terms that vanish <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sum \limits _{\mathrm {spins}} |\mathcal {M}|^2 &amp;= \frac {g_W^4}{M_W^4} \Big [ p_2^\mu p_4^\nu + p_2^\nu p_4^\mu - p_2 \cdot p_4 g^{\mu \nu } - i\epsilon ^{\mu \nu \lambda \sigma } p_{2\lambda } p_{4\sigma } \Big ] \\ &amp;\times \Big [ p_{1\mu } p_{3\nu } + p_{1\nu } p_{3\mu } - p_1 \cdot p_3 g_{\mu \nu } - i\epsilon _{\mu \nu \kappa \tau } p_1^\kappa p_3^\tau \Big ] \\ &amp;= \frac {g_W^4}{M_W^4} \bigg [ \Big ( p_2^\mu p_4^\nu + p_2^\nu p_4^\mu - p_2 \cdot p_4 g^{\mu \nu } \Big )\Big ( p_{1\mu } p_{3\nu } + p_{1\nu } p_{3\mu } - p_1 \cdot p_3 g_{\mu \nu } \Big ) \\ &amp;\quad - \epsilon ^{\mu \nu \lambda \sigma } \epsilon _{\mu \nu \kappa \tau } p_{2\lambda } p_{4\sigma } p_1^\kappa p_3^\tau \bigg ] , \end {aligned} \end{equation}</div><a 
+ id="x1-100007r28"></a> Therefore, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sum \limits _{\mathrm {spins}} |\mathcal {M}|^2 &amp;= \frac {g_W^4}{M_W^4} \bigg [ \Big ( 2(p_1 \cdot p_2)(p_3 \cdot p_4) + 2(p_1 \cdot p_4)(p_2 \cdot p_3) \Big ) \\ &amp;\quad - \Big ( -2({\delta _\kappa }^\lambda {\delta _\tau }^\sigma - {\delta _\tau }^\lambda {\delta _\kappa }^\sigma ) \Big ) p_{2\lambda } p_{4\sigma } p_1^\kappa p_3^\tau \bigg ] \\[1.5ex] &amp;= \frac {g_W^4}{M_W^4} \bigg [ 2(p_1 \cdot p_2)(p_3 \cdot p_4) + 2(p_1 \cdot p_4)(p_2 \cdot p_3) \\ &amp;\quad + 2 \Big ( p_{2\kappa } p_{4\tau } p_1^\kappa p_3^\tau - p_{2\tau } p_{4\kappa } p_1^\kappa p_3^\tau \Big ) \bigg ]. \end {aligned} \end{equation}</div><a 
+ id="x1-100008r29"></a>
+Leading to <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sum \limits _{\mathrm {spins}} |\mathcal {M}|^2 &amp;= \frac {g_W^4}{M_W^4} \bigg [ 2(p_1 \cdot p_2)(p_3 \cdot p_4) + 2(p_1 \cdot p_4)(p_2 \cdot p_3) \\ &amp;\quad + 2(p_1 \cdot p_2)(p_3 \cdot p_4) - 2(p_1 \cdot p_4)(p_2 \cdot p_3) \bigg ] \\ &amp;= \frac {g_W^4}{M_W^4} 4(p_1 \cdot p_2)(p_3 \cdot p_4). \end {aligned} \end{equation}</div><a 
+ id="x1-100009r30"></a>
 <p>   Remember we want the sum over final spins but average over initial spins. We have two possible spins
 for the incoming electron. In the Standard Model, without extensions for neutrino mass, all neutrinos are
 left-handed, and all antineutrinos are right-handed, so we have only one possible spin for the incoming
 neutrino. </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {1}{2}\sum \limits _{\mathrm {spins}} |\mathcal {M}|^2 = 2 \frac {g_W^4}{M_W^4} (p_1 \cdot p_2)(p_3 \cdot p_4). \end {aligned} \end{equation}</div><a 
- id="x1-100008r29"></a>
+ id="x1-100010r31"></a>
 <p>   <figure class="figure"> 
 
                                                                                          
@@ -4235,10 +4237,10 @@ neutrino. </p>
 <p><img 
 src="pics/Inverse_beta_helicity.png" alt="PIC"  
 style="width:51.75%"> <a 
- id="x1-100009r5"></a>
+ id="x1-100011r5"></a>
 <figcaption class="caption" ><span class="id">Figure 9.5: </span><span  
 class="content">Helicity sketch for <span class="mathjax-inline">\(\nu _{\mu }~e^- \rightarrow \nu _{e}~\mu ^-\)</span> [<a 
-href="#XMartin_Wells">4</a>].                                                         </span></figcaption><!--tex4ht:label?: x1-100009r5 -->
+href="#XMartin_Wells">4</a>].                                                         </span></figcaption><!--tex4ht:label?: x1-100011r5 -->
                                                                                          
                                                                                          
 </p> 
@@ -4246,42 +4248,42 @@ href="#XMartin_Wells">4</a>].                                                   
 </p> 
 <p>   We ignore the mass of the electron, so we have </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; s = (p_1+p_2)^2 = p_1^2 + p_2^2 + 2 p_1 \cdot p_2 = 2 p_1 \cdot p_2, \ \ (e,\nu _\mu \ \mathrm {massless}). \\ &amp; s = (p_3+p_4)^2 = 2 p_3 \cdot p_4 + m_\mu ^2 \\ &amp; \implies p_3 \cdot p_4 = \frac {s}{2} - \frac {m_\mu ^2}{2} = \frac {s}{2} \left (1 - \frac {m_\mu ^2}{s}\right ). \end {aligned} \end{equation}</div><a 
- id="x1-100010r30"></a>
+ id="x1-100012r32"></a>
 <p>   Therefore, </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {1}{2}\sum \limits _{\mathrm {spins}} |\mathcal {M}|^2 &amp; = 2 \frac {g_W^4}{M_W^4} \frac {s^2}{4} \left (1 - \frac {m_\mu ^2}{s}\right ) \\ &amp; = \frac {1}{2} \frac {g_W^4}{M_W^4} s^2 \left (1 - \frac {m_\mu ^2}{s}\right ). \end {aligned} \end{equation}</div><a 
- id="x1-100011r31"></a>
+ id="x1-100013r33"></a>
 <p>   In the centre-of-mass frame (figure <a 
-href="#x1-100009r5">9.5<!--tex4ht:ref: fig:Inverse_beta_helicity --></a>), <span class="mathjax-inline">\(\boldsymbol {p}_1 = -\boldsymbol {p}_2\)</span> and <span class="mathjax-inline">\(\boldsymbol {p}_3 = -\boldsymbol {p}_4\)</span>. </p> 
+href="#x1-100011r5">9.5<!--tex4ht:ref: fig:Inverse_beta_helicity --></a>), <span class="mathjax-inline">\(\boldsymbol {p}_1 = -\boldsymbol {p}_2\)</span> and <span class="mathjax-inline">\(\boldsymbol {p}_3 = -\boldsymbol {p}_4\)</span>. </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} s = (E_1+E_2)^2 = (E_3+E_4)^2. \end {aligned} \end{equation}</div><a 
- id="x1-100012r32"></a>
+ id="x1-100014r34"></a>
 <p>   We want to use formula <a 
 href="#x1-32004r26">2.26<!--tex4ht:ref: eq:crossrate --></a>. Both incoming particles are taken to be massless, so <span class="mathjax-inline">\(|\boldsymbol {p}^*_i| = \frac {\sqrt {s}}{2}\)</span>. The outgoing
 muon has mass. In the centre-of-mass frame, the momentum relationships imply </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} |\boldsymbol {p}_3| = |\boldsymbol {p}_4| \implies \boldsymbol {p}_3^2 = \boldsymbol {p}_4^2 \implies E_3^2 - m_\mu ^2 = E_4^2 \implies E_3^2 - E_4^2 = m_\mu ^2. \end {aligned} \end{equation}</div><a 
- id="x1-100013r33"></a> But we also have <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} (E_3+E_4) = \sqrt {s}. \end {aligned} \end{equation}</div><a 
- id="x1-100014r34"></a>
+ id="x1-100015r35"></a> But we also have <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} (E_3+E_4) = \sqrt {s}. \end {aligned} \end{equation}</div><a 
+ id="x1-100016r36"></a>
 Therefore, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} E_3^2 - E_4^2 = m_\mu ^2 \implies (E_3 - E_4)(E_3 + E_4) = m_\mu ^2 \implies (E_3 - E_4) = \frac {m_\mu ^2}{\sqrt {s}}. \end {aligned} \end{equation}</div><a 
- id="x1-100015r35"></a>
+ id="x1-100017r37"></a>
 <p>   The neutrino is considered massless, so <span class="mathjax-inline">\(|\boldsymbol {p}_4| = E_4\)</span>. We can obtain <span class="mathjax-inline">\(E_4\)</span> by subtracting the above two equations. </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} 2 E_4 = \sqrt {s} - \frac {m_\mu ^2}{\sqrt {s}} \implies |\boldsymbol {p}^*_f| = |\boldsymbol {p}_4| = \frac {s - m_\mu ^2}{2\sqrt {s}}. \end {aligned} \end{equation}</div><a 
- id="x1-100016r36"></a>
-Therefore, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {|\boldsymbol {p}^*_f|}{|\boldsymbol {p}^*_i|} = \frac {\frac {s - m_\mu ^2}{2\sqrt {s}}}{\frac {\sqrt {s}}{2}} = \frac {s - m_\mu ^2}{s} = 1 - \frac {m_\mu ^2}{s}, \end {aligned} \end{equation}</div><a 
- id="x1-100017r37"></a>
-   <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} d\sigma = \frac {1}{128 \pi ^2} \frac {g_W^4 s}{M_W^4} \left (1 - \frac {m_\mu ^2}{s}\right )^2 d\Omega . \end {aligned} \end{equation}</div><a 
  id="x1-100018r38"></a>
+Therefore, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {|\boldsymbol {p}^*_f|}{|\boldsymbol {p}^*_i|} = \frac {\frac {s - m_\mu ^2}{2\sqrt {s}}}{\frac {\sqrt {s}}{2}} = \frac {s - m_\mu ^2}{s} = 1 - \frac {m_\mu ^2}{s}, \end {aligned} \end{equation}</div><a 
+ id="x1-100019r39"></a>
+   <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} d\sigma = \frac {1}{128 \pi ^2} \frac {g_W^4 s}{M_W^4} \left (1 - \frac {m_\mu ^2}{s}\right )^2 d\Omega . \end {aligned} \end{equation}</div><a 
+ id="x1-100020r40"></a>
 <p>   In the centre-of-mass frame this differential cross section is isotropic since <span class="mathjax-inline">\(s = 4E^2\)</span>. Integrating over <span class="mathjax-inline">\(d\Omega \)</span>,
 we obtain </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sigma = \frac {1}{32 \pi } \frac {g_W^4 s}{M_W^4} \left (1 - \frac {m_\mu ^2}{s}\right )^2 = \frac {G_F^2 s}{\pi } \left (1 - \frac {m_\mu ^2}{s}\right )^2, \end {aligned} \end{equation}</div><a 
- id="x1-100019r39"></a> which, in the limit where we also consider the muon to be massless, becomes
+ id="x1-100021r41"></a> which, in the limit where we also consider the muon to be massless, becomes
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sigma = \frac {1}{32 \pi } \frac {g_W^4 s}{M_W^4} = \frac {G_F^2 s}{\pi }. \end {aligned} \end{equation}</div><a 
- id="x1-100020r40"></a>
+ id="x1-100022r42"></a>
 <p>   As we have seen (section <a 
 href="#x1-520004.11">4.11<!--tex4ht:ref: sec:Hel_vs_chir --></a>), a massive left-handed chiral spinor has contributions from both
 positive and negative helicity components. However, the positive helicity component is small, <span class="mathjax-inline">\(\approx m/E\)</span>, and
 vanishes in the case where the mass is much smaller than the energy. For <span class="mathjax-inline">\(\nu _{\mu }~e^- \rightarrow \nu _{e}~\mu ^-\)</span> the left-handed neutrino has
 negative helicity, and the same is true for the electron. The situation is similar for the final state. As a
 result, both the initial and final states have spin 0 (see figure <a 
-href="#x1-100009r5">9.5<!--tex4ht:ref: fig:Inverse_beta_helicity --></a>), so that the process is an <span class="mathjax-inline">\(s\)</span>-wave, and
+href="#x1-100011r5">9.5<!--tex4ht:ref: fig:Inverse_beta_helicity --></a>), so that the process is an <span class="mathjax-inline">\(s\)</span>-wave, and
 therefore isotropic.
    
    </p> 
@@ -4312,16 +4314,16 @@ class="content">LO order Feynman diagram for <span class="mathjax-inline">\(\bar
 </p> 
 <p>   The relevant amplitude is </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} -i \mathcal {M} &amp;= \left [ \bar {v}(p_2) (-\frac {i g_W}{2\sqrt {2}} \gamma ^\mu (1-\gamma ^5)) u(p_1) \right ] (i \frac {g_{\mu \nu }}{M_W^2}) \left [ \bar {u}(p_3) (- \frac {i g_W} {2\sqrt {2}} \gamma ^\nu (1-\gamma ^5)) v(p_4) \right ]\\ \mathcal {M} &amp; = \frac {g_W^2}{8M_W^2} \left [ \bar {v}(p_2) \gamma ^\mu (1- \gamma ^5) u(p_1) \right ] \left [ \bar {u}(p_3) \gamma _\mu (1-\gamma ^5) v(p_4) \right ]. \end {aligned} \end{equation}</div><a 
- id="x1-101002r41"></a> We will use crossing symmetry. We start from the result for <span class="mathjax-inline">\(\nu _{\mu }~e^- \rightarrow \nu _{e}~\mu ^-\)</span> <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mathcal {M} &amp; = \frac {g_W^2}{8M_W^2} \left [ \bar {u}(p_4) \gamma ^\mu (1- \gamma ^5) u(p_2) \right ] \left [ \bar {u}(p_3) \gamma _\mu (1-\gamma ^5) u(p_1) \right ]. \end {aligned} \end{equation}</div><a 
- id="x1-101003r42"></a> and cross the
+ id="x1-101002r43"></a> We will use crossing symmetry. We start from the result for <span class="mathjax-inline">\(\nu _{\mu }~e^- \rightarrow \nu _{e}~\mu ^-\)</span> <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mathcal {M} &amp; = \frac {g_W^2}{8M_W^2} \left [ \bar {u}(p_4) \gamma ^\mu (1- \gamma ^5) u(p_2) \right ] \left [ \bar {u}(p_3) \gamma _\mu (1-\gamma ^5) u(p_1) \right ]. \end {aligned} \end{equation}</div><a 
+ id="x1-101003r44"></a> and cross the
 two neutrinos.
 <p>   We can identify the spinor replacements </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\bar {u}(p_4) \rightarrow \bar {v}(p_2), \\ &amp;u(p_2) \rightarrow u(p_1), \\ &amp;\bar {u}(p_3) \rightarrow \bar {u}(p_3), \\ &amp;u(p_1) \rightarrow v(p_4), \end {aligned} \end{equation}</div><a 
- id="x1-101004r43"></a> which lead to the momentum replacements <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;p_4 \rightarrow - p_2, \\ &amp;p_2 \rightarrow p_1, \\ &amp;p_3 \rightarrow p_3, \\ &amp;p_1 \rightarrow -p_4. \end {aligned} \end{equation}</div><a 
- id="x1-101005r44"></a> If
+ id="x1-101004r45"></a> which lead to the momentum replacements <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;p_4 \rightarrow - p_2, \\ &amp;p_2 \rightarrow p_1, \\ &amp;p_3 \rightarrow p_3, \\ &amp;p_1 \rightarrow -p_4. \end {aligned} \end{equation}</div><a 
+ id="x1-101005r46"></a> If
 applied to the <span class="mathjax-inline">\(\nu _{\mu } e^- \rightarrow \nu _{e} \mu ^-\)</span> result this yields <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {1}{2}\sum \limits _{\mathrm {spins}} |\mathcal {M}|^2 = 2 \frac {g_W^4}{M_W^4} (p_1 \cdot p_4) (p_2 \cdot p_3). \end {aligned} \end{equation}</div><a 
- id="x1-101006r45"></a> We ignore the mass of the electron and the muon so we have <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; u = (p_1-p_4)^2 = - 2 p_1 \cdot p_4 \\ &amp; u = (p_2-p_3)^2 = - 2 p_2 \cdot p_3. \\ \end {aligned} \end{equation}</div><a 
- id="x1-101007r46"></a>
+ id="x1-101006r47"></a> We ignore the mass of the electron and the muon so we have <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; u = (p_1-p_4)^2 = - 2 p_1 \cdot p_4 \\ &amp; u = (p_2-p_3)^2 = - 2 p_2 \cdot p_3. \\ \end {aligned} \end{equation}</div><a 
+ id="x1-101007r48"></a>
 <figure class="figure"> 
 
                                                                                          
@@ -4342,14 +4344,14 @@ class="content">Helicity sketch of <span class="mathjax-inline">\(\bar {\nu }_{e
 <p>   Using the centre-of-mass reference frame (see figure <a 
 href="#x1-101008r7">9.7<!--tex4ht:ref: fig:antineutrino_Electron_ref --></a>) </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;p_1 = ( E, 0, 0, E), \\ &amp;p_2 = (E , 0 , 0, -E), \\ &amp;p_3 = (E , E \sin \theta , 0 , E \cos \theta ), \\ &amp;p_4 = (E, -E \sin \theta , 0 , -E \cos \theta ), \end {aligned} \end{equation}</div><a 
- id="x1-101009r47"></a> we obtain <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {1}{2}\sum \limits _{\mathrm {spins}} |\mathcal {M}|^2 &amp;= 2 \frac {g_W^4}{M_W^4} \frac {u^2}{4} = \frac {1}{2} \frac {g_W^4} {M_W^4} u^2 = \frac {1}{8} \frac {g_W^4} {M_W^4} s^2 (1+\cos {\theta })^2. \end {aligned} \end{equation}</div><a 
- id="x1-101010r48"></a> Since <span class="mathjax-inline">\(s = 2p_1 \cdot p_2 = 4E^2\)</span> and <span class="mathjax-inline">\(u = -2p_1 \cdot p_3 = - 2E^2(1+\cos {\theta })\)</span> where <span class="mathjax-inline">\(\cos {\theta }\)</span> is the angle
+ id="x1-101009r49"></a> we obtain <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {1}{2}\sum \limits _{\mathrm {spins}} |\mathcal {M}|^2 &amp;= 2 \frac {g_W^4}{M_W^4} \frac {u^2}{4} = \frac {1}{2} \frac {g_W^4} {M_W^4} u^2 = \frac {1}{8} \frac {g_W^4} {M_W^4} s^2 (1+\cos {\theta })^2. \end {aligned} \end{equation}</div><a 
+ id="x1-101010r50"></a> Since <span class="mathjax-inline">\(s = 2p_1 \cdot p_2 = 4E^2\)</span> and <span class="mathjax-inline">\(u = -2p_1 \cdot p_3 = - 2E^2(1+\cos {\theta })\)</span> where <span class="mathjax-inline">\(\cos {\theta }\)</span> is the angle
 between the outgoing muon and the incoming anti-neutrino. This process is not isotropic in
 the centre of mass frame. Plugging things into <a 
 href="#x1-32004r26">2.26<!--tex4ht:ref: eq:crossrate --></a> we obtain <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} d\sigma = \frac {1}{64 \pi ^2} \frac {1}{8} \frac {g_W^4 s} {M_W^4} (1+\cos {\theta })^2 d\Omega . \end {aligned} \end{equation}</div><a 
- id="x1-101011r49"></a> We then integrate to obtain
+ id="x1-101011r51"></a> We then integrate to obtain
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sigma &amp; = \frac {1}{32 \pi } \frac {1}{8} \frac {g_W^4 s} {M_W^4} \int _{-1}^1 (1+\cos \theta )^2 d\phi d(\cos \theta ) \\ &amp; = \frac {1}{32 \pi } \frac {1}{8} \frac {g_W^4 s} {M_W^4} 2\pi \int _{-1}^1 (1+\cos \theta )^2 d(\cos \theta ) \\ &amp;= \frac {1}{32 \pi } \frac {1}{8} \frac {g_W^4 s} {M_W^4} \frac {8}{3} = \frac {1}{32 \pi } \frac {1}{3} \frac {g_W^4 s} {M_W^4} = \frac {G_F^2 s}{3\pi }. \end {aligned} \end{equation}</div><a 
- id="x1-101012r50"></a>
+ id="x1-101012r52"></a>
 <p>   The result for the <span class="mathjax-inline">\(\bar {\nu }_{e}~e^- \rightarrow \bar {\nu }_{\mu }~\mu ^- \)</span> can be understood from the fact that the right-handed antineutrino has positive
 helicity, while the electron has negative helicity. As a result, the total spin of the initial state will be
 pointing in the direction opposite to the electron 3-momentum see figure <a 
@@ -4417,7 +4419,7 @@ href="#XMartin_Wells">4</a>].                                              </spa
 analysis of some aspects of hadronic weak decays. We know how the <span class="mathjax-inline">\(W\)</span> couples to fermions. We can write
 the amplitude as </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} -i \mathcal {M} &amp;= \frac {-i g_W}{2\sqrt {2}} \left [ \bar {u}(p_3) (\gamma ^\mu (1-\gamma ^5)) v(p_4) \right ] \frac {i g_{\mu \nu }}{M_W^2} \frac {-i g_W}{2\sqrt {2}} V_{ud} F^\nu \\ \mathcal {M} &amp; = \frac {g_W^2}{8M_W^2} \left [ \bar {u}(p_3) \gamma ^\mu (1-\gamma ^5) v(p_4) \right ] V_{ud} F_\mu . \end {aligned} \end{equation}</div><a 
- id="x1-102003r51"></a>
+ id="x1-102003r53"></a>
 <p>   We only use the fact that we have four fermions, a <span class="mathjax-inline">\(W\)</span> boson propagator (<span class="mathjax-inline">\(M_W \gg p\)</span> approximation), and that the
 quarks are <span class="mathjax-inline">\(\bar {u}, d\)</span>. The <span class="mathjax-inline">\(F_\pi \)</span> is a <i>form factor</i> which describes the pion blob. We know that <span class="mathjax-inline">\(F_\mu \)</span> is a four-vector, as it has
 to contract with the four-vector from the lepton part. Since the pion has spin 0, the only vector
@@ -4446,7 +4448,7 @@ href="#Xthomson">5</a>].                                    </span></figcaption>
 </p> 
 <p>   The <span class="mathjax-inline">\(F_\mu \)</span> will be a scalar quantity times the momentum of the pion <span class="mathjax-inline">\(p\)</span>, </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} F_\mu = f_\pi p_\mu . \end{equation}</div><a 
- id="x1-102005r52"></a> <span class="mathjax-inline">\(f_{\pi }\)</span> is called the pion decay
+ id="x1-102005r54"></a> <span class="mathjax-inline">\(f_{\pi }\)</span> is called the pion decay
 constant and is a function of <span class="mathjax-inline">\(p_\mu ^2\)</span>. Since the pion is on mass shell, <span class="mathjax-inline">\(p^2 = m_\pi ^2\)</span>, which for our purposes is a fixed
 number.
 <p>   We have parametrised our ignorance of the pion bound-state properties. In principle, we could
@@ -4455,39 +4457,39 @@ experimentally measured quantity.
 </p> 
 <p>   At the end we have </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mathcal {M} &amp; = -\frac {g_W^2}{8M_W^2} \left [ \bar {u}(p_3) \gamma ^\mu (1-\gamma ^5) v(p_4) \right ] V_{ud} f_\pi p_{\mu }. \end {aligned} \end{equation}</div><a 
- id="x1-102006r53"></a>
+ id="x1-102006r55"></a>
 <p>   Squaring, we obtain </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} |\mathcal {M}|^2 &amp;= \left [\frac {g_W^2}{8M_W^2} \left [ \bar {u}(p_3) \gamma ^\mu (1-\gamma ^5) v(p_4) \right ] V_{ud} f_\pi p_{\mu } \right ] \\ &amp;\times \left [\frac {g_W^2}{8M_W^2} \left [ \bar {u}(p_3) \gamma ^\nu (1-\gamma ^5) v(p_4) \right ] V_{ud} f_\pi p_{\nu } \right ]^* \\ &amp; = \left [\frac {V_{ud} f_\pi g_W^2}{8M_W^2} \right ]^2 p_{\mu } p_{\nu } \left [ \bar {u}(p_3) \gamma ^\mu (1-\gamma ^5) v(p_4) \right ] \left [ \bar {u}(p_3) \gamma ^\nu (1-\gamma ^5) v(p_4) \right ]^*. \end {aligned} \end{equation}</div><a 
- id="x1-102007r54"></a>
+ id="x1-102007r56"></a>
 <p>   Summing over outgoing particle spins and using Casimir’s trick, we have </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sum \limits _{\mathrm {spins}} |\mathcal {M}|^2 &amp;= \left [\frac {V_{ud} f_\pi g_W^2}{8M_W^2} \right ]^2 p_{\mu } p_{\nu } \mbox {Tr}\left [ \gamma ^\mu (1-\gamma ^5)\not \!p_4 \gamma ^\nu (1-\gamma ^5) (\not \!p_3+m_l) \right ]. \end {aligned} \end{equation}</div><a 
- id="x1-102008r55"></a> We have seen this trace
+ id="x1-102008r57"></a> We have seen this trace
 before <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\mbox {Tr}\left [\gamma ^\mu (1-\gamma ^5)(\not \!p_1+m_1) \gamma ^\nu (1-\gamma ^5)(\not \!p_2+m_2)\right ]\\ &amp;= 8[p_1^\mu p_2^\nu + p_1^\nu p_2^\mu -p_1 \cdot p_2 g^{\mu \nu }] -8i \epsilon ^{\mu \nu \lambda \sigma } p_{1\lambda } p_{2\sigma }. \end {aligned} \end{equation}</div><a 
- id="x1-102009r56"></a> Terms involving the Levi-Civita tensor once vanish, leading to <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sum \limits _{\mathrm {spins}} |\mathcal {M}|^2 &amp;= \frac {1}{8}\left [\frac {V_{ud} f_\pi g_W^2}{M_W^2} \right ]^2 p_{\mu } p_{\nu } \left [ p_4^\mu p_3^\nu + p_4^\nu p_3^\mu -p_4 \cdot p_3 g^{\mu \nu } \right ] \\ &amp;= \frac {1}{8}\left [\frac {V_{ud} f_\pi g_W^2}{M_W^2} \right ]^2 [(p \cdot p_4) (p \cdot p_3) + (p \cdot p_3) (p \cdot p_4) - p^2 (p_4 \cdot p_3)] \\ &amp;= \frac {1}{8}\left [\frac {V_{ud} f_\pi g_W^2}{M_W^2} \right ]^2 [2 (p \cdot p_4) (p \cdot p_3) - p^2 (p_4 \cdot p_3)]. \end {aligned} \end{equation}</div><a 
- id="x1-102010r57"></a>
+ id="x1-102009r58"></a> Terms involving the Levi-Civita tensor once vanish, leading to <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sum \limits _{\mathrm {spins}} |\mathcal {M}|^2 &amp;= \frac {1}{8}\left [\frac {V_{ud} f_\pi g_W^2}{M_W^2} \right ]^2 p_{\mu } p_{\nu } \left [ p_4^\mu p_3^\nu + p_4^\nu p_3^\mu -p_4 \cdot p_3 g^{\mu \nu } \right ] \\ &amp;= \frac {1}{8}\left [\frac {V_{ud} f_\pi g_W^2}{M_W^2} \right ]^2 [(p \cdot p_4) (p \cdot p_3) + (p \cdot p_3) (p \cdot p_4) - p^2 (p_4 \cdot p_3)] \\ &amp;= \frac {1}{8}\left [\frac {V_{ud} f_\pi g_W^2}{M_W^2} \right ]^2 [2 (p \cdot p_4) (p \cdot p_3) - p^2 (p_4 \cdot p_3)]. \end {aligned} \end{equation}</div><a 
+ id="x1-102010r59"></a>
 <p>   We cannot ignore the mass of the lepton as, at least in the case of the muon, it is significant with
 respect to the pion mass. We nee to form <span class="mathjax-inline">\(p \cdot p_3\)</span> and <span class="mathjax-inline">\(p \cdot p_4\)</span>. Since <span class="mathjax-inline">\(p = p_3 + p_4\)</span> we obtain by squaring </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;p^2 = m_l^2 + 2 p_3 \cdot p_4 \implies 2p_3 \cdot p_4 = m_\pi ^2 - m_l^2, \end {aligned} \end{equation}</div><a 
- id="x1-102011r58"></a> and by multiplying with <span class="mathjax-inline">\(p_3\)</span>
+ id="x1-102011r60"></a> and by multiplying with <span class="mathjax-inline">\(p_3\)</span>
 and <span class="mathjax-inline">\(p_4\)</span> respectively <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;p \cdot p_3 = m_l^2 + p_3 \cdot p_4,\\ &amp;p \cdot p_4 = p_3 \cdot p_4, \end {aligned} \end{equation}</div><a 
- id="x1-102012r59"></a>
+ id="x1-102012r61"></a>
 <p>   Thus, </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sum \limits _{\mathrm {spins}} |\mathcal {M}|^2 = \left [\frac {g_W}{2 M_W} \right ]^4 V_{ud}^2 f_\pi ^2 m_l^2 (m_\pi ^2 - m_l^2). \end {aligned} \end{equation}</div><a 
- id="x1-102013r60"></a>
+ id="x1-102013r62"></a>
 <p>   We will use formula <a 
 href="#x1-30001r18">2.18<!--tex4ht:ref: eq:decayrate --></a>. In the rest frame of the pion we have </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;p = ( m_\pi , 0), \\ &amp;p_3 = (E_3 , \boldsymbol {p}_3 ), \\ &amp;p_4 = (E_4 , \boldsymbol {p}_4 ). \end {aligned} \end{equation}</div><a 
- id="x1-102014r61"></a> Since the neutrino is massless, <span class="mathjax-inline">\(|\boldsymbol {p}^*| = |\boldsymbol {p}_4| = E_4\)</span>. It is
+ id="x1-102014r63"></a> Since the neutrino is massless, <span class="mathjax-inline">\(|\boldsymbol {p}^*| = |\boldsymbol {p}_4| = E_4\)</span>. It is
 convenient to form <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} p_3^2 = (P - p_4)^2. \end {aligned} \end{equation}</div><a 
- id="x1-102015r62"></a> As the three-momentum of the pion is 0 and the neutrino mass also 0 we can obtain <span class="mathjax-inline">\(E_4\)</span>
+ id="x1-102015r64"></a> As the three-momentum of the pion is 0 and the neutrino mass also 0 we can obtain <span class="mathjax-inline">\(E_4\)</span>
 quite easily: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;p_3^2 = (p - p_4)^2 \implies p_3^2 = p^2 +p_4^2 -2 p\cdot p_4\\ &amp;\implies m_l^2 = m_\pi ^2 - 2E_4 E_\pi + 2 \mathbf {p_\pi } \mathbf {p_4} \implies m_l^2 = m_\pi ^2 - 2E_4 m_\pi . \end {aligned} \end{equation}</div><a 
- id="x1-102016r63"></a> Thus, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} |\boldsymbol {p}^*| = \frac {1}{2m_\pi } (m_\pi ^2 - m_l^2). \end {aligned} \end{equation}</div><a 
- id="x1-102017r64"></a> Therefore, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \Gamma _{fi} &amp;= \frac {(m_\pi ^2 - m_l^2)}{64 \pi ^2 m_\pi ^3} 4\pi \left [\frac {g_W}{2 M_W} \right ]^4 V_{ud}^2 f_\pi ^2 m_l^2 (m_\pi ^2 - m_l^2) \\ &amp;= \frac {V_{ud}^2 f_\pi ^2}{16 \pi m_\pi ^3} \left [\frac {g_W}{2 M_W} \right ]^4 m_l^2 (m_\pi ^2 - m_l^2)^2 \\ &amp;= \frac {V_{ud}^2 f_\pi ^2}{\pi m_\pi ^3} \left [\frac {g_W}{4 M_W} \right ]^4 m_l^2 (m_\pi ^2 - m_l^2)^2. \end {aligned} \end{equation}</div><a 
- id="x1-102018r65"></a>
+ id="x1-102016r65"></a> Thus, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} |\boldsymbol {p}^*| = \frac {1}{2m_\pi } (m_\pi ^2 - m_l^2). \end {aligned} \end{equation}</div><a 
+ id="x1-102017r66"></a> Therefore, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \Gamma _{fi} &amp;= \frac {(m_\pi ^2 - m_l^2)}{64 \pi ^2 m_\pi ^3} 4\pi \left [\frac {g_W}{2 M_W} \right ]^4 V_{ud}^2 f_\pi ^2 m_l^2 (m_\pi ^2 - m_l^2) \\ &amp;= \frac {V_{ud}^2 f_\pi ^2}{16 \pi m_\pi ^3} \left [\frac {g_W}{2 M_W} \right ]^4 m_l^2 (m_\pi ^2 - m_l^2)^2 \\ &amp;= \frac {V_{ud}^2 f_\pi ^2}{\pi m_\pi ^3} \left [\frac {g_W}{4 M_W} \right ]^4 m_l^2 (m_\pi ^2 - m_l^2)^2. \end {aligned} \end{equation}</div><a 
+ id="x1-102018r67"></a>
 <p>   Without knowing <span class="mathjax-inline">\(f_\pi \)</span>, we cannot calculate the charged pion lifetime, but we can already determine the
 ratio of the electron and muon decays. </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {\Gamma (\pi ^- \rightarrow e^-~\bar {\nu }_e)} {\Gamma ( \pi ^- \rightarrow \mu ^-~\bar {\nu }_\mu )} = \frac {m_e^2 (m_\pi ^2 - m_e^2)^2} {m_\mu ^2 (m_\pi ^2 - m_\mu ^2)^2} = 1.2 \times 10^{-4}. \end {aligned} \end{equation}</div><a 
- id="x1-102019r66"></a> This is a definite prediction of the theory, as <span class="mathjax-inline">\(f_\pi \)</span> cancels out, so it
+ id="x1-102019r68"></a> This is a definite prediction of the theory, as <span class="mathjax-inline">\(f_\pi \)</span> cancels out, so it
 depends only on the masses of the relevant particles. This prediction has been experimentally
 verified.
 <p>   <figure class="figure"> 
