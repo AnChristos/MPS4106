@@ -586,7 +586,7 @@ appears twice, once as a superscript and once as a subscript, is understood to b
 <div class="mathjax-env mathjax-equation">\begin{equation} g^{\mu \nu } g_{\nu \rho } = \delta ^\mu _\rho . \end{equation}</div><a 
  id="x1-8006r10"></a> In the case of the Minkowski metric
 tensor in Cartesian coordinates, <span class="mathjax-inline">\(g^{\mu \nu }\)</span> has the same components as <span class="mathjax-inline">\(g_{\mu \nu }\)</span>.
-<p>   The inverse metric allows us to lower indices and define covariant (dual or one-form) four-vectors:
+<p>   The inverse metric allows us to lower indices and define “index-down” (or “covariant”) four-vectors:
 </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} a_{\mu } = g_{\mu \nu } a^{\nu } = (a^0, -a^1, -a^2, -a^3), \end{equation}</div><a 
  id="x1-8007r11"></a>
@@ -626,10 +626,10 @@ href="#x1-9000" id="x1-9000">Lorentz Transformations</a></h5>
 transformations.
 <p>   The Lorentz transformation <span class="mathjax-inline">\({\Lambda ^\mu }_{\nu }\)</span> has an inverse allowing us to write </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} a^{\prime \mu } \rightarrow a^{\mu } = {(\Lambda ^{-1})^\mu }_{\nu } a^{\prime \nu }. \end{equation}</div><a 
- id="x1-9003r19"></a> Covariant four-vectors transform as <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:Covariant_transform} a_{\mu } \rightarrow a'_{\mu } = {\Lambda _\mu }^{\nu } a_{\nu }, \end{equation}</div><a 
- id="x1-9004r20"></a>
-where <span class="mathjax-inline">\({\Lambda _\nu }^{\mu } = {(\Lambda ^{-1})^\mu }_{\nu }\)</span>; notice the position of the indices.
-<p>   Given two contravariant four-vectors <span class="mathjax-inline">\(a^\mu \)</span> and <span class="mathjax-inline">\(b^\nu \)</span> we have </p> 
+ id="x1-9003r19"></a> Index-down four-vectors transform
+as <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:Covariant_transform} a_{\mu } \rightarrow a'_{\mu } = {\Lambda _\mu }^{\nu } a_{\nu }, \end{equation}</div><a 
+ id="x1-9004r20"></a> where <span class="mathjax-inline">\({\Lambda _\nu }^{\mu } = {(\Lambda ^{-1})^\mu }_{\nu }\)</span>; notice the position of the indices.
+<p>   Given two index-up four-vectors <span class="mathjax-inline">\(a^\mu \)</span> and <span class="mathjax-inline">\(b^\nu \)</span> we have </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;g_{\mu \nu } a^{\prime \mu } b^{\prime \nu } = g_{\mu \nu } a^{\mu } b^{\nu } \implies \\ &amp;g_{\mu \nu } {\Lambda ^\mu }_{\rho } {\Lambda ^\nu }_{\sigma } a^{\rho } b^{\sigma } = g_{\rho \sigma } a^{\rho } b^{\sigma }. \end {aligned} \end{equation}</div><a 
  id="x1-9005r21"></a> Since <span class="mathjax-inline">\(a^\mu \)</span> and <span class="mathjax-inline">\(b^\nu \)</span> are arbitrary, it follows that a Lorentz
 transformation must satisfy the following constraint: <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:lorentz_constraint} g_{\mu \nu } {\Lambda ^\mu }_{\rho } {\Lambda ^\nu }_{\sigma } = g_{\rho \sigma }. \end{equation}</div><a 
