@@ -1090,8 +1090,13 @@ invariant matrix element <span class="mathjax-inline">\(\mathcal {M}\)</span> wi
  id="x1-29002r11"></a> Here we have extracted a factor
 <span class="mathjax-inline">\((2\pi )^4 \delta ^{(4)}(P_f - P_i)\)</span> for the overall four-momentum conservation and we use the normalization from equation <a 
 href="#x1-28003r9">2.9<!--tex4ht:ref: eq:mult_norm --></a>. The
-S-Matrix can therefore be written as: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;S_{fi} = \delta _{fi} + \frac {i}{ \prod \limits _{i=1}^{n} (2E_{p_i} V)^{1/2} \prod \limits _{j=1}^{m} (2E_{q_j} V)^{1/2}} \mathcal {M}_{fi}. \end {aligned} \end{equation}</div><a 
+S-Matrix can therefore be written as: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;S_{fi} = \delta _{fi} + \frac {(2\pi )^4 \delta ^{(4)}(P_f - P_i)}{ \prod \limits _{i=1}^{n} (2E_{p_i} V)^{1/2} \prod \limits _{j=1}^{m} (2E_{q_j} V)^{1/2}} i\mathcal {M}_{fi}. \end {aligned} \end{equation}</div><a 
  id="x1-29003r12"></a>
+<p>   For brevity, we define the reduced matrix element <span class="mathjax-inline">\(W_{fi}\)</span> as: </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} W_{fi} = \frac {1}{ \prod \limits _{i=1}^{n} (2E_{p_i} V)^{1/2} \prod \limits _{j=1}^{m} (2E_{q_j} V)^{1/2}} i\mathcal {M}_{fi}. \end{equation}</div><a 
+ id="x1-29004r13"></a> and write the corresponding S-matrix element
+as: <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {S}_{fi} = \delta _{fi} + i (2\pi )^4 \delta ^{(4)}(P_f - P_i) W_{fi}. \end{equation}</div><a 
+ id="x1-29005r14"></a>
 <p>   The matrix element <span class="mathjax-inline">\(\mathcal {M}\)</span> is useful because it allows us to separate all the physics that depends on the
 details of the interaction (“dynamics”) from all the physics that does not (“kinematics”). It is important
 to note that by factoring out the normalization constants and the four-momentum delta function, the
@@ -1109,7 +1114,7 @@ Rule in a relativistic setting (Appendix <a
 href="#x1-128000B">B<!--tex4ht:ref: sec:Appendix_Decay_rate --></a>), the formula for the differential decay rate is:
 </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:diff_decay_rate} \Gamma _{fi} = \frac {(2\pi )^4 \delta ^{(4)} (P_i - P_f)}{2E_p} |\mathcal {M}_{fi}|^2 \prod _{i=1}^{n} \frac {d^3 \mathbf {p}_i}{(2\pi )^3 (2E_i)}. \end{equation}</div><a 
- id="x1-30001r13"></a>
+ id="x1-30001r15"></a>
 <p>   The above formula deserves some comments. </p> 
 
      <ul class="itemize1">
@@ -1121,11 +1126,11 @@ href="#x1-128000B">B<!--tex4ht:ref: sec:Appendix_Decay_rate --></a>), the formul
      <li class="itemize">
      <p>The factors <span class="mathjax-inline">\(d^3 \boldsymbol {p}_i / E_i\)</span> are Lorentz invariant. Consider a boost along the z-axis; then </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;d^3\boldsymbol {p'} = dp_x' dp_y' dp_z' = dp_x dp_y dp_z' = dp_x dp_y \frac {dp_z'}{dp_z} dp_z = \frac {dp_z'}{dp_z} d^3\boldsymbol {p}, \end {aligned} \end{equation}</div><a 
- id="x1-30002r14"></a> where <span class="mathjax-inline">\(dp_x' dp_y' = dp_x dp_y\)</span> since the boost is
+ id="x1-30002r16"></a> where <span class="mathjax-inline">\(dp_x' dp_y' = dp_x dp_y\)</span> since the boost is
      on the z-axis. <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\frac {dp_z'}{dp_z} = \gamma \left (1 - \beta \frac {\partial E}{\partial p_z} \right ) = \gamma \left (1 - \beta \frac {p_z}{E} \right ) = \frac {1}{E} \gamma (E - \beta p_z) = \frac {E'}{E}. \end {aligned} \end{equation}</div><a 
- id="x1-30003r15"></a> where we used <span class="mathjax-inline">\(p'_z = \gamma (p_z - \beta E)\)</span> for the first equality, <span class="mathjax-inline">\(E^2 = p_x^2 + p_y^2 + p_z^2 + m^2\)</span> for the second, and <span class="mathjax-inline">\(E' = \gamma (E - \beta p_z)\)</span> for the last. Therefore
+ id="x1-30003r17"></a> where we used <span class="mathjax-inline">\(p'_z = \gamma (p_z - \beta E)\)</span> for the first equality, <span class="mathjax-inline">\(E^2 = p_x^2 + p_y^2 + p_z^2 + m^2\)</span> for the second, and <span class="mathjax-inline">\(E' = \gamma (E - \beta p_z)\)</span> for the last. Therefore
      <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;d^3\boldsymbol {p'} = \frac {E'}{E} d^3\boldsymbol {p} \implies \frac {d^3\boldsymbol {p'}}{E'} = \frac {d^3\boldsymbol {p}}{E}. \end {aligned} \end{equation}</div><a 
- id="x1-30004r16"></a>
+ id="x1-30004r18"></a>
                                                                                          
                                                                                          
      </li>
@@ -1137,7 +1142,7 @@ href="#x1-128000B">B<!--tex4ht:ref: sec:Appendix_Decay_rate --></a>), the formul
 <p>   When a particle can decay via various decay modes, <span class="mathjax-inline">\(\Gamma _i\)</span> are the <i>partial</i> decay rates corresponding to each
 decay mode <span class="mathjax-inline">\(i\)</span> and the total decay rate is <span class="mathjax-inline">\(\Gamma = \sum _i \Gamma _i\)</span>. The quantity </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \mathrm {BR} = \frac {\Gamma _i}{\Gamma }. \end{equation}</div><a 
- id="x1-30005r17"></a> is called the branching ratio for the mode labelled
+ id="x1-30005r19"></a> is called the branching ratio for the mode labelled
 with <span class="mathjax-inline">\(i\)</span>.
 <p>   <figure class="figure"> 
 
@@ -1171,9 +1176,9 @@ href="#x1-128000B">B<!--tex4ht:ref: sec:Appendix_Decay_rate --></a>) that the fo
 particles, see figure <a 
 href="#x1-30006r2">2.2<!--tex4ht:ref: fig:2BodyDecay --></a>, is </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \Gamma _{fi} = \frac {|\boldsymbol {p}^*|}{32 \pi ^2 M^2} \int |{\mathcal {M}}_{fi}|^2 d\Omega ^*, \label {eq:decayrate} \end{equation}</div><a 
- id="x1-31001r18"></a> where <span class="mathjax-inline">\(|\boldsymbol {p}^*| = |\boldsymbol {p}_1| = |\boldsymbol {p}_2|\)</span> is the magnitude of the momentum of the final-state particles in the
+ id="x1-31001r20"></a> where <span class="mathjax-inline">\(|\boldsymbol {p}^*| = |\boldsymbol {p}_1| = |\boldsymbol {p}_2|\)</span> is the magnitude of the momentum of the final-state particles in the
 rest frame of the decaying particle: <div class="mathjax-env mathjax-equation">\begin{equation} |\boldsymbol {p}^*| = \frac {1}{2M} \sqrt {[M^2 - (m_1+m_2)^2]\, [M^2 - (m_1-m_2)^2]}. \end{equation}</div><a 
- id="x1-31002r19"></a>
+ id="x1-31002r21"></a>
    
    <h4 class="subsectionHead"><span class="titlemark">2.4   </span> <a 
 href="#QQ2-1-38" id="x1-320002.4">Cross-Section</a></h4>
@@ -1239,14 +1244,14 @@ href="#XPeskin:1995ev">11</a>].                                                 
 of all these quantities [<a 
 href="#XPeskin:1995ev">11</a>]: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \sigma = \frac {N}{\rho _A \rho _B l_A l_B A}. \end{equation}</div><a 
- id="x1-32003r20"></a> The cross section has units of area. It can be seen as the effective area of a
+ id="x1-32003r22"></a> The cross section has units of area. It can be seen as the effective area of a
 “piece” taken out from one of the bunches by each particle in the other bunch, which then becomes part
 of the final state.
 <p>   The differential cross section for a process with <span class="mathjax-inline">\(n\)</span> final-state particles is given by: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:cross_section_master} d\sigma = (2\pi )^4 \delta ^{(4)}(P_f - P_i) \frac {1}{4 I} |\mathcal {M}_{fi}|^2 \prod _{i=1}^{n} \frac {d^3 \mathbf {p}_i}{(2\pi )^3 2E_i}. \end{equation}</div><a 
- id="x1-32004r21"></a> Here <span class="mathjax-inline">\(I\)</span> is the
+ id="x1-32004r23"></a> Here <span class="mathjax-inline">\(I\)</span> is the
 Lorentz-invariant flux factor: <div class="mathjax-env mathjax-equation">\begin{equation} I \equiv \sqrt {(p_A \cdot p_B)^2 - m_A^2 m_B^2}. \end{equation}</div><a 
- id="x1-32005r22"></a> The factors <span class="mathjax-inline">\(I\)</span>, <span class="mathjax-inline">\(\mathcal {M}_{fi}\)</span>, and <span class="mathjax-inline">\(d^3 \mathbf {p}_i / (2E_i)\)</span> are all Lorentz invariant, which ensures that the
+ id="x1-32005r24"></a> The factors <span class="mathjax-inline">\(I\)</span>, <span class="mathjax-inline">\(\mathcal {M}_{fi}\)</span>, and <span class="mathjax-inline">\(d^3 \mathbf {p}_i / (2E_i)\)</span> are all Lorentz invariant, which ensures that the
 resulting cross section is independent of the reference frame.
    
 <p><span class="paragraphHead"><a 
@@ -1255,18 +1260,18 @@ href="#x1-33000" id="x1-33000">Two Particle to Two Particle Process</a></span>
 href="#x1-18001r2">1.2<!--tex4ht:ref: fig:Mandelstam --></a>, the differential cross section is most easily expressed
 in the centre-of-mass frame: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\boldsymbol {p}_1 + \boldsymbol {p}_2 = 0, \\ &amp;\boldsymbol {p}_3 + \boldsymbol {p}_4 = 0, \\ &amp; s = (E_1+E_2)^2 = (E_3+E_4)^2. \end {aligned} \end{equation}</div><a 
- id="x1-33001r23"></a> We define <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;|\boldsymbol {p}_1| = |\boldsymbol {p}_2| = |\boldsymbol {p}_i^*|, \\ &amp;|\boldsymbol {p}_3| = |\boldsymbol {p}_4| = |\boldsymbol {p}_f^*|, \end {aligned} \end{equation}</div><a 
- id="x1-33002r24"></a> where <span class="mathjax-inline">\(|\boldsymbol {p}_i^*|\)</span> and <span class="mathjax-inline">\(|\boldsymbol {p}_f^*|\)</span> are the magnitudes of the incoming and
+ id="x1-33001r25"></a> We define <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;|\boldsymbol {p}_1| = |\boldsymbol {p}_2| = |\boldsymbol {p}_i^*|, \\ &amp;|\boldsymbol {p}_3| = |\boldsymbol {p}_4| = |\boldsymbol {p}_f^*|, \end {aligned} \end{equation}</div><a 
+ id="x1-33002r26"></a> where <span class="mathjax-inline">\(|\boldsymbol {p}_i^*|\)</span> and <span class="mathjax-inline">\(|\boldsymbol {p}_f^*|\)</span> are the magnitudes of the incoming and
 outgoing particles, respectively. <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;|\boldsymbol {p}_i^*| = \frac {1}{2\sqrt {s}} \sqrt {[s - (m_1-m_2)^2][s - (m_1+m_2)^2]}, \\ &amp;|\boldsymbol {p}_f^*| = \frac {1}{2\sqrt {s}} \sqrt {[s - (m_3-m_4)^2][s - (m_3+m_4)^2]}. \end {aligned} \end{equation}</div><a 
- id="x1-33003r25"></a> The differential cross section for a <span class="mathjax-inline">\(2 \rightarrow 2\)</span> process is then given by
+ id="x1-33003r27"></a> The differential cross section for a <span class="mathjax-inline">\(2 \rightarrow 2\)</span> process is then given by
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:crossrate} d\sigma = \frac {1}{64 \pi ^2 s} \frac {|\boldsymbol {p}^*_f|}{|\boldsymbol {p}_i^*|} |{\mathcal {M}}_{fi}|^2 d\Omega ^*. \end{equation}</div><a 
- id="x1-33004r26"></a>
+ id="x1-33004r28"></a>
    
    <h4 class="subsectionHead"><span class="titlemark">2.5   </span> <a 
 href="#QQ2-1-42" id="x1-340002.5">A Taste of Things to Come</a></h4>
 <p>Consider the process <span class="mathjax-inline">\(e^+ e^- \to \mu ^+ \mu ^-\)</span>. For this interaction we have: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:S_eemumu} S_{fi} = \bra {p_3, p_4; s_3, s_4; \mu ^+ \mu ^-} \hat {S} \ket {p_1, p_2; s_1, s_2; e^- e^+}, \end{equation}</div><a 
- id="x1-34001r27"></a> where <span class="mathjax-inline">\(p_i\)</span> and <span class="mathjax-inline">\(s_i\)</span> denote the four-momenta and spin states
+ id="x1-34001r29"></a> where <span class="mathjax-inline">\(p_i\)</span> and <span class="mathjax-inline">\(s_i\)</span> denote the four-momenta and spin states
 of the respective particles.
 <p>   What we have established so far are the formulas to handle the kinematics. There are, however, quite
 a few open questions. How are the free electrons, positrons, muons and anti-muons states to be
@@ -1316,13 +1321,13 @@ Where we used <span class="mathjax-inline">\(p_2^2=0\)</span>.
 results to <div class="mathjax-env mathjax-equation*">\begin{equation*} \langle |\mathcal {M}|^2 \rangle = \frac {g_w^2}{2} \cdot \frac {m_t^2 - M_W^2}{2} \left [ 1 + \frac {m_t^2 + M_W^2}{M_W^2} \right ]. \end{equation*}</div>
 <p>   We need to calculate the momentum <span class="mathjax-inline">\(\mathbf {|p^*|}\)</span> of the outgoing particles in the rest frame, as this is needed for
 the decay rate formula <a 
-href="#x1-31001r18">2.18<!--tex4ht:ref: eq:decayrate --></a>. The three momenta of the two outgoing particles have the same magnitude,
+href="#x1-31001r20">2.20<!--tex4ht:ref: eq:decayrate --></a>. The three momenta of the two outgoing particles have the same magnitude,
 for a massless outgoing particle particle <span class="mathjax-inline">\(E = \mathbf {|p|}\)</span>, and the decaying particle has 0 three momentum in its rest
 frame. These mean that the following combination will readily give us <span class="mathjax-inline">\(\mathbf {|p^*|}\)</span>: </p> 
 <div class="mathjax-env mathjax-equation*">\begin{equation*} p_1 \cdot p_2 = m_t E_2 - \mathbf {0}\mathbf {|p^*|} = m_t |\mathbf {p^*}| \end{equation*}</div> Using the result for <span class="mathjax-inline">\(p_1 \cdot p_2\)</span> from above:
 <div class="mathjax-env mathjax-equation*">\begin{equation*} m_t |\mathbf {p^*}| = \frac {m_t^2 - M_W^2}{2} \implies |\mathbf {p^*}| = \frac {m_t^2 - M_W^2}{2m_t}. \end{equation*}</div>
 <p>   The expression for <span class="mathjax-inline">\(\langle |\mathcal {M}|^2 \rangle \)</span> contains no angular dependence. So the integration over the solid angle <span class="mathjax-inline">\(\int d\Omega ^*\)</span> in <a 
-href="#x1-31001r18">2.18<!--tex4ht:ref: eq:decayrate --></a>
+href="#x1-31001r20">2.20<!--tex4ht:ref: eq:decayrate --></a>
 evaluates simply to <span class="mathjax-inline">\(4\pi \)</span>. </p> 
 <div class="mathjax-env mathjax-equation*">\begin{equation*} \Gamma = \frac {|\mathbf {p}^*|}{32 \pi ^2 m_t^2} \cdot 4\pi \cdot \langle |\mathcal {M}|^2 \rangle = \frac {|\mathbf {p}^*|}{8 \pi m_t^2} \langle |\mathcal {M}|^2 \rangle \end{equation*}</div> Substituting our derived expressions for <span class="mathjax-inline">\(|\mathbf {p}^*| \)</span> and <span class="mathjax-inline">\(\langle |\mathcal {M}|^2 \rangle \)</span>: <div class="mathjax-env mathjax-equation*">\begin{equation*} \begin {aligned} \Gamma &amp;= \frac {1}{8\pi m_t^2} \left (\frac {m_t^2 - M_W^2}{2m_t}\right ) \left [ \frac {g_w^2}{4} (m_t^2 - M_W^2) \left ( 1 + \frac {m_t^2 + M_W^2}{M_W^2} \right ) \right ] \\ &amp;= \frac {g_w^2}{64\pi m_t^3} (m_t^2 - M_W^2)^2 \left ( 1 + \frac {m_t^2 + M_W^2}{M_W^2} \right ) \end {aligned} \end{equation*}</div>
 <p>   Using the provided values </p> 
@@ -1775,7 +1780,7 @@ following form of the Dirac equation for antiparticles: <div class="mathjax-env 
 negative value solutions (<span class="mathjax-inline">\(v^{(3)}, v^{(4)}\)</span>).
 <p>   We can replace the negative energy solutions (<span class="mathjax-inline">\(u^{(3)}, u^{(4)}\)</span>) of the particle equation with the positive energy
 solutions of the antiparticle equation: </p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} v^{(1)}(p) = N \begin {pmatrix} \frac {p_x - i p_y}{E+m} \\ \frac {-p_z}{E+m} \\ 0 \\ 1 \end {pmatrix}; \quad v^{(2)}(p) = N \begin {pmatrix} \frac {p_z}{E+m} \\ \frac {p_x + i p_y}{E+m} \\ 1 \\ 0 \end {pmatrix}. \end {aligned} \end{equation}</div><a 
+<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} v^{(1)}(p) = N \begin {pmatrix} \frac {p_x - i p_y}{E+m} \\ \frac {-p_z}{E+m} \\ 0 \\ 1 \end {pmatrix}; \quad v^{(2)}(p) = -N \begin {pmatrix} \frac {p_z}{E+m} \\ \frac {p_x + i p_y}{E+m} \\ 1 \\ 0 \end {pmatrix}. \end {aligned} \end{equation}</div><a 
  id="x1-49006r66"></a> We will mainly working with a set of four independent solutions <span class="mathjax-inline">\([u^{(1)}, u^{(2)}, v^{(1)}, v^{(2)}]\)</span>
 that all represent particles with positive energy.
 <p>   <figure class="figure"> 
@@ -2359,7 +2364,7 @@ href="#QQ2-1-74" id="x1-610005.5">Summary </a></h4>
 scalar (<span class="mathjax-inline">\(\phi \)</span>), spin-<span class="mathjax-inline">\(1/2\)</span> (<span class="mathjax-inline">\(\psi \)</span>), and vector (<span class="mathjax-inline">\(A^\mu \)</span>) particles.
 </p> 
 <p>   In terms of describing the <span class="mathjax-inline">\(e^+ e^- \to \mu ^+ \mu ^-\)</span> process equation <a 
-href="#x1-34001r27">2.27<!--tex4ht:ref: eq:S_eemumu --></a> </p> 
+href="#x1-34001r29">2.29<!--tex4ht:ref: eq:S_eemumu --></a> </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} S_{fi} = \bra {p_3,\ s_3,\ p_4,\ s_4; \mu ^+ \mu ^-} \hat {S} \ket {p_1,\ s_1,\ p_2, s_2; e^- e^+}, \end{equation}</div><a 
  id="x1-61004r31"></a> we have a way to describe the free particle states at
 <span class="mathjax-inline">\(\pm \infty \)</span>. However, a theory consisting only of free, non-interacting particles would not be very useful for
@@ -2911,8 +2916,8 @@ theory.
 href="#QQ2-1-88" id="x1-740007">Feynman Rules</a></h3>
 <p>   Making predictions for cross sections and decay rates means that we need a way to calculate the
 matrix element entering equations <a 
-href="#x1-31001r18">2.18<!--tex4ht:ref: eq:decayrate --></a> and <a 
-href="#x1-33004r26">2.26<!--tex4ht:ref: eq:crossrate --></a>. Feynman rules provide the final element we need in
+href="#x1-31001r20">2.20<!--tex4ht:ref: eq:decayrate --></a> and <a 
+href="#x1-33004r28">2.28<!--tex4ht:ref: eq:crossrate --></a>. Feynman rules provide the final element we need in
 order to achieve our goal of being to be able to calculate amplitudes for various processes and connect
 them to experimental results.
    
@@ -3524,7 +3529,7 @@ href="#Xthomson">5</a>].   </span></figcaption><!--tex4ht:label?: x1-87002r4 -->
 <p>   </figure>
 </p> 
 <p>   Using <a 
-href="#x1-33004r26">2.26<!--tex4ht:ref: eq:crossrate --></a> with <span class="mathjax-inline">\(|\boldsymbol {p_i^*}| = |\boldsymbol {p_f^*}|\)</span> we get: </p> 
+href="#x1-33004r28">2.28<!--tex4ht:ref: eq:crossrate --></a> with <span class="mathjax-inline">\(|\boldsymbol {p_i^*}| = |\boldsymbol {p_f^*}|\)</span> we get: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {d \sigma }{d\Omega } = \frac {1}{64 \pi ^2 s} e^4 (1+\cos ^2 \theta ) = \frac {\alpha ^2}{4s}(1+\cos ^{2} {\theta }). \end {aligned} \end{equation}</div><a 
  id="x1-87003r15"></a> Here we used <span class="mathjax-inline">\(\alpha = e^2/4\pi \)</span>, where <span class="mathjax-inline">\(\alpha \)</span> is the fine structure constant defined in natural units.
 The differential cross section for the <span class="mathjax-inline">\(e^+ e^- \rightarrow \mu ^+ \mu ^-\)</span> process has been measured; see figure <a 
@@ -3572,7 +3577,7 @@ identification efficiency.                                                      
 <p>   </figure>
 </p> 
 <p>   We now need to use <a 
-href="#x1-33004r26">2.26<!--tex4ht:ref: eq:crossrate --></a>. In this case </p> 
+href="#x1-33004r28">2.28<!--tex4ht:ref: eq:crossrate --></a>. In this case </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {|\boldsymbol {p}^*_f|}{|\boldsymbol {p}_i^*|} = \frac {|\boldsymbol {k}|}{E} = \beta . \end {aligned} \end{equation}</div><a 
  id="x1-88009r24"></a> Therefore, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {d \sigma }{d\Omega } &amp; = \frac {1}{64 \pi ^2 s} \beta {e^4} (2+ \beta ^2 \cos ^{2} {\theta } - \beta ^2)\\ &amp; = \frac {\alpha ^2}{4s}\beta (2+ \beta ^2 \cos ^{2} {\theta } - \beta ^2), \end {aligned} \end{equation}</div><a 
  id="x1-88010r25"></a> where we used <span class="mathjax-inline">\(\alpha = e^2/4\pi \)</span>. The total cross-section is given by <div class="mathjax-env mathjax-equation">\begin{equation} \sigma = \frac {4 \pi \alpha ^2}{3s} \beta \left (\frac {(3-\beta )}{2} \right ). \end{equation}</div><a 
@@ -3913,10 +3918,10 @@ decay products have the same mass <div class="mathjax-env mathjax-equation">\beg
  id="x1-92014r86"></a> We also have, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; q^2 = (p_1+p_2)^2 , \\ &amp; M_H^2 = p_1^2 + p_2^2 +2 p_1 \cdot p_2, \\ &amp; 2 p_1 \cdot p_2 = M_H^2 - 2 m_f^2. \end {aligned} \end{equation}</div><a 
  id="x1-92015r87"></a> Therefore, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sum \limits _{\mathrm {spins}} |\mathcal {M}|^2 &amp; = \frac {m_f^2}{v^2} \left [ 2 M_H^2 - 8 m_f^2 \right ] = 2 M_H^2 \frac {m_f^2}{v^2} \left [ 1 - \frac {4 m_f^2}{M_H^2} \right ]. \end {aligned} \end{equation}</div><a 
  id="x1-92016r88"></a> Now we need to use the formula <a 
-href="#x1-31001r18">2.18<!--tex4ht:ref: eq:decayrate --></a>. We
+href="#x1-31001r20">2.20<!--tex4ht:ref: eq:decayrate --></a>. We
 have <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} |\boldsymbol {p}^*| &amp; = \sqrt { \left ( \frac {M_H}{2} \right )^2 - m_f^2 }\ = \frac {1}{2} \sqrt {(M_H^2 - 4m_f^2)} = \frac {M_H}{2} \sqrt {1 - \frac {4m_f^2}{M_H^2}}. \end {aligned} \end{equation}</div><a 
  id="x1-92017r89"></a> Plugging everything into <a 
-href="#x1-31001r18">2.18<!--tex4ht:ref: eq:decayrate --></a> and since <span class="mathjax-inline">\(\int d\Omega = 4 \pi \)</span>, we get <div class="mathjax-env mathjax-equation">\begin{equation} \Gamma _{fi} = \frac {M_H}{8 \pi v^2 } m_f^2 \left [ 1- \frac {4m_f^2}{M_H^2} \right ]^{3/2}. \end{equation}</div><a 
+href="#x1-31001r20">2.20<!--tex4ht:ref: eq:decayrate --></a> and since <span class="mathjax-inline">\(\int d\Omega = 4 \pi \)</span>, we get <div class="mathjax-env mathjax-equation">\begin{equation} \Gamma _{fi} = \frac {M_H}{8 \pi v^2 } m_f^2 \left [ 1- \frac {4m_f^2}{M_H^2} \right ]^{3/2}. \end{equation}</div><a 
  id="x1-92018r90"></a>
 <p>   Since the Higgs couples to the fermions proportionally to their mass, the decay rate of the Higgs to
 fermions is proportional to the square of their mass. This is a definite prediction for the SM Higgs
@@ -4369,7 +4374,7 @@ href="#x1-99011r5">9.5<!--tex4ht:ref: fig:Inverse_beta_helicity --></a>), <span 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} s = (E_1+E_2)^2 = (E_3+E_4)^2. \end {aligned} \end{equation}</div><a 
  id="x1-99014r34"></a>
 <p>   We want to use formula <a 
-href="#x1-33004r26">2.26<!--tex4ht:ref: eq:crossrate --></a>. Both incoming particles are taken to be massless, so <span class="mathjax-inline">\(|\boldsymbol {p}^*_i| = \frac {\sqrt {s}}{2}\)</span>. The outgoing
+href="#x1-33004r28">2.28<!--tex4ht:ref: eq:crossrate --></a>. Both incoming particles are taken to be massless, so <span class="mathjax-inline">\(|\boldsymbol {p}^*_i| = \frac {\sqrt {s}}{2}\)</span>. The outgoing
 muon has mass. In the centre-of-mass frame, the momentum relationships imply </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} |\boldsymbol {p}_3| = |\boldsymbol {p}_4| \implies \boldsymbol {p}_3^2 = \boldsymbol {p}_4^2 \implies E_3^2 - m_\mu ^2 = E_4^2 \implies E_3^2 - E_4^2 = m_\mu ^2. \end {aligned} \end{equation}</div><a 
  id="x1-99015r35"></a> But we also have <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} (E_3+E_4) = \sqrt {s}. \end {aligned} \end{equation}</div><a 
@@ -4460,7 +4465,7 @@ href="#x1-100008r7">9.7<!--tex4ht:ref: fig:antineutrino_Electron_ref --></a>) </
  id="x1-100010r50"></a> Since <span class="mathjax-inline">\(s = 2p_1 \cdot p_2 = 4E^2\)</span> and <span class="mathjax-inline">\(u = -2p_1 \cdot p_3 = - 2E^2(1+\cos {\theta })\)</span> where <span class="mathjax-inline">\(\cos {\theta }\)</span> is the angle
 between the outgoing muon and the incoming anti-neutrino. This process is not isotropic in
 the centre of mass frame. Plugging things into <a 
-href="#x1-33004r26">2.26<!--tex4ht:ref: eq:crossrate --></a> we obtain <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} d\sigma = \frac {1}{64 \pi ^2} \frac {1}{8} \frac {g_W^4 s} {M_W^4} (1+\cos {\theta })^2 d\Omega . \end {aligned} \end{equation}</div><a 
+href="#x1-33004r28">2.28<!--tex4ht:ref: eq:crossrate --></a> we obtain <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} d\sigma = \frac {1}{64 \pi ^2} \frac {1}{8} \frac {g_W^4 s} {M_W^4} (1+\cos {\theta })^2 d\Omega . \end {aligned} \end{equation}</div><a 
  id="x1-100011r51"></a> We then integrate to obtain
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sigma &amp; = \frac {1}{32 \pi } \frac {1}{8} \frac {g_W^4 s} {M_W^4} \int _{-1}^1 (1+\cos \theta )^2 d\phi d(\cos \theta ) \\ &amp; = \frac {1}{32 \pi } \frac {1}{8} \frac {g_W^4 s} {M_W^4} 2\pi \int _{-1}^1 (1+\cos \theta )^2 d(\cos \theta ) \\ &amp;= \frac {1}{32 \pi } \frac {1}{8} \frac {g_W^4 s} {M_W^4} \frac {8}{3} = \frac {1}{32 \pi } \frac {1}{3} \frac {g_W^4 s} {M_W^4} = \frac {G_F^2 s}{3\pi }. \end {aligned} \end{equation}</div><a 
  id="x1-100012r52"></a>
@@ -4589,7 +4594,7 @@ and <span class="mathjax-inline">\(p_4\)</span> respectively <div class="mathjax
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sum \limits _{\mathrm {spins}} |\mathcal {M}|^2 = \left [\frac {g_W}{2 M_W} \right ]^4 V_{ud}^2 f_\pi ^2 m_l^2 (m_\pi ^2 - m_l^2). \end {aligned} \end{equation}</div><a 
  id="x1-101013r62"></a>
 <p>   We will use formula <a 
-href="#x1-31001r18">2.18<!--tex4ht:ref: eq:decayrate --></a>. In the rest frame of the pion we have </p> 
+href="#x1-31001r20">2.20<!--tex4ht:ref: eq:decayrate --></a>. In the rest frame of the pion we have </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;p = ( m_\pi , 0), \\ &amp;p_3 = (E_3 , \boldsymbol {p}_3 ), \\ &amp;p_4 = (E_4 , \boldsymbol {p}_4 ). \end {aligned} \end{equation}</div><a 
  id="x1-101014r63"></a> Since the neutrino is massless, <span class="mathjax-inline">\(|\boldsymbol {p}^*| = |\boldsymbol {p}_4| = E_4\)</span>. It is
 convenient to form <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} p_3^2 = (P - p_4)^2. \end {aligned} \end{equation}</div><a 
@@ -4852,7 +4857,7 @@ multiplied with symmetric ones, we have the symmetric <span class="mathjax-inlin
  id="x1-105012r33"></a>
 <p>   In the centre of mass frame <span class="mathjax-inline">\(|\mathbf {p*}| = |\mathbf {p_3}| = |\mathbf {p_2}|\)</span>, since the fermions are take to be massless implies <span class="mathjax-inline">\(|\mathbf {p*}| =E_2 = E_3 = \frac {M_X}{2}\)</span>. Since, <span class="mathjax-inline">\(\int d\Omega = 4 \pi \)</span> equation
  <a 
-href="#x1-31001r18">2.18<!--tex4ht:ref: eq:decayrate --></a> gives </p> 
+href="#x1-31001r20">2.20<!--tex4ht:ref: eq:decayrate --></a> gives </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:WeakBoson_Decay} \Gamma = \frac {g_X^2 M_X}{48 \pi } (c_V^2 + c_A^2). \end{equation}</div><a 
  id="x1-105013r34"></a>
    
@@ -5596,10 +5601,11 @@ href="#QQ2-1-177" id="x1-128000B">Decay Rate Derivations</a></h3>
    <h4 class="subsectionHead"><span class="titlemark">B.1   </span> <a 
 href="#QQ2-1-178" id="x1-129000B.1">Decay Rate Formula</a></h4>
 <p>Let’s consider a decay process where the initial state is a single particle with four-momentum <span class="mathjax-inline">\(p\)</span> and mass <span class="mathjax-inline">\(M\)</span>,
-and the final state is given by <span class="mathjax-inline">\(n\)</span> particles with four-momenta <span class="mathjax-inline">\(p_i\)</span> and masses <span class="mathjax-inline">\(m_i\)</span>, <span class="mathjax-inline">\(i=1, \dots ,n\)</span>. For brevity, we define <span class="mathjax-inline">\(T_{fi}\)</span> as: </p> 
+and the final state is given by <span class="mathjax-inline">\(n\)</span> particles with four-momenta <span class="mathjax-inline">\(p_i\)</span> and masses <span class="mathjax-inline">\(m_i\)</span>, <span class="mathjax-inline">\(i=1, \dots ,n\)</span>. For brevity, we
+define the reduced matrix element <span class="mathjax-inline">\(W_{fi}\)</span> as: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} W_{fi} = \frac {1}{(2E_{p} V)^{1/2}} \prod _{i=1}^{n} \frac {1}{(2E_{p_i} V)^{1/2}} \mathcal {M}_{fi}. \end{equation}</div><a 
- id="x1-129001r1"></a> So
-we can write the corresponding S-matrix element: <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:SMatrix_M} \mathcal {S}_{fi} = \delta _{fi} + i (2\pi )^4 \delta ^{(4)}(P_f - P_i) W_{fi}. \end{equation}</div><a 
+ id="x1-129001r1"></a> So we can write the corresponding S-matrix element:
+<div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:SMatrix_M} \mathcal {S}_{fi} = \delta _{fi} + i (2\pi )^4 \delta ^{(4)}(P_f - P_i) W_{fi}. \end{equation}</div><a 
  id="x1-129002r2"></a>
    
 <p><span class="paragraphHead"><a 
