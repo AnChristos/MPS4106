@@ -1502,7 +1502,12 @@ physics.
 <p>   <span style="display: hidden">\(\nextSection \)</span></p> 
 <h3 class="sectionHead"><span class="titlemark">4   </span> <a 
 href="#QQ2-1-49" id="x1-410004">The Dirac equation</a></h3>
+<p>   In this chapter, I adopt a historical approach, following the efforts of Dirac and others to formulate
+relativistic quantum mechanics. After deriving the Dirac equation, we examine some of its properties and
+implications.
    
+   </p> 
+
    <h4 class="subsectionHead"><span class="titlemark">4.1   </span> <a 
 href="#QQ2-1-50" id="x1-420004.1">The Schrödinger equation</a></h4>
 <p>In classical dynamics the Hamiltonian of a single particle moving in a potential <span class="mathjax-inline">\(V(\boldsymbol {x})\)</span> can be written as </p> 
@@ -1569,6 +1574,8 @@ current densities <div class="mathjax-env mathjax-equation">\begin{equation} \be
  id="x1-43010r21"></a> since <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \partial _\mu J^\mu &amp;= i \partial _\mu \left ( \phi ^* \partial ^\mu \phi - \phi \partial ^\mu \phi ^* \right ) \\ &amp;= i \left ( \partial _\mu \phi ^* \partial ^\mu \phi + \phi ^* \partial _\mu \partial ^\mu \phi - \partial _\mu \phi \partial ^\mu \phi ^* - \phi \partial _\mu \partial ^\mu \phi ^* \right ) \\ &amp;= i \left [ \phi ^* (-m^2 \phi ) - \phi (-m^2 \phi ^*) \right ] = 0. \end {aligned} \end{equation}</div><a 
  id="x1-43011r22"></a> Here, we used the fact that <span class="mathjax-inline">\(\phi \)</span> and <span class="mathjax-inline">\(\phi ^*\)</span> satisfy
 the Klein-Gordon equation.
+                                                                                         
+                                                                                         
 <p>   The issue is probability densities can now be negative. We can readily check this by introducing
 plane-wave solutions, and using <span class="mathjax-inline">\(\phi ^*\phi = \phi \phi ^* = |N|^2\)</span>, we obtain </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \rho = i \left ( \phi ^* (-iE) \phi - \phi (iE) \phi ^* \right ) = E (\phi ^*\phi + \phi \phi ^*) = 2|N|^2 E. \end{equation}</div><a 
@@ -1577,8 +1584,6 @@ densities. Historically, this is the problem that motivated Dirac to find an alt
 eventual solution is that we should treat <span class="mathjax-inline">\(J^\mu \)</span> not as a probability four-current but as a four-current relating
 to particle or charge density <div class="mathjax-env mathjax-equation">\begin{equation} J^\mu = i Q \left ( \phi ^* \partial ^\mu \phi - \phi \partial ^\mu \phi ^* \right ). \end{equation}</div><a 
  id="x1-43013r24"></a>
-                                                                                         
-                                                                                         
    
    <h4 class="subsectionHead"><span class="titlemark">4.3   </span> <a 
 href="#QQ2-1-52" id="x1-440004.3">The Dirac Equation</a></h4>
@@ -1635,12 +1640,12 @@ will return to this point later in the course, but if you want to see some more 
 appendix <a 
 href="#x1-133000C">C<!--tex4ht:ref: sec:Appendix_Dirac --></a>.
    
+                                                                                         
+                                                                                         
    </p> 
 
    <h4 class="subsectionHead"><span class="titlemark">4.4   </span> <a 
 href="#QQ2-1-53" id="x1-450004.4">Covariant Formulation of the Dirac Equation</a></h4>
-                                                                                         
-                                                                                         
 <p>The Dirac equation is usually expressed in a form which emphasises its covariance (form invariance). On
 multiplying the Dirac equation <a 
 href="#x1-44001r25">4.25<!--tex4ht:ref: eq:Dirac --></a> by <span class="mathjax-inline">\(\beta \)</span> and substituting the operators we obtain </p> 
@@ -1727,6 +1732,8 @@ obtain <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:Dir
 the solutions for a particle at rest, with <span class="mathjax-inline">\(E=m\)</span> and <span class="mathjax-inline">\(\boldsymbol {p}=0\)</span>. In this case the Dirac equation is simply:
 <div class="mathjax-env mathjax-equation">\begin{equation} (\gamma ^0 p_0 - m) u(E,0) = 0 \implies E \gamma ^0 u = m u. \end{equation}</div><a 
  id="x1-47004r54"></a>
+                                                                                         
+                                                                                         
 <p>   In the Dirac-Pauli representation <span class="mathjax-inline">\(\gamma ^0\)</span> is a diagonal matrix. In that representation it is easy to obtain four
 orthogonal solutions based on the eigenvectors and eigenvalues of <span class="mathjax-inline">\(\gamma ^0\)</span>: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} E \begin {pmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1\end {pmatrix} \begin {pmatrix} u_1 \\ u_2 \\ u_3 \\ u_4 \end {pmatrix} = m \begin {pmatrix} u_1 \\ u_2 \\ u_3 \\ u_4 \end {pmatrix}, \end{equation}</div><a 
@@ -1735,8 +1742,6 @@ orthogonal solutions based on the eigenvectors and eigenvalues of <span class="m
 normalisation constant. The first two solutions have positive energy eigenvalues <span class="mathjax-inline">\(E = +m\)</span> and the last two have
 negative energy eigenvalues <span class="mathjax-inline">\(E = -m\)</span>. In terms of <span class="mathjax-inline">\(\psi _i\)</span>, the solutions are: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \psi _1 = N \begin {pmatrix} 1 \\ 0 \\ 0 \\ 0 \end {pmatrix} e^{-imt};\\psi _2 = N \begin {pmatrix} 0 \\ 1 \\ 0 \\ 0 \end {pmatrix} e^{-imt};\\psi _3 = N \begin {pmatrix} 0 \\ 0 \\ 1 \\ 0 \end {pmatrix} e^{+imt};\\psi _4 = N \begin {pmatrix} 0 \\ 0 \\ 0 \\ 1 \end {pmatrix} e^{+imt}. \end {aligned} \end{equation}</div><a 
  id="x1-47007r57"></a>
-                                                                                         
-                                                                                         
 <p>   The general free particle solutions in the Dirac-Pauli representation are: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} u^{(s)} &amp;= N \begin {pmatrix} \chi ^{(s)} \\ \frac {\boldsymbol {\sigma } \cdot \boldsymbol {p}}{E+m} \chi ^{(s)} \end {pmatrix}, \\ u^{(s+2)} &amp;= N \begin {pmatrix} \frac {\boldsymbol {\sigma } \cdot \boldsymbol {p}}{E-m} \chi ^{(s)} \\ \chi ^{(s)} \end {pmatrix}, \end {aligned} \end{equation}</div><a 
  id="x1-47008r58"></a> where <span class="mathjax-inline">\(s=1,2\)</span> and <div class="mathjax-env mathjax-equation">\begin{equation} \chi ^{(1)} = \begin {pmatrix} 1 \\ 0 \end {pmatrix}; \quad \chi ^{(2)} = \begin {pmatrix} 0 \\ 1 \end {pmatrix}; \end{equation}</div><a 
@@ -2421,7 +2426,7 @@ distinct <div class="mathjax-env mathjax-equation">\begin{equation} \phi (x) = \
 <div class="mathjax-env mathjax-equation">\begin{equation} A^\mu (x) = \int \frac {d^3 p}{(2\pi )^3 \sqrt {2E_p}} \sum _{\lambda } \left ( a_{\mathbf {p}, \lambda } \epsilon ^\mu (p, \lambda ) e^{-ipx} + a^\dagger _{\mathbf {p}, \lambda } \epsilon ^{\mu }(p, \lambda ) e^{ipx} \right ). \end{equation}</div><a 
  id="x1-62005r5"></a>
 <p>   We will not be using these explicit forms in this course. What is conceptually useful though, is the
-interpretation of fields as creating and annihilating particles, as this
+interpretation of fields as creating and annihilating particles.
    
    </p> 
 
