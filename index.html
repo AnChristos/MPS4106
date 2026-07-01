@@ -2339,22 +2339,18 @@ href="#QQ2-1-76" id="x1-650006.2.2">Dirac Lagrangian</a></h5>
  id="x1-65001r18"></a> The Dirac spinor <span class="mathjax-inline">\(\psi \)</span> is a four-component complex spinor. It therefore contains
 four complex components, corresponding to eight real degrees of freedom. In principle, one could describe
 the system using eight independent real fields, given by the real and imaginary parts of each component.
-However, it is more convenient to work directly with the complex fields <span class="mathjax-inline">\(\psi _j\)</span> and their complex
-conjugates.
-<p>   We can decompose a complex field <span class="mathjax-inline">\(\psi \)</span> into two real fields, <span class="mathjax-inline">\(\psi _1\)</span> and <span class="mathjax-inline">\(\psi _2\)</span>: </p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} \psi = \frac {1}{\sqrt {2}}(\psi _1 + i\psi _2), \\psi ^* = \frac {1}{\sqrt {2}}(\psi _1 - i\psi _2), \end{equation}</div><a 
- id="x1-65002r19"></a> and instead of varying the action with
-respect to <span class="mathjax-inline">\(\psi _1\)</span> and <span class="mathjax-inline">\(\psi _2\)</span>, we treat <span class="mathjax-inline">\(\psi \)</span> and <span class="mathjax-inline">\(\psi ^*\)</span> as independent variables. Both descriptions contain the same information,
-but the latter is often algebraically simpler. This is analogous to describing a complex number <span class="mathjax-inline">\(z\)</span>: instead of
-using <span class="mathjax-inline">\(\{\mathrm {Re}(z), \mathrm {Im}(z)\}\)</span>, one may equivalently use <span class="mathjax-inline">\(\{z, z^*\}\)</span>.
-                                                                                         
-                                                                                         
+However, it is more convenient to work directly with the four complex fields <span class="mathjax-inline">\(\psi _j\)</span> and their four complex
+conjugates. This is analogous to describing a complex number <span class="mathjax-inline">\(z\)</span>: instead of using <span class="mathjax-inline">\(\{\mathrm {Re}(z), \mathrm {Im}(z)\}\)</span>, one may equivalently
+use <span class="mathjax-inline">\(\{z, z^*\}\)</span>. In this case for one of the four complex fields and its complex conjugate we use <div class="mathjax-env mathjax-equation">\begin{equation} \psi _i = \frac {1}{\sqrt {2}}(\psi _a + i\psi _b) \\ \psi ^*_i = \frac {1}{\sqrt {2}}(\psi _a - i\psi _b), \end{equation}</div><a 
+ id="x1-65002r19"></a> rather than the real
+<span class="mathjax-inline">\(\psi _a\)</span> and <span class="mathjax-inline">\(\psi _b\)</span>.
 <p>   Following this approach, we treat the spinor <span class="mathjax-inline">\(\psi \)</span> and its Dirac adjoint <span class="mathjax-inline">\(\bar {\psi }\)</span> as independent variables when
-applying the Euler-Lagrange equations. The Dirac Lagrangian can be written in component
-form as </p> 
+applying the Euler-Lagrange equations. The Dirac Lagrangian can be written in component form as </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {L} = \sum _{j,k=1}^{4} \bar {\psi }_j \left (i \gamma ^\mu _{\; jk} \partial _\mu - m \, \delta _{jk} \right ) \psi _k, \end{equation}</div><a 
- id="x1-65003r20"></a> where <span class="mathjax-inline">\(\gamma ^\mu _{\; jk}\)</span> are the matrix elements of the gamma matrices, and <span class="mathjax-inline">\(\delta _{jk}\)</span> is the Kronecker delta.
-<div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {L} = \sum _{j=1}^4 \sum _{k=1}^4 \bar {\psi }_j \left [ (i \gamma ^\mu _{jk} \partial _\mu - m \delta _{jk}) \right ] \psi _k. \end{equation}</div><a 
+ id="x1-65003r20"></a>
+                                                                                         
+                                                                                         
+where <span class="mathjax-inline">\(jk\)</span> are the matrix elements of the <span class="mathjax-inline">\(\gamma ^\mu \)</span> matrices, and <span class="mathjax-inline">\(\delta _{jk}\)</span> is the Kronecker delta. <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {L} = \sum _{j=1}^4 \sum _{k=1}^4 \bar {\psi }_j \left [ (i \gamma ^\mu _{jk} \partial _\mu - m \delta _{jk}) \right ] \psi _k. \end{equation}</div><a 
  id="x1-65004r21"></a>
 <p>   We now apply the Euler-Lagrange equations, treating <span class="mathjax-inline">\(\bar {\psi }_j\)</span> as the independent fields. For the first term, we
 obtain </p> 
@@ -2426,13 +2422,13 @@ second theorem) rather than independent conserved currents.
 discrete symmetries such as parity, time reversal, and charge conjugation (particle changing to
 anti-particle).
    
-                                                                                         
-                                                                                         
    </p> 
 
    <h4 class="subsectionHead"><span class="titlemark">6.4   </span> <a 
 href="#QQ2-1-78" id="x1-670006.4">QED Interactions and Gauge Invariance</a></h4>
    
+                                                                                         
+                                                                                         
    <h5 class="subsubsectionHead"><span class="titlemark">6.4.1   </span> <a 
 href="#QQ2-1-79" id="x1-680006.4.1">Global Phase Symmetry</a></h5>
 <p>The Dirac Lagrangian is invariant under the global phase transformation </p> 
@@ -2504,14 +2500,14 @@ theory.
 href="#QQ2-1-81" id="x1-700006.4.3">Reversing the Argument, Gauge Invariance Principle</a></h5>
 <p>The term <i>gauge</i> (scale) symmetry is a bit of a historical misnomer that originates from Weyl’s attempt in
 1918 to employ <i>scale</i> invariance in the metric tensor in an effort to unify electromagnetism and gravity.
-                                                                                         
-                                                                                         
 This attempt was unsuccessful, later Weyl applied the theory to the <i>local phase</i> symmetry of wave
 functions.
 </p> 
 <p>   In the Standard Model, gauge invariance is one of the <i>principles</i> used to derive the dynamics of the
 theory. In order to understand this point, we will reverse the argument: we will start from the free Dirac
 Lagrangian and, by requiring gauge invariance, we will infer the existence of the electromagnetic field and
+                                                                                         
+                                                                                         
 the relevant interaction structure of the theory.
 </p> 
 <p>   The procedure that we will follow is not essential for deriving QED, but becomes important for
@@ -2581,8 +2577,6 @@ states of the same particle: </p>
 <div class="mathjax-env mathjax-equation">\begin{equation} \Psi = \begin {pmatrix} \psi _p \\ \psi _n \end {pmatrix}. \end{equation}</div><a 
  id="x1-71002r60"></a> Notice that <span class="mathjax-inline">\(\Psi \)</span> above is a two component column vector whose entries are
 4-component Dirac spinors.
-                                                                                         
-                                                                                         
 <p>   To rotate these states into one another, we need a <span class="mathjax-inline">\(2\times 2\)</span> unitary matrix <span class="mathjax-inline">\(U\)</span> with determinant 1. This is
 the group <span class="mathjax-inline">\(SU(2)\)</span>, which has <span class="mathjax-inline">\(N^2-1 = 3\)</span> generators. Notice that now we have to deal with matrices, which in
 general do not commute. This is called a <i>non-Abelian</i> symmetry. The transformation is: </p> 
@@ -2594,6 +2588,8 @@ general do not commute. This is called a <i>non-Abelian</i> symmetry. The transf
 These satisfy the relation <span class="mathjax-inline">\([t^a , t^b] = i \epsilon ^{abc} t^c\)</span>. A relationship of the form <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:group_algebra} [T^a,T^b] = i f^{abc} T^c. \end{equation}</div><a 
  id="x1-71006r64"></a> is said to define the <i>algebra</i> of the
 group. The <span class="mathjax-inline">\(f^{abc}\)</span> are called <i>structure constants</i>. In the particular case of <span class="mathjax-inline">\(SU(2)\)</span> <span class="mathjax-inline">\(f^{abc} = \epsilon ^{abc}\)</span>, where <span class="mathjax-inline">\(\epsilon ^{abc}\)</span> is the Levi-Civita
+                                                                                         
+                                                                                         
 symbol.
 <p>   If we try to make this <span class="mathjax-inline">\(SU(2)\)</span> symmetry local, we encounter a new requirement. Because there are three
 independent ways to rotate a doublet (corresponding to the three generators <span class="mathjax-inline">\(T^1, T^2, T^3\)</span>), we need three
