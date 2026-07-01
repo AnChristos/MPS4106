@@ -2316,71 +2316,69 @@ theory.
 href="#QQ2-1-75" id="x1-640006.2.1">Klein-Gordon Lagrangian</a></h5>
 <p>Consider the Lagrangian: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {L} = \frac {1}{2} \partial _\mu \phi \partial ^\mu \phi - \frac {1}{2} m^2 \phi ^2. \end{equation}</div><a 
- id="x1-64001r9"></a> We will use index <span class="mathjax-inline">\(\mu \)</span> for the equation of motion and indices <span class="mathjax-inline">\(\alpha \)</span>, <span class="mathjax-inline">\(\beta \)</span> for the Lagrangian.
-<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\frac {\partial }{\partial (\partial _\mu \phi )} \left ( \frac {1}{2} g^{\alpha \beta } \partial _\alpha \phi \partial _\beta \phi \right ) \\ &amp;= \frac {1}{2} g^{\alpha \beta } \frac {\partial (\partial _\alpha \phi )}{\partial (\partial _\mu \phi )} \partial _\beta \phi + \frac {1}{2} g^{\alpha \beta } \frac {\partial (\partial _\beta \phi )}{\partial (\partial _\mu \phi )} \partial _\alpha \phi \\ &amp;= \frac {1}{2} g^{\alpha \beta } {\delta _\alpha }^\mu \partial _\beta \phi + \frac {1}{2} g^{\alpha \beta } {\delta _\beta }^\mu \partial _\alpha \phi \\ &amp;= \frac {1}{2} g^{\mu \beta } \partial _\beta \phi + \frac {1}{2} g^{\alpha \mu } \partial _\alpha \phi = \partial ^\mu \phi . \end {aligned} \end{equation}</div><a 
- id="x1-64002r10"></a> Here we used <div class="mathjax-env mathjax-equation">\begin{equation} \frac {\partial (\partial _\lambda \phi )}{\partial (\partial _\mu \phi )} = {\delta _\lambda }^\mu , \end{equation}</div><a 
- id="x1-64003r11"></a> meaning that the expression is <span class="mathjax-inline">\(1\)</span> when <span class="mathjax-inline">\(\mu = \lambda \)</span> and zero otherwise. We also have <div class="mathjax-env mathjax-equation">\begin{equation} \frac {\partial (\phi ^2)}{\partial \phi } = 2 \phi . \end{equation}</div><a 
- id="x1-64004r12"></a> Therefore, <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu \left ( \frac {\partial \mathcal {L}}{\partial (\partial _\mu \phi )} \right ) - \frac {\partial \mathcal {L}}{\partial \phi } = 0 \end{equation}</div><a 
- id="x1-64005r13"></a>
-results in <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu \partial ^\mu \phi + m^2 \phi = 0. \end{equation}</div><a 
- id="x1-64006r14"></a> That is the Klein-Gordon equation.
-<p>   If the index notation feels abstract, it is useful to write the Lagrangian in explicit form. Using the
-metric signature <span class="mathjax-inline">\((+,-,-,-)\)</span>: </p> 
+ id="x1-64001r9"></a>
+<p>   In this case let’s write the Lagrangian in explicit form. Using the metric signature <span class="mathjax-inline">\((+,-,-,-)\)</span>: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {L} = \frac {1}{2} \left [ \partial _0 \phi \, \partial _0 \phi - \partial _1 \phi \, \partial _1 \phi - \partial _2 \phi \, \partial _2 \phi - \partial _3 \phi \, \partial _3 \phi \right ] - \frac {1}{2} m^2 \phi ^2, \end{equation}</div><a 
- id="x1-64007r15"></a> we can perform the field derivatives component-wise: <div class="mathjax-env mathjax-equation">\begin{equation} \frac {\partial \mathcal {L}}{\partial (\partial _0 \phi )} = \partial _0 \phi , \\frac {\partial \mathcal {L}}{\partial (\partial _i \phi )} = -\,\partial _i \phi \quad (i=1,2,3). \end{equation}</div><a 
- id="x1-64008r16"></a> Using <div class="mathjax-env mathjax-equation">\begin{equation} \partial _0 \left ( \frac {\partial \mathcal {L}}{\partial (\partial _0 \phi )} \right ) = \partial _0 (\partial _0 \phi ) = \partial _0^2 \phi , \end{equation}</div><a 
- id="x1-64009r17"></a> for the time component,
-and <div class="mathjax-env mathjax-equation">\begin{equation} \partial _i \left ( \frac {\partial \mathcal {L}}{\partial (\partial _i \phi )} \right ) = \partial _i (-\partial _i \phi ) = -\partial _i^2 \phi \quad (i=1,2,3), \end{equation}</div><a 
- id="x1-64010r18"></a> for the spatial components (<span class="mathjax-inline">\(\mu = i\)</span>), and summing we obtain <div class="mathjax-env mathjax-equation">\begin{equation} \partial _{\mu } \left ( \frac {\partial \mathcal {L}}{\partial (\partial _{\mu } \phi )} \right ) = \partial _0^2 \phi - \sum _{i=1}^3 \partial _i^2 \phi = \partial _\mu \partial ^\mu \phi . \end{equation}</div><a 
- id="x1-64011r19"></a>
+ id="x1-64002r10"></a> we can perform
+the field derivatives component-wise: <div class="mathjax-env mathjax-equation">\begin{equation} \frac {\partial \mathcal {L}}{\partial (\partial _0 \phi )} = \partial _0 \phi , \\frac {\partial \mathcal {L}}{\partial (\partial _i \phi )} = -\,\partial _i \phi \quad (i=1,2,3). \end{equation}</div><a 
+ id="x1-64003r11"></a> Using <div class="mathjax-env mathjax-equation">\begin{equation} \partial _0 \left ( \frac {\partial \mathcal {L}}{\partial (\partial _0 \phi )} \right ) = \partial _0 (\partial _0 \phi ) = \partial _0^2 \phi , \end{equation}</div><a 
+ id="x1-64004r12"></a> for the time component, and <div class="mathjax-env mathjax-equation">\begin{equation} \partial _i \left ( \frac {\partial \mathcal {L}}{\partial (\partial _i \phi )} \right ) = \partial _i (-\partial _i \phi ) = -\partial _i^2 \phi \quad (i=1,2,3), \end{equation}</div><a 
+ id="x1-64005r13"></a> for the spatial components (<span class="mathjax-inline">\(\mu = i\)</span>),
+and summing we obtain <div class="mathjax-env mathjax-equation">\begin{equation} \partial _{\mu } \left ( \frac {\partial \mathcal {L}}{\partial (\partial _{\mu } \phi )} \right ) = \partial _0^2 \phi - \sum _{i=1}^3 \partial _i^2 \phi = \partial _\mu \partial ^\mu \phi . \end{equation}</div><a 
+ id="x1-64006r14"></a>
+<p>   We also have </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} \frac {\partial (\phi ^2)}{\partial \phi } = 2 \phi . \end{equation}</div><a 
+ id="x1-64007r15"></a> Therefore, <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu \left ( \frac {\partial \mathcal {L}}{\partial (\partial _\mu \phi )} \right ) - \frac {\partial \mathcal {L}}{\partial \phi } = 0 \end{equation}</div><a 
+ id="x1-64008r16"></a> results in <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu \partial ^\mu \phi + m^2 \phi = 0. \end{equation}</div><a 
+ id="x1-64009r17"></a> That is the Klein-Gordon equation.
    
    <h5 class="subsubsectionHead"><span class="titlemark">6.2.2   </span> <a 
 href="#QQ2-1-76" id="x1-650006.2.2">Dirac Lagrangian</a></h5>
 <p>Consider the Lagrangian: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {L} = \bar {\psi } \, i \gamma ^\mu \partial _\mu \psi - m \bar {\psi } \psi . \end{equation}</div><a 
- id="x1-65001r20"></a> The Dirac spinor <span class="mathjax-inline">\(\psi \)</span> is a four-component complex spinor. It therefore contains
+ id="x1-65001r18"></a> The Dirac spinor <span class="mathjax-inline">\(\psi \)</span> is a four-component complex spinor. It therefore contains
 four complex components, corresponding to eight real degrees of freedom. In principle, one could describe
 the system using eight independent real fields, given by the real and imaginary parts of each component.
 However, it is more convenient to work directly with the complex fields <span class="mathjax-inline">\(\psi _j\)</span> and their complex
 conjugates.
 <p>   We can decompose a complex field <span class="mathjax-inline">\(\psi \)</span> into two real fields, <span class="mathjax-inline">\(\psi _1\)</span> and <span class="mathjax-inline">\(\psi _2\)</span>: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \psi = \frac {1}{\sqrt {2}}(\psi _1 + i\psi _2), \\psi ^* = \frac {1}{\sqrt {2}}(\psi _1 - i\psi _2), \end{equation}</div><a 
- id="x1-65002r21"></a> and instead of varying the action with
+ id="x1-65002r19"></a> and instead of varying the action with
 respect to <span class="mathjax-inline">\(\psi _1\)</span> and <span class="mathjax-inline">\(\psi _2\)</span>, we treat <span class="mathjax-inline">\(\psi \)</span> and <span class="mathjax-inline">\(\psi ^*\)</span> as independent variables. Both descriptions contain the same information,
 but the latter is often algebraically simpler. This is analogous to describing a complex number <span class="mathjax-inline">\(z\)</span>: instead of
-                                                                                         
-                                                                                         
 using <span class="mathjax-inline">\(\{\mathrm {Re}(z), \mathrm {Im}(z)\}\)</span>, one may equivalently use <span class="mathjax-inline">\(\{z, z^*\}\)</span>.
+                                                                                         
+                                                                                         
 <p>   Following this approach, we treat the spinor <span class="mathjax-inline">\(\psi \)</span> and its Dirac adjoint <span class="mathjax-inline">\(\bar {\psi }\)</span> as independent variables when
 applying the Euler-Lagrange equations. The Dirac Lagrangian can be written in component
 form as </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {L} = \sum _{j,k=1}^{4} \bar {\psi }_j \left (i \gamma ^\mu _{\; jk} \partial _\mu - m \, \delta _{jk} \right ) \psi _k, \end{equation}</div><a 
- id="x1-65003r22"></a> where <span class="mathjax-inline">\(\gamma ^\mu _{\; jk}\)</span> are the matrix elements of the gamma matrices, and <span class="mathjax-inline">\(\delta _{jk}\)</span> is the Kronecker delta.
+ id="x1-65003r20"></a> where <span class="mathjax-inline">\(\gamma ^\mu _{\; jk}\)</span> are the matrix elements of the gamma matrices, and <span class="mathjax-inline">\(\delta _{jk}\)</span> is the Kronecker delta.
 <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {L} = \sum _{j=1}^4 \sum _{k=1}^4 \bar {\psi }_j \left [ (i \gamma ^\mu _{jk} \partial _\mu - m \delta _{jk}) \right ] \psi _k. \end{equation}</div><a 
- id="x1-65004r23"></a>
+ id="x1-65004r21"></a>
 <p>   We now apply the Euler-Lagrange equations, treating <span class="mathjax-inline">\(\bar {\psi }_j\)</span> as the independent fields. For the first term, we
 obtain </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \sum _{j=1}^4 \frac {\partial \mathcal {L}}{\partial (\partial _\mu \bar {\psi }_j)} = 0, \end{equation}</div><a 
- id="x1-65005r24"></a> since the Lagrangian does not depend on derivatives of <span class="mathjax-inline">\(\bar {\psi }_j\)</span>.
+ id="x1-65005r22"></a> since the Lagrangian does not depend on derivatives of <span class="mathjax-inline">\(\bar {\psi }_j\)</span>.
 <p>   For the second term we obtain </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \sum \limits _{j=1}^4 \frac {\partial \mathcal {L}}{\partial \bar {\psi }_j} &amp;= \sum _{j=1}^4 \sum _{k=1}^4 \left [ (i \gamma ^\mu _{jk} \partial _\mu - m \delta _{jk}) \right ] \psi _k\\ &amp; = \frac {\partial }{\partial \bar {\psi }_1} \sum \limits _{k=1}^4 \bar {\psi }_1 \left [ (i \gamma ^\mu _{1k} \partial _\mu - m \delta _{1k}) \right ] \psi _k + \frac {\partial }{\partial \bar {\psi }_2} \sum \limits _{k=1}^4 \bar {\psi }_2 \left [ (i \gamma ^\mu _{2k} \partial _\mu - m \delta _{2k}) \right ] \psi _k \\ &amp;+\frac {\partial }{\partial \bar {\psi }_3} \sum \limits _{k=1}^4 \bar {\psi }_3 \left [ (i \gamma ^\mu _{3k} \partial _\mu - m \delta _{3k}) \right ] \psi _k +\frac {\partial }{\partial \bar {\psi }_4} \sum \limits _{k=1}^4 \bar {\psi }_4 \left [ (i \gamma ^\mu _{4k} \partial _\mu - m \delta _{4k}) \right ] \psi _k, \end {aligned} \end{equation}</div><a 
- id="x1-65006r25"></a> resulting in <div class="mathjax-env mathjax-equation">\begin{equation} (i \gamma ^\mu \partial _\mu - m) \psi . \end{equation}</div><a 
- id="x1-65007r26"></a> Plugging the above into the Euler-Lagrange equation we
+ id="x1-65006r23"></a> resulting in <div class="mathjax-env mathjax-equation">\begin{equation} (i \gamma ^\mu \partial _\mu - m) \psi . \end{equation}</div><a 
+ id="x1-65007r24"></a> Plugging the above into the Euler-Lagrange equation we
 obtain <div class="mathjax-env mathjax-equation">\begin{equation} i \gamma ^\mu \partial _\mu \psi - m \psi = 0. \end{equation}</div><a 
- id="x1-65008r27"></a> That is the Dirac equation.
+ id="x1-65008r25"></a> That is the Dirac equation.
 <p>   After establishing how the derivatives act on spinor fields, we can simplify the calculations. To find
 the equation of motion for the adjoint spinor <span class="mathjax-inline">\(\bar {\psi }\)</span>, we vary the Lagrangian with respect to <span class="mathjax-inline">\(\psi \)</span>. Treating <span class="mathjax-inline">\(\psi \)</span> and <span class="mathjax-inline">\(\bar {\psi }\)</span> as
 independent, the relevant derivatives are </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \frac {\partial \mathcal {L}}{\partial \psi } = - m \bar {\psi }, \\frac {\partial \mathcal {L}}{\partial (\partial _\mu \psi )} = i \bar {\psi } \gamma ^\mu . \end{equation}</div><a 
- id="x1-65009r28"></a> Plugging these into the Euler–Lagrange equation <div class="mathjax-env mathjax-equation">\begin{equation} \frac {\partial \mathcal {L}}{\partial \psi } - \partial _\mu \left ( \frac {\partial \mathcal {L}}{\partial (\partial _\mu \psi )} \right ) = 0 \end{equation}</div><a 
- id="x1-65010r29"></a> yields <div class="mathjax-env mathjax-equation">\begin{equation} - m \bar {\psi } - \partial _\mu ( i \bar {\psi } \gamma ^\mu ) = 0. \end{equation}</div><a 
- id="x1-65011r30"></a>
+ id="x1-65009r26"></a> Plugging these into the Euler–Lagrange equation <div class="mathjax-env mathjax-equation">\begin{equation} \frac {\partial \mathcal {L}}{\partial \psi } - \partial _\mu \left ( \frac {\partial \mathcal {L}}{\partial (\partial _\mu \psi )} \right ) = 0 \end{equation}</div><a 
+ id="x1-65010r27"></a> yields <div class="mathjax-env mathjax-equation">\begin{equation} - m \bar {\psi } - \partial _\mu ( i \bar {\psi } \gamma ^\mu ) = 0. \end{equation}</div><a 
+ id="x1-65011r28"></a>
 Rearranging, we obtain the adjoint Dirac equation <a 
 href="#x1-48006r66">4.66<!--tex4ht:ref: eq:Dirac_gamma_anti --></a> <div class="mathjax-env mathjax-equation">\begin{equation} i \, \partial _\mu \bar {\psi } \, \gamma ^\mu + m \bar {\psi } = 0. \end{equation}</div><a 
- id="x1-65012r31"></a>
+ id="x1-65012r29"></a>
 <p>   Before leaving this section, let me point out that we can write the mass term <span class="mathjax-inline">\(m \bar {\psi } \psi \)</span> as </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} m \bar {\psi } \psi &amp;= m \bar {\psi } \left (\frac {1}{2} (1 + \gamma ^5) + \frac {1}{2} (1 - \gamma ^5) \right ) \psi \\ &amp;= m \bar {\psi } (P_R + P_L) \psi \\ &amp;= m (\bar {\psi } P_R \psi + \bar {\psi } P_L \psi ) \\ &amp;= m (\bar {\psi }_L \psi _R + \bar {\psi }_R \psi _L). \end {aligned} \end{equation}</div><a 
- id="x1-65013r32"></a> This is the same
+ id="x1-65013r30"></a> This is the same
 statement as the one at the end  <a 
 href="#x1-530004.12">4.12<!--tex4ht:ref: sec:Chirality_Mass --></a>. The mass term acts as a coupling that mixes the two chiral
 components.
@@ -2407,7 +2405,7 @@ theorem: </p>
 <p>   We need to make a distinction between <i>internal</i> and <i>space-time symmetries</i>. Internal symmetries do
 not change the coordinates. They are of the form </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {symmetry_transf} \phi (x) \rightarrow \phi ^\prime (x) = \phi (x) + \alpha \Delta \phi (x), \end{equation}</div><a 
- id="x1-66001r33"></a> where <span class="mathjax-inline">\(\alpha \)</span> is some parameter that can be taken to
+ id="x1-66001r31"></a> where <span class="mathjax-inline">\(\alpha \)</span> is some parameter that can be taken to
 be small (that is, the symmetry is continuous) and <span class="mathjax-inline">\(\Delta \phi (x)\)</span> is the field deformation. For internal
 symmetries <span class="mathjax-inline">\(d^4x\)</span> is unchanged, so the invariance of the action is equivalent to the invariance of
 <span class="mathjax-inline">\(\mathcal {L}\)</span>.
@@ -2415,10 +2413,10 @@ symmetries <span class="mathjax-inline">\(d^4x\)</span> is unchanged, so the inv
 href="#x1-159000F.4">F.4<!--tex4ht:ref: sec:Noether_appendix --></a>), that the current defined, up to an arbitrary
 constant, as </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:Noether_current} J^\mu = -\sum \limits _{n} \frac {\partial \mathcal {L}} {\partial (\partial _\mu \phi _n)} \, \Delta \phi _n \end{equation}</div><a 
- id="x1-66002r34"></a> is conserved: <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu J^\mu = 0. \end{equation}</div><a 
- id="x1-66003r35"></a>
+ id="x1-66002r32"></a> is conserved: <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu J^\mu = 0. \end{equation}</div><a 
+ id="x1-66003r33"></a>
 <p>   The other important distinction is between <i>local</i> and <i>global</i> symmetries. If <span class="mathjax-inline">\(\alpha \)</span> in equation <a 
-href="#x1-66001r33">6.33<!--tex4ht:ref: symmetry_transf --></a> is
+href="#x1-66001r31">6.31<!--tex4ht:ref: symmetry_transf --></a> is
 constant, then we have a global symmetry. If the above transformation leaves the action invariant even
 when <span class="mathjax-inline">\(\alpha \)</span> is a function of <span class="mathjax-inline">\(x\)</span>, we have a local symmetry. Noether’s (first) theorem applies to continuous <i>global</i>
 symmetries; local symmetries instead lead to identities between the equations of motion (Noether’s
@@ -2439,16 +2437,16 @@ href="#QQ2-1-78" id="x1-670006.4">QED Interactions and Gauge Invariance</a></h4>
 href="#QQ2-1-79" id="x1-680006.4.1">Global Phase Symmetry</a></h5>
 <p>The Dirac Lagrangian is invariant under the global phase transformation </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \psi \rightarrow \psi ^\prime = \psi e^{iaQ}. \end {aligned} \end{equation}</div><a 
- id="x1-68001r36"></a> Noting that a barred Dirac
+ id="x1-68001r34"></a> Noting that a barred Dirac
 field transforms with the opposite phase from the original Dirac field, we obtain <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\mathcal {L} = \bar {\psi }i\gamma ^\mu \partial _\mu \psi - m \bar {\psi }\psi \\ &amp;\implies \bar {\psi } e^{-iaQ} i \gamma ^\mu \partial _\mu \psi e^{iaQ} - m\bar {\psi }e^{-iaQ} \psi e^{iaQ} \\ &amp; = \bar {\psi }i\gamma ^\mu \partial _\mu \psi - m \bar {\psi }\psi . \end {aligned} \end{equation}</div><a 
- id="x1-68002r37"></a> The existence of this
+ id="x1-68002r35"></a> The existence of this
 global invariance allows us to study a simple example of a Noether current. Since, in infinitesimal form <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; \psi ^\prime = (1+ i\alpha Q) \psi \\ &amp; \bar {\psi }^\prime = (1 - i\alpha Q) \bar {\psi } \\ \end {aligned} \end{equation}</div><a 
- id="x1-68003r38"></a>
+ id="x1-68003r36"></a>
 we can use <a 
-href="#x1-66002r34">6.34<!--tex4ht:ref: eq:Noether_current --></a> with <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; \Delta \psi = iQ \psi \\ &amp; \Delta \bar {\psi } = -iQ \bar {\psi } \end {aligned} \end{equation}</div><a 
- id="x1-68004r39"></a> and <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\frac {\partial \mathcal {L}}{\partial (\partial _\mu \psi )} = i\bar {\psi }\gamma ^\mu \\ &amp;\frac {\partial \mathcal {L}}{\partial (\partial _\mu \bar {\psi })} = 0 \\ \end {aligned} \end{equation}</div><a 
- id="x1-68005r40"></a> leading to <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} J^\mu =(i\bar {\psi }\gamma ^\mu ) (iQ \psi ) = - Q \bar {\psi }\gamma ^\mu \psi . \end {aligned} \end{equation}</div><a 
- id="x1-68006r41"></a> We obtained a similar result to the one in section <a 
+href="#x1-66002r32">6.32<!--tex4ht:ref: eq:Noether_current --></a> with <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; \Delta \psi = iQ \psi \\ &amp; \Delta \bar {\psi } = -iQ \bar {\psi } \end {aligned} \end{equation}</div><a 
+ id="x1-68004r37"></a> and <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\frac {\partial \mathcal {L}}{\partial (\partial _\mu \psi )} = i\bar {\psi }\gamma ^\mu \\ &amp;\frac {\partial \mathcal {L}}{\partial (\partial _\mu \bar {\psi })} = 0 \\ \end {aligned} \end{equation}</div><a 
+ id="x1-68005r38"></a> leading to <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} J^\mu =(i\bar {\psi }\gamma ^\mu ) (iQ \psi ) = - Q \bar {\psi }\gamma ^\mu \psi . \end {aligned} \end{equation}</div><a 
+ id="x1-68006r39"></a> We obtained a similar result to the one in section <a 
 href="#x1-460004.5">4.5<!--tex4ht:ref: DiracProbDensity --></a>. The
 interpretation, though, is not the same as we do not treat the fields as single particle probability
 amplitudes. These Noether currents have an interpretation relating to conservation of electric
@@ -2456,16 +2454,16 @@ charge.
 <p>   At this point we can couple the conserved Noether current to the electromagnetic vector potential <span class="mathjax-inline">\(A_\mu \)</span> to
 obtain the QED Lagrangian: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \label {eq:QED_explicit} \mathcal {L} = \bar {\psi }i\gamma ^\mu \partial _\mu \psi - eQ \bar {\psi } \gamma ^\mu \psi A_\mu - m \bar {\psi }\psi - \frac {1}{4} F_{\mu \nu }F^{\mu \nu }. \end {aligned} \end{equation}</div><a 
- id="x1-68007r42"></a>
+ id="x1-68007r40"></a>
 <p>   The above includes the free Dirac Lagrangian </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mathcal {L}_{\text {Dirac}} = \bar {\psi }i\gamma ^\mu \partial _\mu \psi - m \bar {\psi }\psi , \end {aligned} \end{equation}</div><a 
- id="x1-68008r43"></a> and the free Maxwell Lagrangian (see Appendix <a 
+ id="x1-68008r41"></a> and the free Maxwell Lagrangian (see Appendix <a 
 href="#x1-154000F">F<!--tex4ht:ref: sec:Appendix_Lagrangian --></a>)
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mathcal {L}_{\text {Maxwell}} = -\frac {1}{4} F_{\mu \nu }F^{\mu \nu }. \end {aligned} \end{equation}</div><a 
- id="x1-68009r44"></a>
+ id="x1-68009r42"></a>
 <p>   The interaction term is </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mathcal {L}_{\mathrm {int}} = - e Q \bar {\psi } \gamma ^\mu \psi A_\mu = - eJ^\mu _{\mathrm {em}}A_\mu , \end {aligned} \end{equation}</div><a 
- id="x1-68010r45"></a> In what follows, we will use the convention of <span class="mathjax-inline">\(e\)</span> being the elementary charge,
+ id="x1-68010r43"></a> In what follows, we will use the convention of <span class="mathjax-inline">\(e\)</span> being the elementary charge,
 with <span class="mathjax-inline">\(Q=-1\)</span> for the electron.
 <p>   We can use the following interpretation: The field <span class="mathjax-inline">\(\psi \)</span> contains terms that annihilate a fermion and create
 an anti-fermion. The field <span class="mathjax-inline">\(\bar {\psi }\)</span> contains terms that create fermions and annihilate anti-fermions. Similarly, the
@@ -2484,21 +2482,21 @@ href="#QQ2-1-80" id="x1-690006.4.2">Gauge Invariance of QED</a></h5>
 <p>In section <a 
 href="#x1-390003.3">3.3<!--tex4ht:ref: sec:photon --></a> we saw that the existence of gauge transforms of the form </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} A_\mu \rightarrow A'_\mu = A_\mu - \partial _\mu \lambda (x), \end{equation}</div><a 
- id="x1-69001r46"></a> were essential in obtaining the
+ id="x1-69001r44"></a> were essential in obtaining the
 physical degrees of freedom of the photon.
 <p>   It is therefore crucial to check that the Lagrangian <a 
-href="#x1-68007r42">6.42<!--tex4ht:ref: eq:QED_explicit --></a> is invariant under gauge transforms. The
+href="#x1-68007r40">6.40<!--tex4ht:ref: eq:QED_explicit --></a> is invariant under gauge transforms. The
 gauge transform for the fermion fields is obtained by promoting the global <span class="mathjax-inline">\(U(1)\)</span> phase invariance to gauge,
 local phase, invariance </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:U(1)} \begin {aligned} \psi \rightarrow \psi ^\prime = \psi e^{ia(x)Q}, \end {aligned} \end{equation}</div><a 
- id="x1-69002r47"></a> where <span class="mathjax-inline">\(a(x)\)</span> is a function of the coordinates. The gauge transform for
+ id="x1-69002r45"></a> where <span class="mathjax-inline">\(a(x)\)</span> is a function of the coordinates. The gauge transform for
 the gauge (vector) field is <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:EMGaugeTransf} A_\mu \rightarrow A_\mu ^\prime = A_\mu - \frac {1}{e}\partial _\mu a(x), \end{equation}</div><a 
- id="x1-69003r48"></a> where, with respect to equation <a 
+ id="x1-69003r46"></a> where, with respect to equation <a 
 href="#x1-38001r13">3.13<!--tex4ht:ref: eq:Maxwell_gauge_transf --></a>, we have <span class="mathjax-inline">\(a(x) = e \lambda (x)\)</span>. The tricky part
 seems to be the derivative acting on <span class="mathjax-inline">\(\psi \)</span> which transforms as <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\bar {\psi }i\gamma ^\mu \partial _\mu \psi \rightarrow \\ &amp;\bar {\psi } e^{-ia(x)Q} i \gamma ^\mu \partial _\mu (\psi e^{ia(x)Q}) \\ &amp; = \bar {\psi } e^{-ia(x)Q} i \gamma ^\mu \left (e^{ia(x)Q} \partial _\mu (\psi ) + \psi e^{ia(x)Q} iQ \partial _\mu a(x) \right ) \\ &amp; = \bar {\psi } i \gamma ^\mu \partial _\mu \psi - Q \bar {\psi } \gamma ^\mu \psi \partial _\mu a(x), \label {eq:QED_non_CovDeriv} \end {aligned} \end{equation}</div><a 
- id="x1-69004r49"></a> bringing an additional <span class="mathjax-inline">\(-Q \bar {\psi } \gamma ^\mu \psi \partial _\mu a(x)\)</span> term.
+ id="x1-69004r47"></a> bringing an additional <span class="mathjax-inline">\(-Q \bar {\psi } \gamma ^\mu \psi \partial _\mu a(x)\)</span> term.
 But this term is cancelled by the transformations of the interaction term <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;- eQ \bar {\psi } \gamma ^\mu \psi A_\mu \rightarrow \\ &amp; -eQ \bar {\psi } e^{-ia(x)q} \gamma ^\mu \psi e^{ia(x)q} \left ( A_\mu - \frac {1}{e}\partial _\mu a(x) \right ) = \\ &amp;- eQ \bar {\psi } \gamma ^\mu \psi A_\mu + Q \bar {\psi } \gamma ^\mu \psi \partial _\mu a(x). \end {aligned} \end{equation}</div><a 
- id="x1-69005r50"></a> Notice that the
+ id="x1-69005r48"></a> Notice that the
 addition of a mass term <span class="mathjax-inline">\(\propto \frac {1}{2} A_\mu A^\mu \)</span> in the Lagrangian would have spoiled the gauge invariance of the
 theory.
    
@@ -2522,11 +2520,11 @@ incorporating the weak and strong interactions, where no classical analogue exis
 <p>   As we have seen in the previous section, when starting from the free Dirac Lagrangian, the
 problematic term is the derivative <span class="mathjax-inline">\(\partial _\mu \)</span>. </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\bar {\psi }i\gamma ^\mu \partial _\mu \psi \rightarrow \\ &amp;\bar {\psi } e^{-ia(x)Q} i \gamma ^\mu \partial _\mu (\psi e^{ia(x)Q}) \\ &amp; = \bar {\psi } e^{-ia(x)Q} i \gamma ^\mu \left (e^{ia(x)Q} \partial _\mu (\psi ) + \psi e^{ia(x)Q} iQ \partial _\mu a(x) \right ) \\ &amp; = \bar {\psi } i \gamma ^\mu \partial _\mu \psi - Q \bar {\psi } \gamma ^\mu \psi \partial _\mu a(x), \end {aligned} \end{equation}</div><a 
- id="x1-70001r51"></a>
+ id="x1-70001r49"></a>
 <p>   We introduce the <i>covariant derivative</i> </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} D_\mu \psi = (\partial _\mu + ieQA_\mu ) \psi , \end {aligned} \end{equation}</div><a 
- id="x1-70002r52"></a> that transforms the same way as <span class="mathjax-inline">\(\psi \)</span>: <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:CovariantDerivTransf} \begin {aligned} D_\mu \psi \rightarrow (D_\mu \psi )^\prime = e^{ia(x)Q} D_\mu \psi . \end {aligned} \end{equation}</div><a 
- id="x1-70003r53"></a>
+ id="x1-70002r50"></a> that transforms the same way as <span class="mathjax-inline">\(\psi \)</span>: <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:CovariantDerivTransf} \begin {aligned} D_\mu \psi \rightarrow (D_\mu \psi )^\prime = e^{ia(x)Q} D_\mu \psi . \end {aligned} \end{equation}</div><a 
+ id="x1-70003r51"></a>
 <p>   The need for the covariant derivative becomes clearer if we consider that in the derivative, we have <span class="mathjax-inline">\(\psi (x+\epsilon ) - \psi (x)\)</span>.
 In order to subtract values of <span class="mathjax-inline">\(\psi (x)\)</span> in neighbouring points we need to compensate for the difference in
 phase transformation from point to point. In this sense the gauge field plays the role of a
@@ -2534,23 +2532,23 @@ connection that allows us to compare values of the <span class="mathjax-inline">
 phases.
 </p> 
 <p>   We can now use equation <a 
-href="#x1-70003r53">6.53<!--tex4ht:ref: eq:CovariantDerivTransf --></a> to derive the gauge transformation for <span class="mathjax-inline">\(A_\mu \)</span>. We have for the primed
+href="#x1-70003r51">6.51<!--tex4ht:ref: eq:CovariantDerivTransf --></a> to derive the gauge transformation for <span class="mathjax-inline">\(A_\mu \)</span>. We have for the primed
 covariant derivative </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} (D_\mu \psi )^\prime &amp;= (\partial _\mu + ieQA^\prime _\mu ) \psi ^\prime \\ &amp;= (\partial _\mu + ieQA^\prime _\mu ) \psi \exp [ia(x)Q]\\ &amp;= \exp [ia(x)Q] \partial _\mu \psi + iQ (\partial _\mu a(x)) \exp [ia(x)Q] \psi + ie Q \exp [ia(x)Q] A^\prime _\mu \psi , \end {aligned} \end{equation}</div><a 
- id="x1-70004r54"></a> which should be equal to <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \exp [ia(x)Q] D_\mu \psi &amp;= \exp [ia(x)Q] (\partial _\mu + ieQA_\mu )\psi \\ &amp;= \exp [ia(x)Q] \partial _\mu \psi + ie Q \exp [ia(x)Q] A_\mu \psi . \end {aligned} \end{equation}</div><a 
- id="x1-70005r55"></a> Therefore we obtain <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\exp [ia(x)Q] \partial _\mu \psi + iQ (\partial _\mu a(x)) \exp [ia(x)Q] \psi + ie Q \exp [ia(x)Q] A^\prime _\mu \psi \\ &amp;= \exp [ia(x)Q] \partial _\mu \psi + ie Q \exp [ia(x)Q] A_\mu \psi \\ &amp;\implies ie Q \exp [ia(x)Q] A^\prime _\mu \psi = ie Q \exp [ia(x)Q] A_\mu \psi - iQ (\partial _\mu a(x)) \exp [ia(x)Q] \psi \\ &amp;\implies ie \exp [ia(x)Q] A^\prime _\mu \psi = ie \exp [ia(x)Q] A_\mu \psi - i \exp [ia(x)Q] (\partial _\mu a(x)) \psi \\ &amp;\implies A^\prime _\mu = A_\mu - \frac {1}{e} \partial _\mu a(x). \end {aligned} \end{equation}</div><a 
- id="x1-70006r56"></a>
+ id="x1-70004r52"></a> which should be equal to <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \exp [ia(x)Q] D_\mu \psi &amp;= \exp [ia(x)Q] (\partial _\mu + ieQA_\mu )\psi \\ &amp;= \exp [ia(x)Q] \partial _\mu \psi + ie Q \exp [ia(x)Q] A_\mu \psi . \end {aligned} \end{equation}</div><a 
+ id="x1-70005r53"></a> Therefore we obtain <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\exp [ia(x)Q] \partial _\mu \psi + iQ (\partial _\mu a(x)) \exp [ia(x)Q] \psi + ie Q \exp [ia(x)Q] A^\prime _\mu \psi \\ &amp;= \exp [ia(x)Q] \partial _\mu \psi + ie Q \exp [ia(x)Q] A_\mu \psi \\ &amp;\implies ie Q \exp [ia(x)Q] A^\prime _\mu \psi = ie Q \exp [ia(x)Q] A_\mu \psi - iQ (\partial _\mu a(x)) \exp [ia(x)Q] \psi \\ &amp;\implies ie \exp [ia(x)Q] A^\prime _\mu \psi = ie \exp [ia(x)Q] A_\mu \psi - i \exp [ia(x)Q] (\partial _\mu a(x)) \psi \\ &amp;\implies A^\prime _\mu = A_\mu - \frac {1}{e} \partial _\mu a(x). \end {aligned} \end{equation}</div><a 
+ id="x1-70006r54"></a>
 <p>   It is also useful to note the following relationship between the field strength tensor and the covariant
 derivative: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:QED_Field_Tensor} \begin {aligned} \ [D_\mu ,D_\nu ] &amp;= [ (\partial _\mu + ieQA_\mu ) , (\partial _\nu + ieQA_\nu )] \\ &amp;= [\partial _\mu , \partial _\nu ] + iQe [\partial _\mu , A_\nu ] + iQe [A_\mu ,\partial _\nu ] - e^2Q^2 [A_\mu , A_\nu ] \\ &amp; = iQe [\partial _\mu , A_\nu ] + iQe [A_\mu ,\partial _\nu ] - Q^2e^2 [A_\mu , A_\nu ]\\ &amp; = iQe [\partial _\mu , A_\nu ] + iQe [A_\mu ,\partial _\nu ] \\ &amp;= iQe (\partial _\mu A_\nu - \partial _\nu A_\mu ) = iQe F_{\mu \nu }. \end {aligned} \end{equation}</div><a 
- id="x1-70007r57"></a> In the last two steps we used the fact that <span class="mathjax-inline">\([A_\mu , A_\nu ] = 0\)</span>, and the product rule for commutators <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \ [\partial _\mu , f(x) ] g(x) &amp; = \partial _\mu (f(x) g(x)) - f(x) \partial _\mu g(x) \\ &amp;= (\partial _\mu f(x)) g(x) + f(x) \partial _\mu g(x) - f(x) \partial _\mu g(x) \\ &amp;= (\partial _\mu f(x)) g(x). \end {aligned} \end{equation}</div><a 
- id="x1-70008r58"></a> The end
+ id="x1-70007r55"></a> In the last two steps we used the fact that <span class="mathjax-inline">\([A_\mu , A_\nu ] = 0\)</span>, and the product rule for commutators <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \ [\partial _\mu , f(x) ] g(x) &amp; = \partial _\mu (f(x) g(x)) - f(x) \partial _\mu g(x) \\ &amp;= (\partial _\mu f(x)) g(x) + f(x) \partial _\mu g(x) - f(x) \partial _\mu g(x) \\ &amp;= (\partial _\mu f(x)) g(x). \end {aligned} \end{equation}</div><a 
+ id="x1-70008r56"></a> The end
 result is <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} F_{\mu \nu } Q = \frac {1}{ie} [D_\mu ,D_\nu ]. \end {aligned} \end{equation}</div><a 
- id="x1-70009r59"></a> As we mentioned already terms <span class="mathjax-inline">\(\propto A_\mu A^\mu \)</span> are not gauge invariant. The simplest gauge invariant scalar
+ id="x1-70009r57"></a> As we mentioned already terms <span class="mathjax-inline">\(\propto A_\mu A^\mu \)</span> are not gauge invariant. The simplest gauge invariant scalar
 term that we can include is <span class="mathjax-inline">\(\propto F_{\mu \nu } F^{\mu \nu }\)</span>.
 <p>   The end result is that the QED Lagrangian becomes: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mathcal {L} = \bar {\psi }(i\gamma ^\mu D_\mu - m)\psi - \frac {1}{4} F_{\mu \nu }F^{\mu \nu }. \end {aligned} \end{equation}</div><a 
- id="x1-70010r60"></a>
+ id="x1-70010r58"></a>
 <p>   In summary, by demanding gauge invariance under <span class="mathjax-inline">\(U(1)\)</span>, the gauge transformations of <span class="mathjax-inline">\(A_\mu \)</span> and the form of
 the field tensor <span class="mathjax-inline">\(F_{\mu \nu }\)</span> can be derived via the covariant derivative and its properties. The only reference to
 classical electromagnetism comes from the choice of the constant <span class="mathjax-inline">\(-\frac {1}{4}\)</span> in front of <span class="mathjax-inline">\(F_{\mu \nu } F^{\mu \nu }\)</span>. A different constant would
@@ -2567,7 +2565,7 @@ href="#x1-146000E">E<!--tex4ht:ref: sec:Appendix_Group_Theory --></a>. In this s
 summarising what we just did for QED. We established that the Lagrangian is invariant under the
 transformation </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \psi \to \psi ' = e^{i Q \alpha } \psi . \end{equation}</div><a 
- id="x1-71001r61"></a> The term <span class="mathjax-inline">\(e^{i Q \alpha }\)</span> is equivalent to a <span class="mathjax-inline">\(1\times 1\)</span> unitary matrix. In terms of group theory, this is a
+ id="x1-71001r59"></a> The term <span class="mathjax-inline">\(e^{i Q \alpha }\)</span> is equivalent to a <span class="mathjax-inline">\(1\times 1\)</span> unitary matrix. In terms of group theory, this is a
 <i>representation</i> of the group of points along a circle, or the group of unitary matrices <span class="mathjax-inline">\(U(1)\)</span>. The quantity <span class="mathjax-inline">\(Q\)</span> is
 called the <i>generator</i> of the group. It is a number and numbers commute, so this is an <i>Abelian</i>
 symmetry.
@@ -2581,7 +2579,7 @@ not a single field <span class="mathjax-inline">\(\psi \)</span>, but a vector o
 turns out to be only approximate, was <i>nuclear isospin</i>, where the proton and neutron were viewed as two
 states of the same particle: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \Psi = \begin {pmatrix} \psi _p \\ \psi _n \end {pmatrix}. \end{equation}</div><a 
- id="x1-71002r62"></a> Notice that <span class="mathjax-inline">\(\Psi \)</span> above is a two component column vector whose entries are
+ id="x1-71002r60"></a> Notice that <span class="mathjax-inline">\(\Psi \)</span> above is a two component column vector whose entries are
 4-component Dirac spinors.
                                                                                          
                                                                                          
@@ -2589,12 +2587,12 @@ states of the same particle: </p>
 the group <span class="mathjax-inline">\(SU(2)\)</span>, which has <span class="mathjax-inline">\(N^2-1 = 3\)</span> generators. Notice that now we have to deal with matrices, which in
 general do not commute. This is called a <i>non-Abelian</i> symmetry. The transformation is: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \Psi \to \Psi ' = \exp \left (i \alpha ^a t^a\right ) \Psi . \end{equation}</div><a 
- id="x1-71003r63"></a> The
+ id="x1-71003r61"></a> The
 <i>representation</i> acting on the state is <div class="mathjax-env mathjax-equation">\begin{equation} \exp \left (i \alpha ^a t^a\right ). \end{equation}</div><a 
- id="x1-71004r64"></a> The <span class="mathjax-inline">\(t^a = \sigma ^a/2\)</span> are the <i>generators</i> defined by the three Pauli matrices. <div class="mathjax-env mathjax-equation">\begin{equation} t^a = \frac {\sigma ^a}{2} \end{equation}</div><a 
- id="x1-71005r65"></a>
+ id="x1-71004r62"></a> The <span class="mathjax-inline">\(t^a = \sigma ^a/2\)</span> are the <i>generators</i> defined by the three Pauli matrices. <div class="mathjax-env mathjax-equation">\begin{equation} t^a = \frac {\sigma ^a}{2} \end{equation}</div><a 
+ id="x1-71005r63"></a>
 These satisfy the relation <span class="mathjax-inline">\([t^a , t^b] = i \epsilon ^{abc} t^c\)</span>. A relationship of the form <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:group_algebra} [T^a,T^b] = i f^{abc} T^c. \end{equation}</div><a 
- id="x1-71006r66"></a> is said to define the <i>algebra</i> of the
+ id="x1-71006r64"></a> is said to define the <i>algebra</i> of the
 group. The <span class="mathjax-inline">\(f^{abc}\)</span> are called <i>structure constants</i>. In the particular case of <span class="mathjax-inline">\(SU(2)\)</span> <span class="mathjax-inline">\(f^{abc} = \epsilon ^{abc}\)</span>, where <span class="mathjax-inline">\(\epsilon ^{abc}\)</span> is the Levi-Civita
 symbol.
 <p>   If we try to make this <span class="mathjax-inline">\(SU(2)\)</span> symmetry local, we encounter a new requirement. Because there are three
@@ -2604,11 +2602,11 @@ independent connection fields, <span class="mathjax-inline">\(W_\mu ^1, W_\mu ^2
 <p>   Having introduced a gauge field for each Lie algebra generator, we must now include kinetic terms for
 them. By analogy with QED, the gauge field Lagrangian has the form </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mathcal {L}_{\mathrm {gauge}} = -\frac {1}{4} F_{\mu \nu }^a F_a^{\mu \nu }, \end {aligned} \end{equation}</div><a 
- id="x1-71007r67"></a> with an implied sum over the <span class="mathjax-inline">\(a\)</span>
+ id="x1-71007r65"></a> with an implied sum over the <span class="mathjax-inline">\(a\)</span>
 generators. This can be achieved via <a 
-href="#x1-70007r57">6.57<!--tex4ht:ref: eq:QED_Field_Tensor --></a>, in this case equation <a 
-href="#x1-71006r66">6.66<!--tex4ht:ref: eq:group_algebra --></a> implies the form <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} F_{\mu \nu }^a = \partial _\mu W_\nu ^a - \partial _\nu W_\mu ^a - g f^{abc} W_\mu ^b W_\nu ^c, \end {aligned} \end{equation}</div><a 
- id="x1-71008r68"></a> meaning that we
+href="#x1-70007r55">6.55<!--tex4ht:ref: eq:QED_Field_Tensor --></a>, in this case equation <a 
+href="#x1-71006r64">6.64<!--tex4ht:ref: eq:group_algebra --></a> implies the form <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} F_{\mu \nu }^a = \partial _\mu W_\nu ^a - \partial _\nu W_\mu ^a - g f^{abc} W_\mu ^b W_\nu ^c, \end {aligned} \end{equation}</div><a 
+ id="x1-71008r66"></a> meaning that we
 obtain an extra term. This term relates to interaction between the gauge bosons; in QED the photon does
 not interact with itself.
 <p>   The other interesting case, in the context of the SM, is the <span class="mathjax-inline">\(SU(3)\)</span> symmetry. In this case the physical states
@@ -2623,10 +2621,10 @@ href="#QQ2-1-83" id="x1-720006.6">What terms to include in the Lagrangian?</a></
 physics that <span class="mathjax-inline">\(L\)</span> has units of energy, which in our system of units is equivalent to units of mass, therefore it
 has mass dimensionality {1}. As <span class="mathjax-inline">\(dx\)</span> has units of length or <span class="mathjax-inline">\(\mathrm {mass}^{-1}\)</span>, <span class="mathjax-inline">\(d^3\boldsymbol {x}\)</span> has units of mass<span class="mathjax-inline">\(^{-3}\)</span>. Since </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} L = \int \mathcal {L} d^3\boldsymbol {x}, \end{equation}</div><a 
- id="x1-72001r69"></a> it follows that <span class="mathjax-inline">\(\mathcal {L}\)</span> has
+ id="x1-72001r67"></a> it follows that <span class="mathjax-inline">\(\mathcal {L}\)</span> has
 mass dimensionality {4}. The same result can be derived by requiring the action to be dimensionless;
 recall <span class="mathjax-inline">\(dt\)</span> has units of time or <span class="mathjax-inline">\(\mathrm {mass}^{-1}\)</span>. <div class="mathjax-env mathjax-equation">\begin{equation} S = \int L dt = \int \mathcal {L} d^4x, \end{equation}</div><a 
- id="x1-72002r70"></a> After establishing that the mass dimensionality of <span class="mathjax-inline">\(\mathcal {L}\)</span> is {4}, of <span class="mathjax-inline">\(S\)</span> is {0} and of <span class="mathjax-inline">\(dx\)</span>
+ id="x1-72002r68"></a> After establishing that the mass dimensionality of <span class="mathjax-inline">\(\mathcal {L}\)</span> is {4}, of <span class="mathjax-inline">\(S\)</span> is {0} and of <span class="mathjax-inline">\(dx\)</span>
 is {-1}, we can evaluate the mass dimensionality of all fields and couplings in a theory. It is
 easier to start from the kinetic terms of the free Lagrangian equations we have analysed
 before. Since <span class="mathjax-inline">\(\partial _{\mu }\)</span> has mass dimensionality {1} we can see that the scalar and vector boson fields <span class="mathjax-inline">\(\phi \)</span>, <span class="mathjax-inline">\(A^{\mu }\)</span>
