@@ -1747,7 +1747,9 @@ negative energy eigenvalues <span class="mathjax-inline">\(E = -m\)</span>. In t
  id="x1-47008r58"></a> where <span class="mathjax-inline">\(s=1,2\)</span> and <div class="mathjax-env mathjax-equation">\begin{equation} \chi ^{(1)} = \begin {pmatrix} 1 \\ 0 \end {pmatrix}; \quad \chi ^{(2)} = \begin {pmatrix} 0 \\ 1 \end {pmatrix}; \end{equation}</div><a 
  id="x1-47009r59"></a> or in longhand
 form: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} u^{(1)} = N \begin {pmatrix} 1 \\ 0 \\ \frac {p_z}{E+m} \\ \frac {p_x+i p_y}{E+m} \end {pmatrix};\u^{(2)} = N \begin {pmatrix} 0 \\ 1 \\ \frac {p_x-i p_y}{E+m} \\ \frac {-p_z}{E+m} \end {pmatrix}; \u^{(3)} = N \begin {pmatrix} \frac {p_z}{E-m} \\ \frac {p_x+i p_y}{E-m} \\ 1 \\ 0 \end {pmatrix}; \u^{(4)} = N \begin {pmatrix} \frac {p_x-i p_y}{E-m} \\ \frac {-p_z}{E-m} \\ 0 \\ 1 \end {pmatrix}. \end {aligned} \end{equation}</div><a 
- id="x1-47010r60"></a>
+ id="x1-47010r60"></a> See [<a 
+href="#XGriffiths:1987tj">2</a>] or [<a 
+href="#XHalzen:1984mc">3</a>].
    
    <h4 class="subsectionHead"><span class="titlemark">4.7   </span> <a 
 href="#QQ2-1-56" id="x1-480004.7">Interpretation of Negative Energy Solutions</a></h4>
@@ -1756,21 +1758,6 @@ href="#QQ2-1-56" id="x1-480004.7">Interpretation of Negative Energy Solutions</a
  id="x1-48001r61"></a> while the last two
 have negative energy eigenvalues <div class="mathjax-env mathjax-equation">\begin{equation} E = -\sqrt {p^2+m^2}. \end{equation}</div><a 
  id="x1-48002r62"></a>
-<p>   At the end, we did not get rid of the negative energy solutions. We can, however, interpret negative
-energy solutions as positive energy solutions for particles that travel back in time: </p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} e^{-iEt} = e^{-i (-E) (-t)}, \end{equation}</div><a 
- id="x1-48003r63"></a> where <span class="mathjax-inline">\(-E\)</span> is positive. An
-electron travelling back in time is equivalent to a positron travelling forward in time. This is the
-<i>Feynman-Stüeckelberg</i> interpretation. We reverse the signs of energy and momentum: <div class="mathjax-env mathjax-equation">\begin{equation} \psi = v(p) e^{ip_\mu x^\mu }, \end{equation}</div><a 
- id="x1-48004r64"></a> leading to the
-following form of the Dirac equation for antiparticles: <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:Dirac_gamma_anti} (\gamma ^{\mu } p_{\mu } + m) v = 0 \implies (\not \!p + m) v = 0. \end{equation}</div><a 
- id="x1-48005r65"></a> This equation also has two positive (<span class="mathjax-inline">\(v^{(1)}, v^{(2)}\)</span>) and two
-negative value solutions (<span class="mathjax-inline">\(v^{(3)}, v^{(4)}\)</span>).
-<p>   We can replace the negative energy solutions (<span class="mathjax-inline">\(u^{(3)}, u^{(4)}\)</span>) of the particle equation with the positive energy
-solutions of the antiparticle equation: </p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} v^{(1)}(p) = N \begin {pmatrix} \frac {p_x - i p_y}{E+m} \\ \frac {-p_z}{E+m} \\ 0 \\ 1 \end {pmatrix}; \quad v^{(2)}(p) = -N \begin {pmatrix} \frac {p_z}{E+m} \\ \frac {p_x + i p_y}{E+m} \\ 1 \\ 0 \end {pmatrix}. \end {aligned} \end{equation}</div><a 
- id="x1-48006r66"></a> We will mainly working with a set of four independent solutions <span class="mathjax-inline">\([u^{(1)}, u^{(2)}, v^{(1)}, v^{(2)}]\)</span>
-that all represent particles with positive energy.
 <p>   <figure class="figure"> 
 
                                                                                          
@@ -1781,21 +1768,36 @@ that all represent particles with positive energy.
 <p><img 
 src="pics/PositronDiscovery.png" alt="PIC"  
 style="width:51.75%"> <a 
- id="x1-48007r1"></a>
+ id="x1-48003r1"></a>
 <figcaption class="caption" ><span class="id">Figure 4.1: </span><span  
 class="content">Cloud chamber photograph by C. D. Anderson of the first positron ever identified. The
 particle enters from the bottom, strikes the lead plate, and loses energy, as seen from the greater
-curvature of the upper track.                                                               </span></figcaption><!--tex4ht:label?: x1-48007r1 -->
+curvature of the upper track.                                                               </span></figcaption><!--tex4ht:label?: x1-48003r1 -->
                                                                                          
                                                                                          
 </p> 
 <p>   </figure>
 </p> 
+<p>   At the end, we did not get rid of the negative energy solutions. We can, however, interpret negative
+energy solutions as positive energy solutions for particles that travel back in time: </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} e^{-iEt} = e^{-i (-E) (-t)}, \end{equation}</div><a 
+ id="x1-48004r63"></a> where <span class="mathjax-inline">\(-E\)</span> is positive. An
+electron travelling back in time is equivalent to a positron travelling forward in time. This is the
+<i>Feynman-Stüeckelberg</i> interpretation. We reverse the signs of energy and momentum: <div class="mathjax-env mathjax-equation">\begin{equation} \psi = v(p) e^{ip_\mu x^\mu }, \end{equation}</div><a 
+ id="x1-48005r64"></a> leading to the
+following form of the Dirac equation for antiparticles: <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:Dirac_gamma_anti} (\gamma ^{\mu } p_{\mu } + m) v = 0 \implies (\not \!p + m) v = 0. \end{equation}</div><a 
+ id="x1-48006r65"></a> This equation also has two positive (<span class="mathjax-inline">\(v^{(1)}, v^{(2)}\)</span>) and two
+negative value solutions (<span class="mathjax-inline">\(v^{(3)}, v^{(4)}\)</span>).
+<p>   We can replace the negative energy solutions (<span class="mathjax-inline">\(u^{(3)}, u^{(4)}\)</span>) of the particle equation with the positive energy
+solutions of the antiparticle equation: </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} v^{(1)}(p) = N \begin {pmatrix} \frac {p_x - i p_y}{E+m} \\ \frac {-p_z}{E+m} \\ 0 \\ 1 \end {pmatrix}; \quad v^{(2)}(p) = -N \begin {pmatrix} \frac {p_z}{E+m} \\ \frac {p_x + i p_y}{E+m} \\ 1 \\ 0 \end {pmatrix}. \end {aligned} \end{equation}</div><a 
+ id="x1-48007r66"></a> We will mainly working with a set of four independent solutions <span class="mathjax-inline">\([u^{(1)}, u^{(2)}, v^{(1)}, v^{(2)}]\)</span>
+that all represent particles with positive energy.
 <p>   At the time Dirac proposed his equation, no one had suggested a new particle with positive charge
 and the mass of an electron. In 1932, Carl Anderson was observing cosmic rays in a cloud chamber within
 a strong magnetic field. Some of the particles were bending in a way that indicated a positive charge, as
 seen in figure <a 
-href="#x1-48007r1">4.1<!--tex4ht:ref: fig:PositronDiscovery --></a>.
+href="#x1-48003r1">4.1<!--tex4ht:ref: fig:PositronDiscovery --></a>.
    
    </p> 
 
@@ -1847,6 +1849,8 @@ positive helicity <span class="mathjax-inline">\(u_\uparrow \)</span> and <span 
 transformations for massive particles. This is because one can always boost to a different frame in which
 the 3-momentum is flipped but the spin remains the same.
    
+                                                                                         
+                                                                                         
    <h4 class="subsectionHead"><span class="titlemark">4.10   </span> <a 
 href="#QQ2-1-60" id="x1-510004.10">Chirality</a></h4>
 <p>The property of chirality is an important concept in the Standard Model, but unfortunately, unlike
@@ -1864,8 +1868,6 @@ chirality operator which is represented by the <span class="mathjax-inline">\(\g
  id="x1-51004r80"></a> The left- and right-handed eigenstates
 of the chirality operator are unaffected by their corresponding projection operator: The left- and
 right-handed eigenstates of the chirality operator are unaffected by their corresponding projection
-                                                                                         
-                                                                                         
 operator: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp; P_R \psi _R = \psi _R, \ P_R \psi _L = 0, \ P_L\psi _L = \psi _L, \ P_L \psi _R = 0, \end {aligned} \end{equation}</div><a 
  id="x1-51005r81"></a>
 <p>   For adjoint spinors we have </p> 
@@ -2515,7 +2517,7 @@ independent, the relevant derivatives are </p>
  id="x1-65010r29"></a> yields <div class="mathjax-env mathjax-equation">\begin{equation} - m \bar {\psi } - \partial _\mu ( i \bar {\psi } \gamma ^\mu ) = 0. \end{equation}</div><a 
  id="x1-65011r30"></a>
 Rearranging, we obtain the adjoint Dirac equation <a 
-href="#x1-48005r65">4.65<!--tex4ht:ref: eq:Dirac_gamma_anti --></a> <div class="mathjax-env mathjax-equation">\begin{equation} i \, \partial _\mu \bar {\psi } \, \gamma ^\mu + m \bar {\psi } = 0. \end{equation}</div><a 
+href="#x1-48006r65">4.65<!--tex4ht:ref: eq:Dirac_gamma_anti --></a> <div class="mathjax-env mathjax-equation">\begin{equation} i \, \partial _\mu \bar {\psi } \, \gamma ^\mu + m \bar {\psi } = 0. \end{equation}</div><a 
  id="x1-65012r31"></a>
 <p>   Before leaving this section, let me point out that we can write the mass term <span class="mathjax-inline">\(m \bar {\psi } \psi \)</span> as </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} m \bar {\psi } \psi &amp;= m \bar {\psi } \left (\frac {1}{2} (1 + \gamma ^5) + \frac {1}{2} (1 - \gamma ^5) \right ) \psi \\ &amp;= m \bar {\psi } (P_R + P_L) \psi \\ &amp;= m (\bar {\psi } P_R \psi + \bar {\psi } P_L \psi ) \\ &amp;= m (\bar {\psi }_L \psi _R + \bar {\psi }_R \psi _L). \end {aligned} \end{equation}</div><a 
@@ -3609,7 +3611,7 @@ href="#x1-530004.12">4.12<!--tex4ht:ref: sec:Chirality_Mass --></a> we have </p>
 <p>   The outgoing muons are produced at scattering angle <span class="mathjax-inline">\(\theta \)</span> in the <span class="mathjax-inline">\(x,z\)</span>-plane. Since any expression of the
 form <span class="mathjax-inline">\(\bar \psi \gamma ^\mu \psi \)</span> transforms like a 4-vector, we can calculate </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\bar u_R \gamma ^\mu v_L = -2E (0, 1, -i, 0)\\ &amp;\bar u_L \gamma ^\mu v_R = -2E (0,1,i,0) \end {aligned} \end{equation}</div><a 
- id="x1-88018r44"></a> and use the rotation matrix <div class="mathjax-env mathjax-equation">\begin{equation} R_y(\theta ) = \begin {pmatrix} \cos \theta &amp; 0 &amp; \sin \theta \\ 0 &amp; 1 &amp; 0 \\ -\sin \theta &amp; 0 &amp; \cos \theta \end {pmatrix}. \end{equation}</div><a 
+ id="x1-88018r44"></a> and use the rotation matrix <div class="mathjax-env mathjax-equation">\begin{equation} R_y(\theta ) = \begin {pmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; \cos \theta &amp; 0 &amp; \sin \theta \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; -\sin \theta &amp; 0 &amp; \cos \theta \end {pmatrix} \end{equation}</div><a 
  id="x1-88019r45"></a> This yields
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} j_{(\mu )}^\mu (R,L) &amp;= - 2E (0, \cos \theta , -i, -\sin \theta ), \\ j_{(\mu )}^\mu (L,R) &amp;= - 2E (0, \cos \theta , i, -\sin \theta ). \end {aligned} \end{equation}</div><a 
  id="x1-88020r46"></a>
