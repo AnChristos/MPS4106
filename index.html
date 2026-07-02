@@ -2041,10 +2041,15 @@ factor, which by convention we set to unity, by: <div class="mathjax-env mathjax
  id="x1-55013r116"></a>
 There are 16 products of the form <span class="mathjax-inline">\(\bar {\psi }_i \psi _j\)</span> (taking one component from <span class="mathjax-inline">\(\bar {\psi }\)</span> and one from <span class="mathjax-inline">\(\psi \)</span>), since <span class="mathjax-inline">\(i\)</span> and <span class="mathjax-inline">\(j\)</span> run from 1
 to 4. These 16 products can be assembled in linear combinations to construct quantities with distinct
-transformation behaviour. An exhaustive list is given in Table <a 
-href="#x1-55014r2">4.2<!--tex4ht:ref: tab:bilinear --></a>, where <span class="mathjax-inline">\(\sigma ^{\mu \nu } = \frac {i}{2}(\gamma ^\mu \gamma ^\nu - \gamma ^\nu \gamma ^\mu )\)</span> is an antisymmetric (<span class="mathjax-inline">\(\sigma ^{\mu \nu } = - \sigma ^{\nu \mu }\)</span>) <span class="mathjax-inline">\(4\times 4\)</span>
-matrix.
-   <div class="table">
+transformation behaviour. Another way to think of it is this: <span class="mathjax-inline">\(I\)</span>, <span class="mathjax-inline">\(\gamma ^5\)</span>, <span class="mathjax-inline">\(\gamma ^\mu \)</span>, <span class="mathjax-inline">\(\gamma ^\mu \gamma ^5\)</span>, and <span class="mathjax-inline">\(\sigma ^{\mu \nu }\)</span> constitute a basis for the space of
+all <span class="mathjax-inline">\(4 \times 4\)</span> matrices; any <span class="mathjax-inline">\(4 \times 4\)</span> matrix can be written as a linear combination of these 16 products: <div class="mathjax-env mathjax-equation">\begin{equation} M = a_0 I + a_\mu \gamma ^\mu + a_5 \gamma _5 + b_\mu \gamma ^\mu \gamma _5 + \frac {1}{2} t_{\mu \nu } \sigma ^{\mu \nu }. \end{equation}</div><a 
+ id="x1-55014r117"></a> where <span class="mathjax-inline">\(\sigma ^{\mu \nu } = \frac {i}{2}(\gamma ^\mu \gamma ^\nu - \gamma ^\nu \gamma ^\mu )\)</span> is an
+antisymmetric <span class="mathjax-inline">\(4\times 4\)</span> matrix (<span class="mathjax-inline">\(\sigma ^{\mu \nu } = - \sigma ^{\nu \mu }\)</span>)
+<p>   An exhaustive list is given in Table <a 
+href="#x1-55015r2">4.2<!--tex4ht:ref: tab:bilinear --></a>, alongside the relevant boson spin. We will meet
+some of these terms again when we will study the interactions between bosons and fermions.
+</p> 
+<div class="table">
                                                                                          
                                                                                          
 <p>   <figure class="float" 
@@ -2107,21 +2112,21 @@ class="td11">      6         </td><td  style="white-space:nowrap; text-align:cen
 class="td11">             </td><td  style="white-space:nowrap; text-align:center;" id="TBL-4-6-5"  
 class="td11">     2        </td></tr></table>             </div>
 <a 
- id="x1-55014r2"></a>
+ id="x1-55015r2"></a>
 <figcaption class="caption" ><span class="id">Table 4.2: </span><span  
 class="content">Lorentz-invariant bilinear currents.
-</span></figcaption><!--tex4ht:label?: x1-55014r2 -->
+</span></figcaption><!--tex4ht:label?: x1-55015r2 -->
 </div>
 </figure>
    </div>
-<p>   We can check how <span class="mathjax-inline">\(\bar {\psi }\gamma ^5\psi \)</span> transforms under parity: </p> 
+<p>   We can now check the parity entries in this table. For <span class="mathjax-inline">\(\bar {\psi }\gamma ^5\psi \)</span>: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} (\bar {\psi }\gamma ^5\psi )' &amp;= (\psi ')^\dagger \gamma ^0 \gamma ^5 \psi ' \\ &amp;= (\gamma ^0 \psi )^\dagger \gamma ^0 \gamma ^5 \gamma ^0 \psi \\ &amp;= \psi ^\dagger (\gamma ^0)^\dagger \gamma ^0 \gamma ^5 \gamma ^0 \psi \\ &amp;= \psi ^\dagger \gamma ^0 \gamma ^0 \gamma ^5 \gamma ^0 \psi \\ &amp;= \psi ^\dagger \gamma ^5 \gamma ^0 \psi \\ &amp;= - \psi ^\dagger \gamma ^0 \gamma ^5 \psi \\ &amp;= - (\bar {\psi }\gamma ^5\psi ). \end {aligned} \end{equation}</div><a 
- id="x1-55015r117"></a> One can obtain the other parity entries in Table <a 
-href="#x1-55014r2">4.2<!--tex4ht:ref: tab:bilinear --></a> in a
-similar manner. For example, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} (\bar {\psi }\gamma ^\mu \psi )' &amp;= (\psi ')^\dagger \gamma ^0 \gamma ^\mu \psi ' \\ &amp;= (\gamma ^0 \psi )^\dagger \gamma ^0 \gamma ^\mu \gamma ^0 \psi \\ &amp;= \psi ^\dagger \gamma ^0 \gamma ^0 \gamma ^\mu \gamma ^0 \psi \\ &amp;= \psi ^\dagger \gamma ^\mu \gamma ^0 \psi , \end {aligned} \end{equation}</div><a 
- id="x1-55016r118"></a> which is <div class="mathjax-env mathjax-equation">\begin{equation} \bar {\psi } \gamma ^0 \psi \end{equation}</div><a 
- id="x1-55017r119"></a> for the time component and <div class="mathjax-env mathjax-equation">\begin{equation} \psi ^\dagger \gamma ^i \gamma ^0 \psi = - \psi ^\dagger \gamma ^0 \gamma ^i \psi = - \bar {\psi } \gamma ^i \psi \end{equation}</div><a 
- id="x1-55018r120"></a> for the three spatial
+ id="x1-55016r118"></a> One can obtain the other parity entries in
+Table <a 
+href="#x1-55015r2">4.2<!--tex4ht:ref: tab:bilinear --></a> in a similar manner. For example, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} (\bar {\psi }\gamma ^\mu \psi )' &amp;= (\psi ')^\dagger \gamma ^0 \gamma ^\mu \psi ' \\ &amp;= (\gamma ^0 \psi )^\dagger \gamma ^0 \gamma ^\mu \gamma ^0 \psi \\ &amp;= \psi ^\dagger \gamma ^0 \gamma ^0 \gamma ^\mu \gamma ^0 \psi \\ &amp;= \psi ^\dagger \gamma ^\mu \gamma ^0 \psi , \end {aligned} \end{equation}</div><a 
+ id="x1-55017r119"></a> which is <div class="mathjax-env mathjax-equation">\begin{equation} \bar {\psi } \gamma ^0 \psi \end{equation}</div><a 
+ id="x1-55018r120"></a> for the time component and <div class="mathjax-env mathjax-equation">\begin{equation} \psi ^\dagger \gamma ^i \gamma ^0 \psi = - \psi ^\dagger \gamma ^0 \gamma ^i \psi = - \bar {\psi } \gamma ^i \psi \end{equation}</div><a 
+ id="x1-55019r121"></a> for the three spatial
 components.
                                                                                          
                                                                                          
@@ -3664,7 +3669,7 @@ for both spinors. The end result is that the weak currents have the form <div cl
 Vector<span class="mathjax-inline">\(-\)</span>Axial Vector, or in shorthand <span class="mathjax-inline">\(V-A\)</span> currents. When currents of the form <span class="mathjax-inline">\(J = J_A - J_V\)</span> are multiplied,
 the products <span class="mathjax-inline">\(J_A J_A\)</span> and <span class="mathjax-inline">\(J_V J_V\)</span> will be unchanged under parity, but not the <span class="mathjax-inline">\(J_V J_A\)</span> one, as can be seen from
 table <a 
-href="#x1-55014r2">4.2<!--tex4ht:ref: tab:bilinear --></a>.
+href="#x1-55015r2">4.2<!--tex4ht:ref: tab:bilinear --></a>.
 <p>   After this modification the Fermi Lagrangian takes the form </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mathcal {L}_{\mathrm {int}} = - 2 \sqrt {2} G_F J_{(l)}^\rho J^{\dagger }_{(l)\rho }, \end {aligned} \end{equation}</div><a 
  id="x1-88005r5"></a> with <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} J_{(l)}^{\rho } = (\bar {e}_L \gamma ^\rho {\nu _{e}}_L) + (\bar {\mu }_L \gamma ^\rho {\nu _{\mu }}_L) + (\bar {\tau }_L \gamma ^\rho {\nu _{\tau }}_L). \end {aligned} \end{equation}</div><a 
