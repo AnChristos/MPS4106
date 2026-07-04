@@ -2683,34 +2683,33 @@ class="content">Gauge boson propagators.                                        
 </p> 
 <p>   Given the free part of a complete Lagrangian in the form </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {L} = \sum _{ij} \bar {\psi }_i P_{ij} \psi _j \end{equation}</div><a 
- id="x1-70003r6"></a> for fermions, and <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {L} = \frac {1}{2} \sum _{ij} A_i P_{ij} A_j \end{equation}</div><a 
- id="x1-70004r7"></a> for bosons, the free
-propagator in momentum space is <span class="mathjax-inline">\(i\)</span> times the inverse of the operator <span class="mathjax-inline">\(P\)</span>, after the replacement
-<div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu \rightarrow -ip_\mu . \end{equation}</div><a 
- id="x1-70005r8"></a>
-<p>   For the fermion propagator, the bilinear term in the Lagrangian is: </p> 
+ id="x1-70003r6"></a> for fermion fields <span class="mathjax-inline">\(\psi \)</span>, and <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {L} = \frac {1}{2} \sum _{ij} A_i P_{ij} A_j \end{equation}</div><a 
+ id="x1-70004r7"></a> for boson fields <span class="mathjax-inline">\(A\)</span>,
+the free propagator in momentum space is <span class="mathjax-inline">\(i\)</span> times the inverse of the operator <span class="mathjax-inline">\(P\)</span>, after the replacement <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu \rightarrow -ip_\mu . \end{equation}</div><a 
+ id="x1-70005r8"></a> One
+can start from the equation of motion for the particle fields in which case the the operators to be inverted
+are <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} P_{ij} \psi _j &amp;=0\\ P_{ij} A_j &amp;=0 \end {aligned} \end{equation}</div><a 
+ id="x1-70006r9"></a>
+<p>   For the fermion propagator we have </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} P = i\gamma ^\mu \partial _\mu - m. \end{equation}</div><a 
- id="x1-70006r9"></a> In momentum space, using <span class="mathjax-inline">\(\partial _\mu \rightarrow -ip_\mu \)</span>,
-the operator becomes: <div class="mathjax-env mathjax-equation">\begin{equation} \gamma ^\mu p_\mu - m \qquad \text {or} \qquad \not \!p - m. \end{equation}</div><a 
- id="x1-70007r10"></a> To find the propagator, we require the inverse operator <span class="mathjax-inline">\(P^{-1}\)</span> such that
-<span class="mathjax-inline">\((\not \!p - m)P^{-1} = I\)</span>.
-<p>   Using the anti-commutation relations of the <span class="mathjax-inline">\(\gamma \)</span>-matrices we have: </p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} \not \!p^{\,2} = p_\mu p_\nu \gamma ^\mu \gamma ^\nu = \frac {1}{2} p_\mu p_\nu \{\gamma ^\mu , \gamma ^\nu \} = p_\mu p_\nu g^{\mu \nu } I = p^2 I. \end{equation}</div><a 
- id="x1-70008r11"></a> Multiplying the operator by its
-conjugate <span class="mathjax-inline">\((\not \!p + m)\)</span>: <div class="mathjax-env mathjax-equation">\begin{equation} (\not \!p - m)(\not \!p + m) = \not \!p^{\,2} - m^2 = (p^2 - m^2)I, \end{equation}</div><a 
- id="x1-70009r12"></a> we obtain <div class="mathjax-env mathjax-equation">\begin{equation} (\not \!p - m)^{-1} = \frac {\not \!p + m}{p^2 - m^2}. \end{equation}</div><a 
- id="x1-70010r13"></a> Following our rule, the fermion propagator is: <div class="mathjax-env mathjax-equation">\begin{equation} \frac {i(\not \!p + m)}{p^2 - m^2}. \end{equation}</div><a 
- id="x1-70011r14"></a>
+ id="x1-70007r10"></a> In momentum space, using <span class="mathjax-inline">\(\partial _\mu \rightarrow -ip_\mu \)</span>, the operator becomes: <div class="mathjax-env mathjax-equation">\begin{equation} \gamma ^\mu p_\mu - m \qquad \text {or} \qquad \not \!p - m. \end{equation}</div><a 
+ id="x1-70008r11"></a> So the
+propagator is (see also figure  <a 
+href="#x1-70001r3">6.3<!--tex4ht:ref: fig:Fermion_propagator --></a>): <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {i}{\not \!p -m} = \frac {i(\not \!p+m)}{\not \!p^2- m^2} = \frac {i(\not \!p+m)}{p^2- m^2} = \frac {i \sum \limits _{s} u\bar {u} }{p^2- m^2}. \end {aligned} \end{equation}</div><a 
+ id="x1-70009r12"></a> Here we used <div class="mathjax-env mathjax-equation">\begin{equation} \not \!p^{\,2} = (\gamma ^\mu p_\mu )(\gamma ^\nu p_\nu ) = p_\mu p_\nu \gamma ^\mu \gamma ^\nu = p_\mu p_\nu \left ( \frac {1}{2} \{\gamma ^\mu , \gamma ^\nu \} \right ) = p_\mu p_\nu g^{\mu \nu } I = p^2 \end{equation}</div><a 
+ id="x1-70010r13"></a> and the completeness relation for a Dirac
+spinor. Therefore, the fermion propagator is just the factor <span class="mathjax-inline">\(\frac {i}{p^2- m^2}\)</span> multiplied by the polarisation
+sum.
 <p>   For vector bosons the situation is complicated by the fact that it is not possible to define the
 propagator without making a choice of gauge. In this respect it is convenient that the form </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \frac {i \sum \text {polarizations}}{p^2 - m^2}, \end{equation}</div><a 
- id="x1-70012r15"></a> applies to
+ id="x1-70011r14"></a> applies to
 the other cases we will be using in this course. For scalar bosons the propagator is <div class="mathjax-env mathjax-equation">\begin{equation} \frac {i}{p^2 - m^2}. \end{equation}</div><a 
- id="x1-70013r16"></a> For a
+ id="x1-70012r15"></a> For a
 massive vector field <span class="mathjax-inline">\(A_\mu \)</span>, the propagator is <div class="mathjax-env mathjax-equation">\begin{equation} \frac {-i \left ( g_{\mu \nu } - \frac {p_\mu p_\nu }{m^2} \right )} {p^2 - m^2}. \end{equation}</div><a 
- id="x1-70014r17"></a> For a massless vector boson the propagator is given by
+ id="x1-70013r16"></a> For a massless vector boson the propagator is given by
 <div class="mathjax-env mathjax-equation">\begin{equation} \frac {-i g_{\mu \nu }}{p^2}. \end{equation}</div><a 
- id="x1-70015r18"></a>
+ id="x1-70014r17"></a>
    
    <h4 class="subsectionHead"><span class="titlemark">6.5   </span> <a 
 href="#QQ2-1-87" id="x1-710006.5">Feynman Calculus</a></h4>
@@ -2744,7 +2743,7 @@ vertices, so it will be proportional to <span class="mathjax-inline">\(e^2\)</sp
 fine-structure constant (see <a 
 href="#x1-10003r2">1.2<!--tex4ht:ref: eq:fine_structure --></a>). In what follows we will be calculating the first term of a series like </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \mathcal {M} = \mathcal {M}_{\mathrm {LO}} + \mathcal {M}_{\mathrm {NLO}} + \mathcal {M}_{\mathrm {NNLO}} \dots \end{equation}</div><a 
- id="x1-71002r19"></a>
+ id="x1-71002r18"></a>
 ignoring higher-order terms. Notice that when squaring the full expression there are terms involving
 interference of LO with NLO, so <span class="mathjax-inline">\(\alpha ^3\)</span>. In QED the result would still be correct at the <span class="mathjax-inline">\(\mathcal {O} (\alpha ^3/\alpha ^2 \approx 1\%)\)</span> level by keeping just
 the LO <span class="mathjax-inline">\(\alpha ^2\)</span> term. Higher-order calculations, especially NNLO and N<span class="mathjax-inline">\(^3\)</span>LO, are done with the help of dedicated
