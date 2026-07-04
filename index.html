@@ -4225,20 +4225,20 @@ states of the same particle: </p>
 <div class="mathjax-env mathjax-equation">\begin{equation} \Psi = \begin {pmatrix} \psi _p \\ \psi _n \end {pmatrix}. \end{equation}</div><a 
  id="x1-94002r3"></a> Notice that <span class="mathjax-inline">\(\Psi \)</span> above is a two component column vector whose entries are
 4-component Dirac spinors.
-<p>   To rotate these states into one another, we need a <span class="mathjax-inline">\(2\times 2\)</span> unitary matrix <span class="mathjax-inline">\(U\)</span> with determinant 1. This is the
-Lie group <span class="mathjax-inline">\(SU(2)\)</span>, which has <span class="mathjax-inline">\(N^2-1 = 3\)</span> generators. Notice that now we have to deal with matrices, which in
-general do not commute. This is called a <i>non-Abelian</i> symmetry. The transformation is: </p> 
+<p>   To rotate these states into one another, we need a <span class="mathjax-inline">\(2\times 2\)</span> unitary matrix with determinant 1. This is the Lie
+group <span class="mathjax-inline">\(SU(2)\)</span>, which has <span class="mathjax-inline">\(N^2-1 = 3\)</span> generators. Notice that now we have to deal with matrices, which in general do not
+commute. This is called a <i>non-Abelian</i> symmetry. The transformation is: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \Psi \to \Psi ' = \exp \left (i \alpha ^a t^a\right ) \Psi . \end{equation}</div><a 
- id="x1-94003r4"></a> The
-<i>representation</i> acting on the state is <div class="mathjax-env mathjax-equation">\begin{equation} \exp \left (i \alpha ^a t^a\right ). \end{equation}</div><a 
- id="x1-94004r5"></a> The <span class="mathjax-inline">\(t^a = \sigma ^a/2\)</span> are the <i>generators</i> defined by the three Pauli matrices. <div class="mathjax-env mathjax-equation">\begin{equation} t^a = \frac {\sigma ^a}{2} \end{equation}</div><a 
+ id="x1-94003r4"></a> The <i>representation</i> acting on
+the state is <div class="mathjax-env mathjax-equation">\begin{equation} \exp \left (i \alpha ^a t^a\right ). \end{equation}</div><a 
+ id="x1-94004r5"></a> The <span class="mathjax-inline">\(t^a = \sigma ^a/2\)</span> are the <i>generators</i>. They are typically defined using the three Pauli matrices. <div class="mathjax-env mathjax-equation">\begin{equation} t^a = \frac {\sigma ^a}{2} \end{equation}</div><a 
  id="x1-94005r6"></a>
 These satisfy the relation <span class="mathjax-inline">\([t^a , t^b] = i \epsilon ^{abc} t^c\)</span>. A relationship of the form <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:group_algebra} [T^a,T^b] = i f^{abc} T^c. \end{equation}</div><a 
  id="x1-94006r7"></a> is said to define the <i>algebra</i> of the
 group. The <span class="mathjax-inline">\(f^{abc}\)</span> are called <i>structure constants</i>. In the particular case of <span class="mathjax-inline">\(SU(2)\)</span> <span class="mathjax-inline">\(f^{abc} = \epsilon ^{abc}\)</span>, where <span class="mathjax-inline">\(\epsilon ^{abc}\)</span> is the Levi-Civita
 symbol.
 <p>   If we try to make this <span class="mathjax-inline">\(SU(2)\)</span> symmetry local, we encounter a new requirement. Because there are three
-independent ways to rotate a doublet (corresponding to the three generators <span class="mathjax-inline">\(T^1, T^2, T^3\)</span>), we need three
+independent ways to rotate a doublet (corresponding to the three generators <span class="mathjax-inline">\(t^1, t^2, t^3\)</span>), we need three
 independent connection fields, <span class="mathjax-inline">\(W_\mu ^1, W_\mu ^2, W_\mu ^3\)</span>.
 </p> 
 <p>   Having introduced a gauge field for each generator, we must now include kinetic terms for them.
@@ -4251,7 +4251,14 @@ href="#x1-94006r7">9.7<!--tex4ht:ref: eq:group_algebra --></a> implies the form 
  id="x1-94008r9"></a>
 meaning that we obtain an extra term. This term relates to interaction between the gauge
 bosons.
+<p>   The other interesting case, in the context of the SM, is the <span class="mathjax-inline">\(SU(3)\)</span> symmetry. In this case the physical states
+are triplets. We have <span class="mathjax-inline">\(N^2-1 = 8\)</span> generators, which consequently require the introduction of eight gauge fields. I use
+QCD as an explicit example of a non-Abelian theory in Appendix <a 
+href="#x1-149000G">G<!--tex4ht:ref: sec:Appendix_QCD --></a>, where I derive the covariant
+derivative and the relevant field strength tensor.
    
+   </p> 
+
    <h4 class="subsectionHead"><span class="titlemark">9.2   </span> <a 
 href="#QQ2-1-137" id="x1-950009.2">Setting Up The Theory</a></h4>
 <p>Arranging the leptons as (see section <a 
@@ -4290,6 +4297,8 @@ tensors are defined by <div class="mathjax-env mathjax-equation">\begin{equation
 weak gauge bosons can interact with one another; see section <a 
 href="#x1-940009.1">9.1<!--tex4ht:ref: sec:symmetries --></a>. The <span class="mathjax-inline">\(U(1)_Y\)</span> field-strength tensor has the same
 form as in electromagnetism since <span class="mathjax-inline">\(U(1)\)</span> is Abelian.
+                                                                                         
+                                                                                         
 <p>   The interaction terms may be written more compactly by introducing the covariant derivative, </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} D_\mu = \partial _\mu - i g \frac {\tau _a}{2} W_\mu ^{(a)} - i g^\prime \frac {Y}{2} B_\mu . \end {aligned} \end{equation}</div><a 
  id="x1-95014r23"></a>
@@ -4298,8 +4307,6 @@ leading to <div class="mathjax-env mathjax-equation">\begin{equation} \begin {al
 <p>   At this point it seems that, at the cost of adding, for <span class="mathjax-inline">\(Y\)</span>, a gauge field <span class="mathjax-inline">\(B^\mu \)</span> on top of the <span class="mathjax-inline">\(W^{(1,2,3)}\)</span>, we can create a
 unified electroweak theory. In the above Lagrangian The <span class="mathjax-inline">\(W_\mu ^\alpha = W^{(1,2,3)}\)</span>, <span class="mathjax-inline">\(B_\mu \)</span>, and the fermions are massless. Adding terms
 for those will break local gauge invariance. We need a way to obtain the physical <span class="mathjax-inline">\(W^\pm \)</span> and <span class="mathjax-inline">\(Z^0\)</span> bosons. This will
-                                                                                         
-                                                                                         
 be the subject of the next chapters.
    
    </p> 
