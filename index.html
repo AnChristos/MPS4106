@@ -1907,8 +1907,8 @@ observers but is independent of the coordinates <span class="mathjax-inline">\((
  id="x1-54003r106"></a> We have <div class="mathjax-env mathjax-equation">\begin{equation} \partial ^\prime _\mu ={\Lambda _\mu }^\nu \partial _\nu . \end{equation}</div><a 
  id="x1-54004r107"></a> and <div class="mathjax-env mathjax-equation">\begin{equation} \psi '(x') = S(\Lambda ) \psi (x). \end{equation}</div><a 
  id="x1-54005r108"></a> Therefore in the primed frame <div class="mathjax-env mathjax-equation">\begin{equation} (i \gamma ^\mu S(\Lambda ) {\Lambda _\mu }^\nu \partial _\nu - m S(\Lambda )) \psi (x) = 0. \end{equation}</div><a 
- id="x1-54006r109"></a> Multiplication with <span class="mathjax-inline">\(S^1(\Lambda )\)</span>
-from the left, using <span class="mathjax-inline">\(S(\Lambda ) S^{-1}(\Lambda ) = I\)</span>, gives <div class="mathjax-env mathjax-equation">\begin{equation} (i S^{-1}(\Lambda ) \gamma ^\mu S(\Lambda ) {\Lambda _\mu }^\nu \partial _\nu - m) \psi (x) = 0. \end{equation}</div><a 
+ id="x1-54006r109"></a> Multiplication with <span class="mathjax-inline">\(S^{-1}(\Lambda )\)</span>
+from the left, using <span class="mathjax-inline">\( S^{-1}(\Lambda ) S(\Lambda ) = I\)</span>, gives <div class="mathjax-env mathjax-equation">\begin{equation} (i S^{-1}(\Lambda ) \gamma ^\mu S(\Lambda ) {\Lambda _\mu }^\nu \partial _\nu - m) \psi (x) = 0. \end{equation}</div><a 
  id="x1-54007r110"></a>
 <p>   This has to be identical with the Dirac equation in original frame, which means that <span class="mathjax-inline">\(S(\Lambda )\)</span>
 must satisfy </p> 
@@ -1927,19 +1927,15 @@ factor, which by convention we set to unity, by: <div class="mathjax-env mathjax
  id="x1-54011r114"></a> Therefore, under parity a spinor transforms as
 <div class="mathjax-env mathjax-equation">\begin{equation} \psi \rightarrow \psi ' = \gamma ^0 \psi . \end{equation}</div><a 
  id="x1-54012r115"></a>
-<p>   In order to construct Lorentz-invariant currents we are interested in bilinear quantities of the form </p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} \bar {\psi } (4\times 4) \psi . \end{equation}</div><a 
- id="x1-54013r116"></a>
-There are 16 products of the form <span class="mathjax-inline">\(\bar {\psi }_i \psi _j\)</span> (taking one component from <span class="mathjax-inline">\(\bar {\psi }\)</span> and one from <span class="mathjax-inline">\(\psi \)</span>), since <span class="mathjax-inline">\(i\)</span> and <span class="mathjax-inline">\(j\)</span> run from 1
-to 4. These 16 products can be assembled in linear combinations to construct quantities with distinct
-transformation behaviour. Another way to think of it is this: <span class="mathjax-inline">\(I\)</span>, <span class="mathjax-inline">\(\gamma ^5\)</span>, <span class="mathjax-inline">\(\gamma ^\mu \)</span>, <span class="mathjax-inline">\(\gamma ^\mu \gamma ^5\)</span>, and <span class="mathjax-inline">\(\sigma ^{\mu \nu }\)</span> constitute a basis for the space of
-all <span class="mathjax-inline">\(4 \times 4\)</span> matrices; any <span class="mathjax-inline">\(4 \times 4\)</span> matrix can be written as a linear combination of these 16 products: <div class="mathjax-env mathjax-equation">\begin{equation} M = a_0 I + a_\mu \gamma ^\mu + a_5 \gamma _5 + b_\mu \gamma ^\mu \gamma _5 + \frac {1}{2} t_{\mu \nu } \sigma ^{\mu \nu }. \end{equation}</div><a 
- id="x1-54014r117"></a> where <span class="mathjax-inline">\(\sigma ^{\mu \nu } = \frac {i}{2}(\gamma ^\mu \gamma ^\nu - \gamma ^\nu \gamma ^\mu )\)</span> is an
-antisymmetric <span class="mathjax-inline">\(4\times 4\)</span> matrix (<span class="mathjax-inline">\(\sigma ^{\mu \nu } = - \sigma ^{\nu \mu }\)</span>)
-<p>   An exhaustive list is given in Table <a 
-href="#x1-54015r2">4.2<!--tex4ht:ref: tab:bilinear --></a>, alongside the relevant boson spin. We will meet
-some of these terms again when we will study the interactions between bosons and fermions.
+<p>   There are 16 products of the form <span class="mathjax-inline">\(\bar {\psi }_i \psi _j\)</span>, since <span class="mathjax-inline">\(i\)</span> and <span class="mathjax-inline">\(j\)</span> run from 1 to 4. These 16 products can
+be assembled in linear combinations to construct quantities with distinct transformation
+behaviour.
 </p> 
+<p>   An exhaustive list is given in Table <a 
+href="#x1-54013r2">4.2<!--tex4ht:ref: tab:bilinear --></a>, alongside the relevant boson spin, where <span class="mathjax-inline">\(\sigma ^{\mu \nu } = \frac {i}{2}(\gamma ^\mu \gamma ^\nu - \gamma ^\nu \gamma ^\mu )\)</span> is an antisymmetric
+<span class="mathjax-inline">\(4\times 4\)</span> matrix (<span class="mathjax-inline">\(\sigma ^{\mu \nu } = - \sigma ^{\nu \mu }\)</span>). This gives 16 terms, one for each of the scalar and pseudo-scalar, four for each of the vector
+and pseudo-vector, and six for the antisymmetric tensor.
+   </p> 
 <div class="table">
                                                                                          
                                                                                          
@@ -2003,21 +1999,28 @@ class="td11">      6         </td><td  style="white-space:nowrap; text-align:cen
 class="td11">             </td><td  style="white-space:nowrap; text-align:center;" id="TBL-4-6-5"  
 class="td11">     2        </td></tr></table>             </div>
 <a 
- id="x1-54015r2"></a>
+ id="x1-54013r2"></a>
 <figcaption class="caption" ><span class="id">Table 4.2: </span><span  
 class="content">Lorentz-invariant bilinear currents.
-</span></figcaption><!--tex4ht:label?: x1-54015r2 -->
+</span></figcaption><!--tex4ht:label?: x1-54013r2 -->
 </div>
 </figure>
    </div>
+<p>   Another way to think of it is this: <span class="mathjax-inline">\(I\)</span>, <span class="mathjax-inline">\(\gamma ^5\)</span>, <span class="mathjax-inline">\(\gamma ^\mu \)</span>, <span class="mathjax-inline">\(\gamma ^\mu \gamma ^5\)</span>, and <span class="mathjax-inline">\(\sigma ^{\mu \nu }\)</span> constitute a basis for the space of all <span class="mathjax-inline">\(4 \times 4\)</span> matrices; any <span class="mathjax-inline">\(4 \times 4\)</span>
+matrix can be written as a linear combination of these 16 products: </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} M = a_0 I + a_\mu \gamma ^\mu + a_5 \gamma _5 + b_\mu \gamma ^\mu \gamma _5 + \frac {1}{2} t_{\mu \nu } \sigma ^{\mu \nu }. \end{equation}</div><a 
+ id="x1-54014r116"></a>
+<p>   We will meet some of these terms again when we will study the interactions between bosons and
+fermions.
+</p> 
 <p>   We can now check the parity entries in this table. For <span class="mathjax-inline">\(\bar {\psi }\gamma ^5\psi \)</span>: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} (\bar {\psi }\gamma ^5\psi )' &amp;= (\psi ')^\dagger \gamma ^0 \gamma ^5 \psi ' \\ &amp;= (\gamma ^0 \psi )^\dagger \gamma ^0 \gamma ^5 \gamma ^0 \psi \\ &amp;= \psi ^\dagger (\gamma ^0)^\dagger \gamma ^0 \gamma ^5 \gamma ^0 \psi \\ &amp;= \psi ^\dagger \gamma ^0 \gamma ^0 \gamma ^5 \gamma ^0 \psi \\ &amp;= \psi ^\dagger \gamma ^5 \gamma ^0 \psi \\ &amp;= - \psi ^\dagger \gamma ^0 \gamma ^5 \psi \\ &amp;= - (\bar {\psi }\gamma ^5\psi ). \end {aligned} \end{equation}</div><a 
- id="x1-54016r118"></a> One can obtain the other parity entries in
+ id="x1-54015r117"></a> One can obtain the other parity entries in
 Table <a 
-href="#x1-54015r2">4.2<!--tex4ht:ref: tab:bilinear --></a> in a similar manner. For example, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} (\bar {\psi }\gamma ^\mu \psi )' &amp;= (\psi ')^\dagger \gamma ^0 \gamma ^\mu \psi ' \\ &amp;= (\gamma ^0 \psi )^\dagger \gamma ^0 \gamma ^\mu \gamma ^0 \psi \\ &amp;= \psi ^\dagger \gamma ^0 \gamma ^0 \gamma ^\mu \gamma ^0 \psi \\ &amp;= \psi ^\dagger \gamma ^\mu \gamma ^0 \psi , \end {aligned} \end{equation}</div><a 
- id="x1-54017r119"></a> which is <div class="mathjax-env mathjax-equation">\begin{equation} \bar {\psi } \gamma ^0 \psi \end{equation}</div><a 
- id="x1-54018r120"></a> for the time component and <div class="mathjax-env mathjax-equation">\begin{equation} \psi ^\dagger \gamma ^i \gamma ^0 \psi = - \psi ^\dagger \gamma ^0 \gamma ^i \psi = - \bar {\psi } \gamma ^i \psi \end{equation}</div><a 
- id="x1-54019r121"></a> for the three spatial
+href="#x1-54013r2">4.2<!--tex4ht:ref: tab:bilinear --></a> in a similar manner. For example, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} (\bar {\psi }\gamma ^\mu \psi )' &amp;= (\psi ')^\dagger \gamma ^0 \gamma ^\mu \psi ' \\ &amp;= (\gamma ^0 \psi )^\dagger \gamma ^0 \gamma ^\mu \gamma ^0 \psi \\ &amp;= \psi ^\dagger \gamma ^0 \gamma ^0 \gamma ^\mu \gamma ^0 \psi \\ &amp;= \psi ^\dagger \gamma ^\mu \gamma ^0 \psi , \end {aligned} \end{equation}</div><a 
+ id="x1-54016r118"></a> which is <div class="mathjax-env mathjax-equation">\begin{equation} \bar {\psi } \gamma ^0 \psi \end{equation}</div><a 
+ id="x1-54017r119"></a> for the time component and <div class="mathjax-env mathjax-equation">\begin{equation} \psi ^\dagger \gamma ^i \gamma ^0 \psi = - \psi ^\dagger \gamma ^0 \gamma ^i \psi = - \bar {\psi } \gamma ^i \psi \end{equation}</div><a 
+ id="x1-54018r120"></a> for the three spatial
 components.
                                                                                          
                                                                                          
@@ -3502,7 +3505,7 @@ for both spinors. The end result is that the weak currents have the form <div cl
 Vector<span class="mathjax-inline">\(-\)</span>Axial Vector, or in shorthand <span class="mathjax-inline">\(V-A\)</span> currents. When currents of the form <span class="mathjax-inline">\(J = J_A - J_V\)</span> are multiplied,
 the products <span class="mathjax-inline">\(J_A J_A\)</span> and <span class="mathjax-inline">\(J_V J_V\)</span> will be unchanged under parity, but not the <span class="mathjax-inline">\(J_V J_A\)</span> one, as can be seen from
 table <a 
-href="#x1-54015r2">4.2<!--tex4ht:ref: tab:bilinear --></a>.
+href="#x1-54013r2">4.2<!--tex4ht:ref: tab:bilinear --></a>.
 <p>   After this modification the Fermi Lagrangian takes the form </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mathcal {L}_{\mathrm {int}} = - 2 \sqrt {2} G_F J_{(l)}^\rho J^{\dagger }_{(l)\rho }, \end {aligned} \end{equation}</div><a 
  id="x1-86005r5"></a> with <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} J_{(l)}^{\rho } = (\bar {e}_L \gamma ^\rho {\nu _{e}}_L) + (\bar {\mu }_L \gamma ^\rho {\nu _{\mu }}_L) + (\bar {\tau }_L \gamma ^\rho {\nu _{\tau }}_L). \end {aligned} \end{equation}</div><a 
@@ -5552,7 +5555,7 @@ definitions.
  id="x1-149027r27"></a> where <span class="mathjax-inline">\(i,j\)</span> run over the colour indices, <span class="mathjax-inline">\(A,B\)</span> run over the quark
 flavours <span class="mathjax-inline">\(u,d,s,c,b,t\)</span> and <span class="mathjax-inline">\(t_a\)</span> are the generators of <span class="mathjax-inline">\(SU(3)_c\)</span>. This Lagrangian contains a gluon-quark interaction term
 analogous to QED: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} g_s G^a_\mu \bar {\psi }^{i,A} \gamma ^\mu t^a_{ij} \psi ^{j,A}. \end {aligned} \end{equation}</div><a 
- id="x1-149028r28"></a>. The Lagrangian also contains a pure gluon part <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} - \frac {1}{4} G^{\mu \nu }_a G^a_{\mu \nu } \end {aligned} \end{equation}</div><a 
+ id="x1-149028r28"></a> The Lagrangian also contains a pure gluon part <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} - \frac {1}{4} G^{\mu \nu }_a G^a_{\mu \nu } \end {aligned} \end{equation}</div><a 
  id="x1-149029r29"></a> with <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} G_{\mu \nu }^a = \partial _\mu G_{\nu }^a - \partial _\nu G_{\mu }^a - g_s f^{abc} G_{\mu }^b G_{\nu }^c. \end {aligned} \end{equation}</div><a 
  id="x1-149030r30"></a> The term <span class="mathjax-inline">\(G^{\mu \nu }_a G^a_{\mu \nu }\)</span> has a
 remarkable new property. It contains not only the standard kinetic term of the gauge fields,
