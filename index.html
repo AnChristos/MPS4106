@@ -612,13 +612,17 @@ one “time-like” and three “space-like” components: <div class="mathjax-e
 Cartesian coordinates: <div class="mathjax-env mathjax-equation">\begin{equation} g_{\mu \nu } = \left ( \begin {array}{rrrr} g_{00} &amp; g_{01} &amp; g_{02} &amp; g_{03} \\ g_{10} &amp; g_{11} &amp; g_{12} &amp; g_{13} \\ g_{20} &amp; g_{21} &amp; g_{22} &amp; g_{23} \\ g_{30} &amp; g_{31} &amp; g_{32} &amp; g_{33} \end {array} \right ) = \left ( \begin {array}{rrrr} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 \end {array} \right ). \end{equation}</div><a 
  id="x1-12003r7"></a> or simply <div class="mathjax-env mathjax-equation">\begin{equation} g_{\mu \nu } = \text {diag}[1,-1,-1,-1]. \end{equation}</div><a 
  id="x1-12004r8"></a>
-<p>   As a matter of notation, it is important to notice that Greek indices <span class="mathjax-inline">\(\mu \)</span>, <span class="mathjax-inline">\(\nu \)</span>, <span class="mathjax-inline">\(\rho \)</span>, such as in <span class="mathjax-inline">\(a^{\mu }\)</span>, run over the
-values 0, 1, 2, 3, and that we are using the Einstein summation convention: any index such as <span class="mathjax-inline">\(\mu \)</span> that
-appears twice, once as a superscript and once as a subscript, is understood to be summed over and
-<i>contracted</i>. </p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} g_{\mu \nu } a^\mu a^\nu = \sum _{\mu =0}^{3} \sum _{\nu =0}^{3} g_{\mu \nu } a^\mu a^\nu \end{equation}</div><a 
- id="x1-12005r9"></a>
-<p>   The metric tensor has an inverse, denoted with “index-up“ <span class="mathjax-inline">\(g^{\mu \nu }\)</span>, such that </p> 
+<p>   As a matter of notation, it is important to notice that Greek indices <span class="mathjax-inline">\(\mu \)</span>, <span class="mathjax-inline">\(\nu \)</span>, <span class="mathjax-inline">\(\rho \)</span>, such as in <span class="mathjax-inline">\(a^{\mu }\)</span>,
+run over the values 0, 1, 2, 3, and that we are using the Einstein summation convention. A
+repeated index, appearing once as a superscript and once as a subscript, is understood to be
+summed over and <i>contracted</i>. </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} a_\mu b^\mu = \sum _{\mu =0}^3 a_\mu b^\mu . \end{equation}</div><a 
+ id="x1-12005r9"></a> An index that is summed over is called a <i>dummy index</i>, can be
+freely renamed (e.g., <span class="mathjax-inline">\(a_\mu b^\mu = a_\rho b^\rho \)</span>) and may appear exactly twice in a single term, once as “up” index and
+once as a “down” index. An index that appears exactly once in a term is a <i>free index</i>. In
+each term an index can be appear exactly once as a free index, or exactly twice as a dummy
+index.
+<p>   The metric tensor has an inverse, denoted with both indices up <span class="mathjax-inline">\(g^{\mu \nu }\)</span>, such that </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} g^{\mu \nu } g_{\nu \rho } = \delta ^\mu _\rho . \end{equation}</div><a 
  id="x1-12006r10"></a>
 <p>   In the case of the Minkowski metric tensor in Cartesian coordinates, the inverse has the same
@@ -630,47 +634,54 @@ class="newline" />For <span class="mathjax-inline">\(\mu =0, \rho =0\)</span>: <
 <p>   If we were using a matrix representation the statement can be expressed as </p> 
 <div class="mathjax-env mathjax-equation*">\begin{equation*} g\cdot g^{-1}= \begin {pmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 \end {pmatrix} \begin {pmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; -1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; -1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; -1 \end {pmatrix} = \begin {pmatrix} 1 &amp; 0 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 0 &amp; 1 \end {pmatrix} \end{equation*}</div> The algebraic operation
 would be the same as the ones when using index notation.
-<p>   The inverse metric allows us to lower indices and define “index-down” (or “covariant”) four-vectors:
-</p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} a_{\mu } = g_{\mu \nu } a^{\nu } = (a^0, -a^1, -a^2, -a^3), \end{equation}</div><a 
+<p>   The inverse metric allows us to lower indices and define “index-down” (or “covariant”) four-vectors: </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} a_{\mu } = g_{\mu \nu } a^{\nu } = (a^0, -a^1, -a^2, -a^3). \end{equation}</div><a 
  id="x1-12007r11"></a>
-<p>   The invariant can be written as the dot (or scalar) product of two four-vectors </p> 
+We can confirm that by summing over the dummy index <span class="mathjax-inline">\(\nu \)</span> for each value of the free index <span class="mathjax-inline">\(\mu \)</span>
+<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} a_0 &amp;= g_{00} \cdot a^0 + g_{01} \cdot a^1 + g_{02} \cdot a^2 + g_{03} \cdot a^3= g_{00} \cdot a^0 = a^0,\\ a_1 &amp;= g_{10} \cdot a^0 + g_{11} \cdot a^1 + g_{12} \cdot a^2 + g_{13} \cdot a^3=g_{11} \cdot a^1 = -a^1,\\ a_2 &amp;= g_{20} \cdot a^0 + g_{21} \cdot a^1 + g_{22} \cdot a^2 + g_{23} \cdot a^3= g_{22} \cdot a^2 = -a^2,\\ a_3 &amp;= g_{30} \cdot a^0 + g_{31} \cdot a^1 + g_{32} \cdot a^2 + g_{33} \cdot a^3= g_{33} \cdot a^3 = -a^3. \end {aligned} \end{equation}</div><a 
+ id="x1-12008r12"></a>
+<p>   Using this notation, we can see that the invariant is simply the dot (or scalar) product of two
+four-vectors </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:4vec_mult} \begin {aligned} &amp;a^{\mu } b_{\mu } = a_{\mu } b^{\mu } = g_{\mu \nu } a^{\mu } b^{\nu } = g^{\mu \nu } a_{\mu } b_{\nu } =\\ &amp;a \cdot b = a^0 b^0 - a^1 b^1 - a^2 b^2 - a^3 b^3. \end {aligned} \end{equation}</div><a 
- id="x1-12008r12"></a> This is analogous to
-the dot product of two three-vectors see Appendix <a 
+ id="x1-12009r13"></a>
+<p>   The above is analogous to the dot product of two three-vectors. Other than the extra
+time dimension the difference is that the Euclidean metric in three dimensions is <span class="mathjax-inline">\(\text {diag}[+1,+1,+1]\)</span>. See also
+Appendix <a 
 href="#x1-109000A">A<!--tex4ht:ref: sec:Appendix_Notation --></a>.
    
+   </p> 
+
 <p><span class="paragraphHead"><a 
 href="#x1-13000" id="x1-13000">Common Invariants</a></span>
-   Some important invariants that you have likely already encountered in Special Relativity are invariant
-interval, proper time and invariant mass. </p> 
+   Some important invariants that you have likely already encountered in your Special Relativity course
+are invariant interval, proper time and invariant mass. </p> 
 
+                                                                                         
+                                                                                         
      <ul class="itemize1">
      <li class="itemize">
      <p>The invariant interval is defined as: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} ds^2 = c^2 dt^2 - (dx^2 + dy^2 + dz^2). \end{equation}</div><a 
- id="x1-13001r13"></a> Events with <span class="mathjax-inline">\(ds^2&gt;0\)</span> are called time-like, <span class="mathjax-inline">\(ds^2&lt;0\)</span> space-like and <span class="mathjax-inline">\(ds^2=0\)</span>
+ id="x1-13001r14"></a> Events with <span class="mathjax-inline">\(ds^2&gt;0\)</span> are called time-like, <span class="mathjax-inline">\(ds^2&lt;0\)</span> space-like and <span class="mathjax-inline">\(ds^2=0\)</span>
      light-like.
      </li>
      <li class="itemize">
      <p>The proper time is defined as: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} d\tau ^2 = dt^2 - \frac {1}{c^2}(dx^2 + dy^2 + dz^2) = \frac {ds^2}{c^2}. \end{equation}</div><a 
- id="x1-13002r14"></a> In natural units (<span class="mathjax-inline">\(c=1\)</span>) and using Einstein summation: <div class="mathjax-env mathjax-equation">\begin{equation} d\tau ^2 = ds^2= g_{\mu \nu } dx^\mu dx^\nu = dt^2 - dx^2 - dy^2 - dz^2. \end{equation}</div><a 
- id="x1-13003r15"></a>
-                                                                                         
-                                                                                         
+ id="x1-13002r15"></a> In natural units (<span class="mathjax-inline">\(c=1\)</span>) and using Einstein summation: <div class="mathjax-env mathjax-equation">\begin{equation} d\tau ^2 = ds^2= g_{\mu \nu } dx^\mu dx^\nu = dt^2 - dx^2 - dy^2 - dz^2. \end{equation}</div><a 
+ id="x1-13003r16"></a>
      </li>
      <li class="itemize">
      <p>The invariant mass, in natural units (<span class="mathjax-inline">\(c=1\)</span>) , is defined as </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} m^2 = g_{\mu \nu } p^\mu p^\nu = E^2 - \mathbf {p}^2. \end{equation}</div><a 
- id="x1-13004r16"></a></li></ul>
+ id="x1-13004r17"></a></li></ul>
    
 <p><span class="paragraphHead"><a 
 href="#x1-14000" id="x1-14000">Constancy of the Speed of Light</a></span>
    Consider a light ray. By definition, a light ray follows a path where <span class="mathjax-inline">\(ds^2 = 0\)</span>. In natural units </p> 
 <div class="mathjax-env mathjax-equation*">\begin{equation*} \beta = \left |\frac {d\mathbf {x}}{dt}\right | \end{equation*}</div> where <span class="mathjax-inline">\(|d\mathbf {x}| = \sqrt {dx^2 + dy^2 + dz^2}\)</span>. Since
 the interval <span class="mathjax-inline">\(ds^2\)</span> is invariant, if it is zero in one frame, it must be zero in all frames implying : <div class="mathjax-env mathjax-equation">\begin{equation} dt^2 = |d\mathbf {x}|^2 \implies \left | \frac {d\mathbf {x}}{dt} \right | = 1. \end{equation}</div><a 
- id="x1-14001r17"></a> Thus, all
+ id="x1-14001r18"></a> Thus, all
 inertial observers measure the same speed <span class="mathjax-inline">\(\beta =1\)</span> (or <span class="mathjax-inline">\(c\)</span>).
    
 <p><span class="paragraphHead"><a 
@@ -687,15 +698,15 @@ Therefore, <div class="mathjax-env mathjax-equation*">\begin{equation*} dt' = \f
 href="#x1-16000" id="x1-16000">Lorentz Transformations</a></h5>
 <p>The set of linear coordinate transformations </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:Contravariant_transform} a^{\mu } \rightarrow a^{\prime \mu } = {\Lambda ^\mu }_{\nu } a^{\nu } \end{equation}</div><a 
- id="x1-16001r18"></a> which preserve the invariant <div class="mathjax-env mathjax-equation">\begin{equation} g_{\mu \nu } a^{\mu } a^{\nu } \end{equation}</div><a 
- id="x1-16002r19"></a> are called Lorentz
+ id="x1-16001r19"></a> which preserve the invariant <div class="mathjax-env mathjax-equation">\begin{equation} g_{\mu \nu } a^{\mu } a^{\nu } \end{equation}</div><a 
+ id="x1-16002r20"></a> are called Lorentz
 transformations.
 <p>   The Lorentz transformation <span class="mathjax-inline">\({\Lambda ^\mu }_{\nu }\)</span> has an inverse allowing us to write </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} a^{\prime \mu } \rightarrow a^{\mu } = {(\Lambda ^{-1})^\mu }_{\nu } a^{\prime \nu }. \end{equation}</div><a 
- id="x1-16003r20"></a>
+ id="x1-16003r21"></a>
 <p>   Index-down, covariant, four-vectors transform as </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:Covariant_transform} a_{\mu } \rightarrow a'_{\mu } = {\Lambda _\mu }^{\nu } a_{\nu }, \end{equation}</div><a 
- id="x1-16004r21"></a> where <span class="mathjax-inline">\({\Lambda _\nu }^{\mu } = {(\Lambda ^{-1})^\mu }_{\nu }\)</span>. Here, notice the position of the
+ id="x1-16004r22"></a> where <span class="mathjax-inline">\({\Lambda _\nu }^{\mu } = {(\Lambda ^{-1})^\mu }_{\nu }\)</span>. Here, notice the position of the
 indices.
    
    <h4 class="subsectionHead"><span class="titlemark">1.3   </span> <a 
@@ -707,25 +718,19 @@ words, a scalar is invariant under Lorentz transformations. A four-vector transf
 spacetime index) tensor. A second-rank tensor <span class="mathjax-inline">\(s^{\mu \nu }\)</span> carries two indices, has <span class="mathjax-inline">\(4^2 = 16\)</span> components, and
 transforms as </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} s^{\mu \nu } \rightarrow s^{\prime \mu \nu } = {\Lambda ^\mu }_{\kappa } {\Lambda ^\nu }_{\sigma } s^{\kappa \sigma }. \end{equation}</div><a 
- id="x1-17001r22"></a> A third-rank tensor has three indices, <span class="mathjax-inline">\(4^3 = 64\)</span> components, and transforms as <div class="mathjax-env mathjax-equation">\begin{equation} t^{\mu \nu \lambda } \rightarrow t^{\prime \mu \nu \lambda } = {\Lambda ^\mu }_{\kappa } {\Lambda ^\nu }_{\sigma } {\Lambda ^\lambda }_{\tau } t^{\kappa \sigma \tau }, \end{equation}</div><a 
- id="x1-17002r23"></a> and
+ id="x1-17001r23"></a> A third-rank tensor has three indices, <span class="mathjax-inline">\(4^3 = 64\)</span> components, and transforms as <div class="mathjax-env mathjax-equation">\begin{equation} t^{\mu \nu \lambda } \rightarrow t^{\prime \mu \nu \lambda } = {\Lambda ^\mu }_{\kappa } {\Lambda ^\nu }_{\sigma } {\Lambda ^\lambda }_{\tau } t^{\kappa \sigma \tau }, \end{equation}</div><a 
+ id="x1-17002r24"></a> and
 so on. The product of two tensors is itself a tensor. For example <span class="mathjax-inline">\(a^\mu b^\nu \)</span> is a second-rank tensor.
 There are also mixed tensors, for example <span class="mathjax-inline">\(g^{\mu \lambda } g_{\lambda \nu } = {\delta ^\mu }_\nu \)</span>, <span class="mathjax-inline">\({T_{\alpha \beta }}^\lambda {\delta _\lambda }^\gamma = {T_{\alpha \beta }}^\gamma \)</span>. Finally, the contraction of like upper and lower
 indices results in another tensor with order reduced by two, for example <span class="mathjax-inline">\({s^\mu }_\mu \)</span> is a scalar and <span class="mathjax-inline">\(a_\nu t^{\mu \nu }\)</span> is a
 vector.
-<p>   A repeated index implies a summation over all possible values of that index: </p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} a_\mu b^\mu = \sum _{\mu =0}^3 a_\mu b^\mu . \end{equation}</div><a 
- id="x1-17003r24"></a> An index that is
-summed over is called a <i>dummy index</i>, can be freely renamed (e.g., <span class="mathjax-inline">\(a_\mu b^\mu = a_\rho b^\rho \)</span>) and may appear exactly twice in a
-single term, once up and once down. An index that appears only once in a term is a <i>free
-index</i>.
+                                                                                         
+                                                                                         
 <p>   The point of all this notation is that it allows us to readily see if an equation is Lorentz invariant. If
 two tensors with the same upper and lower indices are equal in one coordinate system, then they are
 equal in any other coordinate system that is related to the first by a Lorentz transformation. For an
 equation that is valid in a given coordinate system, if all free indices match on both sides of
 the equation, and all repeated indices appear once as an upper and once as a lower index,
-                                                                                         
-                                                                                         
 then the equation is valid in any other coordinate system related to the first by a Lorentz
 transformation.
    
@@ -780,6 +785,8 @@ inverse transform can be obtained by inverting the sign of <span class="mathjax-
  id="x1-20003r28"></a> so that <span class="mathjax-inline">\({(\Lambda ^{-1})^\mu }_{\nu } = dx^\mu /dx'^\nu \)</span> is <div class="mathjax-env mathjax-equation">\begin{equation} {\Lambda _\mu }^{\nu } = \left ( \begin {array}{cccc} \gamma &amp; 0 &amp; 0 &amp; +\beta \gamma \\ 0 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \\ +\beta \gamma &amp; 0 &amp; 0 &amp; \gamma \end {array} \right ). \end{equation}</div><a 
  id="x1-20004r29"></a>
    
+                                                                                         
+                                                                                         
 <p><span class="paragraphHead"><a 
 href="#x1-21000" id="x1-21000">Applying the Concepts: Twin Paradox</a></span>
    The twin paradox provides a good example of the application of the concepts we introduced. The
@@ -3054,7 +3061,7 @@ identities for four and two <span class="mathjax-inline">\(\gamma \)</span> matr
 replacement <span class="mathjax-inline">\(1\rightarrow 3 \)</span>, <span class="mathjax-inline">\(2\rightarrow 4\)</span>, <span class="mathjax-inline">\(m_e\rightarrow m_\mu \)</span>, and all indices lowered. Therefore <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mbox {Tr}\left [\gamma _\mu (\not \!p_4-m_\mu ) \gamma _\nu (\not \!p_3+ m_\mu )\right ] = 4 \left [ {p_3}_\mu {p_4}_\nu + {p_4}_\mu {p_3}_\nu - g_{\mu \nu } (p_3 \cdot p_4 + m_\mu ^2) \right ]. \end {aligned} \end{equation}</div><a 
  id="x1-77010r8"></a> Keeping track of the indices to obtain the correct
 four-momentum pairings (<a 
-href="#x1-12008r12">1.12<!--tex4ht:ref: eq:4vec_mult --></a>), employing the fact that <span class="mathjax-inline">\(g^{\mu \nu } g_{\mu \nu } = 4\)</span> and ignoring the mass of the electron <span class="mathjax-inline">\(m_e\)</span> but not
+href="#x1-12009r13">1.13<!--tex4ht:ref: eq:4vec_mult --></a>), employing the fact that <span class="mathjax-inline">\(g^{\mu \nu } g_{\mu \nu } = 4\)</span> and ignoring the mass of the electron <span class="mathjax-inline">\(m_e\)</span> but not
 of the muon <span class="mathjax-inline">\(m_\mu \)</span> we obtain: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \frac {1}{4} \sum \limits _{\mathrm {spins}} |\mathcal {M} |^2 &amp; = \frac {4e^4}{q^4} \big [ (p_1 \cdot p_3)(p_2 \cdot p_4) + (p_1 \cdot p_4) (p_2 \cdot p_3) - (p_1 \cdot p_2) (p_3 \cdot p_4) - m_{\mu }^2 (p_1 \cdot p_2) \\ &amp; + (p_1 \cdot p_4) (p_2 \cdot p_3) + (p_1 \cdot p_3)(p_2 \cdot p_4) - (p_1 \cdot p_2)(p_3 \cdot p_4) - m_{\mu }^2 (p_1 \cdot p_2) \\ &amp; - (p_1 \cdot p_2) (p_3 \cdot p_4) - (p_1 \cdot p_2) (p_3 \cdot p_4) + 4(p_1 \cdot p_2)(p_3 \cdot p_4) + 4m_{\mu }^2 (p_1 \cdot p_2) \big ]\\ &amp;= \frac {8 e^4}{q^4} \left [(p_1 \cdot p_3)(p_2 \cdot p_4) + (p_1 \cdot p_4) (p_2 \cdot p_3) + m_\mu ^2 (p_1 \cdot p_2) \right ]. \end {aligned} \end{equation}</div><a 
  id="x1-77011r9"></a>
    
