@@ -2279,8 +2279,8 @@ href="#x1-60002r32">5.32<!--tex4ht:ref: eq:Noether_current --></a> with <div cla
  id="x1-62006r39"></a> We obtained a similar result to the one in section <a 
 href="#x1-450004.5">4.5<!--tex4ht:ref: DiracProbDensity --></a>. The
 interpretation, though, is not the same as we do not treat the fields as single particle probability
-amplitudes. These Noether currents have an interpretation relating to conservation of electric
-charge.
+amplitudes. These Noether currents have an interpretation relating to conservation of number of particles
+or electric charge.
 <p>   At this point we can couple the conserved Noether current to the electromagnetic vector potential <span class="mathjax-inline">\(A_\mu \)</span> to
 obtain the QED Lagrangian: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \label {eq:QED_explicit} \mathcal {L} = \bar {\psi }i\gamma ^\mu \partial _\mu \psi - eQ \bar {\psi } \gamma ^\mu \psi A_\mu - m \bar {\psi }\psi - \frac {1}{4} F_{\mu \nu }F^{\mu \nu }. \end {aligned} \end{equation}</div><a 
@@ -2366,16 +2366,16 @@ href="#x1-64003r51">5.51<!--tex4ht:ref: eq:CovariantDerivTransf --></a> to deriv
 covariant derivative </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} (D_\mu \psi )^\prime &amp;= (\partial _\mu + ieQA^\prime _\mu ) \psi ^\prime \\ &amp;= (\partial _\mu + ieQA^\prime _\mu ) \psi \exp [ia(x)Q]\\ &amp;= \exp [ia(x)Q] \partial _\mu \psi + iQ (\partial _\mu a(x)) \exp [ia(x)Q] \psi + ie Q \exp [ia(x)Q] A^\prime _\mu \psi , \end {aligned} \end{equation}</div><a 
  id="x1-64004r52"></a> which should be equal to <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \exp [ia(x)Q] D_\mu \psi &amp;= \exp [ia(x)Q] (\partial _\mu + ieQA_\mu )\psi \\ &amp;= \exp [ia(x)Q] \partial _\mu \psi + ie Q \exp [ia(x)Q] A_\mu \psi . \end {aligned} \end{equation}</div><a 
- id="x1-64005r53"></a> Therefore we obtain <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;\exp [ia(x)Q] \partial _\mu \psi + iQ (\partial _\mu a(x)) \exp [ia(x)Q] \psi + ie Q \exp [ia(x)Q] A^\prime _\mu \psi \\ &amp;= \exp [ia(x)Q] \partial _\mu \psi + ie Q \exp [ia(x)Q] A_\mu \psi \\ &amp;\implies ie Q \exp [ia(x)Q] A^\prime _\mu \psi = ie Q \exp [ia(x)Q] A_\mu \psi - iQ (\partial _\mu a(x)) \exp [ia(x)Q] \psi \\ &amp;\implies ie \exp [ia(x)Q] A^\prime _\mu \psi = ie \exp [ia(x)Q] A_\mu \psi - i \exp [ia(x)Q] (\partial _\mu a(x)) \psi \\ &amp;\implies A^\prime _\mu = A_\mu - \frac {1}{e} \partial _\mu a(x). \end {aligned} \end{equation}</div><a 
+ id="x1-64005r53"></a> Therefore we obtain <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} &amp;ie Q \exp [ia(x)Q] A^\prime _\mu \psi = ie Q \exp [ia(x)Q] A_\mu \psi - iQ (\partial _\mu a(x)) \exp [ia(x)Q] \psi \\ &amp;\implies e \exp [ia(x)Q] A^\prime _\mu \psi = e \exp [ia(x)Q] A_\mu \psi - \exp [ia(x)Q] (\partial _\mu a(x)) \psi \\ &amp;\implies A^\prime _\mu = A_\mu - \frac {1}{e} \partial _\mu a(x). \end {aligned} \end{equation}</div><a 
  id="x1-64006r54"></a>
 <p>   It is also useful to note the following relationship between the field strength tensor and the covariant
 derivative: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \label {eq:QED_Field_Tensor} \begin {aligned} \ [D_\mu ,D_\nu ] &amp;= [ (\partial _\mu + ieQA_\mu ) , (\partial _\nu + ieQA_\nu )] \\ &amp;= [\partial _\mu , \partial _\nu ] + iQe [\partial _\mu , A_\nu ] + iQe [A_\mu ,\partial _\nu ] - e^2Q^2 [A_\mu , A_\nu ] \\ &amp; = iQe [\partial _\mu , A_\nu ] + iQe [A_\mu ,\partial _\nu ] - Q^2e^2 [A_\mu , A_\nu ]\\ &amp; = iQe [\partial _\mu , A_\nu ] + iQe [A_\mu ,\partial _\nu ] \\ &amp;= iQe (\partial _\mu A_\nu - \partial _\nu A_\mu ) = iQe F_{\mu \nu }. \end {aligned} \end{equation}</div><a 
- id="x1-64007r55"></a> In the last two steps we used the fact that <span class="mathjax-inline">\([A_\mu , A_\nu ] = 0\)</span>, and the product rule for commutators <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \ [\partial _\mu , f(x) ] g(x) &amp; = \partial _\mu (f(x) g(x)) - f(x) \partial _\mu g(x) \\ &amp;= (\partial _\mu f(x)) g(x) + f(x) \partial _\mu g(x) - f(x) \partial _\mu g(x) \\ &amp;= (\partial _\mu f(x)) g(x). \end {aligned} \end{equation}</div><a 
- id="x1-64008r56"></a> The end
-result is <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} F_{\mu \nu } Q = \frac {1}{ie} [D_\mu ,D_\nu ]. \end {aligned} \end{equation}</div><a 
- id="x1-64009r57"></a> As we mentioned already terms <span class="mathjax-inline">\(\propto A_\mu A^\mu \)</span> are not gauge invariant. The simplest gauge invariant scalar
-term that we can include is <span class="mathjax-inline">\(\propto F_{\mu \nu } F^{\mu \nu }\)</span>.
+ id="x1-64007r55"></a> Here we used the fact that <span class="mathjax-inline">\([\partial _\mu , \partial _\nu ]=0\)</span>, <span class="mathjax-inline">\([A_\mu , A_\nu ] = 0\)</span>, and the product rule for commutators <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mathbf {[}\partial _\mu , f(x) \mathbf {]} \psi (x) &amp; = \partial _\mu \Big ( f(x) \psi (x)\Big ) - f(x) \Big ( \partial _\mu \psi (x)\Big )\\ &amp;= \Big ( \partial _\mu [f(x)\Big ) \psi (x) + f(x) \Big ( \partial _\mu \psi (x)\Big ) - f(x) \Big ( \partial _\mu \psi (x)\Big ) \\ &amp;= \Big ( \partial _\mu f(x)\Big ) \psi (x). \end {aligned} \end{equation}</div><a 
+ id="x1-64008r56"></a> The end result is <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} F_{\mu \nu } Q = \frac {1}{ie} [D_\mu ,D_\nu ]. \end {aligned} \end{equation}</div><a 
+ id="x1-64009r57"></a> As we
+mentioned already terms <span class="mathjax-inline">\(\propto A_\mu A^\mu \)</span> are not gauge invariant. The simplest gauge invariant scalar term that we can
+include is <span class="mathjax-inline">\(\propto F_{\mu \nu } F^{\mu \nu }\)</span>.
 <p>   The end result is that the QED Lagrangian becomes: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mathcal {L} = \bar {\psi }(i\gamma ^\mu D_\mu - m)\psi - \frac {1}{4} F_{\mu \nu }F^{\mu \nu }. \end {aligned} \end{equation}</div><a 
  id="x1-64010r58"></a>
