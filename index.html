@@ -195,9 +195,11 @@ href="#x1-10700010.4" id="QQ2-1-153">Higgs Discovery and Current Status</a></spa
 <br />   <span class="sectionToc" >A <a 
 href="#x1-109000A" id="QQ2-1-155">More on Index Notation</a></span>
 <br />   <span class="subsectionToc" >A.1 <a 
-href="#x1-110000A.1" id="QQ2-1-156">Vectors and the Metric</a></span>
+href="#x1-110000A.1" id="QQ2-1-156">Euclidean Metric</a></span>
 <br />   <span class="subsectionToc" >A.2 <a 
-href="#x1-113000A.2" id="QQ2-1-159">The Levi-Civita Symbol </a></span>
+href="#x1-111000A.2" id="QQ2-1-157">The Minkowski Metric</a></span>
+<br />   <span class="subsectionToc" >A.3 <a 
+href="#x1-113000A.3" id="QQ2-1-159">The Levi-Civita Symbol </a></span>
 <br />   <span class="sectionToc" >B <a 
 href="#x1-117000B" id="QQ2-1-163">Decay Rate Derivations</a></span>
 <br />   <span class="subsectionToc" >B.1 <a 
@@ -226,10 +228,10 @@ href="#x1-137000E" id="QQ2-1-183">Lagrangian Formalism</a></span>
 href="#x1-138000E.1" id="QQ2-1-184">Lagrangian formulation of Classical Mechanics</a></span>
 <br />   <span class="subsectionToc" >E.2 <a 
 href="#x1-139000E.2" id="QQ2-1-185">Maxwell Lagrangian</a></span>
+                                                                                         
+                                                                                         
 <br />   <span class="subsectionToc" >E.3 <a 
 href="#x1-140000E.3" id="QQ2-1-186">Proca Lagrangian</a></span>
-                                                                                         
-                                                                                         
 <br />   <span class="sectionToc" >F <a 
 href="#x1-141000F" id="QQ2-1-187">A Very Short Introduction to Lie Groups</a></span>
 <br />   <span class="subsectionToc" >F.1 <a 
@@ -607,7 +609,7 @@ index.
 <p>   The metric tensor has an inverse, denoted with both indices up <span class="mathjax-inline">\(g^{\mu \nu }\)</span>, such that </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} g^{\mu \nu } g_{\nu \rho } = \delta ^\mu _\rho . \end{equation}</div><a 
  id="x1-12006r10"></a>
-<p>   In the case of the Minkowski metric tensor in Cartesian coordinates, the inverse has the same
+<p>   In the case of the Minkowski metric tensor in Lorentz coordinates, the inverse has the same
 components as <span class="mathjax-inline">\(g_{\mu \nu }\)</span>.
 </p> 
 <p>   We can confirm this using Einstein summation with the dummy index <span class="mathjax-inline">\(\nu \)</span> running from 0 to
@@ -4837,86 +4839,73 @@ href="#x1-108000" id="x1-108000">Appendices</a></h3>
    <h3 class="sectionHead"><span class="titlemark">A   </span> <a 
 href="#QQ2-1-155" id="x1-109000A">More on Index Notation</a></h3>
 <p>   A <i>tensor</i> is a <i>geometric object</i> defined in spacetime, whose components carry indices and <i>transform
-appropriately</i> under a change of reference frame. One of the difficulties in working with tensors and index
-notation is that we are often used to working in particular coordinate systems, so we sometimes overlook
-actual geometric properties. I will adopt a practical approach. Meaning that I will avoid certain
-mathematical terms and formal definitions.
+appropriately</i> under a change of reference frame. Tensors are useful because tensor equations have the
+same form in all co-ordinate systems.
+</p> 
+<p>   One of the difficulties in working with tensors is that we are often used to working in particular
+coordinate systems, so we sometimes overlook actual geometric properties. For example, we
+describe a vector in a coordinate system with basis <span class="mathjax-inline">\(e_i\)</span> as </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} v = v^i e_i , \end {aligned} \end{equation}</div><a 
+ id="x1-109001r1"></a> where the <span class="mathjax-inline">\(v^i\)</span> are the components of <span class="mathjax-inline">\(v\)</span>. The
+components depend on the coordinate system. On the other hand, the vector as a geometrical
+object <i>does not depend on the coordinate system</i>, only its components do. Coordinates are
+simply labels assigned to points in space; changing coordinates should not alter geometric
+properties.
+<p>   In the same spirit, coordinate transformations cannot change the meaning of geometric operations
+such as inner products or directional derivatives. For instance, the dot product of two vectors is a scalar.
+Scalars are coordinate-independent, meaning their value at a point does not depend on the coordinates
+assigned to that point.
    
    </p> 
 
    <h4 class="subsectionHead"><span class="titlemark">A.1   </span> <a 
-href="#QQ2-1-156" id="x1-110000A.1">Vectors and the Metric</a></h4>
-<p>A vector is commonly described as an object possessing both a magnitude (length) and a direction. It is
-important to distinguish between a vector and its components. The <i>vector</i> <span class="mathjax-inline">\(v\)</span> is an object that is completely
-independent of any coordinate system.
-</p> 
-<p>   To describe a vector we introduce a basis. In a coordinate system <span class="mathjax-inline">\(x = (x^1,x^2,\ldots ,x^n)\)</span> we denote the basis vectors by <span class="mathjax-inline">\(e_i\)</span>.
-Any vector <span class="mathjax-inline">\(v\)</span> can then be written as </p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} v = v^i e_i , \end {aligned} \end{equation}</div><a 
- id="x1-110001r1"></a> where the <span class="mathjax-inline">\(v^i\)</span> are the components of <span class="mathjax-inline">\(v\)</span>. The components depend on
-the coordinate system. On the other hand, the vector as a geometrical object it <i>does not
-depend on the coordinate system</i>, only its components do. Put otherwise, coordinates are
-simply labels assigned to points in space; changing coordinates should not alter geometric
-properties.
-<p>   In the same spirit, coordinate transformations cannot change the meaning of geometric operations
-such as inner products or directional derivatives. For instance, the dot product of two vectors or the
-directional derivative of a function produces a scalar. Scalars are coordinate-independent, meaning their
-value at a point does not depend on the coordinates assigned to that point. Consider two vectors <span class="mathjax-inline">\(u\)</span> and <span class="mathjax-inline">\(v\)</span>.
-In a coordinate system the dot product is </p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} u \cdot v &amp;= (u^i e_i) \cdot (v^j e_j) \\ &amp;= u^i v^j (e_i \cdot e_j). \end {aligned} \end{equation}</div><a 
- id="x1-110002r2"></a> Now suppose we change coordinates from <span class="mathjax-inline">\(x\)</span> to <span class="mathjax-inline">\(x'\)</span>, with new basis
-vectors <span class="mathjax-inline">\(e'_i\)</span>. The same vectors can be written as <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} u = u'^i e'_i , \qquad v = v'^j e'_j . \end {aligned} \end{equation}</div><a 
- id="x1-110003r3"></a> The dot product in the new coordinates is <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} u \cdot v &amp;= (u'^i e'_i) \cdot (v'^j e'_j) \\ &amp;= u'^i v'^j (e'_i \cdot e'_j). \end {aligned} \end{equation}</div><a 
- id="x1-110004r4"></a> Although the
-components and basis vectors have changed, the numerical value of the dot product is a scalar, so it
-should be the same: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} u \cdot v &amp;= u^i v^j (e_i \cdot e_j) \\ &amp;= u'^i v'^j (e'_i \cdot e'_j). \end {aligned} \end{equation}</div><a 
- id="x1-110005r5"></a>
-   
-   <h5 class="likesubsubsectionHead"><a 
-href="#x1-111000" id="x1-111000">Euclidean Metric</a></h5>
+href="#QQ2-1-156" id="x1-110000A.1">Euclidean Metric</a></h4>
 <p>In three-dimensional Euclidean space, a vector <span class="mathjax-inline">\(v\)</span> can be described by three numbers <span class="mathjax-inline">\((v_x, v_y, v_z)\)</span>. In index notation,
 we write </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} v^1 = v_x, \quad v^2 = v_y, \quad v^3 = v_z . \end {aligned} \end{equation}</div><a 
- id="x1-111001r6"></a> In a Cartesian coordinate system, the basis vectors are orthonormal: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} e_i \cdot e_j = \delta _{ij} = \begin {cases} 1 &amp; i=j \\ 0 &amp; i \neq j \end {cases} \end {aligned} \end{equation}</div><a 
- id="x1-111002r7"></a> The metric is <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} g_{ij} = \delta _{ij}. \end {aligned} \end{equation}</div><a 
- id="x1-111003r8"></a> The dot
+ id="x1-110001r2"></a> In a Cartesian coordinate system, the basis vectors are orthonormal: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} e_i \cdot e_j = \delta _{ij} = \begin {cases} 1 &amp; i=j \\ 0 &amp; i \neq j \end {cases} \end {aligned} \end{equation}</div><a 
+ id="x1-110002r3"></a> The metric is <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} g_{ij} = \delta _{ij}. \end {aligned} \end{equation}</div><a 
+ id="x1-110003r4"></a> The dot
 product becomes <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} u \cdot v = \sum _{i,j} g_{ij} u^i v^j . \end {aligned} \end{equation}</div><a 
- id="x1-111004r9"></a> In Cartesian coordinates, <span class="mathjax-inline">\(v_i = v^i\)</span>, and we can write <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} u \cdot v = g_{ij} u^i v^j = g^{ij} u_i v_j = u^i v_i = u^1v^1+u^2v^2+ u^3v^3 \end {aligned} \end{equation}</div><a 
- id="x1-111005r10"></a> This is the Einstein summation
-convention: repeated indices (one up, one down) imply summation.
+ id="x1-110004r5"></a> In Cartesian coordinates, <span class="mathjax-inline">\(v_i = v^i\)</span>, and we can write <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} u \cdot v = g_{ij} u^i v^j = g^{ij} u_i v_j = u^i v_i = u^1v^1+u^2v^2+ u^3v^3, \end {aligned} \end{equation}</div><a 
+ id="x1-110005r6"></a> where we used the Einstein summation
+convention.
    
-   <h5 class="likesubsubsectionHead"><a 
-href="#x1-112000" id="x1-112000">The Minkowski Metric</a></h5>
+   <h4 class="subsectionHead"><span class="titlemark">A.2   </span> <a 
+href="#QQ2-1-157" id="x1-111000A.2">The Minkowski Metric</a></h4>
 <p>In special relativity, the quantity <span class="mathjax-inline">\(g_{\mu \nu } a^{\mu } a^{\nu }\)</span> is invariant. Here <span class="mathjax-inline">\(a^{\mu } = (a^0, a^1, a^2, a^3)\)</span> is a four-vector. The metric tensor is </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} g_{\mu \nu } = \text {diag}(1,-1,-1,-1). \end {aligned} \end{equation}</div><a 
- id="x1-112001r11"></a>
+ id="x1-111001r7"></a>
 The corresponding covariant vector is: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} a_\mu = g_{\mu \nu } a^\nu = (a^0, -a^1, -a^2, -a^3). \end {aligned} \end{equation}</div><a 
- id="x1-112002r12"></a> The product of two four-vectors can be written as:
-                                                                                         
-                                                                                         
+ id="x1-111002r8"></a> The product of two four-vectors can be written as:
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} a^{\mu } b_{\mu } = a_{\mu } b^{\mu } = g_{\mu \nu } a^{\mu } b^{\nu } = g^{\mu \nu } a_{\mu } b_{\nu } = a \cdot b = a^0 b^0 - a^1 b^1- a^2 b^2 - a^3 b^3. \end {aligned} \end{equation}</div><a 
- id="x1-112003r13"></a>
+ id="x1-111003r9"></a>
 <p>   For example </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} (p_a^\mu p_b^\nu )(p_{c\,\mu } p_{d\,\ \nu }) &amp;= (p_a^\mu p_b^\nu ) (g_{\mu \rho } p_c^\rho \, g_{\nu \sigma } p_d^\sigma ) \\ &amp;= (p_a^\mu g_{\mu \rho } p_c^\rho ) (p_b^\nu g_{\nu \sigma } p_d^\sigma ) \\ &amp;= (p_a \cdot p_c) (p_b \cdot p_d) \end {aligned} \end{equation}</div><a 
- id="x1-112004r14"></a>
-<p>   Be mindful of the following mistakes: </p> 
+ id="x1-111004r10"></a>
+   
+   <h5 class="likesubsubsectionHead"><a 
+href="#x1-112000" id="x1-112000">Common Mistakes</a></h5>
+<p>Be mindful of the following mistakes: </p> 
 
      <ul class="itemize1">
      <li class="itemize">
      <p>Using a Euclidean sum: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} p_a^0 p_c^0 + \mathbf {p_a} \cdot \mathbf {p_c} \end {aligned} \end{equation}</div><a 
- id="x1-112005r15"></a> is not Lorentz invariant.
+ id="x1-112001r11"></a> is not Lorentz invariant.
+                                                                                         
+                                                                                         
      </li>
      <li class="itemize">
      <p>Pairing wrong indices: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} (p_a \cdot p_b)(p_c \cdot p_d) \end {aligned} \end{equation}</div><a 
- id="x1-112006r16"></a> gives a scalar with a different physical meaning. In particle physics, indices
+ id="x1-112002r12"></a> gives a scalar with a different physical meaning. In particle physics, indices
      often track the flow of momentum along lines in a Feynman diagram or other conserved
      quantities. Therefore, pairing the wrong vectors does not correspond to the intended physical
      process.</li></ul>
    
-   <h4 class="subsectionHead"><span class="titlemark">A.2   </span> <a 
-href="#QQ2-1-159" id="x1-113000A.2">The Levi-Civita Symbol </a></h4>
+   <h4 class="subsectionHead"><span class="titlemark">A.3   </span> <a 
+href="#QQ2-1-159" id="x1-113000A.3">The Levi-Civita Symbol </a></h4>
    
    <h5 class="likesubsubsectionHead"><a 
 href="#x1-114000" id="x1-114000">3D Case</a></h5>
@@ -4944,13 +4933,11 @@ href="#x1-114000" id="x1-114000">3D Case</a></h5>
 </li></ul>
 <p>   The <span class="mathjax-inline">\(i\)</span>-th component of the cross product is </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} w_i = \epsilon _{ijk} u^j v^k \end {aligned} \end{equation}</div><a 
- id="x1-114001r17"></a> Leading to <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} w_1 &amp;= \epsilon _{123} u^2 v^3 + \epsilon _{132} u^3 v^2 = u^2 v^3 + (-1) u^3 v^2 = u^2 v^3 - u^3 v^2, \\ w_2 &amp;= \epsilon _{213} u^1 v^3 + \epsilon _{231} u^3 v^1 \= (-1) u^1 v^3 + (+1) u^3 v^1 \= -(u^1 v^3 - u^3 v^1), \\ w_3 &amp;= \epsilon _{312} u^1 v^2 + \epsilon _{321} u^2 v^1 = (+1) u^1 v^2 + (-1) u^2 v^1 = u^1 v^2 - u^2 v^1. \end {aligned} \end{equation}</div><a 
- id="x1-114002r18"></a> You can compare the above with the
+ id="x1-114001r13"></a> Leading to <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} w_1 &amp;= \epsilon _{123} u^2 v^3 + \epsilon _{132} u^3 v^2 = u^2 v^3 + (-1) u^3 v^2 = u^2 v^3 - u^3 v^2, \\ w_2 &amp;= \epsilon _{213} u^1 v^3 + \epsilon _{231} u^3 v^1 \= (-1) u^1 v^3 + (+1) u^3 v^1 \= -(u^1 v^3 - u^3 v^1), \\ w_3 &amp;= \epsilon _{312} u^1 v^2 + \epsilon _{321} u^2 v^1 = (+1) u^1 v^2 + (-1) u^2 v^1 = u^1 v^2 - u^2 v^1. \end {aligned} \end{equation}</div><a 
+ id="x1-114002r14"></a> You can compare the above with the
 determinant formula you might be more familiar with: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \mathbf {u} \times \mathbf {v} &amp;= \begin {vmatrix} \mathbf {i} &amp; \mathbf {j} &amp; \mathbf {k} \\ u_x &amp; u_y &amp; u_z \\ v_x &amp; v_y &amp; v_z \end {vmatrix} = (u_y v_z - u_z v_y) \mathbf {i} - (u_x v_z - u_z v_x) \mathbf {j} + (u_x v_y - u_y v_x) \mathbf {k}. \end {aligned} \end{equation}</div><a 
- id="x1-114003r19"></a>
+ id="x1-114003r15"></a>
    
-                                                                                         
-                                                                                         
    <h5 class="likesubsubsectionHead"><a 
 href="#x1-115000" id="x1-115000">4D Case</a></h5>
 <p>In 4D, the indices run from <span class="mathjax-inline">\(\mu = 0\)</span> to <span class="mathjax-inline">\(3\)</span>, and we define <span class="mathjax-inline">\(\epsilon _{\mu \nu \rho \sigma }\)</span> with the same rules as in 3D: </p> 
@@ -4962,6 +4949,8 @@ href="#x1-115000" id="x1-115000">4D Case</a></h5>
 </li>
      <li class="itemize">
      <p>Even permutations give <span class="mathjax-inline">\(+1\)</span>, odd permutations give <span class="mathjax-inline">\(-1\)</span>
+                                                                                         
+                                                                                         
      </p> 
 </li>
      <li class="itemize">
@@ -4969,27 +4958,28 @@ href="#x1-115000" id="x1-115000">4D Case</a></h5>
 </li></ul>
 <p>   The only thing that differs is that indices are raised with the Minkowski metric: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \epsilon ^{\mu \nu \lambda \sigma } = g^{\mu \alpha } g^{\nu \beta } g^{\lambda \gamma } g^{\sigma \delta } \epsilon _{\alpha \beta \gamma \delta } \end {aligned} \end{equation}</div><a 
- id="x1-115001r20"></a> In particular:
+ id="x1-115001r16"></a> In particular:
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \epsilon ^{0123} &amp;= (1)(-1)(-1)(-1) \epsilon _{0123} = -1 \end {aligned} \end{equation}</div><a 
- id="x1-115002r21"></a>
+ id="x1-115002r17"></a>
    
    <h5 class="likesubsubsectionHead"><a 
 href="#x1-116000" id="x1-116000">Some Cases Encountered in the Notes</a></h5>
-<p>Consider </p> 
-<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} C^{\lambda \sigma }_{\kappa \tau } = \epsilon ^{\mu \nu \lambda \sigma } \epsilon _{\mu \nu \kappa \tau } \end {aligned} \end{equation}</div><a 
- id="x1-116001r22"></a> Non-zero terms require <span class="mathjax-inline">\(\{\lambda ,\sigma \} = \{\kappa ,\tau \}\)</span> otherwise one of the indices that differ would coincide with one of the <span class="mathjax-inline">\(\{\mu ,\nu \}\)</span>
-and the product would vanish. As an example we can look at the case: <span class="mathjax-inline">\(\lambda = 2\)</span>, <span class="mathjax-inline">\(\sigma = 3\)</span> <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} C^{23}_{\kappa \tau } &amp;= \epsilon ^{0123} \epsilon _{01\kappa \tau } + \epsilon ^{1023} \epsilon _{10\kappa \tau } \end {aligned} \end{equation}</div><a 
- id="x1-116002r23"></a> If <span class="mathjax-inline">\(\kappa = 2\)</span>, <span class="mathjax-inline">\(\tau = 3\)</span> <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} C^{23}_{23} &amp;= \epsilon ^{0123} \epsilon _{0123} + \epsilon ^{1023} \epsilon _{1023} = (-1)(+1) + (+1)(-1) = -2 \end {aligned} \end{equation}</div><a 
- id="x1-116003r24"></a> If <span class="mathjax-inline">\(\kappa = 3\)</span>, <span class="mathjax-inline">\(\tau = 2\)</span> <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} C^{23}_{32} &amp;= \epsilon ^{0123} \epsilon _{0132} + \epsilon ^{1023} \epsilon _{1032} = (-1)(-1) + (+1)(+1) = +2 \end {aligned} \end{equation}</div><a 
- id="x1-116004r25"></a> If <span class="mathjax-inline">\(\{\kappa ,\tau \} \neq \{\lambda ,\sigma \}\)</span>, at least one
-Levi-Civita symbol contains repeated indices, hence <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} C^{\lambda \sigma }_{\kappa \tau } = 0 \end {aligned} \end{equation}</div><a 
- id="x1-116005r26"></a> The above can be repeated for the other cases <span class="mathjax-inline">\(\{\lambda , \sigma \} = \{0,1\}, \{0,2\} ,\{0,3\}, \{1,2\}, \{1,3\} \{2,3\}\)</span>,
-leading to the same result that can be written in terms of Kronecker deltas: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} C^{\lambda \sigma }_{\kappa \tau } = -2 \left ( \delta ^\lambda _{\ \kappa } \delta ^\sigma _{\ \tau } - \delta ^\lambda _{\ \tau } \delta ^\sigma _{\ \kappa } \right ) \end {aligned} \end{equation}</div><a 
- id="x1-116006r27"></a> Meaning: <span class="mathjax-inline">\(-2\)</span> when <span class="mathjax-inline">\(\lambda =\kappa \)</span>, <span class="mathjax-inline">\(\sigma =\tau \)</span>; <span class="mathjax-inline">\(+2\)</span> when <span class="mathjax-inline">\(\lambda =\tau \)</span>, <span class="mathjax-inline">\(\sigma =\kappa \)</span>; <span class="mathjax-inline">\(0\)</span>
-otherwise.
+   <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} C^{\lambda \sigma }_{\kappa \tau } = \epsilon ^{\mu \nu \lambda \sigma } \epsilon _{\mu \nu \kappa \tau } \end {aligned} \end{equation}</div><a 
+ id="x1-116001r18"></a>
+<p>We can look at the case: <span class="mathjax-inline">\(\lambda = 2\)</span>, <span class="mathjax-inline">\(\sigma = 3\)</span> </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} C^{23}_{\kappa \tau } &amp;= \epsilon ^{0123} \epsilon _{01\kappa \tau } + \epsilon ^{1023} \epsilon _{10\kappa \tau } \end {aligned} \end{equation}</div><a 
+ id="x1-116002r19"></a> If <span class="mathjax-inline">\(\kappa = 2\)</span>, <span class="mathjax-inline">\(\tau = 3\)</span> <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} C^{23}_{23} &amp;= \epsilon ^{0123} \epsilon _{0123} + \epsilon ^{1023} \epsilon _{1023} = (-1)(+1) + (+1)(-1) = -2 \end {aligned} \end{equation}</div><a 
+ id="x1-116003r20"></a> If <span class="mathjax-inline">\(\kappa = 3\)</span>, <span class="mathjax-inline">\(\tau = 2\)</span> <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} C^{23}_{32} &amp;= \epsilon ^{0123} \epsilon _{0132} + \epsilon ^{1023} \epsilon _{1032} = (-1)(-1) + (+1)(+1) = +2 \end {aligned} \end{equation}</div><a 
+ id="x1-116004r21"></a> If any of the <span class="mathjax-inline">\(\kappa \)</span>, <span class="mathjax-inline">\(\tau \)</span> differs from <span class="mathjax-inline">\(\lambda \)</span>,<span class="mathjax-inline">\(\sigma \)</span>, at least one Levi-Civita symbol
+contains repeated indices with <span class="mathjax-inline">\(\mu \)</span>,<span class="mathjax-inline">\(\nu \)</span> and hence vanishes. Therefore, <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} C^{\lambda \sigma }_{\kappa \tau } = 0 \end {aligned} \end{equation}</div><a 
+ id="x1-116005r22"></a>
+<p>   The above can be repeated for the other cases <span class="mathjax-inline">\(\{\lambda , \sigma \} = \{0,1\}, \{0,2\} ,\{0,3\}, \{1,2\}, \{1,3\} \{2,3\}\)</span>, leading to the same result that can be written in
+terms of Kronecker deltas: </p> 
+<div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} C^{\lambda \sigma }_{\kappa \tau } = -2 \left ( \delta ^\lambda _{\ \kappa } \delta ^\sigma _{\ \tau } - \delta ^\lambda _{\ \tau } \delta ^\sigma _{\ \kappa } \right ) \end {aligned} \end{equation}</div><a 
+ id="x1-116006r23"></a> Meaning: <span class="mathjax-inline">\(-2\)</span> when <span class="mathjax-inline">\(\lambda =\kappa \)</span>, <span class="mathjax-inline">\(\sigma =\tau \)</span>; <span class="mathjax-inline">\(+2\)</span> when <span class="mathjax-inline">\(\lambda =\tau \)</span>, <span class="mathjax-inline">\(\sigma =\kappa \)</span>; <span class="mathjax-inline">\(0\)</span> otherwise.
 <p>   The other case we encounter in the Feynman diagram calculations is having a tensor like </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} S^{\mu \nu } = p_1^\mu p_2^\nu + p_1^\nu p_2^\mu - g^{\mu \nu } (p_1 \cdot p_2). \end{equation}</div><a 
- id="x1-116007r28"></a> contracted
+ id="x1-116007r24"></a> contracted
 with the Levi-Civita symbol.
 <p>   The tensor <span class="mathjax-inline">\(S^{\mu \nu }\)</span> is symmetric under the exchange of <span class="mathjax-inline">\(\mu \)</span> and <span class="mathjax-inline">\(\nu \)</span> because: </p> 
 
@@ -5543,7 +5533,7 @@ colour <span class="mathjax-inline">\(i\)</span> and spinor <span class="mathjax
  id="x1-149013r13"></a> Since <span class="mathjax-inline">\(U\)</span> is unitary, <span class="mathjax-inline">\((U^\dagger U)_{jk} = \delta _{jk}\)</span>: <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} \bar {\psi }' \psi ' &amp;= \bar {\psi }_{qj} \delta _{jk} \psi _{kq} \\ &amp;= \bar {\psi }_{qk} \psi _{kq} = \bar {\psi }\psi . \end {aligned} \end{equation}</div><a 
  id="x1-149014r14"></a>
 <p>   However, if <span class="mathjax-inline">\(U\)</span> is a function of <span class="mathjax-inline">\(x\)</span>, a term proportional to <span class="mathjax-inline">\(\partial U\)</span> will spoil the local invariance. To construct
-a gauge-invariant Lagrangian, we introduce eight gauge fields <span class="mathjax-inline">\(G_\mu ^a\)</span>, one for each generator—to
+a gauge-invariant Lagrangian, we introduce eight gauge fields <span class="mathjax-inline">\(G_\mu ^a\)</span>, one for each generator, to
 compensate for the phase differences. These are the 8 gluons. We now construct the covariant
 derivative: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} \begin {aligned} D_\mu = \partial _\mu + ig_s G_{\mu }, \end {aligned} \end{equation}</div><a 
