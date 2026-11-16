@@ -2098,8 +2098,8 @@ distinct <div class="mathjax-env mathjax-equation">\begin{equation} \phi (x) = \
  id="x1-56004r4"></a> For a vector field describing a spin-1 particle (like the photon) that has polarization <span class="mathjax-inline">\(\epsilon ^\mu (p, \lambda )\)</span>
 <div class="mathjax-env mathjax-equation">\begin{equation} A^\mu (x) = \int \frac {d^3 p}{(2\pi )^3 \sqrt {2E_p}} \sum _{\lambda } \left ( a_{\mathbf {p}, \lambda } \epsilon ^\mu (p, \lambda ) e^{-ipx} + a^\dagger _{\mathbf {p}, \lambda } \epsilon ^{\mu }(p, \lambda ) e^{ipx} \right ). \end{equation}</div><a 
  id="x1-56005r5"></a>
-<p>   We will not be using these explicit forms in this course. What is conceptually useful though, is the
-interpretation of fields as creating and annihilating particles.
+<p>   We will not be using these explicit forms in this course. What is conceptually useful, though, is the
+interpretation of quantum fields as operators that create and annihilate particles.
    
    </p> 
 
@@ -2109,24 +2109,27 @@ href="#QQ2-1-67" id="x1-570005.2">Lagrangian Formalism in Particle Physics</a></
 density</i>. We define the action for a relativistic field theory as: </p> 
 <div class="mathjax-env mathjax-equation">\begin{equation} S = \int L \, dt = \int \mathcal {L} \, d^4x, \end{equation}</div><a 
  id="x1-57001r6"></a> where <div class="mathjax-env mathjax-equation">\begin{equation} L = \int \mathcal {L} \, d^3\boldsymbol {x}. \end{equation}</div><a 
- id="x1-57002r7"></a> The <span class="mathjax-inline">\(\mathcal {L}\)</span> is the Lagrangian density, but
-we will simply call it the Lagrangian in most parts of this course. <span class="mathjax-inline">\(\mathcal {L}\)</span> is a function of the fields and their
-derivatives, <span class="mathjax-inline">\(\mathcal {L}(\phi _i, \partial _\mu \phi _i)\)</span>. The equivalent of the Euler-Lagrange equation for the equations of motion is
-<div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu \left ( \frac {\partial \mathcal {L}}{\partial (\partial _\mu \phi _i)} \right ) - \frac {\partial \mathcal {L}}{\partial \phi _i} = 0. \end{equation}</div><a 
- id="x1-57003r8"></a>
-<p>   In this course we are mainly interested in the fact that there is mapping between the Feynman
-diagram rules and the terms of the Lagrangian density. But first we need to understand the origin of
-these terms.
-</p> 
-<p>   In classical particle mechanics, the Lagrangian is derived from the kinetic and potential energies
-according to (<span class="mathjax-inline">\(L = T - V\)</span>). In relativistic field theory, however, the choice of the Lagrangian density <span class="mathjax-inline">\(\mathcal {L}\)</span> is largely
+ id="x1-57002r7"></a> Here, <span class="mathjax-inline">\(\mathcal {L}\)</span> is the Lagrangian density,
+though we will simply call it the Lagrangian throughout most of this course. <span class="mathjax-inline">\(\mathcal {L}\)</span> is a function of the fields
+and their derivatives, <span class="mathjax-inline">\(\mathcal {L}(\phi _i, \partial _\mu \phi _i)\)</span>. The field-theoretic equivalent of the Euler–Lagrange equation yielding the
+equations of motion is <div class="mathjax-env mathjax-equation">\begin{equation} \partial _\mu \left ( \frac {\partial \mathcal {L}}{\partial (\partial _\mu \phi _i)} \right ) - \frac {\partial \mathcal {L}}{\partial \phi _i} = 0. \end{equation}</div><a 
+ id="x1-57003r8"></a> In relativistic field theory, the choice of the Lagrangian density <span class="mathjax-inline">\(\mathcal {L}\)</span> is largely
 axiomatic; one must begin somewhere.
+<p>   Typically, one starts with a classical Lagrangian or Lagrangian density and then applies a procedure
+known as <i>canonical quantisation</i>. Canonical quantisation then involves promoting the canonical position
+and momentum variables to operators. In field theory, the classical fields and their conjugate momenta
+are promoted to operators. The resulting quantum theory can then be used to derive the Feynman
+rules.
 </p> 
-<p>   In the examples that follow, the Lagrangians will be chosen so that they reproduce the equations of
-motion previously derived for spin-0 and spin-1/2 particles (the spin-1 case is discussed in the
+<p>   In this course, we will omit most of the intermediate formal steps. We are mainly interested in the
+fact that there is a direct mapping between the Feynman diagram rules and the terms of the Lagrangian
+density. First, however, we need to understand the origin of these terms.
+</p> 
+<p>   In the examples that follow, we will choose Lagrangians so that they reproduce the equations of
+motion previously derived for spin-0 and spin-1/2 particles (the spin-1 case is discussed in
 Appendix <a 
 href="#x1-137000E">E<!--tex4ht:ref: sec:Appendix_Lagrangian --></a>). We will also show how, starting from the Dirac Lagrangian and imposing the
-principle of gauge invariance, one can derive the full structure of quantum electrodynamics
+principle of local gauge invariance, one can derive the full structure of quantum electrodynamics
 (QED).
    
    </p> 
@@ -2158,12 +2161,12 @@ href="#QQ2-1-69" id="x1-590005.2.2">Dirac Lagrangian</a></h5>
  id="x1-59001r18"></a> The Dirac spinor <span class="mathjax-inline">\(\psi \)</span> is a four-component complex spinor. It therefore contains
 four complex components, corresponding to eight real degrees of freedom. In principle, one could describe
 the system using eight independent real fields, given by the real and imaginary parts of each component.
+                                                                                         
+                                                                                         
 However, it is more convenient to work directly with the four complex fields <span class="mathjax-inline">\(\psi _j\)</span> and their four complex
 conjugates. This is analogous to describing a complex number <span class="mathjax-inline">\(z\)</span>: instead of using <span class="mathjax-inline">\(\{\mathrm {Re}(z), \mathrm {Im}(z)\}\)</span>, one may equivalently
-use <span class="mathjax-inline">\(\{z, z^*\}\)</span>. In this case for one of the four complex fields and its complex conjugate we use <div class="mathjax-env mathjax-equation">\begin{equation} \psi _i = \frac {1}{\sqrt {2}}(\psi _a + i\psi _b) \\ \psi ^*_i = \frac {1}{\sqrt {2}}(\psi _a - i\psi _b), \end{equation}</div><a 
+use <span class="mathjax-inline">\(\{z, z^*\}\)</span>. In this case for one of the four complex fields and its complex conjugate we use <div class="mathjax-env mathjax-equation">\begin{equation} \psi _i = \frac {1}{\sqrt {2}}(\psi _a + i\psi _b), \\psi ^*_i = \frac {1}{\sqrt {2}}(\psi _a - i\psi _b), \end{equation}</div><a 
  id="x1-59002r19"></a> rather than the real
-                                                                                         
-                                                                                         
 <span class="mathjax-inline">\(\psi _a\)</span> and <span class="mathjax-inline">\(\psi _b\)</span>.
 <p>   Following this approach, we treat the spinor <span class="mathjax-inline">\(\psi \)</span> and its Dirac adjoint <span class="mathjax-inline">\(\bar {\psi }\)</span> as independent variables when
 applying the Euler-Lagrange equations. The Dirac Lagrangian can be written in component form as </p> 
@@ -2239,11 +2242,11 @@ anti-particle).
    
    </p> 
 
+                                                                                         
+                                                                                         
    <h4 class="subsectionHead"><span class="titlemark">5.4   </span> <a 
 href="#QQ2-1-71" id="x1-610005.4">QED Interactions and Gauge Invariance</a></h4>
    
-                                                                                         
-                                                                                         
    <h5 class="subsubsectionHead"><span class="titlemark">5.4.1   </span> <a 
 href="#QQ2-1-72" id="x1-620005.4.1">Global Phase Symmetry</a></h5>
 <p>The Dirac Lagrangian is invariant under the global phase transformation </p> 
@@ -2317,12 +2320,12 @@ href="#QQ2-1-74" id="x1-640005.4.3">Reversing the Argument, Gauge Invariance Pri
 1918 to employ <i>scale</i> invariance in the metric tensor in an effort to unify electromagnetism and gravity.
 This attempt was unsuccessful, later Weyl applied the theory to the <i>local phase</i> symmetry of wave
 functions.
+                                                                                         
+                                                                                         
 </p> 
 <p>   In the Standard Model, gauge invariance is one of the <i>principles</i> used to derive the dynamics of the
 theory. In order to understand this point, we will reverse the argument: we will start from the free Dirac
 Lagrangian and, by requiring gauge invariance, we will infer the existence of the electromagnetic field and
-                                                                                         
-                                                                                         
 the relevant interaction structure of the theory.
 </p> 
 <p>   The procedure that we will follow is not essential for deriving QED, but becomes important for
